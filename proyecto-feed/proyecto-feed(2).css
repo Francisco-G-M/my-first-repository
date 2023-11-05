@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0px;
+    background-color: rgb(27, 26, 26)
+}
+header{
+    background-color: yellow;
+    color: red;
+    padding: 5px ;
+    border: 6px solid red;
+    font-size: 20px;
+}
+main{
+    color: black;
+    background-color: skyblue;
+    width:  400px;
+    margin: auto;
+    padding: 25px ;
+}
+footer{
+    color: white;
+    background-color: brown;
+    padding: 10px ;
+    border: 6px solid white;
+}
+div{
+    margin-top: 10px;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.posteo{
+    background-color:green;
+  border: 6px solid black;
+  color: white;
+}
+.anuncio{
+      background-color:yellow;
+    border: 6px solid black;
+  color:#FF1B68;
+}
+#foto-perfil{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 5px double red;
+    box-shadow: 5px 10px 35px whitesmoke;
+}
+img{
+    width: 100%;
+}
+#nombre-usuario{
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+border-bottom: 1px solid black;
+ font-size: 20px;     
+}
+h2{
+   text-align: center;
+   font-size: 30px;
+   background-color: blue;
+  border: 6px solid white; 
+}
+.infoUsuario{
+  color: purple;
+}
+#mis-Publicaciones{
+  font-weight: lighter;
+}
