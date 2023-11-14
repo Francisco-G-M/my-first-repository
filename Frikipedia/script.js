@@ -342,3 +342,24 @@ total++;
   return total;
 }
 console.log(contarNumerosPares([2, 2, 2, 2, 4, 6, 8]));
+var arregloPrincipal = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+for (var i = 0; i < arregloPrincipal.length; i++) {
+  console.log(">Nueva Interaccion");
+var arregloAnidado = arregloPrincipal[i];//arreglo
+console.log("Arreglo: " + arregloAnidado);
+for (var j = 0; j < arregloAnidado.length; j++) {
+  console.log(">>>Ciclo Anidado");
+  console.log("Elemento :" + arregloAnidado[j]);
+  console.log(arregloAnidado[j]);//elemento
+  }
+}
+var mercado = [["Galletas", "Gaseosas", "Papas Fritas"], ["Arroz", "Avena", "Cereales"], ["Zanahorias", "Papas", "Cebolla"]];
+for (var y = 0; y < mercado.length; y++) {
+console.log("Nuevas Compras");
+var compras = mercado[y];
+console.log("Consumibles Comprados: " + compras);
+for (var h = 0; h < compras.length; h++ ) {
+console.log("Consumible: " + compras[h]);
+console.log(compras[h]);
+}
+}
