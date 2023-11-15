@@ -411,3 +411,12 @@ console.log(generarFraccionAleatoria());
 var numeroAleatorio = Math.random();
 console.log(numeroAleatorio);
 console.log(Math.random());
+var numeroAleatorioEntre0y19 = Math.floor(Math.random()*20);
+console.log(numeroAleatorioEntre0y19);
+function generarEnteroAleatorio(limiteSuperior) {
+  return Math.floor(Math.random()*limiteSuperior);
+}
+console.log(generarEnteroAleatorio(5));
+for (var i = 0; i < 15; i++) {
+  console.log(generarEnteroAleatorio(5));
+}
