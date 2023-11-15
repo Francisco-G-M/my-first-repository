@@ -404,3 +404,10 @@ function buscarPerfil(nombre, propiedad) {
 console.log(buscarPerfil("Nora", "gustos"));
 console.log(buscarPerfil("Harry", "apellido"));
 console.log(buscarPerfil("Sherlock", "numero"));
+function generarFraccionAleatoria() {
+  return Math.random();
+}
+console.log(generarFraccionAleatoria());
+var numeroAleatorio = Math.random();
+console.log(numeroAleatorio);
+console.log(Math.random());
