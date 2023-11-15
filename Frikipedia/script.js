@@ -373,3 +373,34 @@ while (x<10) {
   console.log(x);
   x++;
 }
+var contactos = [
+  {
+    "nombre": "Nora",
+    "apellido": "Nav",
+    "numero": "0543236543",
+     "gustos": ["Pizza", "Programación"]
+  },
+  {
+    "nombre": "Harry",
+    "apellido": "Potter",
+    "numero": "0994372684",
+    "gustos": ["Hogwars", "Magia"]
+  },
+  {
+    "nombre": "Sherlock",
+    "apellido": "Holmes",
+    "numero": "0487345643",
+    "gustos": ["Casos Interesantes", "Violín"]
+  }
+]
+function buscarPerfil(nombre, propiedad) {
+  for (var i = 0; i < contactos.length; i++) {
+    if (contactos[i].nombre === nombre) {
+      return contactos[i][propiedad] || "La propiedad no existe.";
+    }
+  }
+  return "El constacto no existe";
+}
+console.log(buscarPerfil("Nora", "gustos"));
+console.log(buscarPerfil("Harry", "apellido"));
+console.log(buscarPerfil("Sherlock", "numero"));
