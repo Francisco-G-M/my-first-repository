@@ -428,3 +428,21 @@ console.log(rangoAleatorio(3, 8));
 for (var i = 0; i < 15; i++) {
   console.log(rangoAleatorio(10, 15));
 }
+console.log(parseInt("5"));
+console.log(parseInt("0"));
+console.log(parseInt("-40"));
+var a = parseInt("5"); 
+var b = parseInt("7");
+console.log(a + b);
+var a = parseInt("2"); 
+var b = parseInt("2");
+console.log(a * b);
+var a = parseInt("4"); 
+var b = parseInt("4");
+console.log(a / b);
+var a = parseInt("4"); 
+var b = parseInt("4");
+console.log(a % b);
+var a = parseInt("4"); 
+var b = parseInt("3");
+console.log(a - b);
