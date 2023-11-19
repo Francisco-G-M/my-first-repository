@@ -446,3 +446,7 @@ console.log(a % b);
 var a = parseInt("4"); 
 var b = parseInt("3");
 console.log(a - b);
+console.log(parseInt("110111", 2));
+console.log(parseInt("3e0a", 16));
+console.log(parseInt("0"));
+console.log(parseInt("15,99", 10));
