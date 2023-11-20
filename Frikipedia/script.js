@@ -464,3 +464,11 @@ m = 12;
 console.log(m<n ? m : n);
 n = 12;
 console.log(m<n ? m : n);
+function compararNumeros (a, b) {
+  return a == b ? "A y B son iguales"
+       : a > b ? "A es mayor que B"
+       : "b es mayor que A";
+}
+console.log(compararNumeros(11, 11));
+console.log(compararNumeros(2, 1));
+console.log(compararNumeros(1, 2));
