@@ -450,3 +450,17 @@ console.log(parseInt("110111", 2));
 console.log(parseInt("3e0a", 16));
 console.log(parseInt("0"));
 console.log(parseInt("15,99", 10));
+function retornarMinimo (j, k) {
+  console.log(j<k ? j : k);
+}
+retornarMinimo(1, 5);
+retornarMinimo(4, 5);
+retornarMinimo(5, 2);
+retornarMinimo(9, 9);
+var m = 10;
+var n = 11;
+console.log(m<n ? m : n);
+m = 12;
+console.log(m<n ? m : n);
+n = 12;
+console.log(m<n ? m : n);
