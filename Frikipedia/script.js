@@ -472,3 +472,38 @@ function compararNumeros (a, b) {
 console.log(compararNumeros(11, 11));
 console.log(compararNumeros(2, 1));
 console.log(compararNumeros(1, 2));
+function opcionesDeCompra (madera, hierro) {
+  return madera > hierro ? "Has comprado 64 de Madera."
+       : madera < hierro ? "Has comprado 32 lingotes de Hierro."
+       :"No compraste nada.";
+}
+console.log(opcionesDeCompra(2, 1));
+console.log(opcionesDeCompra(1, 2));
+console.log(opcionesDeCompra());
+const MI_ARREGLO = [1, 2, 3, 4];
+console.log(MI_ARREGLO);
+MI_ARREGLO[0] = 10;
+MI_ARREGLO[1] = 9;
+MI_ARREGLO[2] = 8;
+MI_ARREGLO[3] = 7;
+console.log(MI_ARREGLO);
+let colores = {
+  "verde": "#10e04b",
+  "azul": "#1b50e0",
+  "negro": "#000000",
+  "blanco": "#ffffff"
+}
+Object.freeze(colores);
+colores.verde = "#abhgfd";
+console.log(colores);
+const fecha = () => new Date();
+console.log(fecha);
+const sumarTres = (x) => x + 3;
+console.log(sumarTres(4));
+const concatenarArreglos = (arr1, arr2) => arr1.concat(arr2);
+console.log(concatenarArreglos([1, 2], [3, 4, 5]));
+const sumar = (a, b, c) => {
+  let num = 6;
+  return a * b + num - c ;
+};
+console.log(sumar(2, 2, 8));
