@@ -507,3 +507,6 @@ const sumar = (a, b, c) => {
   return a * b + num - c ;
 };
 console.log(sumar(2, 2, 8));
+const incrementar = (num, valor = 1) => num + valor;
+console.log(incrementar(1));
+console.log(incrementar(2, 2));
