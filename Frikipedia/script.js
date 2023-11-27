@@ -510,3 +510,18 @@ console.log(sumar(2, 2, 8));
 const incrementar = (num, valor = 1) => num + valor;
 console.log(incrementar(1));
 console.log(incrementar(2, 2));
+function miFuncion (...args) {
+  console.log(args.length);
+}
+miFuncion(1, 2, 3, 4);
+miFuncion([1, 2, 3], [4, 5, 6]);
+const suma = (...args) => {
+  return args.reduce((a, b)=> a + b,0);
+};
+console.log(suma(2, 6));
+console.log(suma(2));
+const numbers = [1, 2, 3];
+function operacion(x, y, z) {
+  return x+y+z;
+}
+console.log(sumar(...numbers));
