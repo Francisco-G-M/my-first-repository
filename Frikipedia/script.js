@@ -557,3 +557,15 @@ const PRONOSTICO_LOCAL = {
 };
 const {hoy: {minima: minimaDeHoy, maxima: maximaDeHoy}} = PRONOSTICO_LOCAL;
 console.log(minimaDeHoy, maximaDeHoy);
+var primera;
+var segunda;
+var tercera;
+[primera, segunda,,, tercera] = [1, 2, 3, 4, 5, 6];
+console.log(primera);
+console.log(segunda);
+console.log(tercera);
+var a = 8;
+var b = 6;
+[b, a] = [a, b];
+console.log("a: " + a);
+console.log("b: " + b);
