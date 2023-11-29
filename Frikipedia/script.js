@@ -525,3 +525,10 @@ function operacion(x, y, z) {
   return x+y+z;
 }
 console.log(sumar(...numbers));
+var coordenadas = {
+  l: 4,
+  p: 6,
+  z: 12
+}
+const {l, p, z} = coordenadas;
+console.log(coordenadas);
