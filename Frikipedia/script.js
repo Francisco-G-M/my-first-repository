@@ -532,3 +532,28 @@ var coordenadas = {
 }
 const {l, p, z} = coordenadas;
 console.log(coordenadas);
+const usuario = {
+  Joseph: {
+  edad: 30,
+  correo: "JosephJoestar@gmail.com"
+  }
+};
+const {Joseph: {edad: edadDelUsuario, correo: correoDelUsuario}} = usuario;
+console.log(edadDelUsuario);
+console.log(correoDelUsuario);
+const PRONOSTICO_LOCAL = {
+  "ayer": {
+    minima: "-1",
+    maxima: 6
+  },
+  "hoy": {
+    minima: 1,
+    maxima: 4
+  },
+  "mañana": {
+    minima: 2,
+    maxima: 10
+  }
+};
+const {hoy: {minima: minimaDeHoy, maxima: maximaDeHoy}} = PRONOSTICO_LOCAL;
+console.log(minimaDeHoy, maximaDeHoy);
