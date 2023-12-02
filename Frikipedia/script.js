@@ -583,3 +583,33 @@ function removerTresPrimerosElementos(arreglo) {
 }
 const arregloFinal = removerTresPrimerosElementos(arregloInicial);
 console.log(arregloFinal);
+var nuevoPerfil = {
+  name: "Francisco Manuello",
+  age: 17,
+  nacionality: "Argentine",
+  location: "Ushuaia"
+};
+const extraerDatosPerfil = ({name, age, nacionality, location}) => {
+  console.log(name, age);
+  console.log(nacionality, location);
+};
+extraerDatosPerfil(nuevoPerfil);
+var climaSemanal = {
+  Lunes: "2 grados",
+  Martes: "-1 grado",
+  Miercoles: "-5 grados",
+  Jueves: "3 grados",
+  Viernes: "6 grados",
+  Sabado: "4 grados",
+  Domingo: "0 grados"
+};
+const diasSeleccionados = ({Lunes, Miercoles, Viernes}) => {
+  console.log("Lunes: " + Lunes);
+  console.log("Miercoles: " + Miercoles);
+  console.log("Viernes: " + Viernes);
+};
+diasSeleccionados(climaSemanal);
+const diasRestantes = ({Martes, Jueves, Sabado, Domingo}) => {
+ console.log("Martes: " + Martes, "Jueves: " + Jueves, "Sabado: " + Sabado, "Domingo: " + Domingo);
+}
+diasRestantes(climaSemanal);
