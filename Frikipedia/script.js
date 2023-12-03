@@ -613,3 +613,14 @@ const diasRestantes = ({Martes, Jueves, Sabado, Domingo}) => {
  console.log("Martes: " + Martes, "Jueves: " + Jueves, "Sabado: " + Sabado, "Domingo: " + Domingo);
 }
 diasRestantes(climaSemanal);
+var miArreglo = [1, 2, 3, 4];
+console.log(`Mi arreglo es ${JSON.stringify(miArreglo)}`);
+var nombre = "Diego";
+var edad = 8;
+console.log(`Mi nombre es ${nombre} y tengo ${edad} años.`);
+var persona = {
+  nombre: "Mario Fernandez",
+  ciudad: "Rio Grande"
+};
+const SALUDO = `Hola mi nombre es ${persona.nombre} y vivo en ${persona.ciudad}`;
+console.log(SALUDO);
