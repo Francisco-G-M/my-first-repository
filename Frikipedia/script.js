@@ -634,3 +634,11 @@ const personajeFicticio = {
   }
 };
 console.log(personajeFicticio.presentacion());
+class TransbordadorEspacial {
+constructor(planeta) {
+  this.planeta = planeta;
+}
+}
+var zeus = new TransbordadorEspacial("Júpiter");
+var damatio = new TransbordadorEspacial("Saturno");
+console.log("Dirección del Transbordador Zeus: " + zeus.planeta, "Dirección del Transbordador Damatio: " + damatio.planeta);
