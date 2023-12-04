@@ -626,3 +626,11 @@ const SALUDO = `Hola mi nombre es ${persona.nombre} y vivo en ${persona.ciudad}`
 console.log(SALUDO);
 const Joestar = (nombre, edad, stand) => ({nombre, edad, stand});
 console.log(Joestar("Jotaro kujo", 17, "Star Platinum"));
+const personajeFicticio = {
+  nombre: "Naruto Uzumaki",
+  sueño: "Hokage",
+  presentacion() {
+    return `¡Hola!, mi nombre es ${this.nombre} y sere el proximo ${this.sueño}.`;
+  }
+};
+console.log(personajeFicticio.presentacion());
