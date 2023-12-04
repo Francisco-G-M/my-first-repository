@@ -624,3 +624,5 @@ var persona = {
 };
 const SALUDO = `Hola mi nombre es ${persona.nombre} y vivo en ${persona.ciudad}`;
 console.log(SALUDO);
+const Joestar = (nombre, edad, stand) => ({nombre, edad, stand});
+console.log(Joestar("Jotaro kujo", 17, "Star Platinum"));
