@@ -642,3 +642,34 @@ constructor(planeta) {
 var zeus = new TransbordadorEspacial("Júpiter");
 var damatio = new TransbordadorEspacial("Saturno");
 console.log("Dirección del Transbordador Zeus: " + zeus.planeta, "Dirección del Transbordador Damatio: " + damatio.planeta);
+class Espia {
+constructor(nombre, especie, serie) {
+  this.nombre = nombre;
+  this.especie = especie;
+  this.serie = serie;
+}
+}
+var personajeEspia = new Espia("Perry", "Ornitorrinco", "Phineas and Ferb");
+console.log(personajeEspia.nombre, "/", personajeEspia.especie, "/", personajeEspia.serie);
+class Manga {
+  constructor(autor, historia) {
+    this._autor = autor;
+    this._historia = historia;
+  }
+  get autor() {
+    return this._autor;
+  }
+  set autor(nuevoAutor) {
+    this._autor = nuevoAutor;
+  }
+  get historia() {
+    return this._historia;
+  }
+  set historia(historiaDelAutor) {
+    this._historia = historiaDelAutor;
+  }
+}
+const MANGA = new Manga("Kentaro Miura");
+MANGA.historiaDelAutor = "Bersek";
+console.log(MANGA.autor + ": " + MANGA.historiaDelAutor);
+
