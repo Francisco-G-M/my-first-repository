@@ -9,20 +9,21 @@
 <body>
     <header>
         <h1>JavaScriptPersonalBlog</h1>
+        <div id="barra-nav">
+            <a href="#basic-javascript" class="enlace-barra-nav">BasicJavaScript</a>
+            <a href="#" class="enlace-barra-nav">ES6</a>
+        </div>
     </header>
     <main>
-        <div class="Definicion">
-            <h2>¿Qué es JavaScript?</h2>
+        <h2 id="definicion-js">¿Qué es JavaScript?</h2>
             <p>Es un lenguaje de programación utilizado para volver más interactiva a una página web.
                 En el encontraras herramientas como: funciones,variables,objetos,arreglos,sentencias,ciclos,etc.
             </p>
-        </div>
-        <div>
-            <h2>Comentarios</h2>
+            <h2 id="basic-javascript">Comentarios</h2>
             <p>Son parte del código que se ignora(que no figura en la consola),sirve para comentar el código.
                 Básicamente cumple una función tipo notas que dejamos een nuestro código para explicar alguna
                 parte de nuestro código,marcar alguna expresión,agregar datos extra,etc.
-                Existen dos tipos de comentarios:
+                Existen dos tipos de comentarios,e.j:</p>
                 <ol>
                     <li>Comentario de una línea:</li>
                     <li>//esto es un comentario</li>
@@ -30,11 +31,31 @@
                     <li>/*esto es </li>
                     <li>un comentario*/</li>
                 </ol>
+            <h2>Variables</h2>
+            <p>Las variables crean un espacio en la memoria del dispositivo para que guardemos un valor específico
+                en ese lugar de memoria,e.j:</p>
+                <ol>
+                    <li>var miVariable = "hi";</li>
+                    <li>console.log(miVariable);</li>
+                </ol>
+            <p>También podes aisnarle un valor númerico,e.j:</p>
+            <ol>
+                <li>miVariable = 16;</li>
+            </ol>
+            <h2>Asignar el valor de una var a otra var</h2>
+            <p>Para poder asignarle el valor de una var a otra var hariamos así :</p>
+            <ol>
+                <li>var a = 5;</li>
+                <li>var b = a;</li>
+            </ol>
+            <p>y lo confirmamos con : console.log(a) , y lo mismo con b.Otra forma más sencilla sería : 
+                b = a; , esto resulta más práctico. </p>
+            <h2>Inicializar variables</h2>
+            <p>Básicamente, cuando le asignas un valor a la var,la estas inicializando,e.j: 
+                var x = 9;
+                miIdioma = "Español";
             </p>
-        </div>
-    </main>
     <footer>
-
     </footer>
 </body>
 </html>
