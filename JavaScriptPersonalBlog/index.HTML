@@ -91,7 +91,31 @@
             <p>a += 5; a -= 5; a *= 5; a /= 5;</p>
             <h2>Variables con cadenas de caracteres</h2>
             <p>Estas se usan para representar textos en el código,e.j: var nombre = "Alan";</p>
-            <p>Las cadenas de caracteres se rodean con comillas dobles o simples.Lo que si no podemos hacer es empezar la cadena con un tipo de comillas y terminarla xon otro tipo.</p>
+            <p>Las cadenas de caracteres se rodean con comillas dobles o simples.Lo que si no podemos hacer es empezar la cadena con un tipo de comillas y terminarla con otro tipo.</p>
+            <h2>Escapar comillas en cadenas de caracteres</h2>
+            <p>Sirve para "escapar" comillas en cadenas, básicamente omitirla,e.j: var myString = "Escapar\"comillas dobles"";</p>
+            <p>En este caso la barra " \ " sirve para escapar las comillas dobles , el resultado: Escapar "comillas dobles".</p>
+            <h2>Cadenas de caracteres con comillas simples</h2>
+            <p>Podemos usar comillas dobles dentro de comillas simple y viceversa,e.j: var miMeta; miMeta = 'Aprender a programar con "JavaScript"';</p>
+            <p>Si usas '' por afuera podes usar "" por dentro y viceversa.</p>
+            <h2>Secuencias de escape</h2>
+            <p>Son una combinación de de caracteres que no se representan a sí mismos en una cadena de caracteres:</p>
+            <h3>Tipos de secuencias de escape</h3>
+            <p>Comilla simple( \' ), Comilla doble( \" ), Barra invertida( \\ ), Nueva línea( \n ), Retorno de carro( \r ), Tabulación( \t ), Retroceso( \b ) y Salto de página( \f ).e.j:</p>
+            <p>console.log("Estoy aprendiendo\"JavaScript""); o también: console.log("Estoy aprendiendo:\n JavaScript");</p>
+            <h2>Concatenar cadenas de caracteres</h2>
+            <p>Para poder unir cadenas de caracteres debemos usar el signo + ,e.j: var nombreCompleto = "Alan" + " "  + "Turing";</p>
+            <p>Las comillas vacias son para que entre el nombre y el apellido tenga un espacio que los distinga.</p>
+            <h3>Otra forma sería</h3>
+            <p>var nombreCompleto = "Alan" + "Turing"; Aquí los dos nombres figuraran juntos.</p>
+            <h2>Construir cadenas de caracteres con variables</h2>
+            <p>También se pueden construir cadenas de caracteres con variables,e.j: var verbo = "programar"; var mensaje = "Estoy aprendiendo a " + verbo; console.log(mensaje);</p>
+            <p>También puedes dejar un espacio al final de la cadena a la que le vas a concatenar algo, resulta siendo más práctico.Puedes concatenar todas las cadenas que quieras.</p>
+            <h2>Agregar variables a cadenas de caracteres</h2>
+            <p>El procedimiento de agregar variables a cadenas de caracteres es muy simple, mira el siguiente ejemplo:</p>
+            <p>var mensajeCompleto = "Estoy aprendiendo a programar"; var parteFinal = "con JavaScript"; mensajeCompleto += parteFinal;</p>
+            <p>Básicamente lo que hacemos es escribir el nombre de la variable a la que le queremos concatenar otra cadena más el nombre de la cadena a concatenar, entre ellos el signo +=</p>
+            
         </div>
     <footer>
     </footer>
