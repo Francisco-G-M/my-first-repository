@@ -149,6 +149,19 @@
             <h2>Modificar elementos de un arreglo</h2>
             <p>Para modificar los elementos de un arreglo tenemos que reaccinarle un valor nuevo,e.j: var array1 = [10, 20, 30]; array1[0] = 40; console.log(array1);</p>
             <p>Aquí le asignamos un valor nuevo al índice 0 , es decir , que ahora pasa a tener un valor de 40.También podemos asignar palabras: array1[1] = "Hi"; o incluso otro arreglo: array1[1] = [1, 2, 3];</p>
+            <p>A diferencia de las cadenas de texto los arreglos son mutables.</p>
+            <h2>Acceder a arreglos multidimensionales</h2>
+            <p>Este tipo de arreglo se caracteriza por contener arreglos anidados,e.j: var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];</p>
+            <p>Aquí cada arreglo es un índice, y cada elemento de los arreglos anidados son un índice independiente,por ejemplo: si quisieramos acceder al primer elemento del primer arreglo anidado: console.log(myArray[0][0]);</p>
+            <p>El primer 0 índica el arreglo anidado, mientras que el segundo 0 selecciona el primer elemento de ese arreglo.</p>
+            <h2>.push()</h2>
+            <p>.push() es una función que permite añadir un elemento al final del arreglo,e.j: var estaciones = ["Invierno", "Otoño", "Primavera"]; estaciones.push("Verano"); console.log(estaciones);</p>
+            <h2>.pop()</h2>
+            <p>.pop() sirve para remover el último elemento de un arreglo,e.j: estaciones.pop(); console.log(estaciones); También podemos asignarle ese valor a otra variable: var etapaDelAño; etapaDelAño = estaciones.pop();</p>
+            <h2>.shift()</h2>
+            <p>.shift() sirve para remover el primer elemento de un arreglo,e.j: estaciones.shift(); console.log(estaciones);</p>
+            <h2>.unshift()</h2>
+            <p>.unshift() sirve para agregar un elemento al principio del arreglo,e.j: estaciones.unshift("Verano"); console.log(estaciones);</p>
         </div>
     <footer>
     </footer>
