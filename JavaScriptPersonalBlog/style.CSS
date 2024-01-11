@@ -13,10 +13,8 @@ body {
 }
 h2 {
     color: black;
-    text-align: center;
     background-color: yellow;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-right: 800px;
     border: 5px solid black;
 }
 p {
@@ -35,8 +33,19 @@ p {
     color: red;
     background-color: white;
 }
-
-
-
-
-   
+h3{
+    color: pink;
+    background-color: brown;
+    border: 4px solid black;
+    margin-right: 950px;
+}
+img{
+    width: 100%;
+    height: 160px;
+}
+.principio{
+text-align: center;
+display: grid;
+grid-template-columns: 28% 50%;
+grid-gap: 15px;
+}
