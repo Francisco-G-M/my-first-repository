@@ -206,6 +206,26 @@
                 <li>console.log(miVariableLocal);</li>
                 <li>}</li>
             </ol>
+            <h2>Ámbito global vs Ámbito local</h2>
+            <p>En caso de que tuvieramos una var global y una local con el mismo nombre pasaria lo siguiente:</p>
+            <ol>
+                <li>var myName = "Nora";</li>
+                <li>function mostrarMiNombre() {</li>
+                <li>var myName = "Gino";</li>
+                <li>console.log(myName);</li>
+                <li>}</li>
+                <li>mostrarMiNombre();</li>
+            </ol>
+            <p>Aquí la llamada a la function va a mostrar la var local porque: esta tiene mayor prioridad dentro de la función,si mostraramos la var myName fuera de la function:</p>
+            <p>console.log(myName); Saldria el valor de la var global debajo del de la var local.</p>
+            <h2>Retornar un valor</h2>
+            <p>La función de retornar un valor es finalizar la ejecución de la función y especificar un valor para ser devuelto en la llamada,veamos un ejemplo:</p>
+            <ol>
+                <li>function sumar(a, b) {</li>
+                <li>return a + b;</li>
+                <li>}</li>
+            </ol>
+            <p>console.log(sumar(5, 3)); Lo que estamos haciendo es mostrar el valor de la suma,para eso lo retornamos.</p>
         </main>
     </div>
     <footer>
