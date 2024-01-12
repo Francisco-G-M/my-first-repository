@@ -226,6 +226,32 @@
                 <li>}</li>
             </ol>
             <p>console.log(sumar(5, 3)); Lo que estamos haciendo es mostrar el valor de la suma,para eso lo retornamos.</p>
+            <h2>undefined</h2>
+            <p>Por defecto las funciones retornan el valor undefined,este mismo sirve para omitir el retornar de las funciones,e.j:</p>
+            <ol>
+                <li>function sumar(x, y) {</li>
+                <li>console,log(sumar(x + y));</li>
+                <li>}</li>
+                <li>console.log(sumar(3, 6));</li>
+            </ol>
+            <p>Al no retornar el valor de la suma,en la terminal lo que va a retornar sera undefined.</p>
+            <h2>Asignar un valor retornado</h2>
+            <p>La asignación de un valor retornado permite asignar un valor retornado a una variable,para posteriormente usarlo cuando quieras,e.j:</p>
+            <ol>
+                <li>function sumar(a, b) {</li>
+                <li>return a + b;</li>
+                <li>}</li>
+                <li>var resultado = sumar(4, 4);</li>
+                <li>console.log(resultado);</li>
+            </ol>
+            <p>Támbien podemos definir una function que retorne una cadena de caracteres con nuestra meta:</p>
+            <ol>
+                <li>function crearCadenaConMeta() {</li>
+                <li>return "Mi meta es apender" + miMeta;</li>
+                <li>}</li>
+                <li>var miMeta = crearCadenaConMeta("JavaScript");</li>
+                <li>console.log(miMeta);</li>
+            </ol>
         </main>
     </div>
     <footer>
