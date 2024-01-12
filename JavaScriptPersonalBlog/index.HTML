@@ -252,6 +252,25 @@
                 <li>var miMeta = crearCadenaConMeta("JavaScript");</li>
                 <li>console.log(miMeta);</li>
             </ol>
+            <h2>Cola(queue)</h2>
+            <p>En informatica las queue es una estructura de datos abstracta en la cual los elementos se mantienen en orden.Loa nuevos elementos se pueden añadir al final de la cola y los elementos previos se retiran del principio de esta misma,e.j:</p>
+            <ol>
+                <li>function proximoEnLaFila(array, elemento) {</li>
+                <li>array.push(elemento);</li>
+                <li>return array.shift();</li>
+                <li>}</li>
+                <li>var myArray = [1, 2, 3, 4, 5, 6];</li>
+                <li>console.log("Antes: " + JSON.stringify(myArray));</li>
+                <li>console.log(proximoEnLaFila(myArray, 6));</li>
+                <li>console.log("Despues: " + JSON.stringify(myArray));</li>
+            </ol>
+            <p>Támbien estamos usando a JSON.stringify,esta función sirve para mostrar en la consola los arreglos tal cual como estan escritos(básicamente figuraran con sus corchetes).</p>
+            <h2>Valores booleanos</h2>
+            <p>Estos valores representan un valor de verdad(true o false),e.j: console.log(true); console.log(false); Con estos valores no se usan mayúsculas ni espacios.</p>
+            <h2>Operador de igualdad</h2>
+            <p>Este operador sirve para comparar valores para comprobar si son iguales o no,puedes comparar digitos y cadenas de caracteres,e.j:</p>
+            <p>console.log(5 == 5); console.log("Hola" == "Hola"); estas dos llamadas regresan true.Las comparaciones támbien son afectadas por las mayúsculas y minúsculas:</p>
+            <p>console.log("Hola" == "hola"); console.log(6 == 5); console.log("Hola" == "Chau"); estas llamadas regresan false.No se recomienda comparar arreglos porque no va a comparar sus elementos,sino que comparara si representan el mismo objeto.</p>
         </main>
     </div>
     <footer>
