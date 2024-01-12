@@ -188,6 +188,24 @@
                 <li>}</li>
             </ol>
             <p>concatenarTresCadenas("Estoy", "aprendiendo", "a programar");</p>
+            <h2>Ámbito global</h2>
+            <p>Este tipo de variable se puede uitilizar en cualquier lugar del programa,esto ya que esta definida en el programa principal:</p>
+            <ol>
+                <li>var miVraiableGlobal = 5;</li>
+                <li>console.log(miVraiableGlobal);</li>
+                <li>function myfunction() {</li>
+                <li>console.log(miVraiableGlobal);</li>
+                <li>}</li>
+            </ol>
+            <p>Llamamos a la function: myfunction(); o si queremos podemos llamar directamente a la var global: console.log(miVraiableGlobal);</p>
+            <h2>Ámbito local</h2>
+            <p>Estos son variables definidas dentro de una function y solo se pueden usar dentro de esa function y solo pueden ser usadas dentro de esa function:</p>
+            <ol>
+                <li>function miFunction() {</li>
+                <li>var miVariableLocal = 4;</li>
+                <li>console.log(miVariableLocal);</li>
+                <li>}</li>
+            </ol>
         </main>
     </div>
     <footer>
