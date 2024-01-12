@@ -1,4 +1,4 @@
-h1 {
+h1{
     color:black;
     background-color: yellow;
     border: 4px solid black;
@@ -18,7 +18,7 @@ h2 {
     border: 5px solid black;
 }
 p {
-    font-size: 18px;
+    font-size: 19px;
 }
 .enlace-barra-nav{
     color: black;
@@ -48,4 +48,7 @@ text-align: center;
 display: grid;
 grid-template-columns: 28% 50%;
 grid-gap: 15px;
+}
+ol{
+    font-size: 18px;
 }
