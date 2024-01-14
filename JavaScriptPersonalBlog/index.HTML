@@ -281,6 +281,18 @@
             <h2>Operador de desigualdad estricta</h2>
             <p>Básicamente es lo mismo que la igualdad estricta,pero negandola,e.j:</p>
             <p>Operador de desigualdad: console.log(1!="1"); detecta que los números son del mismo valor,figura false.Operador de desigualdad estricta: console.log(1!=="1"); compara si ambos valores son del mismo tipo de dato,pero no lo combierte a un tipo de dato común,figura true.</p>
+            <h2>Operador "mayor que"</h2>
+            <p>Este operador compara cual de las dos cadenas es mayor que la otra,e.j: console.log(6 > 5); console.log(3 > 10); La primera llamada devuelve true y la segunda false.También podemos comparar cadenas de caracteres,JavaScript las comparara según el orden alfabetico,e.j:</p>
+            <p>console.log("b" > "a"); aquí devuelve true , console.log("acb" > "abc"); en este casso J.S compara cada uno de los caracteres en su secuencia,al ser a=a pasa a comparar el segundo caracter c > b aquí determina su resultado que sera true.</p>
+            <p>console.log("ab" > "a"); devuelve true porque tiene más caracteres, console.log("mundo" > "hola"); también devuelve true porque la M viene despuess de la H en el orden alfabetico.</p>
+            <p>También se puede comparar variables: var a = 15; var b = 7; console.log(a > b); console.log(b > a); La primera llamada devuelve true y la segunda false.</p>
+            <h2>Operador "mayor o igual que"</h2>
+            <p>Este operador nos permite saber si dos cadenas son iguales, o si una de ellas es maor que la otra,e.j: console.log(5 >= 5); console.log("hola" >= "hola"); Las dos llamadas devuelven true.</p>
+            <H2>Operador "menor que"</H2>
+            <p>Este operador compara que una de las cadenas sea menor que la otra,e.j: console.log(5 < 6); console.log(10 < 3); La primera llamada devuelve true y la segunda false.En el caso de las cadenas de caracteres las compara por orden alfabetico:</p>
+            <p>console.log("a" < "b"); console.log("abc" < "acb"); Ambas cadenas devuelven true, porque al ser A = A pasa a comparar B < C (lo cual es verdad),var a = 15; var b = 7; console.log(a < b); console.log(b < a); La primera llamada devuelve false  y la segunda true.</p>
+            <h2>Operador "menor o igual que"</h2>
+            <p>Es básicamente lo mismo que el operador "menopr que", pero se le suma la posibilidad de que ambos valores sean iguales,e.j: console.log(10 <= 10);</p>
         </main>
     </div>
     <footer>
