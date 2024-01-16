@@ -218,53 +218,61 @@
             </ol>
             <p>Aquí la llamada a la function va a mostrar la var local porque: esta tiene mayor prioridad dentro de la función,si mostraramos la var myName fuera de la function:</p>
             <p>console.log(myName); Saldria el valor de la var global debajo del de la var local.</p>
-            <h2>Retornar un valor</h2>
-            <p>La función de retornar un valor es finalizar la ejecución de la función y especificar un valor para ser devuelto en la llamada,veamos un ejemplo:</p>
-            <ol>
-                <li>function sumar(a, b) {</li>
-                <li>return a + b;</li>
-                <li>}</li>
-            </ol>
-            <p>console.log(sumar(5, 3)); Lo que estamos haciendo es mostrar el valor de la suma,para eso lo retornamos.</p>
-            <h2>undefined</h2>
-            <p>Por defecto las funciones retornan el valor undefined,este mismo sirve para omitir el retornar de las funciones,e.j:</p>
-            <ol>
-                <li>function sumar(x, y) {</li>
-                <li>console,log(sumar(x + y));</li>
-                <li>}</li>
-                <li>console.log(sumar(3, 6));</li>
-            </ol>
-            <p>Al no retornar el valor de la suma,en la terminal lo que va a retornar sera undefined.</p>
-            <h2>Asignar un valor retornado</h2>
-            <p>La asignación de un valor retornado permite asignar un valor retornado a una variable,para posteriormente usarlo cuando quieras,e.j:</p>
-            <ol>
-                <li>function sumar(a, b) {</li>
-                <li>return a + b;</li>
-                <li>}</li>
-                <li>var resultado = sumar(4, 4);</li>
-                <li>console.log(resultado);</li>
-            </ol>
-            <p>Támbien podemos definir una function que retorne una cadena de caracteres con nuestra meta:</p>
-            <ol>
-                <li>function crearCadenaConMeta() {</li>
-                <li>return "Mi meta es apender" + miMeta;</li>
-                <li>}</li>
-                <li>var miMeta = crearCadenaConMeta("JavaScript");</li>
-                <li>console.log(miMeta);</li>
-            </ol>
-            <h2>Cola(queue)</h2>
-            <p>En informatica las queue es una estructura de datos abstracta en la cual los elementos se mantienen en orden.Loa nuevos elementos se pueden añadir al final de la cola y los elementos previos se retiran del principio de esta misma,e.j:</p>
-            <ol>
-                <li>function proximoEnLaFila(array, elemento) {</li>
-                <li>array.push(elemento);</li>
-                <li>return array.shift();</li>
-                <li>}</li>
-                <li>var myArray = [1, 2, 3, 4, 5, 6];</li>
-                <li>console.log("Antes: " + JSON.stringify(myArray));</li>
-                <li>console.log(proximoEnLaFila(myArray, 6));</li>
-                <li>console.log("Despues: " + JSON.stringify(myArray));</li>
-            </ol>
-            <p>Támbien estamos usando a JSON.stringify,esta función sirve para mostrar en la consola los arreglos tal cual como estan escritos(básicamente figuraran con sus corchetes).</p>
+    <h2>Retornar un valor</h2>
+    <p>La función de retornar un valor es finalizar la ejecución de la función y especificar un valor para ser devuelto en la llamada,veamos un ejemplo:</p>
+    <pre>
+    <code>
+    function sumar(a, b) {
+    return a + b; 
+    }
+    console.log(sumar(5, 3));
+    //Lo que estamos haciendo es mostrar el valor de la suma,para eso lo retornamos.
+    </code>
+    </pre>
+    <h2>undefined</h2>
+    <p>Por defecto las funciones retornan el valor undefined,este mismo sirve para omitir el retornar de las funciones,e.j:</p>
+    <pre>
+    <code>
+    function sumar(x, y) {
+    console,log(sumar(x + y));
+    }
+    console.log(sumar(3, 6));
+    //Al no retornar el valor de la suma,en la terminal lo que va a retornar sera undefined.
+    </code>
+    </pre>
+    <h2>Asignar un valor retornado</h2>
+    <p>La asignación de un valor retornado permite asignar un valor retornado a una variable,para posteriormente usarlo cuando quieras,e.j:</p>
+    <pre>
+    <code>
+    function sumar(a, b) {
+    return a + b;
+    }
+    var resultado = sumar(4, 4);
+    console.log(resultado);
+    //Támbien podemos definir una function que retorne una cadena de caracteres con una cadena de carcateres:
+    function crearCadenaConMeta() {
+    return "Mi meta es apender" + miMeta;
+    }
+    var miMeta = crearCadenaConMeta("JavaScript");
+    console.log(miMeta);
+    </code>
+    </pre>
+    <h2>Cola(queue)</h2>
+    <p>En informatica las queue es una estructura de datos abstracta en la cual los elementos se mantienen en orden.Loa nuevos elementos se pueden añadir al final de la cola y los elementos previos se retiran del principio de esta misma,e.j:</p>
+    <pre>
+    <code>
+    function proximoEnLaFila(array, elemento) {
+    array.push(elemento);
+    return array.shift();
+    }
+    var myArray = [1, 2, 3, 4, 5, 6];
+    console.log("Antes: " + JSON.stringify(myArray));
+    console.log(proximoEnLaFila(myArray, 6));
+    console.log("Despues: " + JSON.stringify(myArray));
+    //Támbien estamos usando a JSON.stringify.
+    esta función sirve para mostrar en la consola los arreglos tal cual como estan escritos(básicamente figuraran con sus corchetes).
+    </code>
+    </pre>
     <h2>Valores booleanos</h2>
     <p>Estos valores representan un valor de verdad(true o false),e.j:</p>
     <pre>
