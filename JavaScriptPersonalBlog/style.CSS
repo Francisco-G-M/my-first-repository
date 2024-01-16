@@ -9,7 +9,7 @@ header {
     text-align: center;
 }
 body {
-    background-color: skyblue;
+    background-color: rgb(35, 35, 211);
 }
 h2 {
     color: black;
@@ -19,6 +19,7 @@ h2 {
 }
 p {
     font-size: 19px;
+    color: whitesmoke;
 }
 .enlace-barra-nav{
     color: black;
@@ -51,4 +52,14 @@ grid-gap: 15px;
 }
 ol{
     font-size: 18px;
+    color: whitesmoke;
+}
+code{
+    color: white;
+    font-size: 16px;
+}
+pre{
+    background-color: rgb(21, 18, 26);
+    border: 5px solid white;
+    border-radius: 20px 20px;
 }
