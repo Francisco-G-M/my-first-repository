@@ -265,22 +265,64 @@
                 <li>console.log("Despues: " + JSON.stringify(myArray));</li>
             </ol>
             <p>Támbien estamos usando a JSON.stringify,esta función sirve para mostrar en la consola los arreglos tal cual como estan escritos(básicamente figuraran con sus corchetes).</p>
-            <h2>Valores booleanos</h2>
-            <p>Estos valores representan un valor de verdad(true o false),e.j: console.log(true); console.log(false); Con estos valores no se usan mayúsculas ni espacios.</p>
-            <h2>Operador de igualdad</h2>
-            <p>Este operador sirve para comparar valores para comprobar si son iguales o no,puedes comparar digitos y cadenas de caracteres,e.j:</p>
-            <p>console.log(5 == 5); console.log("Hola" == "Hola"); estas dos llamadas regresan true.Las comparaciones támbien son afectadas por las mayúsculas y minúsculas:</p>
-            <p>console.log("Hola" == "hola"); console.log(6 == 5); console.log("Hola" == "Chau"); estas llamadas regresan false.No se recomienda comparar arreglos porque no va a comparar sus elementos,sino que comparara si representan el mismo objeto.</p>
-            <h2>Operador de igualdad estricta</h2>
-            <p>Este operador nos permite comparar si ambos tipos de datos son exactamente iguales o no,si lo son la llamada nos devuelve true, si no lo son nos devuelve false,e.j:</p>
-            <p>console.log(9 === 9); console.log(9 === "9"); La primera llamada nos devuelve true,pero laa segunda devuelve false porque: mientras 9 es clasificado como digito , "9" al estar entre comillas se lo toma como un caracter.</p>
-            <h2>Operador de desigualdad</h2>
-            <p>Este operador compara si dos valores son desiguales,si son iguales devuelve false y si son diferentes true,e.j: console.log(9!=6); console.log(9!=9); La primera llamada devuelve true y la segunda false.</p>
-            <p>En caso de cadenas de caracteres: console.log("Hola"!="Hola"); console.log("Hola"!="hola"); La primera sera true y la segunda false.</p>
-            <p>En este tipo de operadores influyen en el resultado los espacios,mayúsculas y minúsculas.En caso de los arreglos compara como estan representados como objetos en la memoria del dispositivo.</p>
-            <h2>Operador de desigualdad estricta</h2>
-            <p>Básicamente es lo mismo que la igualdad estricta,pero negandola,e.j:</p>
-            <p>Operador de desigualdad: console.log(1!="1"); detecta que los números son del mismo valor,figura false.Operador de desigualdad estricta: console.log(1!=="1"); compara si ambos valores son del mismo tipo de dato,pero no lo combierte a un tipo de dato común,figura true.</p>
+    <h2>Valores booleanos</h2>
+    <p>Estos valores representan un valor de verdad(true o false),e.j:</p>
+    <pre>
+    <code>
+    console.log(true); 
+    console.log(false);
+    //Con estos valores no se usan mayúsculas ni espacios.
+    </code>
+    </pre>
+    <h2>Operador de igualdad</h2>
+    <p>Este operador sirve para comparar valores para comprobar si son iguales o no,puedes comparar digitos y cadenas de caracteres,e.j:</p>
+    <pre>
+    <code>
+    console.log(5 == 5);
+    console.log("Hola" == "Hola");
+    //Estas dos llamadas regresan true.Las comparaciones támbien son afectadas por las mayúsculas y minúsculas:
+    console.log("Hola" == "hola");
+    console.log(6 == 5);
+    console.log("Hola" == "Chau");
+    /*Estas llamadas regresan false.
+    No se recomienda comparar arreglos porque no va a comparar sus elementos,sino que comparara si representan el mismo objeto.*/
+    </code>
+    </pre>
+    <h2>Operador de igualdad estricta</h2>
+    <p>Este operador nos permite comparar si ambos tipos de datos son exactamente iguales o no,si lo son la llamada nos devuelve true, si no lo son nos devuelve false,e.j:</p>
+    <pre>
+    <code>
+    console.log(9 === 9);
+    console.log(9 === "9");
+    /*La primera llamada nos devuelve true,pero laa segunda devuelve false porque: mientras 9 es clasificado como digito,
+    "9" al estar entre comillas se lo toma como un caracter.*/
+    </code>
+    </pre>
+    <h2>Operador de desigualdad</h2>
+    <p>Este operador compara si dos valores son desiguales,si son iguales devuelve false y si son diferentes true.</p>
+    <pre>
+    <code>
+    console.log(9!=6);
+    console.log(9!=9);
+    //La primera llamada devuelve true y la segunda false.
+    console.log("Hola"!="Hola");
+    console.log("Hola"!="hola");
+    //La primera sera true y la segunda false.n este tipo de operadores influyen en el resultado los espacios,mayúsculas y minúsculas.
+    //En caso de los arreglos compara como estan representados como objetos en la memoria del dispositivo.
+    </code>
+    </pre>
+    <h2>Operador de desigualdad estricta</h2>
+    <p>Básicamente es lo mismo que la igualdad estricta,pero negandola:</p>
+    <pre>
+    <code>
+    //Operador de desigualdad: 
+    console.log(1!="1");
+    //Detecta que los números son del mismo tipo de valor,figura false.
+    //Operador de desigualdad estricta: 
+    console.log(1!=="1");
+    //Compara si ambos valores son del mismo tipo de dato,pero no lo combierte a un tipo de dato común,figura true.
+    </code>
+    </pre>
     <h2>Operador "mayor que"</h2>
     <p>Este operador compara cual de las dos cadenas es mayor que la otra.También podemos comparar cadenas de caracteres,JavaScript las comparara según el orden alfabetico:</p>
     <pre>
