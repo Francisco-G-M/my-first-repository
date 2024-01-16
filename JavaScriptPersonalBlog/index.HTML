@@ -155,39 +155,80 @@
             <p>Este tipo de arreglo se caracteriza por contener arreglos anidados,e.j: var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];</p>
             <p>Aquí cada arreglo es un índice, y cada elemento de los arreglos anidados son un índice independiente,por ejemplo: si quisieramos acceder al primer elemento del primer arreglo anidado: console.log(myArray[0][0]);</p>
             <p>El primer 0 índica el arreglo anidado, mientras que el segundo 0 selecciona el primer elemento de ese arreglo.</p>
-            <h2>.push()</h2>
-            <p>.push() es una función que permite añadir un elemento al final del arreglo,e.j: var estaciones = ["Invierno", "Otoño", "Primavera"]; estaciones.push("Verano"); console.log(estaciones);</p>
-            <h2>.pop()</h2>
-            <p>.pop() sirve para remover el último elemento de un arreglo,e.j: estaciones.pop(); console.log(estaciones); También podemos asignarle ese valor a otra variable: var etapaDelAño; etapaDelAño = estaciones.pop();</p>
-            <h2>.shift()</h2>
-            <p>.shift() sirve para remover el primer elemento de un arreglo,e.j: estaciones.shift(); console.log(estaciones);</p>
-            <h2>.unshift()</h2>
-            <p>.unshift() sirve para agregar un elemento al principio del arreglo,e.j: estaciones.unshift("Verano"); console.log(estaciones);</p>
-            <h2>Funciones</h2>
-            <p>Las funciones sirven para escribir código reutilizable,e.j: </p>
-            <ol>
-                <li>function mostrarMensaje() {</li>
-                <li>console.log("¡Hola mundo!");</li>
-                <li>}</li>
-            </ol>
-            <p>De este modo con solo llamar a la función: mostraMensaje(); puedes llamarlo las veces que quieras.</p>
-            <h2>Argumentos</h2>
-            <p>Los argumentos agregan la capacidad de tomar valores:</p>
-            <ol>
-                <li>function sumar(a, b) {</li>
-                <li>var suma = a + b;</li>
-                <li>console.log("El resultado de " + a + " + " + b + "es: " + suma);</li>
-                <li>}</li>
-            </ol>
-            <p>a y b son los argumentos,estos pueden ser cualquier argumento valido en JavaScript.Ahora le agregamos valores númericos a los argumentos: sumar(5, 3);</p>
-            <p>Podemos llamar varias veces a esa función y que sume otros valores: sumar(8, 9); Otra variante sería hacer que variables sean los argumentos,e.j: var x = 5; var y = 3; sumar(x, y);</p>
-            <p>Ahora concatenamos cadenas:</p>
-            <ol>
-                <li>function concatenarTresCadenas(cadena1, cadena2, cadena3) {</li>
-                <li>console.log(cadena1 + " " + cadena2 + " " + cadena3);</li>
-                <li>}</li>
-            </ol>
-            <p>concatenarTresCadenas("Estoy", "aprendiendo", "a programar");</p>
+    <h2>.push()</h2>
+    <p>Es una función que permite añadir un elemento al final del arreglo,e.j:</p>
+    <pre>
+    <code>
+    var estaciones = ["Invierno", "Otoño", "Primavera"];
+    estaciones.push("Verano");
+    console.log(estaciones);
+    </code>
+    </pre>
+    <h2>.pop()</h2>
+    <p>Sirve para remover el último elemento de un arreglo,e.j:</p>
+    <pre>
+    <code>
+    var estaciones = ["Invierno", "Otoño", "Primavera", "Verano"];
+    estaciones.pop();
+    console.log(estaciones);
+    //También podemos asignarle ese valor a otra variable:
+    var etapaDelAño;
+    etapaDelAño = estaciones.pop();
+    </code>
+    </pre>
+    <h2>.shift()</h2>
+    <p>Sirve para remover el primer elemento de un arreglo,e.j:</p>
+    <pre>
+    <code>
+    var estaciones = ["Invierno", "Otoño", "Primavera", "Verano"];
+    estaciones.shift();
+    console.log(estaciones);
+    </code>
+    </pre>
+    <h2>.unshift()</h2>
+    <p>Sirve para agregar un elemento al principio de un arreglo:</p>
+    <pre>
+    <code>
+    var estaciones = ["Otoño", "Primavera","Verano"];
+    estaciones.unshift("Invierno");
+    console.log(estaciones);
+    </code>
+    </pre>
+    <h2>Funciones</h2>
+    <p>Las funciones sirven para escribir código reutilizable,e.j: </p>
+    <pre>
+    <code>
+    function mostrarMensaje() {
+    console.log("¡Hola mundo!");
+    }
+    //De este modo con solo llamar a la función puedes llamarlo las veces que quieras:
+    mostraMensaje();
+    </code>
+    </pre>
+    <h2>Argumentos</h2>
+    <p>Los argumentos agregan la capacidad de tomar valores:</p>
+    <pre>
+    <code>
+    function sumar(a, b) {
+    var suma = a + b;
+    console.log("El resultado de " + a + " + " + b + "es: " + suma);
+    }
+    /*a y b son los argumentos,estos pueden ser cualquier argumento valido en JavaScript.
+    Ahora le agregamos valores númericos a los argumentos:*/
+    sumar(5, 3);
+    Podemos llamar varias veces a esa función y que sume otros valores:*/
+    sumar(8, 9);
+    //Otra variante sería hacer que variables sean los argumentos,e.j:
+    var x = 5;
+    var y = 3; 
+    sumar(x, y);
+    //Ahora concatenamos cadenas:
+    function concatenarTresCadenas(cadena1, cadena2, cadena3) {
+    console.log(cadena1 + " " + cadena2 + " " + cadena3);
+    }
+    concatenarTresCadenas("Estoy", "aprendiendo", "a programar");
+    </code>
+    </pre>
     <h2>Ámbito global</h2>
     <p>Este tipo de variable se puede uitilizar en cualquier lugar del programa,esto ya que esta definida en el programa principal:</p>
     <pre>
