@@ -116,29 +116,78 @@
             <p>El procedimiento de agregar variables a cadenas de caracteres es muy simple, mira el siguiente ejemplo:</p>
             <p>var mensajeCompleto = "Estoy aprendiendo a programar"; var parteFinal = "con JavaScript"; mensajeCompleto += parteFinal;</p>
             <p>Básicamente lo que hacemos es escribir el nombre de la variable a la que le queremos concatenar otra cadena más el nombre de la cadena a concatenar, entre ellos el signo +=</p>
-            <h2>Longitud de una cadena de caracteres</h2>
-            <p>Para calcular la longitud de una cadena de caracteres usamos la propiedad .length, e.j: var miCadena; miCadena = "A"; console.log(miCadena.length);</p>
-            <p>Esta propiedad al calcular la longitud cosidera caracteres,simbolos,números y espacios.</p>
-            <h2>Notación de corchetes</h2>
-            <p>Este tipo de notación nos permite acceder a los caracteres individualesde de una cadena, la cuál sigue una regla de indices,e.j: var lenguajeDeProgramacion = "JavaScript";</p>
-            <P>J A V A S C R I P T</P>
-            <p>0 1 2 3 4 5 6 7 8 9</p>
-            <P>j = 0,A = 1,V = 2,A = 3,S = 4,C = 5,R = 6,I = 7,P = 8,T = 9</P>
-            <h3>acceder al primer caracter</h3>
-            <p>console.log(lenguajeDeProgramacion[0]); Si quisieramos acceder a otro caracter solo tenemos que escribir su índice dentro de los corchetes.</p>
-            <h3>Enesimo carácter</h3>
-            <p>Si eliges un carácter inexistente, en la consola figurara undefine, e.j: con el cuadro del primer caracter si pusieramos: console.log(lenguajeDeProgramacion[10]); aquí nos saldría undefined en la consola.</p>
-            <h3>Último carácter</h3>
-            <p>Se usa para acceder al último caracter, e.j: console.log(myString[myString.length -1]); el último índice siempre es longitud -1, porque contamos desde 0.</p>
-            <h3>De derecha a izquierda</h3>
-            <p>Para acceder al penúltimo índice tenemos que poner en la llamada .length - 2, e.j: console.log(myString[myString.length - 2]);</p>
-            <h2>Inmutabilidad de cadenas de caracteres</h2>
-            <p>Las cadenas son inmutables, es decir, no podemos hacer esto: var myString = "Jola,mundo"; myString[0] = "H"; console.log(myString);</p>
-            <p>myString[0] = "H"; esto es un error, pero lo que si podemos hacer es cambiar todo su valor: myString = "Hola,mundo";</p>
-            <h2>Palabras en blanco</h2>
-            <p>Las palabras en blanco son caracteres(letras exactamente) que agregamos a una cadena que esta armada a base de variables, esto con el objetivo de que tenga más sentido, e.j:</p>
-            <p>var sustantivo = "perro"; var adjetivo = "negro"; var verbo = "corrio"; var adverbio = "rapidamente";</p>
-            <p>let palabrasEnBlanco = "El " + sustantivo + adjetivo + verbo + adverbio + " cuando apenas lo deje solo por diez segundos."</p>
+    <h2>Longitud de una cadena de caracteres</h2>
+    <p>Para calcular la longitud de una cadena de caracteres usamos la propiedad .length, e.j:</p>
+    <pre>
+    <code>
+    var miCadena;
+    miCadena = "A";
+    console.log(miCadena.length);
+    </code>
+    </pre>
+    <p>Esta propiedad al calcular la longitud cosidera caracteres,simbolos,números y espacios.</p>
+    <h2>Notación de corchetes</h2>
+    <p>Este tipo de notación nos permite acceder a los caracteres individualesde de una cadena, la cuál sigue una regla de indices,e.j:</p>
+    <pre>
+    <code>
+    var lenguajeDeProgramacion = "JavaScript";
+    //J A V A S C R I P T
+    //0 1 2 3 4 5 6 7 8 9
+    </code>
+    </pre>
+    <h3>acceder al primer caracter</h3>
+    <p>En caso de querer acceder al primer caracter:</p>
+    <pre>
+    <code>
+    console.log(lenguajeDeProgramacion[0]);
+    //Si quisieramos acceder a otro caracter solo tenemos que escribir su índice dentro de los corchetes.
+    </code>
+    </pre>
+    <h3>Enesimo carácter</h3>
+    <p>Si eliges un carácter inexistente, en la consola figurara undefine, e.j:</p>
+    <pre>
+    <code>
+    //Con el cuadro del primer caracter si pusieramos:
+    console.log(lenguajeDeProgramacion[10]);
+    //Aquí nos saldría undefined en la consola.
+    </code>
+    </pre>
+    <h3>Último carácter</h3>
+    <p>Se usa para acceder al último caracter, e.j:</p>
+    <pre>
+    <code>
+    console.log(myString[myString.length -1]);
+    //El último índice siempre es longitud -1, porque contamos desde 0.
+    </code>
+    </pre>
+    <h3>De derecha a izquierda</h3>
+    <p>Para acceder al penúltimo índice tenemos que poner en la llamada .length - 2, e.j:</p>
+    <pre>
+    <code>
+    console.log(myString[myString.length - 2]);
+    </code>
+    </pre>
+    <h2>Inmutabilidad de cadenas de caracteres</h2>
+    <p>Las cadenas son inmutables, es decir, no podemos hacer esto:</p>
+    <pre>
+    <code>
+    var myString = "Jola,mundo";
+    myString[0] = "H";
+    console.log(myString);
+    </code>
+    </pre>
+    <p>myString[0] = "H"; esto es un error, pero lo que si podemos hacer es cambiar todo su valor: myString = "Hola,mundo";</p>
+    <h2>Palabras en blanco</h2>
+    <p>Las palabras en blanco son caracteres(letras exactamente) que agregamos a una cadena que esta armada a base de variables, esto con el objetivo de que tenga más sentido, e.j:</p>
+    <pre>
+    <code>
+    var sustantivo = "perro";
+    var adjetivo = "negro";
+    var verbo = "corrio";
+    var adverbio = "rapidamente";
+    let palabrasEnBlanco = "El " + sustantivo + adjetivo + verbo + adverbio + " cuando apenas lo deje solo por diez segundos.";
+    </code>
+    </pre>
     <h2>Arreglos(Arrays)</h2>
     <p>Loa Arreglos son estructuras de datos que permiten almacenar valores en una misma estructura,e.j:</p>
     <pre>
