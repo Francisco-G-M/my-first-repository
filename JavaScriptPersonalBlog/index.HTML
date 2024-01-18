@@ -651,6 +651,73 @@
     console.log("Hola" <= "Hola");
     </code>
     </pre>
+    <h2>Operador lógico "and"</h2>
+    <p>Este tipo de operador nos permite escribir dos operandos en la misma expresión,siguiendo la siguiente tabla:</p>
+    <h3>Tabla de verdad del operador and:</h3>
+    <pre class="tablaDeOperadoresLogicos">
+    <code class="otrasCaracteriscasTabla">
+    X--Y--X&&Y 
+    T--T = T
+    T--F = F
+    F--T = F
+    F--F = F
+    </code>
+    </pre>
+    <pre>
+    <code>
+    //La expresión es solo verdadera si ambos operandos son verdaderos:
+    var a = 8;
+    console.log((a > 5)&&(a < 10));
+    // a(8) > 5 true && a(8) < 10 true,valor final true.
+    var b = 3;
+    console.log((b > 5)&&(b < 10));
+    //b(3) > 5 false && b(3) < 10 true,valor final es false.
+    var c = 1;
+    console.log((c > 5)&&(c == 10));
+    //c(1) > 5 false && c(1) == 10 false,valor final es false.
+    </code>
+    </pre>
+    <h2>Operador lógico "or"</h2>
+    <p>En este caso si culaquiera de los operandos es true entonces el resultado sera true:</p>
+    <h3>Tabla de valores del operador or</h3>
+    <pre class="tablaDeOperadoresLogicos">
+    <code class="otrasCaracteriscasTabla">
+    X--Y--X||Y
+    T--T = T
+    T--F = T
+    F--T = T
+    F--F = F 
+    </code>
+    </pre>
+    <pre>
+    <code>
+    var a = 8;
+    console.log((a < 5)||(a > 15));
+    //a(8) < 5 false||a(8) > 15 false,el valor final es false.
+    var b = 5;
+    console.log((b == 5)||(b < 15));
+    //b(5) == 5 true||b(5) < 15 true,el valor final es true.
+    </code>
+    </pre>
+    <h2>Operador lógico "not"</h2>
+    <p>Se usa para negar el valor de verdad de otra expresión,es decir,para negar una expresión:</p>
+    <h3>Tabla de valores del operador not</h3>
+    <pre class="tablaDeOperadoresLogicos">
+    <code class="otrasCaracteriscasTabla">
+    X --!X
+    T--F
+    F--T
+    </code>
+    </pre>
+    <pre>
+    <code>
+    var a = 8;
+    console.log(!(a > 5));
+    //a(8) > 5 esto es true,pero con ! se niega su valor inicial(que en este caso es true),dando como resultado false.
+    console.log(!(a < 5));
+    //a(8) < 5 !false = true
+    </code>
+    </pre>
     </div>
     <footer>
     </footer>
