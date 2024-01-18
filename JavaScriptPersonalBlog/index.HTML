@@ -718,6 +718,64 @@
     //a(8) < 5 !false = true
     </code>
     </pre>
+    <h2>Sentencias condicionales</h2>
+    <p>Permite decidir si un bloque de código se ejecuta o no dependiendo de una condición,"if" es la palabra clave para las sentencias condicionales,para que se ejecute el código la condición debe ser vedadera:</p>
+    <pre>
+    <code>
+    var z = 5;
+    if(z > 2) {
+    console.log("La condición es verdadera.");
+    }
+    /*La condición puede ser tan compleja como uno quiera,se puede usar operadores lógicos(and,or,not).
+    Pero siempre sera una expresión que devuelve un valor booleano.*/
+    var estacion = "Invierno";
+    if(estacion == "Invierno") {
+    console.log("Estamos en Invierno.");
+    }
+    //Cualquier linea despues del cierre del cierre del condicional se ejecutara.
+    </code>
+    </pre>
+    <h2>Cláusula "else"</h2>
+    <p>Sirve para expandir los condicionales para decidir que es lo que ocurre si la condición del condicional es falsa:</p>
+    <pre>
+    <code>
+        var s = 5;
+    if(s < 2) {
+    console.log("La condición es verdadera.");
+    } else {
+    console.log("La condición es falsa.");
+    }
+    /*Como s(5) < 2  es falso,se ejecuta la línea de else.
+    Si if fuera true solo se ejecutaría ella y se ignoraria la línea else.*/
+    var estacion = "Invierno";
+    if(estacion == "Verano") {
+    console.log("La condicion es verdadera.");
+    } else {
+    console.log("La condición es falsa.");
+    }
+    //Como la condición es falsa,se muestra el mensaje del else.
+    </code>
+    </pre>
+    <h2>Cláusula "else if"</h2>
+    <p>Permite manejar condicionales alternativos:</p>
+    <pre>
+    <code>
+    function clasificarValor(valor) {
+    if(valor % 2 == 0) {
+    console.log("Divible entre 2.");
+    } else if(valor % 3 == 0) {
+    console.log("Divisible entre 3.");
+    } else {
+    console.log("No es divisible estre las dos opciones.");
+    }
+    }
+    clasificarValor(2);
+    /*Al ser 2 % 2 == 0 se ejecutara el valor del if,si fuera 15 no se ejecuta el if pero si el else if ya que 15 % 3 == 0.
+    Y si fuera 7 ni el if y else if se ejecutan,pero si el else.*/
+    </code>
+    </pre>
+    <h2>Condicionales: orden lógido</h2>
+    <p>Básicamente puedes agregar más de una clausula dependiendo de cuantas condiciones deseas verificar en el condicional.Pero siempre la clausula if va primero,luego la/las else if y al final else ya que sirve como respaldo.</p>
     </div>
     <footer>
     </footer>
