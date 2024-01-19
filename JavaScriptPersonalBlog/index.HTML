@@ -869,6 +869,42 @@
     }
     </code>
     </pre>
+    <h2>Retornar un valores booleanos</h2>
+    <p>En caso de que quisieramos retornar un valores booleanos podemos hacerlo con sentencias if,else if y else:</p>
+    <pre>
+    <code>
+    function esMenorQue(a, b) {
+    if(a < b) {
+    return true;
+    } else {
+    return false;
+    }
+    }
+    //Pero existe una manera mucho más práctica:
+    function esMenorQue(a, b) {
+    return a < b;
+    }
+    console.log(esMenorQue(3, 6));
+    //Figurara true.
+    console.log(esMenorQue(6, 3));
+    //Figurara false,si fuera (3, 3) támbien sería false porque estamos usando el operador de comparación estricta.
+    </code>
+    </pre>
+    <h2>Patrón de retorno anticipado</h2>
+    <p>Se utiliza cuando necesitamos detener la función por alguna condición específica:</p>
+    <pre>
+    <code>
+    function calcularRaizCuadrada(num) {
+    if(num < 0) {
+    return undefined;
+    }
+    return Math.sqrt(num);
+    }
+    console.log(calcularRaizCuadrada(-5));
+    /*Al ser el num menor que 0 retorna undefined,pero si el valor fuera mayor que 0,e.j: 25,entonces se ignora la 
+    sentencia if y se calcula su raiz cuadrada.
+    </code>
+    </pre>
     </div>
     <footer>
     </footer>
