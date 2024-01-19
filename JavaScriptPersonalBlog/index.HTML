@@ -905,6 +905,60 @@
     sentencia if y se calcula su raiz cuadrada.
     </code>
     </pre>
+    <h2>Crear objetos</h2>
+    <p>Los "objetos" permiten guardar una secuencia o conjunto de propiedades que estan relacionadas con sus valores:</p>
+    <pre>
+    <code>
+    var myDog = {
+    "nombre": "Gordox",
+    "edad": 5,
+    "peso": "24kl",
+    "raza": "Pitbull"
+    };
+    //Támbien puedes usar numeros como propiedades:
+    var myNumber = {
+    5: "cinco"
+    };
+    </code>
+    </pre>
+    <h2>Acceder a propiedades: notación de punto</h2>
+    <p>Sirve para acceder a las propiedades de un objeto: con el ejemplo del tema anterior, accedemos a su nombre:</p>
+    <pre>
+    <code>
+    console.log(myDog.nombre);
+    //El punto sirve como conexión entre el objeto(myDog) y la propiedad(nombre).
+    </code>
+    </pre>
+    <h2>Acceder a propiedades: notación de corchetes</h2>
+    <p>Es una alternativa paraacceder a las propiedades de un objeto:</p>
+    <pre>
+    <code>
+    var profile = {
+    "username": "Ragnarok",
+    "followers": "16k",
+    "publications": "100k",
+    "profile create": "20/01/19"
+    };
+    console.log(perfil["create"]);
+    /*En este caso si usamos notación de punto nos saltaría un error por el espacio en el nombre de la propiedad.
+    Para evitar ese error usamos [] para estos casos.*/ 
+    </code>
+    </pre>
+    <h2>Acceder a propiedades: variables</h2>
+    <p>En caso de que quisieramos acceder a propiedades de objetos mediante variables podemos usar las notaciones(de punto y cochete):</p>
+    <pre>
+    <code>
+    var animes = {
+    1: "JoJos",
+    2: "Naruto",
+    3: "Code Geass",
+    4: "Jujutsu Kaisen"
+    };
+    var seleccionado = 3;
+    console.log(animes[seleccionado]);
+    //Esto no lo podemos hacer con la notación de punto,únicamente se puede con notación de corchete.
+    </code>
+    </pre>
     </div>
     <footer>
     </footer>
