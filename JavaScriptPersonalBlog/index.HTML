@@ -959,6 +959,25 @@
     //Esto no lo podemos hacer con la notación de punto,únicamente se puede con notación de corchete.
     </code>
     </pre>
+    <h2>Actualizar propiedades</h2>
+    <p>Nos permite actualizar el valor de las propiedades:</p>
+    <pre>
+    <code>
+    var mochila = {
+    "color": "azul",
+    "tamaño": "mediano",
+    "contenido": ["botella de agua", "cuaderno"]
+    };
+    console.log(mochila.color); // azul
+    mochila.color = "verde"; //cambiamos el color
+    console.log(mochila.color);
+    //Si queremos agregar algo al arreglo dentro del objeto tenemos que acceder al valor de la propiedad "contenido"(que es lo que queremos modificar)
+    mochila.contenido.push("Lapiz");
+    console.log(mochila.contenido);
+    //Para cambiar el contenido de alguna propiedad por completo hacemos lo siguiente:
+    mochila.contenido = ["Utiles escolares"];
+    </code>
+    </pre>
     </div>
     <footer>
     </footer>
