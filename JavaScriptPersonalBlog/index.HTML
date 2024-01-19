@@ -776,6 +776,99 @@
     </pre>
     <h2>Condicionales: orden lógido</h2>
     <p>Básicamente puedes agregar más de una clausula dependiendo de cuantas condiciones deseas verificar en el condicional.Pero siempre la clausula if va primero,luego la/las else if y al final else ya que sirve como respaldo.</p>
+    <h2>Sentencias switch</h2>
+    <p>Permite  decidir que va a pasar a partir de un valor o expresión:</p>
+    <pre>
+    <code>
+    function clasificarValor(valor) {
+    var respuesta;
+    switch(valor) {
+    case 1:
+    respuesta = "Alpha";
+    break;
+    case 2:
+    respuesta = "Beta";
+    break;
+    case 3:
+    respuesta = "Gamma";
+    break;
+    case 4:
+    respuesta = "Delta";
+    break;
+    }
+    return respuesta;
+    }
+    console.log(clasificarValor(1));
+    /*Las sentencias "break" sirven para detener el proceso de ejecución de la estructura switch,ejemplo:
+    si el caso 1 es true,solo se ejecutara ese caso,los demas se ignoraran.
+    Ponemos "return respuesta" fuera de la llave "switch" porque: no es parte de el.
+    Debido a que retornamos el valor tenemos que mostrarlo en la consola o lo podemos asignar a una var.
+    Ejemplo de cadenas de caracteres:*/ 
+    var producto = "Hamburguesa";
+    switch(producto) {
+    case "Pizza":
+    console.log("Pedido de pizza realizado.");
+    break;
+    case "Hamburguesa":
+    console.log("Pedido de hamburguesa realizado.");
+    break;
+    case "Helado":
+    console.log("Pedido de helado realizado.");
+    break;
+    }
+    //Dependiendo del valor de la var producto(pizza,hamburguesa o helado) se mostrara solo uno de los casos.
+    </code>
+    </pre>
+    <h2>Sentencias switch(opción predeterminada)</h2>
+    <p>Esta opción se ejecutara si ninguno de los valores es el valor de la variable o de la expresión:</p>
+    <pre>
+    <code>
+    function seleccionarIdioma(valor) {
+    var idioma;
+    switch(valor) {
+    case 1:
+    idioma = "Español";
+    break;
+    case 2:
+    idioma = "Frances";
+    break;
+    case 3:
+    idioma = "Italiano";
+    break;
+    default:
+    idioma = "Ingles";
+    break;
+    }
+    return idioma;
+    }
+    console.log()seleccionarIdioma(4);
+    //Al no haber ningun case 4,figurara el valor del default.
+    </code>
+    </pre>
+    <h2>Sentencias switch(múltiples casos)</h2>
+    <p>Sirve para ejecutar un código específico para varios valores:</p>
+    <pre>
+    <code>
+    function clasificarVolumen(valor) {
+    var volumen;
+    switch(valor) {
+    case 1:
+    volumen = "Bajo";
+    break,
+    case 2:
+    case 3:
+    volumen = Intermedio"";
+    break;
+    case 4:
+    case 5:
+    case 6:
+    volumen = "Alto";
+    break;
+    }
+    return volumen;
+    }
+    </code>
+    </pre>
     </div>
     <footer>
     </footer>
