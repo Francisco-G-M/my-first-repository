@@ -1099,6 +1099,72 @@
     console.log(miReceta.ingredientes["cobertura"].BBQ);
     </code>
     </pre>
+    <h2>Arreglos anidados</h2>
+    <p>Básicamente son arreglos que tienen objetos dentro de ellos que a su vez estos también tienen arreglos dentro:</p>
+    <pre>
+    <code>
+    var misPlantas = [
+    {
+    "tipo": "flores",
+    "lista": [
+    "rosas",
+    "margaritas",
+    "girasoles",
+    "tulipanes"
+    ]
+    },
+    {
+    "tipo": "arboles",
+    "lista": [
+    "pino",
+    "olivo",
+    "madroño,
+    "eucalipto"
+    ]
+    }
+    ];
+    var primeraFlor = misPlantas[0].lista[0];
+    console.log(primeraFlor);
+    /*El primer 0 se refiere al primer objeto del arreglo,mientras que el segundo 0 índica el primer elemento del arreglo "lista".
+    </code>
+    </pre>
+    <h2>Ciclo "while"</h2>
+    <p>Permite escribir un código simplemente con una estructura específica y repetirlo:</p>
+    <pre>
+    <code>
+    var i = 0;
+    while(i <= 3) {
+    console.log("Hola mundo");
+    i++;
+    }
+    /*índicamos que siempre que i <= 3 se va a ejecutar el código,y cada vez que lo haga se incrementa en uno el valor(i++)
+    hasta que la condición sea falsa y,por ende,deje de ejecutarse el ciclo, sino usamos i++ sería un ciclo ínfinito.*/
+    var numeros = [2, 3, 4, 5, 6, 8, 9, 34];
+    while(numeros.length > 4) {
+    numeros.pop();
+    }
+    console.log(numeros);
+    //length significa longitud(en este caso del arreglo).
+    </code>
+    </pre>
+    <h2>Ciclo "for"</h2>
+    <p>Actualiza la variable sin necesidad de que tengamos que hacerlo nosotros,para este tipo ciclos debemos especificar tres aspectos para su ejecución:</p>
+    <ul>
+    <li>iniciación de variable</li>
+    <li>condición de ciclo</li>
+    <li>actualizar var con cada repetición</li>
+    </ul>
+    <pre>
+    <code>
+    var miArreglo = [];
+    for(var i = 0; i < 10; i+=2) {
+    miArreglo.push(i);
+    }
+    console.log(miArreglo);
+    /*i+=2 significa que con cada repetición del ciclo la var i aumentara su valor de dos en dos hasta que su logitud no
+    sea menor que 10.*/
+    </code>
+    </pre>
     </div>
     <footer>
     </footer>
