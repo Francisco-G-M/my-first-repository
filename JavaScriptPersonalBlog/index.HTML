@@ -1001,6 +1001,79 @@
     //Como ya lo eliminamos,al llamarlo figurara undefined.
     </code>
     </pre>
+    <h2>objetos para búsqueda</h2>
+    <p>Nos permite usar un  objeto para reemplazar una sentencia Switch:</p>
+    <pre>
+    <code>
+    function buscarElementoQuimico(simbolo) {
+    simbolosQuimicos = {
+    "Al": "Aluminio",
+    "S": "Azufre"
+    }
+    return simbolosQuimicos[simbolo];
+    }
+    console.log(buscarElementoQuimico("Al"));
+    xonsole.log(buscarElementoQuimico("S"));
+    //Escribimos el nombre de la función y el simbolo del elemento.
+    </code>
+    </pre>
+    <h2>Verificar propiedades</h2>
+    <p>Permite verificar si la propiedad existe en el objeto:</p>
+    <pre>
+    <code>
+    var miCuaderno = {
+    "color": "verde",
+    "numero": 3
+    };
+    console.log(miCuaderno.hasOwnProperty("color"));
+    //En el caso de una función sería:
+    function verificarPropiedad(obj, propiedad) {
+    if(obj.hasOwnProperty(propiedad)) {
+    return "propiedad: " + obj[propiedad];
+    } else {
+    return "El objeto no tiene esta propiedad.";
+    }
+    }
+    var miCuaderno = {
+    "color": "verde";
+    "precio": "4.56"
+    };
+    console.log(verificarPropiedad(miCuaderno, "color"));
+    </code>
+    </pre>
+    <h2>Objetos complejos</h2>
+    <p>Son combinaciones de distintos tipos de datos,usaremos un arreglo que dentro tendra objetos que támbien tendra arreglos dentro de ellos:</p>
+    <pre>
+    <code>
+    var ordenesDePizzas = [
+    {
+    "Tipo": "Margarita",
+    "tamaño": "Individual",
+    "Toppings": [
+    "Albhaca fresca 5g",
+    "Ajo 2 dientes"
+    ],
+    "paraLlevar": true
+    },
+    {
+    "tipo": "Cuatro quesos",
+    "Tamaño": "Familiar",
+    "Toppings": [
+    "Queso azul",
+    "Queso cremoso",
+    "Queso básico",
+    "Queso duro"
+    ],
+    }
+    ];
+    /*Al ser un arreglo la estructura principal,se aplican sus propiedades al contenido,el 1° obj es el índice 0,
+    2° obj índice 1, 3° obj índice 2,etc.*/
+    console.log(ordenesDePizzas[0]); /*Si queremos acceder a una propiedad específica del objeto,usamos notación de
+    punto o corchete:*/
+    console.log(ordenesDePizzas[0].tipo);
+    console.log(ordenesDePizzas[1]["tamaño"]);
+    </code>
+    </pre>
     </div>
     <footer>
     </footer>
