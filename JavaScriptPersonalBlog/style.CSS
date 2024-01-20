@@ -54,6 +54,10 @@ ol{
     font-size: 18px;
     color: whitesmoke;
 }
+ul{
+    font-size: 18px;
+    color: whitesmoke;
+}
 code{
     color: white;
     font-size: 16px;
@@ -62,4 +66,14 @@ pre{
     background-color: rgb(21, 18, 26);
     border: 5px solid white;
     border-radius: 20px 20px;
+}
+.tablaDeOperadoresLogicos{
+    background-color: rgb(25, 252, 25);
+    border: 5px solid cyan;
+    margin-right: 86%;
+    border-radius: 0px;
+}
+.otrasCaracteriscasTabla{
+    color: black;
+    font-size: 18px;
 }
