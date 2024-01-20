@@ -1074,6 +1074,31 @@
     console.log(ordenesDePizzas[1]["tamaño"]);
     </code>
     </pre>
+    <h2>Objetos anidados</h2>
+    <p>Son objetos contenidos dentro de otros objetos:</p>
+    <pre>
+    <code>
+    var miReceta = {
+    "descipcion": "Como hacer una pizza",
+    "ingredientes": {
+    "masa": {
+    "harina": "400g",
+    "sal": "1 pizca"
+    },
+    "coberturas": {
+    "BBQ": "salsa BBQ,queso mozzarella,pepperoni,tocino,carne picada,cabanossi y jamon cocido.",
+    "Pepperoni": "Abundante queso mozzarella y pepperoni en rodajas finas"
+    }
+    }
+    };
+    cosole.log(miRecea.descripcion);
+    //Si queremos acceder a los ingredientes sería:
+    console.log(miReceta.ingredientes.masa);
+    //Támbien podemos usar notación de corchetes:
+    console.log(miReceta.ingredientes.masa["harina"]); //oh también:
+    console.log(miReceta.ingredientes["cobertura"].BBQ);
+    </code>
+    </pre>
     </div>
     <footer>
     </footer>
