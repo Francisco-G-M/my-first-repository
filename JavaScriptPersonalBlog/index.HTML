@@ -1165,6 +1165,65 @@
     sea menor que 10.*/
     </code>
     </pre>
+    <h2>Iterar sobre un arreglo con un ciclo "for"</h2>
+    <p>Nos permite obtener cada uno de los elementos del arreglo,pudiendo usarlos en el cuerpo del ciclo:</p>
+    <pre>
+    <code>
+    var ejemploArreglo = [4, 6, 8, 2];
+    var total = 0;
+    for(var i = 0; i < ejemploArreglo; i++) {
+    console.log("Avance" + i);
+    console.log(ejemplosArreglo[i]);
+    total += ejemploArreglo;                                               
+    }
+    console.log(total);
+    //Si quisieramos mostrar cadenas de caracteres en mayúsculas:
+    var lenguajes = ["JavaScript", "HTML", "Java", "CSS"];
+    for(var i = 0; i < lenguajes.length; i++) {
+    console.log(lenguajes[i].toUpperCase());
+    }
+    //.toUpperCase() sirve para indicar que queremos que esas cadenas de caracteres pasen a estar en mayúsculas.
+    //Si usaramos ciclo "for" en una función:
+    function contarNumerosPares(arreglo) {
+    var total = 0;
+    for(var j = 0; j < arreglo.length; j++) {
+    if(arreglo[j] % 2 == 0) {
+    total++;
+    }
+    }
+    return total;
+    }
+    console.log(contarNumerosPares([2, 3, 4, 8, 9, 1]));
+    </code>
+    </pre>
+    <h2>Ciclos "for" anidados</h2>
+    <p>Son ciclos escritos dentro de otros ciclos:</p>
+    <pre>
+    <code>
+    var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+    for(var x = 0; x < myArray.length; i++) {
+    console.log("Nueva interacion");
+    var arregloAnidado = myArray[i];
+    console.log("Arreglo: " + arregloAnidado);
+    for(var y = 0; y < arregloAnidado.length; y++) {
+    console.log("Ciclo anidado");
+    console.log("Elemento: " + arregloAnidado[y]);
+    console.log(arregloAnidado[y]);
+    }
+    }
+    </code>
+    </pre>
+    <h2>Ciclos "do...while"</h2>
+    <p>Primero realiza la secuencia de código(por lo menos una vez) y recien depués evalua la condición:</p>
+    <pre>
+    <code>
+    var a = 16;
+    do {
+    console.log(a);
+    a++;
+    } while (a < 10);
+    </code>
+    </pre>
     </div>
     <footer>
     </footer>
