@@ -1224,6 +1224,96 @@
     } while (a < 10);
     </code>
     </pre>
+    <h2>Números aleatorios</h2>
+    <p>Genera números aleatorios,pero núnca sera 1(los números generados son entre 0 y 1),las formas de llamarlos son:</p>
+    <pre>
+    <code>
+    function generarFraccionAleatoria() {
+    return Math.random();
+    }
+    console.log(generarFraccionAleatoria());
+    //Oh también:
+    var númeroAleatorio = Math.random();
+    console.log(numeroAleatorio);
+    //Oh simplemente usando:
+    console.log(Math.random());
+    </code>
+    </pre>
+    <h2>Números enteros aleatorios</h2>
+    <p>Nos permite convertir los números decimales aleatorios en enteros,dentro de un rango especifíco:</p>
+    <pre>
+    <code>
+    var númeroAleatorioEntreDosNúmeros = Math.floor(Math.random()*20);
+    //Múltiplicamos el decimal por un entero,y con Math.floor truncamos la parte entera.
+    console.log(númeroAleatorioEntreDosNúmeros);
+    //En caso de una función:
+    function generarEnteroAleatorio(limiteSuperior) {
+    return Math.floor(Math.random()*limiteSuperior);
+    //Múltiplicamos el decimal por el valor del parametro.
+    console.log(generarEnteroAleatorio(5));
+    }
+    //El valor final nunca dara el limite Superior(5).Para generar muchos números aleatorios podemos usar ciclos:
+    for(var p = 0; p < 15; p++) {
+    console.log(generarEnteroAleatorio(5));
+    }
+    </code>
+    </pre>
+    <h2>Números enteros aleatorios en un rango</h2>
+    <p>Genera números enteros en un rango específico con un límite superior y uno inferior:</p>
+    <pre>
+    <code>
+    functon rangoAleatorio(limiteInferior, limiteSuperior) {
+    return Math.floor(Math.random()*(limiteSuperior - limiteInferior + 1)) + limiteInferior;
+    }
+    //Si quisieramos generar varios números,podemos usar un ciclo:
+    for(var k = 0; k < 15; k++) {
+    console.log(rangoAleatorio(3, 8));
+    }
+    //Con el ciclo se incluye como posible resultado el límite superior.
+    </code>
+    </pre>
+    <h2>Función parseInt()</h2>
+    <p>Convierte cadenas de caracteres que representan un número en un número entero:</p>
+    <pre>
+    <code>
+    console.log(parseInt("5"));
+    console.log(parseInt("-40"));
+    console.log(parseInt("6.7"));
+    //En caso de decimales los trunca en la parte entera.
+    //También esta función nos permite realizar diferentes tipos de calculos matemáticos:
+    var a = parseInt("3");
+    var b = parseInt("1");
+    console.log(a + b);
+    </code>
+    </pre>
+    <h2>Función parseInt() con una base</h2>
+    <p>Convierte cadenas de caracteres en otro sistema númerico al sistema decimal:</p>
+    <pre>
+    <code>
+    //Sisttemas númerico binario:
+    console.log("110111", 2); // 2 es la base para binarios,cada sistema númerico posee un tipo de base específico.
+    //Sistema númerico hexadecimal:
+    console.log("3e0a", 16);
+    //Sistema númerico decimal:
+    console.log("15,99", 10);
+    //Las bases son un número entero entre 2 y 36.
+    </code>
+    </pre>
+    <h2>Operador condicional(ternario)</h2>
+    <p>Permite compactar un condicional en una sola línea:</p>
+    <pre>
+    <code>
+    (x, y) {
+    return x < y ? x:y;
+    }
+    //Oh en vez de usar return podemos escribir:
+    console.log(x < y ? x:y);
+    //Si la condición se cumple figurara el valor de x, si no es así sera el valor de y.
+    var a = 5;
+    var b = 9;
+    console.log(a > b ? a + 2 : b * 3);
+    </code>
+    </pre>
     </div>
     <footer>
     </footer>
