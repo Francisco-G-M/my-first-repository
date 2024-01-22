@@ -11,7 +11,7 @@
         <h1>JavaScriptPersonalBlog</h1>
         <div id="barra-nav">
             <a href="#basic-javascript" class="enlace-barra-nav">BasicJavaScript</a>
-            <a href="#" class="enlace-barra-nav">ES6</a>
+            <a href="#ES6" class="enlace-barra-nav">ES6</a>
         </div>
     </header>
     <main>
@@ -1314,7 +1314,34 @@
     console.log(a > b ? a + 2 : b * 3);
     </code>
     </pre>
+    <h2>Multiples Operadores condicionales</h2>
+    <p>Combina el poder de los operadores condicionales y ternarios escribiendo multiples operadores condicionales/ternarios uno dentro del otro:</p>
+    <pre>
+    <code>
+    function compararNumeros(a, b) {
+    return a == b ?  "a y b son iguales"
+         : a > b ? "a es mayor que b"
+         : "b es mayor que a";
+    }
+    </code>
+    </pre>
     </div>
+    <div id = "ES6">
+    <h2>¿Qué es ES6?</h2>
+    <p>ES6(ECMAScript 6) es el nuevo estándar de JavaScript,la cuál agrego nuevas caracteristicas al lenguaje,estos cambios en la sintaxis nos permite escribir código de una manera más rápida y limpia.</p>
+    <h2>var vs let</h2>
+    <p>La diferencia entre declarar una variable con var o let es que, si declaras con con var,podras declarar esa variable dos o más veces:</p>
+    <pre>
+    <code>
+    var campista = "James";
+    var campista = "David";
+    //Pero con let solo puedes declarar una variable una única vez:
+    let campista = "David";
+    //Lo que si puedes hacer es reaccinar el valor.
+    </code>
+    </pre>
+    </div>
+    </main>
     <footer>
     </footer>
 </body>
