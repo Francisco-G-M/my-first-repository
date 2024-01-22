@@ -1398,6 +1398,27 @@
     /*Si quisieramos transformar esta función en un tipo flecha,tendríamos que eliminar la palabra clave function,la apertura y cierre de la llave,
     la sentencia return y escribimos el símbolo característico de las funciones flecha (=>):
     const fecha = () => nex date();
+    /*Dato importante: las funciones flecha son muy utiles cuando queremos pasar una función como argumento a otra función,lo que hacemos es
+    escribirla directamente como el argumento.
+    </code>
+    </pre>
+    <h2>Funciones flecha con parámetros</h2>
+    <p>Para definir funciones flechas que tengan uno o más parametros:</p>
+    <pre>
+    <code>
+    //Si es de una sola línea,eliminamos las palabras function y return,la apertura y cierre de llave, y agregamos la flecha:
+    const sumarTres = (x) => x + 3;
+    console.log(sumarTres(4));
+    //En caso de una función con dos parametros hacemos exactamente lo mismo:
+    const CONCATENAR_ARREGLOS = (arr1, arr2) => arr1.concat(arr2);
+    console.log(CONCATENAR_ARREGLOS([1, 2], [3, 4, 5]));
+    //.concat() es un metodo que permite unir arreglos.
+    //Si la función tiene más de una línea: borramos el function y la apertura de la llave:
+    const SUMAR = (a, b) => {
+    let num = 6;
+    return a + b + num;
+    };
+    console.log(SUMAR(1, 1));
     </code>
     </pre>
     </div>
