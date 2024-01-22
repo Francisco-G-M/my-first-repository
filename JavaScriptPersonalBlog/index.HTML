@@ -1340,6 +1340,38 @@
     //Lo que si puedes hacer es reaccinar el valor.
     </code>
     </pre>
+    <h2>Ámbito de var vs let</h2>
+    <p>Las diferencias en el ambito de las variables declaradas con var o con let son:</p>
+    <p>La variable var tiene un ámbito global,pero si esta dentro de una función sera una variable local.Pero con let las variables tienen el ámbito local restringido al bloque de código/expresión donde fue declarada/definida la variable.</p>
+    <h2>Const</h2>
+    <p>Es la tercera opción para declarar una variable,estas solo se pueden usar para acceder a su valor,su valor no se puede modificar una vez ya allá sido declarado:</p>
+    <pre>
+    <code>
+    const MI_CONSTANTE = 35;
+    /*Se escribe en mayúsculas el nombre de las const para poder distinguirlas y para que los desarrolladores sepan que no deben intentar cambiar
+    el valor de esa constante.*/
+    //Si la usaramos en una función:
+    function calcularAreaCirculo(radio) {
+    const PI = 3.14;
+    if(radio < 0) {
+    return undefined;
+    }
+    return PI*(radio**2);
+    }
+    console.log(calcularAreaCirculo(10));
+    //Usar dos ** índica que es el operador para una potencia,el número al lado de ellos sera la potencia deseada.
+    </code>
+    </pre>
+    <h2>Mutar arreglo declarado con const</h2>
+    <p>Si bien a las variables declaradas con "const" no le puedes asignar un valor nuevo,si lo puedes cambiar:</p>
+    <pre>
+    <code>
+    const MI_ARREGLO = [1, 2, 3, 4,];
+    MI_ARREGLO[0] = 5;
+    /*Lo que hacemos es cambiar los elementos del arreglo,básicamente podemos reaccinar el valor del arreglo,pero no el valor directo de la 
+    variable declarada con "const"*/
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
