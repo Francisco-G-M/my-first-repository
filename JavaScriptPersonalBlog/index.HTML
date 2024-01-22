@@ -1372,6 +1372,34 @@
     variable declarada con "const"*/
     </code>
     </pre>
+    <h2>Crear un objeto inmutable</h2>
+    <p>Para lograr que un objeto sea inmutable usaremos el metodo freeze():</p>
+    <pre>
+    <code>
+    let colores = {
+    "verde": "#10e04b",
+    "azul": "#1b50e0",
+    "negro": "#000000",
+    "blanco": "#ffffff"
+    };
+    object.freeze(colores);
+    /*object nos permite dar funcionalidades en común a todos los objetos.Pero al usar freeze,entre () aclaramos que un objeto determinado sera
+    el afectado*/
+    </code>
+    </pre>
+    <h2>Funciones flecha</h2>
+    <p>Es un tipo de función más compacta utilizada normalmente para funciones anonimas(funciones sin un nombre especifíco):</p>
+    <pre>
+    <code>
+    const fecha = function() {
+    return new date();
+    };
+    //"new date" crea un objeto con la fecha actual del sistema.
+    /*Si quisieramos transformar esta función en un tipo flecha,tendríamos que eliminar la palabra clave function,la apertura y cierre de la llave,
+    la sentencia return y escribimos el símbolo característico de las funciones flecha (=>):
+    const fecha = () => nex date();
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
