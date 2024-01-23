@@ -1447,6 +1447,30 @@
     el resultado*/
     </code>
     </pre>
+    <h2>Operador spread</h2>
+    <p>Su función es descomponer un arreglo en sus elementos individuales para que la función pueda recibirlos y asignarlos a sus parametros correspondientes:</p>
+    <pre>
+    <code>
+    const numeros = [1, 2, 3];
+    function sumar (x, y, z) {
+    retuen x + y + z;
+    }
+    console.log(sumar(...numeros));
+    //Usamos el mismo símbolo que .rest(), pero lo escribimos en la llamada a la función. 
+    </code>
+    </pre>
+    <h2>Sintaxis de desestructuración</h2>
+    <p>Permite asignar las propiedades de un objeto a variables:</p>
+    <pre>
+    <code>
+    var coordenadas = {
+    x: 4,
+    y: 6,
+    z: 12
+    }
+    const {x, y, z} = coordenadas;
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
