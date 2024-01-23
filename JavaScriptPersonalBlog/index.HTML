@@ -1471,6 +1471,39 @@
     const {x, y, z} = coordenadas;
     </code>
     </pre>
+    <h2>Sintaxis de desestructuración: objetos anidados</h2>
+    <p>Para acceder a los datos de un objeto anidado haríamos lo siguiente:</p>
+    <pre>
+    <code>
+    const usuario = {
+    joseph: {
+    edad: 30,
+    correo: "JopsephJoestar@gmail.com"
+    }
+    };
+    const {joseph: {edad: edadDelUsuario, correo: correoDelUsuario}} = usuario;
+    //Como ven, para acceder a los objetos anidados, debemos escribir otro corchete que tenga dentro el nombre de aquellos objetos.
+    /*Lo que esta escrito despues de los nombres de las porpiedades que queremos acceder son los nuevos nombres que queremos asignarles a las
+    propiedades (esto es completamente opcional).Si llegasemos a llamarlos, tendríamos que usar estos nuevos nombres*/
+    const PRONOSTICO_LOCAL = {
+    "ayer": {
+    minima: "-1",
+    maxima: 6
+    },
+    "hoy": {
+    minima: 1,
+    maxima: 4
+    },
+    "mañana" = {
+    minima: 2,
+    maxima: 10
+    }
+    };
+    const {hoy: {minima, maxima}} = PRONOSTICO_LOCAL;
+    console.log(minima, maxima);
+    //Usamos una coma y un espacio para que en una sola línea figuren los dos datos.
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
