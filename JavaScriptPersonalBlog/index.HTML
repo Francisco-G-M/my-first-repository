@@ -1421,6 +1421,32 @@
     console.log(SUMAR(1, 1));
     </code>
     </pre>
+    <h2>Valores por defecto para parámetros</h2>
+    <p>Para asignar un valor por defecto a los parámetros de una función flecha tendríamos que escribir un signo igual y el valor por defecto:</p>
+    <pre>
+    <code>
+    const INCREMENTAR = (num, valor = 1) => num + valor;
+    //En caso de que se omita el argumento valor,se asignara el valor por defecto.
+    //Este principio también se puede aplicar a las funciones normales y sus variantes,y a las anonimas.
+    </code>
+    </pre>
+    <h2>Operador rest</h2>
+    <p>Permite pasar cualquier número de argumentos a una función,y que esos argumentos se agrupen como un arreglo:</p>
+    <pre>
+    <code>
+    function miFuncion(...arrgs) {
+    console.log(arrgs);
+    }
+    miFuncion(1, 2, 3, 4); // Oh también:
+    miFuncion([1, 2, 3], [4, 5, 6]); //Oh puedes usar .length() :
+    console.log(arrgs.length);
+    const SUMAR = (...arrgs) => {
+    return arrgs.reduce((a, b) => a + b,0);
+    };
+    /*El metodo .reduce() nos permite reducir el array a un solo valor, sumando los elementos del arreglo y retornando
+    el resultado*/
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
