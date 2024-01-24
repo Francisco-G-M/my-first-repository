@@ -1641,6 +1641,32 @@
     console.log(miMascota.edad);
     </code>
     </pre>
+    <h2>Getters y Setters</h2>
+    <p>Podemos definir funciones en una clase para que al crear un objeto, este tenga todas esas funciones asociadas, existen dos funciones específicas que protegen la data del objeto.</p>
+    <h3>Getters</h3>
+    <p>Metodos que permiten obtener el valor de una propiedad privada (una propiedad que tenga un guion bajo antes de su nombre), es decir, permite acceder al valor indirectamente.</p>
+    <h3>Setters</h3>
+    <p>Función que actualiza el valor de una propiedad, utiles para verificar el valor nuevo antes de asignarlo.</p>
+    <pre>
+    <code>
+    class libro {
+    constructor(autor) {
+    this._autor = autor;
+    }
+    get autor() {
+    return this._autor;
+    }
+    set autor(nuevoAutor) {
+    this._autor = nuevoAutor;
+    }
+    }
+    const libro = new libro("anonimo");
+    console.log(libro.autor);
+    libro.autor = "Marcelo Díaz";
+    console.log(libro.autor);
+    //Solo utilizar un guion bajo no convierte la variable en privada, es simplemente una convención.
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
