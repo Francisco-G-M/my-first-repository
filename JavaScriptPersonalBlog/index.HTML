@@ -1592,6 +1592,55 @@
     console.log(`El arreglo es ${JSON.stringify(myArray)}`);
     </code>
     </pre>
+    <h2>Crear objetos de forma concisa</h2>
+    <p>Lo que haremos sera utilizar una funcion flecha, seguido de su simbolo característico escribimos un parentesis con un par de llaves que dentro tendran los mismos parametros que tiene el parentesis del principio:</p>
+    <pre>
+    <code>
+    const JOESTAR = (nombre, edad, stand) => ({nombre, edad, stand});
+    console.log(JOESTAR("Jotaro Kujo", 17, "Star Platinum"));
+    </code>
+    </pre>
+    <h2>Métodos</h2>
+    <p>Se denomina "método" a la propiedad que tenga de valor una función:</p>
+    <pre>
+    <code>
+    const PERSONAJE_FICTICIO = {
+    nombre: "Naruto Uzumaki",
+    objetivo: "Hokage",
+    presentacion() {
+    return `¡Hola! mi nombre es ${this.nombre} y sere el próximo ${this.objetivo}.`;
+    }
+    };
+    console.log(PERSONAJE_FICTICIO.presentacion());
+    //La función de "this" en JavaScript es referirce al objeto que estamos trabajando, en este caso el objeto "persona" y a su propiedad "nombre"
+    </code>
+    </pre>
+    <h2>Definir una clase</h2>
+    <p>Las "clases" nos periten crear muchos objetos con la misma extructura, propiedades y funcionalidad:</p>
+    <pre>
+    <code>
+    class TransbordadorEspacial {
+    constructor(planeta) {
+    this.planeta = planeta;
+    }
+    }
+    var zeus = new TransbordadorEspacial("Jupiter");
+    console.log(zeus.planeta);
+    /*"constructor" es la función que se va a llamar cuando asignemos a un objeto ese tipo de class."new" es la palabra clave para crear un objeto
+    como valor de una var*/ 
+    /*Las class en JavaScript siguen una convención específica que es que inician su nombre con mayúscula y también entre palabras inician
+    con mayúscula*/ 
+    class Mascota {
+    constructor(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+    }
+    }
+    var miMascota = new Mascota("Nora", 5);
+    console.log(miMascota.nombre);
+    console.log(miMascota.edad);
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
