@@ -1521,6 +1521,77 @@
     console.log("y: " + y);
     </code>
     </pre>
+    <h2>Sintaxis de desestructuración con el operador rest</h2>
+    <p>Permite reaccinar un arreglo en varias variables:</p>
+    <pre>
+    <code>
+    var a;
+    var b;
+    var arr;
+    [a, b, ...arr] = [1, 2, 3, 4, 5, 6, 7];
+    console.log(a);
+    console.log(b);
+    console.log(arr);
+    //En caso de que quisieramos remover los tres primeros elementos de un arreglo:
+    const arregloInicial = [1, 2, 3, 4, 5, 6, 7, 8];
+    function removerTresPrimerosElementos(arreglo) {
+    const [,,, ...nuevoArreglo] = arreglo;
+    return nuevoArreglo;
+    }
+    const arregloFinal = removerTresPrimerosElementos(arregloInicial);
+    console.log(arregloFinal);
+    </code>
+    </pre>
+    <h2>Sintaxis de desestructuración: pasar objeto como argumento</h2>
+    <p>Para pasar un objeto como argumento primero identificamos que propiedades vamos a necesitar en la función y escribirlas entrre llaves en el primer parametro, asignandoce esos valores a variables, que podemos trabajar en la función:</p>
+    <pre>
+    <code>
+    var nuevoPerfilCliente = {
+    nombre: "Jon Doe",
+    edad: 24,
+    nacionalidad: "Española",
+    ubicacion: "España"
+    };
+    const actualizarPerfil = ({nombre, edad, nacionalidad, ubicacion}) => {
+    console.log(nombre);
+    console.log(edad);
+    console.log(nacionalidad);
+    console.log(ubicacion);
+    };
+    actualizarPerfil(nuevoPerfilCliente);
+    //Otro ejemplo:
+    const estadisticas = {
+    max: 56.78,
+    min: -0.75
+    };
+    const mitad = ({max, min}) => (max + min) /2.0;
+    console.log(mitad(estadisticas));
+    </code>
+    </pre>
+    <h2>Plantillas literales</h2>
+    <p>Es un tipo de cadena de caracteres que permite crear cadenas con varias líneas y reemplazar los valores de las variables que querramos, algunas de sus características son:</p>
+    <ul>
+    <li>Utiliza el acento invertido `` en vez de comillas.</li>
+    <li>Puede usar tanto comillas simples como dobles.</li>
+    <li>Las líneas de código se preservan.</li>
+    <li>En caso de reemplazar una variable se escribe: ${variable}</li>
+    <li>Puede escribir expresiones dentro de ${}</li>
+    </ul>
+    <pre>
+    <code>
+    var nombre = "Diego";
+    var edad = 8;
+    console.log(`Mi nombre es ${nombre} y tengo ${edad} años.`);
+    var persona = {
+    nombre: "Mario Fernandes",
+    edad 40
+    };
+    const SALUDO = `¡Hola! Mi nombre es ${persona.nombre} y tengo ${persona.edad} años.`;
+    console.log(SALUDO);
+    var myArray = [1, 2, 3, 4];
+    console.log(`El arreglo es ${JSON.stringify(myArray)}`);
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
