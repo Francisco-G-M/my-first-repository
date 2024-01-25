@@ -1667,6 +1667,34 @@
     //Solo utilizar un guion bajo no convierte la variable en privada, es simplemente una convención.
     </code>
     </pre>
+    <h2>Exportación para compartir bloques de código</h2>
+    <p>En caso de que quisieramos utilizar funciones almacenadas en un archivo, tendriamos que exportalas, para ello utilizaremos la palabra clave "export" y la variable donde estan almacenadas estas funciones:</p>
+    <pre>
+    <code>
+    export const add = (x, y) => {
+    return x + y;
+    }
+    //Otra forma sería:
+    const add = (x, y) => {
+    return x + y;
+    }
+    export {add};
+    /*Puedes exportar varias funciones utilizando la exportación antes del tipo de variable(ejemplo) o poniendolas todas en la declaración de
+    exportación(ejemplo 2):*/
+    export {add, otherString};
+    </code>
+    </pre>
+    <h2>Reutilización de código mediante importación</h2>
+    <p>Este nos permite elegir las partes del archivo/modulo que queremos cargar:</p>
+    <pre>
+    <code>
+    import {add} from './string_functions.js'
+    /* ./ es la ruta relativa del archivo, índica a la importación que busque el archivo string_functions.js en la misma carpeta
+    que el archivo actual*/ 
+    // .js es la extensión del archivo
+    //import encuentra add en string_functions.js, solo importa esta función.
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
