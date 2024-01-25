@@ -1738,6 +1738,24 @@
     const stringPromise = new Promise((resolve, reject) => {});
     </code>
     </pre>
+    <h2>Completar una promise con resolve y reject</h2>
+    <p>En las promesas los parametros "resolve" y "reject" se usan para completar la promesa, "resolve" es si queremos que se complete con exito, y "reject" si queremos que falle, ambos toman un argumento:</p>
+    <pre>
+    <code>
+    const makeServerRequest = new Promise((resolve, reject) => {
+    let responseFromServer;
+    if(responseFromServer) {
+    resolve("We got the data");
+    } else {
+    reject("Data not received");
+    }
+    });
+    /*Las promesas tienen tres estados:
+    Pending: sucede cunado no agregamos una forma de completar la promesa, quedando en un estado inicial, es decir, no fue ni cumplida ni rechazada.
+    Fulfilled: significa que la promesa se completo con éxito.
+    Rejected: significa que la promesa falló. 
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
