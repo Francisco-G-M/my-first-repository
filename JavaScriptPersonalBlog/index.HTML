@@ -1688,21 +1688,21 @@
     <p>Este nos permite elegir las partes del archivo/modulo que queremos cargar:</p>
     <pre>
     <code>
-    import {add} from './string_functions.js'
-    /* ./ es la ruta relativa del archivo, índica a la importación que busque el archivo string_functions.js en la misma carpeta
+    import {add} from './string_functions.JS'
+    /* ./ es la ruta relativa del archivo, índica a la importación que busque el archivo string_functions.JS en la misma carpeta
     que el archivo actual*/ 
-    // .js es la extensión del archivo
-    //import encuentra add en string_functions.js, solo importa esta función.
+    // .JS es la extensión del archivo
+    //import encuentra add en string_functions.JS, solo importa esta función.
     </code>
     </pre>
     <h2>Utilizar * para importar todo desde un archivo</h2>
     <p>En el caso de que queramos importar todo el contenido de un archivo a otro utilizaremos la sintaxis "import * as":</p>
     <pre>
     <code>
-    import * as myModule from "./math_functions.js";
+    import * as myModule from "./math_functions.JS";
     //Si utilizaramos este tipo de sintaxis, el nombre del archivo va entre comillasdobles.
     /*La declaración import crea un objeto llamado myModule (solo es el nombre de una variable), este contendrá todas las exportaciones que tiene 
-    math_functions.js, si quisieramos utilizar alguna/s funciones que importamos haríamos así:*/
+    math_functions.JS, si quisieramos utilizar alguna/s funciones que importamos haríamos así:*/
     myModule.add(2, 3);
     myModule.subtract(5, 3);
     //Recordemos que estamos usando funciones que tienen operaciones matemáticas, por eso los números.
@@ -1721,6 +1721,21 @@
     }
     /*Esta sintaxis solo se utiliza para declarar un valor alternativo para un archivo/modulo, por ende, solo puede tener un valor como exportación
     predeterminada en cada archivo/modulo.También la "export default" no se puede utilizar con let,const o var*/
+    </code>
+    </pre>
+    <h2>Imortar la exportación predeterminada</h2>
+    <p>En caso de que quisieramos importar una exportación predeterminada utilizariamos una import sintaxis que no encierra entre llaves el valor importado:</p>
+    <pre>
+    <code>
+    import string from "./math.functions.JS";
+    //string es simplemente un nombre de variable para culaquiera que sea la exportación predeterminada del archivo math.functions.JS
+    </code>
+    </pre>
+    <h2>Crear un promesa de J.S</h2>
+    <P>La función constructora "promise" toma como argumento una función, con dos parámetros: "resolve" y "reject", estos metodos se utilizan para determinar el resultado de la promesa.Su función es hacer una promesa para hacer algo, normalmente de forma asincrónica, su sintaxis es:</P>
+    <pre> 
+    <code>
+    const stringPromise = new Promise((resolve, reject) => {});
     </code>
     </pre>
     </div>
