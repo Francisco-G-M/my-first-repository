@@ -1695,6 +1695,34 @@
     //import encuentra add en string_functions.js, solo importa esta función.
     </code>
     </pre>
+    <h2>Utilizar * para importar todo desde un archivo</h2>
+    <p>En el caso de que queramos importar todo el contenido de un archivo a otro utilizaremos la sintaxis "import * as":</p>
+    <pre>
+    <code>
+    import * as myModule from "./math_functions.js";
+    //Si utilizaramos este tipo de sintaxis, el nombre del archivo va entre comillasdobles.
+    /*La declaración import crea un objeto llamado myModule (solo es el nombre de una variable), este contendrá todas las exportaciones que tiene 
+    math_functions.js, si quisieramos utilizar alguna/s funciones que importamos haríamos así:*/
+    myModule.add(2, 3);
+    myModule.subtract(5, 3);
+    //Recordemos que estamos usando funciones que tienen operaciones matemáticas, por eso los números.
+    </code>
+    </pre>
+    <h2>Respaldo de exportación con el valor predeterminado de expostación</h2>
+    <p>La sintaxis "export default" nos permite exportar un valor de un archivo(siendo esta comúnmente su función):</p>
+    <pre> 
+    <code>
+    export default function string(a, b) {
+    return a : b;
+    }
+    //Oh también se puede usar con funciones anonimas:
+    export default function(a, b) {
+    return a : b;
+    }
+    /*Esta sintaxis solo se utiliza para declarar un valor alternativo para un archivo/modulo, por ende, solo puede tener un valor como exportación
+    predeterminada en cada archivo/modulo.También la "export default" no se puede utilizar con let,const o var*/
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
