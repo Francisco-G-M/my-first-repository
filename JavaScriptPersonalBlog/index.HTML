@@ -9,10 +9,11 @@
 <body>
     <header>
         <h1>JavaScriptPersonalBlog</h1>
-        <div id="barra-nav">
-            <a href="#basic-javascript" class="enlace-barra-nav">BasicJavaScript</a>
+        <nav id="barra-nav">
+            <a href="#basic-javascript" class="enlace-barra-nav">JavaScript básico</a>
             <a href="#ES6" class="enlace-barra-nav">ES6</a>
-        </div>
+            <a href="#regular-Expressions" class="enlace-barra-nav">Expresiones regulares</a>
+        </nav>
     </header>
     <main>
         <h2>¿Qué es JavaScript?</h2>
@@ -1767,13 +1768,42 @@
     </code>
     </pre>
     <h2>Manejo de la "promise" rechazada con "catch"</h2>
-    <p>El método "catch" se usa si su "promise" fue rechazada, se ejecuta después de llamar al método "reject" de la promesa:</p>
+    <p>El método "catch" se usa si su "promise" fue rechazada,se ejecuta después de llamar al método "reject" de la promesa:</p>
     <pre> 
     <code>
     makeServerRequest.cath(error => {
     console.log(error);
     });
-    //Dato extra: no borramos el "makeServerRequest.then", simplemente agregamos debajo de el la verción con el método "catch"
+    //Dato extra: no borramos el "makeServerRequest.then",simplemente agregamos debajo de el la verción con el método "catch"
+    </code>
+    </pre>
+    </div>
+    <div id="regular-Expressions">
+    <h2>¿Qué son las expresiones regulares?</h2>
+    <p>Las expresiones regulares (también conocidas como "regrex" o "regexp") son patrones que ayudan a los programadores a hacer coincidir conjuntos de caracteres con cadenas.Si bien estas expresiones tienen mucho poder,pueden resultar dificiles de leer debido al uso de caracteres especiales para hacer las coincidencias más flexibles y complejas.</p>
+    <h2>Método .test()</h2>
+    <p>En los lenguajes de programación las expresiones regulares se usan para hacer coincidir partes de cadenas,es decir,crea patrones que nos ayudan a hacer esa combinación:</p>
+    <pre>
+    <code>
+    //ejemplo de expresiones regulares:
+    let firstString = "Hi people";
+    let otherSttring = /Hi/;
+    //La expresión regular es /Hi/ esta no va con ningún tipo de comillas dentro.
+    //Una manera de probar una expresión regular es usando el método .test(),este toma la expresión regular,la aplica a una cadena
+    (que va dentro del parentesis) y devuelve "true" o "false" si su patron encuentra algo o no:
+    let result = otherString.test(firstString);
+    /*Oh también podemos escribir el .test() sin asignarlo a una variable,la diferencia es que al asignarlo a una variable podemos llamarlo con
+    console.log(); y que nos devuelva y figure en la consola su valor booleano*/
+    </code>
+    </pre>
+    <h2>Coincidir cadenas literales</h2>
+    <p>Cuando hablamos de hacer coincidir cadenas literales nos referimos a que la expresión regular busque una coincidencia literal con la cadena:</p>
+    <pre>
+    <code>
+    var saludo = "Hola";
+    var extraer = /Hola/;
+    let final = extraer.test(saludo);
+    /*Aquí hay un acoincidencia literal,pero si la expresión regular se escribiera diferente que la cadena original haría .test() devolviera false*/
     </code>
     </pre>
     </div>
