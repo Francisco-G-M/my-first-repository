@@ -1844,6 +1844,15 @@
     let extract = /hi/gi;
     </code>
     </pre>
+    <h2>Hacer coincidir cualquier cosa con Wilcard Period</h2>
+    <p>En el caso de que no conozcamos o no necesitaramos los caracteres exactos de nuestros patrones,podemos usar el caracter comodín: " . ",el cuál hara coincidir con cualquier caracter a nuestra expresión regular:</p>
+    <pre>
+    <code>
+    let string = "Hi,this is my first day in this job";
+    var extract = /th./;
+    const result = extract.test(string);
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
