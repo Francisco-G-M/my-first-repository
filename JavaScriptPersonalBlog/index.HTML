@@ -1806,6 +1806,44 @@
     /*Aquí hay un acoincidencia literal,pero si la expresión regular se escribiera diferente que la cadena original haría .test() devolviera false*/
     </code>
     </pre>
+    <h2>Hacer coindir una cadena literal con diferentes posibilidades</h2>
+    <p>En caso de que quisieramos múltiples patrones de posibilidades utilizamos el operador "alternation"(que usa la barra | y la expresión regular).</p>
+    <pre>
+    <code>
+    let name = "My name is Joseph";
+    var result = /Jotaro|Joseph|Kujo|Jolyne/;
+    </code>
+    </pre>
+    <h2>Ignorar mayúsculas y minúsculas al hacer coincir</h2>
+    <p>En caso de que quisieramos hacer coincidir expresiones regulares que pueden tener mayúsculas o minúsculas que tienen o no las cadenas originales,podemos hacerlos coincidir usando una "bandera",en este caso la "bandera" "i":</p>
+    <pre>
+    <code>
+    let fullName = "Star Platinum";
+    var serchStand = /Star Platinum/i;
+    </code>
+    </pre>
+    <h2>Método .match()</h2>
+    <p>Con el .match() podemos extraer coincidencias reales:</p>
+    <pre>
+    <code>
+    let extraer = "Extraer la palabra codigo";
+    let extracto = /codigo/;
+    const resultado = extraer.match(extracto);
+    /*Dato extra: tanto aquí como en ejemplos anteriores le estamos asignando el valor de la cuerda "codigo" a la variable "resultado".
+    Esto es opcional como ya hemos visto*/ 
+    </code>
+    </pre>
+    <h2>Encontrar más de una vez un patrón</h2>
+    <p>Con el indicador de búsqueda global "g" (estos indicadores son las "banderas) podemos extraer/buscar más de una vez un patrón:</p>
+    <pre>
+    <code>
+    let string = "hi, hi, hi";
+    let extract = /hi/g;
+    string.match(extract);
+    //También podemos usar más de un indicador de búsqueda global en una expresión regular:
+    let extract = /hi/gi;
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
