@@ -1756,6 +1756,26 @@
     Rejected: significa que la promesa falló. 
     </code>
     </pre>
+    <h2>Manejar un a "promise" cumplida con "then"</h2>
+    <p>El método "then" programa funciones de devolución de llamada para la finalización de la "promise", independientemente de si cumplio o no.Esto dependiendo que controlador se llama(onFulfilled o onRejected):</p>
+    <pre> 
+    <code>
+    makeServerRequest.then(result => {
+    console.log(result);
+    });
+    //Aquí "result" es el controlador de onFulfilled, ya que "result" proviene del argumento dado al método "resolve"
+    </code>
+    </pre>
+    <h2>Manejo de la "promise" rechazada con "catch"</h2>
+    <p>El método "catch" se usa si su "promise" fue rechazada, se ejecuta después de llamar al método "reject" de la promesa:</p>
+    <pre> 
+    <code>
+    makeServerRequest.cath(error => {
+    console.log(error);
+    });
+    //Dato extra: no borramos el "makeServerRequest.then", simplemente agregamos debajo de el la verción con el método "catch"
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
