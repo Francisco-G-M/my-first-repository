@@ -1919,6 +1919,26 @@
     //La primera llamada nos devuelve: [Ooooo],la segunda: [O] y la tercera: null
     </code>
     </pre>
+    <h2>Encontrar caracteres con coincidencia diferida</h2>
+    <p>La coincidencia diferida encuentra la parte más pequeña posible en el menor tiempo dentro de la cadena,para lograr esto utilizamos el ? en la expresión regular:</p>
+    <pre>
+    <code>
+    let estación = "&lth1&gtWinter&lt/h1&gt";
+    var buscar = /&lt.*?&gt/;
+    let busqueda = estacion.match(busqueda);
+    /* &lt &gt son los delimitadores de la expresión &lth1&gt.El ? indica una coincidencia diferida que buscara en el menor tiempo posible la parte más
+    pequeña(&lth1&gt),sin el ? devolvería toda la oración*/
+    </code>
+    </pre>
+    <h2>Coincidir con patrones de cuerdas iniciales</h2>
+    <p>En caso de que quisieramos buscar patrones en posiciones especificas en una cadena,debemos usar el caracter de intercalación ^ (en este caso no habra corchetes,si hubieran se confundiría con el caracter juegos de caracteres negados):</p>
+    <pre>
+    <code>
+    let presentacion = "Mi nombre es Bob";
+    let regresarMi = /^Mi/;
+    var elemento = regresarMi.test(presentacion);
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
