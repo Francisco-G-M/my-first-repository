@@ -1876,6 +1876,23 @@
     string3.match(extract);
     </code>
     </pre>
+    <h2>Unir letras del alfabeto con numeros</h2>
+    <p>También podemos indicar un rango de números: /[0-9]/ o uno con letras y números:</p>
+    <pre>
+    <code>
+    let usuario = "Jonny2407za";
+    var rango = /[a-z0-7]/ig;
+    let resultado = usuario.match(rango);
+    </code>
+    </pre>
+    <h2>Coincidir caracteres individuales no especificados</h2>
+    <p>Los "juegos de caracteres individuales negados" son un conjunto de caracteres que creamos porque no queremos que coincidan,para ello utilizamos un carácter de intercalación ^ :</p>
+    <pre>
+    <code>
+    let producto = "Cuesta 3 pesos";
+    var extraer = /[^0-9aeion]/;
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
