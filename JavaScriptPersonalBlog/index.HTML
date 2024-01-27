@@ -1893,6 +1893,32 @@
     var extraer = /[^0-9aeion]/;
     </code>
     </pre>
+    <h2>Emparejar caracteres que aparecen una o más veces</h2>
+    <p>Si queremos comprobar que un caracter/grupo de estos aparece una o más veces seguidas,debemos usar el caracter "+" en la expresión regular:</p>
+    <pre> 
+    <code>
+    let rioFamoso = "Mississippi";
+    var expresionRegular = /s+/;
+    let extraer = rioFamoso.match(expresionRegular);
+    </code>
+    </pre>
+    <h2>Unir caracteres que aparecen cero o más veces</h2>
+    <p>En caso de que quisieramos hacer coincidir caracteres que aparecen cero o más veces,debemos usar el * en la expresión regular:</p>
+    <pre>
+    <code>
+    let a = "Oooooh shit";
+    let b = "Okey man";
+    let c = "who?";
+    let extract = /Oo*/;
+    let final1 = a.match(extract);
+    let final2 = b.match(extract);
+    let final3 = c.match(extract);
+    console.log(final1);
+    console.log(final2);
+    console.log(final3);
+    //La primera llamada nos devuelve: [Ooooo],la segunda: [O] y la tercera: null
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
