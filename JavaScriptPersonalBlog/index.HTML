@@ -1981,8 +1981,18 @@
     <code>
     let movie = "2012: el final";
     let movieYear = /\d/g;
-    var extract = movie.match(movieYear.length);
+    var extract = movie.match(movieYear).length;
     //Calcula la cantidad de números en la var movies,en este caso devuelve 4 porque: calcula una longitud de 4 digitos
+    </code>
+    </pre>
+    <h2>Coincidir con todos los caracteres no númericos</h2>
+    <p>Si queremos buscar palabras en la cadena,podemos usar el atajo "\D" en la expresión regular,es lo mismo que escribir [^0-9]:</p>
+    <pre>
+    <code>
+    let artist = "Wolty";
+    let count = /\D/g;
+    var final = artist.match(count).length;
+    //Este atajo también cuenta simbolos y espacios,en este caso devuelve 5
     </code>
     </pre>
     </div>
