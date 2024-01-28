@@ -1963,6 +1963,28 @@
     //Todas las test regresan true
     </code>
     </pre>
+    <h2>Combinar todo excepto letras y números</h2>
+    <p>Si quisieramos todo tipo de caracteres excepto letras y números tendríamoss que usar la clase de caracteres abreviados "\W",parecida a "\w":</p>
+    <pre> 
+    <code>
+    let shortString = /\W/;
+    var porcentaje = "10%";
+    var rareza = "baja!";
+    let extraer1 = porcentaje.match(shortString);
+    let extraer2 = rareza.match(shortString);
+    //El primer match devuelve ["%"] y el segundo ["!"]
+    </code>
+    </pre>
+    <h2>Coincidir con todos los caracteres numéricos</h2>
+    <p>Si lo que queremos es solo buscar digitos/números tenemos que usar el atajo de caracteres númericos "\d",que es lo mismo que escribir [0-9]:</p>
+    <pre>
+    <code>
+    let movie = "2012: el final";
+    let movieYear = /\d/g;
+    var extract = movie.match(movieYear.length);
+    //Calcula la cantidad de números en la var movies,en este caso devuelve 4 porque: calcula una longitud de 4 digitos
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
