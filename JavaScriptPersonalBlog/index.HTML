@@ -1939,6 +1939,30 @@
     var elemento = regresarMi.test(presentacion);
     </code>
     </pre>
+    <h2>Hacer  coincidir patrones de cuerdas finales</h2>
+    <p>Si queremos buscar patrones al final de las cadenas,usamos el signo "$" al final de la expresión regular:</p>
+    <pre>
+    <code>
+    let accidente = "Choque mi auto en plena ruta";
+    let lugar = /ruta$/;
+    var testeo = lugar.test(accidente);
+    </code>
+    </pre>
+    <h2>Unir todas las letras y números</h2>
+    <p>La clase de caracteres "\w" coincide con letras mayúsculas y minúsculas más números(también incluye el carácter de subrayado " _ ")</p>
+    <pre>
+    <code>
+    let longString = /[A-Za-z0-9]/;
+    let shortString = /\w+/;
+    var aleatoryNumber = 100;
+    var aleatoryCharacter = "guion_bajo";
+    longString.test(aleatoryNumber);
+    shortString.test(aleatoryNumber);
+    longString.test(aleatoryCharacter);
+    shortString.test(aleatoryCharacter);
+    //Todas las test regresan true
+    </code>
+    </pre>
     </div>
     </main>
     <footer>
