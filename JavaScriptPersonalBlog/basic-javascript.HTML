@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.CSS">
     <title>JavaScriptPersonalBlog</title>
 </head>
+
 <body>
     <header>
         <h1 class="titulo">JavaScriptPersonalBlog</h1>
         <nav id="barra-nav">
-            <a href="#ES6" class="enlace-barra-nav">ES6</a>
+            <a href="ECMAScript-6.HTML" class="enlace-barra-nav">ES6</a>
             <a href="regular-Expresions.HTML" class="enlace-barra-nav">Expresiones regulares</a>
         </nav>
     </header>
@@ -18,19 +20,22 @@
         <h2>¿Qué es JavaScript?</h2>
         <div class="principio">
             <img src="https://cdn.pixabay.com/photo/2015/04/23/17/41/javascript-736400_1280.png" alt="JavaScript-logo">
-            <p>Es un lenguaje de programación utilizado para volver más interactiva a una página web.En el encontraras herramientas como: funciones,variables,objetos,arreglos,sentencias,ciclos,etc.</p>
-            </div>
-            <div id="basic-javascript">
-    <h2>Comentarios</h2>
-    <p>Son parte del código que se ignora(que no figura en la consola),sirve para comentar el código.Básicamente cumple una función tipo notas que dejamos en nuestro código para explicar alguna parte de nuestro código,marcar alguna expresión,agregar datos extra,etc.Existen dos tipos de comentarios,e.j:</p>
-    <h3>Comentario de una línea:</h3>
-    <pre>
+            <p>Es un lenguaje de programación utilizado para volver más interactiva a una página web.En el encontraras
+                herramientas como: funciones,variables,objetos,arreglos,sentencias,ciclos,etc.</p>
+        </div>
+        <div id="basic-javascript">
+            <h2>Comentarios</h2>
+            <p>Son parte del código que se ignora(que no figura en la consola),sirve para comentar el código.Básicamente
+                cumple una función tipo notas que dejamos en nuestro código para explicar alguna parte de nuestro
+                código,marcar alguna expresión,agregar datos extra,etc.Existen dos tipos de comentarios,e.j:</p>
+            <h3>Comentario de una línea:</h3>
+            <pre>
     <code>
     //esto es un comentario.
     </code>
     </pre>
-    <h3>Comentario de varias líneas:</h3>
-    <pre>
+            <h3>Comentario de varias líneas:</h3>
+            <pre>
     <code>
     /*esto
     es
@@ -38,9 +43,10 @@
     comentario.*/
     </code>
     </pre>
-    <h2>Variables</h2>
-    <p>Las variables crean un espacio en la memoria del dispositivo para que guardemos un valor específico en ese lugar de memoria,e.j:</p>
-    <pre>
+            <h2>Variables</h2>
+            <p>Las variables crean un espacio en la memoria del dispositivo para que guardemos un valor específico en
+                ese lugar de memoria,e.j:</p>
+            <pre>
     <code>
     var miVariable = "hi";
     console.log(miVariable);
@@ -48,9 +54,9 @@
     miVariable = 16;
     </code>
     </pre>s
-    <h2>Asignar el valor de una var a otra var</h2>
-    <p>Para poder asignarle el valor de una var a otra var hariamos así :</p>
-    <pre>
+            <h2>Asignar el valor de una var a otra var</h2>
+            <p>Para poder asignarle el valor de una var a otra var hariamos así :</p>
+            <pre>
     <code>
     var a = 5;
     var b = a;
@@ -60,96 +66,98 @@
     b = a; //esto resulta más práctico.
     </code>
     </pre>
-    <h2>Inicializar variables</h2>
-    <p>Básicamente,cuando le asignas un valor a la var,la estas inicializando,e.j: </p>
-    <pre>
+            <h2>Inicializar variables</h2>
+            <p>Básicamente,cuando le asignas un valor a la var,la estas inicializando,e.j: </p>
+            <pre>
     <code>
     var x = 9;
     var miIdioma = "Español";
     </code>
     </pre>
-    <h2>Variables no inicializadas</h2>
-    <p>Se refiere a una variable que no tiene un valor asignado,e.j:</p>
-    <pre>
+            <h2>Variables no inicializadas</h2>
+            <p>Se refiere a una variable que no tiene un valor asignado,e.j:</p>
+            <pre>
     <code>
     var a;
     </code>
     </pre>
-    <h2>Mayúsculas y miúsculas</h2>
-    <p>Al ser JavaScript un lenguaje "sencible" con las mayúsculas y minúsculas,no podemos escribir diferente el nombre de la variable al momento de llamarla,e.j:</p>
-    <pre>
+            <h2>Mayúsculas y miúsculas</h2>
+            <p>Al ser JavaScript un lenguaje "sencible" con las mayúsculas y minúsculas,no podemos escribir diferente el
+                nombre de la variable al momento de llamarla,e.j:</p>
+            <pre>
     <code>
     var miVariable = 5;
     console.log(MIVARIABLE)
     </code>
     </pre>
-    <h2>Suma,resta,multiplicación y división</h2>
-    <p>Para sumar en J.S es muy simple,e.j:</p>
-    <pre>
+            <h2>Suma,resta,multiplicación y división</h2>
+            <p>Para sumar en J.S es muy simple,e.j:</p>
+            <pre>
     <code>
     var suma = 7 + 12;var suma = 7 + 12;
     </code>
     </pre>
-    <p>Para la resta,multiplicación y división es básicamente lo mismo,e.j: var resta = 15 - 5; var producto = 5*3; var cociente = 20/2;</p>
-    <p>Un dato a destacar es que si divides entre Cero te figurara Infinity en la consola.</p>
-    <h2>Números decimales en J.S</h2>
-    <p>En J.S al escribir números decimales usamos un punto para separar la parte decimal de la entera,e.j:</p>
-    <pre>
+            <p>Para la resta,multiplicación y división es básicamente lo mismo,e.j: var resta = 15 - 5; var producto =
+                5*3; var cociente = 20/2;</p>
+            <p>Un dato a destacar es que si divides entre Cero te figurara Infinity en la consola.</p>
+            <h2>Números decimales en J.S</h2>
+            <p>En J.S al escribir números decimales usamos un punto para separar la parte decimal de la entera,e.j:</p>
+            <pre>
     <code>
     var cuentaTotal = 23.4;
     </code>
     </pre>
-    <h2>multiplicar y dividir números decimales</h2>
-    <p>Es lo mismo que cuando lo hacemos con números enteros.e.j:</p>
-    <pre>
+            <h2>multiplicar y dividir números decimales</h2>
+            <p>Es lo mismo que cuando lo hacemos con números enteros.e.j:</p>
+            <pre>
     <code>
     var producto = 3.4*10.4;
     var cociente = 5.0/2.0;
     </code>
     </pre>
-    <h2>Resto de una división</h2>
-    <p>Para calcular el resto de una división usamos el signo " % " ,e.j:</p>
-    <pre>
+            <h2>Resto de una división</h2>
+            <p>Para calcular el resto de una división usamos el signo " % " ,e.j:</p>
+            <pre>
     <code>
     var resto = 15 % 5;
     </code>
     </pre>
-    <h2>Incrementar el valor de una variable</h2>
-    <p>Para incrementar el valor de una variable hay dos maneras : </p>
-    <h3>Opción 1:</h3>
-    <pre>
+            <h2>Incrementar el valor de una variable</h2>
+            <p>Para incrementar el valor de una variable hay dos maneras : </p>
+            <h3>Opción 1:</h3>
+            <pre>
     <code>
     var incrementar = 1;
     incrementar + 1;
     </code>
     </pre>
-    <h3>Opción 2:</h3>
-    <p>Esta opción solo funciona para incrementar el valor en 1:</p>
-    <pre>
+            <h3>Opción 2:</h3>
+            <p>Esta opción solo funciona para incrementar el valor en 1:</p>
+            <pre>
     <code>
     incrementar++;
     </code>
     </pre>
-    <h2>Reducir el valor de una variable</h2>
-    <p>Para reducir el valor de una variable hay dos maneras:</p>
-    <h3>Opción 1:</h3>
-    <pre>
+            <h2>Reducir el valor de una variable</h2>
+            <p>Para reducir el valor de una variable hay dos maneras:</p>
+            <h3>Opción 1:</h3>
+            <pre>
     <code>
     var numeroDeEstudiantes = 100;
     numeroDeEstudiantes = numeroDeEstudiantes - 1;
     </code>
     </pre>
-    <h3>Opción 2:</h3>
-    <p>Otra forma más práctica sería :</p>
-    <pre>
+            <h3>Opción 2:</h3>
+            <p>Otra forma más práctica sería :</p>
+            <pre>
     <code>
     numeroDeEstudiantes --;
     //Pero esta opción solo sirve para reducir de a uno.
     </code>
     </pre>
-    <h2>Asignación de suma,resta,multiplicación y división</h2>
-    <p>Sirve para incrementar los valores en más de uno,e.j:</p>
-    <pre>
+            <h2>Asignación de suma,resta,multiplicación y división</h2>
+            <p>Sirve para incrementar los valores en más de uno,e.j:</p>
+            <pre>
     <code>
     var a = 10;
     a = a + 5;
@@ -158,8 +166,8 @@
     a = a / 5;
     </code>
     </pre>
-    <h3>Otra forma más práctica sería</h3>
-    <pre>
+            <h3>Otra forma más práctica sería</h3>
+            <pre>
     <code>
     a += 5;
     a -= 5;
@@ -167,60 +175,61 @@
     a /= 5;
     </code>
     </pre>
-    <h2>Variables con cadenas de caracteres</h2>
-    <p>Estas se usan para representar textos en el código,e.j:</p>
-    <pre>
+            <h2>Variables con cadenas de caracteres</h2>
+            <p>Estas se usan para representar textos en el código,e.j:</p>
+            <pre>
     <code>
     var nombre = "Alan";
     /*Las cadenas de caracteres se rodean con comillas dobles o simples.
     Lo que si no podemos hacer es empezar la cadena con un tipo de comillas y terminarla con otro tipo.*/
     </code>
     </pre>
-    <h2>Escapar comillas en cadenas de caracteres</h2>
-    <p>Sirve para "escapar" comillas en cadenas,básicamente omitirla,e.j:</p>
-    <pre>
+            <h2>Escapar comillas en cadenas de caracteres</h2>
+            <p>Sirve para "escapar" comillas en cadenas,básicamente omitirla,e.j:</p>
+            <pre>
     <code>
     var myString = "Escapar\"comillas dobles"";
     //En este caso la barra " \ " sirve para escapar las comillas dobles,el resultado: Escapar "comillas dobles".
     </code>
     </pre>
-    <h2>Cadenas de caracteres con comillas simples</h2>
-    <p>Podemos usar comillas dobles dentro de comillas simple y viceversa,e.j:</p>
-    <pre>
+            <h2>Cadenas de caracteres con comillas simples</h2>
+            <p>Podemos usar comillas dobles dentro de comillas simple y viceversa,e.j:</p>
+            <pre>
     <code>
     var miMeta; miMeta = 'Aprender a programar con "JavaScript"';
     //Si usas '' por afuera podes usar "" por dentro y viceversa.
     </code>
     </pre>
-    <h2>Secuencias de escape</h2>
-    <p>Son una combinación de de caracteres que no se representan a sí mismos en una cadena de caracteres:</p>
-    <h3>Tipos de secuencias de escape</h3>
-    <p>Comilla simple( \' ),Comilla doble( \" ),Barra invertida( \\ ),Nueva línea( \n ),Retorno de carro( \r ),Tabulación( \t ),Retroceso( \b ) y Salto de página( \f ).e.j:</p>
-    <pre>
+            <h2>Secuencias de escape</h2>
+            <p>Son una combinación de de caracteres que no se representan a sí mismos en una cadena de caracteres:</p>
+            <h3>Tipos de secuencias de escape</h3>
+            <p>Comilla simple( \' ),Comilla doble( \" ),Barra invertida( \\ ),Nueva línea( \n ),Retorno de carro( \r
+                ),Tabulación( \t ),Retroceso( \b ) y Salto de página( \f ).e.j:</p>
+            <pre>
     <code>
     console.log("Estoy aprendiendo\"JavaScript"");
     //O también:
     console.log("Estoy aprendiendo:\n JavaScript");
     </code>
     </pre>
-    <h2>Concatenar cadenas de caracteres</h2>
-    <p>Para poder unir cadenas de caracteres debemos usar el signo + ,e.j:</p>
-    <pre>
+            <h2>Concatenar cadenas de caracteres</h2>
+            <p>Para poder unir cadenas de caracteres debemos usar el signo + ,e.j:</p>
+            <pre>
     <code>
     var nombreCompleto = "Alan" + " "  + "Turing";
     </code>
     </pre>
-    <p>Las comillas vacias son para que entre el nombre y el apellido tenga un espacio que los distinga.</p>
-    <h3>Otra forma sería</h3>
-    <pre>
+            <p>Las comillas vacias son para que entre el nombre y el apellido tenga un espacio que los distinga.</p>
+            <h3>Otra forma sería</h3>
+            <pre>
     <code>
     var nombreCompleto = "Alan" + "Turing";
     //Aquí los dos nombres figuraran juntos.
     </code>
     </pre>
-    <h2>Construir cadenas de caracteres con variables</h2>
-    <p>También se pueden construir cadenas de caracteres con variables,e.j:</p>
-    <pre>
+            <h2>Construir cadenas de caracteres con variables</h2>
+            <p>También se pueden construir cadenas de caracteres con variables,e.j:</p>
+            <pre>
     <code>
     var verbo = "programar";
     var mensaje = "Estoy aprendiendo a " + verbo;
@@ -229,9 +238,10 @@
     Puedes concatenar todas las cadenas que quieras.*/
     </code>
     </pre>
-    <h2>Agregar variables a cadenas de caracteres</h2>
-    <p>El procedimiento de agregar variables a cadenas de caracteres es muy simple,mira el siguiente ejemplo:</p>
-    <pre>
+            <h2>Agregar variables a cadenas de caracteres</h2>
+            <p>El procedimiento de agregar variables a cadenas de caracteres es muy simple,mira el siguiente ejemplo:
+            </p>
+            <pre>
     <code>
     var mensajeCompleto = "Estoy aprendiendo a programar";
     var parteFinal = "con JavaScript"
@@ -240,70 +250,73 @@
     concatenar.Entre ellos el signo +=*/
     </code>
     </pre>
-    <h2>Longitud de una cadena de caracteres</h2>
-    <p>Para calcular la longitud de una cadena de caracteres usamos la propiedad .length,e.j:</p>
-    <pre>
+            <h2>Longitud de una cadena de caracteres</h2>
+            <p>Para calcular la longitud de una cadena de caracteres usamos la propiedad .length,e.j:</p>
+            <pre>
     <code>
     var miCadena;
     miCadena = "A";
     console.log(miCadena.length);
     </code>
     </pre>
-    <p>Esta propiedad al calcular la longitud cosidera caracteres,simbolos,números y espacios.</p>
-    <h2>Notación de corchetes</h2>
-    <p>Este tipo de notación nos permite acceder a los caracteres individualesde de una cadena,la cuál sigue una regla de indices,e.j:</p>
-    <pre>
+            <p>Esta propiedad al calcular la longitud cosidera caracteres,simbolos,números y espacios.</p>
+            <h2>Notación de corchetes</h2>
+            <p>Este tipo de notación nos permite acceder a los caracteres individualesde de una cadena,la cuál sigue una
+                regla de indices,e.j:</p>
+            <pre>
     <code>
     var lenguajeDeProgramacion = "JavaScript";
     //J A V A S C R I P T
     //0 1 2 3 4 5 6 7 8 9
     </code>
     </pre>
-    <h3>acceder al primer caracter</h3>
-    <p>En caso de querer acceder al primer caracter:</p>
-    <pre>
+            <h3>acceder al primer caracter</h3>
+            <p>En caso de querer acceder al primer caracter:</p>
+            <pre>
     <code>
     console.log(lenguajeDeProgramacion[0]);
     //Si quisieramos acceder a otro caracter solo tenemos que escribir su índice dentro de los corchetes.
     </code>
     </pre>
-    <h3>Enesimo carácter</h3>
-    <p>Si eliges un carácter inexistente,en la consola figurara undefine,e.j:</p>
-    <pre>
+            <h3>Enesimo carácter</h3>
+            <p>Si eliges un carácter inexistente,en la consola figurara undefine,e.j:</p>
+            <pre>
     <code>
     //Con el cuadro del primer caracter si pusieramos:
     console.log(lenguajeDeProgramacion[10]);
     //Aquí nos saldría undefined en la consola.
     </code>
     </pre>
-    <h3>Último carácter</h3>
-    <p>Se usa para acceder al último caracter,e.j:</p>
-    <pre>
+            <h3>Último carácter</h3>
+            <p>Se usa para acceder al último caracter,e.j:</p>
+            <pre>
     <code>
     console.log(myString[myString.length -1]);
     //El último índice siempre es longitud -1,porque contamos desde 0.
     </code>
     </pre>
-    <h3>De derecha a izquierda</h3>
-    <p>Para acceder al penúltimo índice tenemos que poner en la llamada .length - 2,e.j:</p>
-    <pre>
+            <h3>De derecha a izquierda</h3>
+            <p>Para acceder al penúltimo índice tenemos que poner en la llamada .length - 2,e.j:</p>
+            <pre>
     <code>
     console.log(myString[myString.length - 2]);
     </code>
     </pre>
-    <h2>Inmutabilidad de cadenas de caracteres</h2>
-    <p>Las cadenas son inmutables,es decir,no podemos hacer esto:</p>
-    <pre>
+            <h2>Inmutabilidad de cadenas de caracteres</h2>
+            <p>Las cadenas son inmutables,es decir,no podemos hacer esto:</p>
+            <pre>
     <code>
     var myString = "Jola,mundo";
     myString[0] = "H";
     console.log(myString);
     </code>
     </pre>
-    <p>myString[0] = "H"; esto es un error,pero lo que si podemos hacer es cambiar todo su valor: myString = "Hola,mundo";</p>
-    <h2>Palabras en blanco</h2>
-    <p>Las palabras en blanco son caracteres(letras exactamente) que agregamos a una cadena que esta armada a base de variables,esto con el objetivo de que tenga más sentido,e.j:</p>
-    <pre>
+            <p>myString[0] = "H"; esto es un error,pero lo que si podemos hacer es cambiar todo su valor: myString =
+                "Hola,mundo";</p>
+            <h2>Palabras en blanco</h2>
+            <p>Las palabras en blanco son caracteres(letras exactamente) que agregamos a una cadena que esta armada a
+                base de variables,esto con el objetivo de que tenga más sentido,e.j:</p>
+            <pre>
     <code>
     var sustantivo = "perro";
     var adjetivo = "negro";
@@ -312,9 +325,9 @@
     let palabrasEnBlanco = "El " + sustantivo + adjetivo + verbo + adverbio + " cuando apenas lo deje solo por diez segundos.";
     </code>
     </pre>
-    <h2>Arreglos(Arrays)</h2>
-    <p>Loa Arreglos son estructuras de datos que permiten almacenar valores en una misma estructura,e.j:</p>
-    <pre>
+            <h2>Arreglos(Arrays)</h2>
+            <p>Loa Arreglos son estructuras de datos que permiten almacenar valores en una misma estructura,e.j:</p>
+            <pre>
     <code>
     var estudiantes = ["Nora", "Gino", "Emily", "Juan"];
     console.log(estudiantes);
@@ -323,17 +336,18 @@
     var estudiante = ["John", 10];
     </code>
     </pre>
-    <h2>Arreglos anidados</h2>
-    <p>Son arreglos dentro de un arreglo,e.j:</p>
-    <pre>
+            <h2>Arreglos anidados</h2>
+            <p>Son arreglos dentro de un arreglo,e.j:</p>
+            <pre>
     <code>
     var listaDeEstudiantes = [["Nora", 9], ["Gido", 6], ["Ronaldo", 8]];
     console.log(listaDeEstudiantes)
     </code>
     </pre>
-    <h2>Acceder a los elementos de un arreglo</h2>
-    <p>Para acceder a los elementos de un arreglo debemos escribir entre corchetes el índice al que queremos acceder (los arreglos siguen la regla de los índices),e.j:</p>
-    <pre>
+            <h2>Acceder a los elementos de un arreglo</h2>
+            <p>Para acceder a los elementos de un arreglo debemos escribir entre corchetes el índice al que queremos
+                acceder (los arreglos siguen la regla de los índices),e.j:</p>
+            <pre>
     <code>
     var myArray = [10, 20, 30];
     console.log(myArray[0]);
@@ -344,9 +358,9 @@
     //Toda esta suma sería igual a 60.
     </code>
     </pre>
-    <h2>Modificar elementos de un arreglo</h2>
-    <p>Para modificar los elementos de un arreglo tenemos que reaccinarle un valor nuevo,e.j:</p>
-    <pre>
+            <h2>Modificar elementos de un arreglo</h2>
+            <p>Para modificar los elementos de un arreglo tenemos que reaccinarle un valor nuevo,e.j:</p>
+            <pre>
     <code>
     var array1 = [10, 20, 30];
     array1[0] = 40;
@@ -359,9 +373,9 @@
     //A diferencia de las cadenas de texto los arreglos son mutables.
     </code>
     </pre>
-    <h2>Acceder a arreglos multidimensionales</h2>
-    <p>Este tipo de arreglo se caracteriza por contener arreglos anidados,e.j:</p>
-    <pre>
+            <h2>Acceder a arreglos multidimensionales</h2>
+            <p>Este tipo de arreglo se caracteriza por contener arreglos anidados,e.j:</p>
+            <pre>
     <code>
     var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
     //Aquí cada arreglo es un índice,y cada elemento de los arreglos anidados son un índice independiente.
@@ -369,19 +383,20 @@
     console.log(myArray[0][0]);
     </code>
     </pre>
-    <p>El primer 0 índica el arreglo anidado,mientras que el segundo 0 selecciona el primer elemento de ese arreglo.</p>
-    <h2>.push()</h2>
-    <p>Es una función que permite añadir un elemento al final del arreglo,e.j:</p>
-    <pre>
+            <p>El primer 0 índica el arreglo anidado,mientras que el segundo 0 selecciona el primer elemento de ese
+                arreglo.</p>
+            <h2>.push()</h2>
+            <p>Es una función que permite añadir un elemento al final del arreglo,e.j:</p>
+            <pre>
     <code>
     var estaciones = ["Invierno", "Otoño", "Primavera"];
     estaciones.push("Verano");
     console.log(estaciones);
     </code>
     </pre>
-    <h2>.pop()</h2>
-    <p>Sirve para remover el último elemento de un arreglo,e.j:</p>
-    <pre>
+            <h2>.pop()</h2>
+            <p>Sirve para remover el último elemento de un arreglo,e.j:</p>
+            <pre>
     <code>
     var estaciones = ["Invierno", "Otoño", "Primavera", "Verano"];
     estaciones.pop();
@@ -391,27 +406,27 @@
     etapaDelAño = estaciones.pop();
     </code>
     </pre>
-    <h2>.shift()</h2>
-    <p>Sirve para remover el primer elemento de un arreglo,e.j:</p>
-    <pre>
+            <h2>.shift()</h2>
+            <p>Sirve para remover el primer elemento de un arreglo,e.j:</p>
+            <pre>
     <code>
     var estaciones = ["Invierno", "Otoño", "Primavera", "Verano"];
     estaciones.shift();
     console.log(estaciones);
     </code>
     </pre>
-    <h2>.unshift()</h2>
-    <p>Sirve para agregar un elemento al principio de un arreglo:</p>
-    <pre>
+            <h2>.unshift()</h2>
+            <p>Sirve para agregar un elemento al principio de un arreglo:</p>
+            <pre>
     <code>
     var estaciones = ["Otoño", "Primavera","Verano"];
     estaciones.unshift("Invierno");
     console.log(estaciones);
     </code>
     </pre>
-    <h2>Funciones</h2>
-    <p>Las funciones sirven para escribir código reutilizable,e.j: </p>
-    <pre>
+            <h2>Funciones</h2>
+            <p>Las funciones sirven para escribir código reutilizable,e.j: </p>
+            <pre>
     <code>
     function mostrarMensaje() {
     console.log("¡Hola mundo!");
@@ -420,9 +435,9 @@
     mostraMensaje();
     </code>
     </pre>
-    <h2>Argumentos</h2>
-    <p>Los argumentos agregan la capacidad de tomar valores:</p>
-    <pre>
+            <h2>Argumentos</h2>
+            <p>Los argumentos agregan la capacidad de tomar valores:</p>
+            <pre>
     <code>
     function sumar(a, b) {
     var suma = a + b;
@@ -444,9 +459,10 @@
     concatenarTresCadenas("Estoy", "aprendiendo", "a programar");
     </code>
     </pre>
-    <h2>Ámbito global</h2>
-    <p>Este tipo de variable se puede uitilizar en cualquier lugar del programa,esto ya que esta definida en el programa principal:</p>
-    <pre>
+            <h2>Ámbito global</h2>
+            <p>Este tipo de variable se puede uitilizar en cualquier lugar del programa,esto ya que esta definida en el
+                programa principal:</p>
+            <pre>
     <code>
     var miVraiableGlobal = 5;
     console.log(miVraiableGlobal);
@@ -458,9 +474,10 @@
     console.log(miVraiableGlobal);
     </code>
     </pre>
-    <h2>Ámbito local</h2>
-    <p>Estos son variables definidas dentro de una function y solo se pueden usar dentro de esa function y solo pueden ser usadas dentro de esa function:</p>
-    <pre>
+            <h2>Ámbito local</h2>
+            <p>Estos son variables definidas dentro de una function y solo se pueden usar dentro de esa function y solo
+                pueden ser usadas dentro de esa function:</p>
+            <pre>
     <code>
     function miFunction() {
     var miVariableLocal = 4;
@@ -468,9 +485,9 @@
     }
     </code>
     </pre>
-    <h2>Ámbito global vs Ámbito local</h2>
-    <p>En caso de que tuvieramos una var global y una local con el mismo nombre pasaria lo siguiente:</p>
-    <pre>
+            <h2>Ámbito global vs Ámbito local</h2>
+            <p>En caso de que tuvieramos una var global y una local con el mismo nombre pasaria lo siguiente:</p>
+            <pre>
     <code>
     var myName = "Nora";
     function mostrarMiNombre() {
@@ -484,9 +501,10 @@
     //Saldria el valor de la var global debajo del de la var local.
     </code>
     </pre>
-    <h2>Retornar un valor</h2>
-    <p>La función de retornar un valor es finalizar la ejecución de la función y especificar un valor para ser devuelto en la llamada,veamos un ejemplo:</p>
-    <pre>
+            <h2>Retornar un valor</h2>
+            <p>La función de retornar un valor es finalizar la ejecución de la función y especificar un valor para ser
+                devuelto en la llamada,veamos un ejemplo:</p>
+            <pre>
     <code>
     function sumar(a, b) {
     return a + b; 
@@ -495,9 +513,10 @@
     //Lo que estamos haciendo es mostrar el valor de la suma,para eso lo retornamos.
     </code>
     </pre>
-    <h2>undefined</h2>
-    <p>Por defecto las funciones retornan el valor undefined,este mismo sirve para omitir el retornar de las funciones,e.j:</p>
-    <pre>
+            <h2>undefined</h2>
+            <p>Por defecto las funciones retornan el valor undefined,este mismo sirve para omitir el retornar de las
+                funciones,e.j:</p>
+            <pre>
     <code>
     function sumar(x, y) {
     console,log(sumar(x + y));
@@ -506,9 +525,10 @@
     //Al no retornar el valor de la suma,en la terminal lo que va a retornar sera undefined.
     </code>
     </pre>
-    <h2>Asignar un valor retornado</h2>
-    <p>La asignación de un valor retornado permite asignar un valor retornado a una variable,para posteriormente usarlo cuando quieras,e.j:</p>
-    <pre>
+            <h2>Asignar un valor retornado</h2>
+            <p>La asignación de un valor retornado permite asignar un valor retornado a una variable,para posteriormente
+                usarlo cuando quieras,e.j:</p>
+            <pre>
     <code>
     function sumar(a, b) {
     return a + b;
@@ -523,9 +543,11 @@
     console.log(miMeta);
     </code>
     </pre>
-    <h2>Cola(queue)</h2>
-    <p>En informatica las queue es una estructura de datos abstracta en la cual los elementos se mantienen en orden.Loa nuevos elementos se pueden añadir al final de la cola y los elementos previos se retiran del principio de esta misma,e.j:</p>
-    <pre>
+            <h2>Cola(queue)</h2>
+            <p>En informatica las queue es una estructura de datos abstracta en la cual los elementos se mantienen en
+                orden.Loa nuevos elementos se pueden añadir al final de la cola y los elementos previos se retiran del
+                principio de esta misma,e.j:</p>
+            <pre>
     <code>
     function proximoEnLaFila(array, elemento) {
     array.push(elemento);
@@ -539,18 +561,19 @@
     esta función sirve para mostrar en la consola los arreglos tal cual como estan escritos(básicamente figuraran con sus corchetes).
     </code>
     </pre>
-    <h2>Valores booleanos</h2>
-    <p>Estos valores representan un valor de verdad(true o false),e.j:</p>
-    <pre>
+            <h2>Valores booleanos</h2>
+            <p>Estos valores representan un valor de verdad(true o false),e.j:</p>
+            <pre>
     <code>
     console.log(true); 
     console.log(false);
     //Con estos valores no se usan mayúsculas ni espacios.
     </code>
     </pre>
-    <h2>Operador de igualdad</h2>
-    <p>Este operador sirve para comparar valores para comprobar si son iguales o no,puedes comparar digitos y cadenas de caracteres,e.j:</p>
-    <pre>
+            <h2>Operador de igualdad</h2>
+            <p>Este operador sirve para comparar valores para comprobar si son iguales o no,puedes comparar digitos y
+                cadenas de caracteres,e.j:</p>
+            <pre>
     <code>
     console.log(5 == 5);
     console.log("Hola" == "Hola");
@@ -562,9 +585,10 @@
     No se recomienda comparar arreglos porque no va a comparar sus elementos,sino que comparara si representan el mismo objeto.*/
     </code>
     </pre>
-    <h2>Operador de igualdad estricta</h2>
-    <p>Este operador nos permite comparar si ambos tipos de datos son exactamente iguales o no,si lo son la llamada nos devuelve true,si no lo son nos devuelve false,e.j:</p>
-    <pre>
+            <h2>Operador de igualdad estricta</h2>
+            <p>Este operador nos permite comparar si ambos tipos de datos son exactamente iguales o no,si lo son la
+                llamada nos devuelve true,si no lo son nos devuelve false,e.j:</p>
+            <pre>
     <code>
     console.log(9 === 9);
     console.log(9 === "9");
@@ -572,9 +596,10 @@
     "9" al estar entre comillas se lo toma como un caracter.*/
     </code>
     </pre>
-    <h2>Operador de desigualdad</h2>
-    <p>Este operador compara si dos valores son desiguales,si son iguales devuelve false y si son diferentes true.</p>
-    <pre>
+            <h2>Operador de desigualdad</h2>
+            <p>Este operador compara si dos valores son desiguales,si son iguales devuelve false y si son diferentes
+                true.</p>
+            <pre>
     <code>
     console.log(9!=6);
     console.log(9!=9);
@@ -585,9 +610,9 @@
     //En caso de los arreglos compara como estan representados como objetos en la memoria del dispositivo.
     </code>
     </pre>
-    <h2>Operador de desigualdad estricta</h2>
-    <p>Básicamente es lo mismo que la igualdad estricta,pero negandola:</p>
-    <pre>
+            <h2>Operador de desigualdad estricta</h2>
+            <p>Básicamente es lo mismo que la igualdad estricta,pero negandola:</p>
+            <pre>
     <code>
     //Operador de desigualdad: 
     console.log(1!="1");
@@ -597,9 +622,10 @@
     //Compara si ambos valores son del mismo tipo de dato,pero no lo combierte a un tipo de dato común,figura true.
     </code>
     </pre>
-    <h2>Operador "mayor que"</h2>
-    <p>Este operador compara cual de las dos cadenas es mayor que la otra.También podemos comparar cadenas de caracteres,JavaScript las comparara según el orden alfabetico:</p>
-    <pre>
+            <h2>Operador "mayor que"</h2>
+            <p>Este operador compara cual de las dos cadenas es mayor que la otra.También podemos comparar cadenas de
+                caracteres,JavaScript las comparara según el orden alfabetico:</p>
+            <pre>
     <code>
     console.log(6 > 5);
     console.log(3 > 10);
@@ -617,18 +643,21 @@
     //La primera llamada devuleve true mientras que la segunda false.
     </code>
     </pre>
-    <h2>Operador "mayor o igual que"</h2>
-    <p>Este operador nos permite saber si dos cadenas son iguales,o si una de ellas es mayor que la otra.En el caso de cadenas de caracteres se aplica el mismo cambio,es decir,cuando sean iguales el valor es true:</p>
-    <pre>
+            <h2>Operador "mayor o igual que"</h2>
+            <p>Este operador nos permite saber si dos cadenas son iguales,o si una de ellas es mayor que la otra.En el
+                caso de cadenas de caracteres se aplica el mismo cambio,es decir,cuando sean iguales el valor es true:
+            </p>
+            <pre>
     <code>
     console.log(5 > 5);
     console.log(5 >= 5);
     //El primer console.log() devuele false y el segundo true.
     </code>
     </pre>
-    <h2>Operador "menor que"</h2>
-    <p>Este operador permite comparar cual de las dos cadenas de caracteres/digitos es menor que el otro.En el caso de las cadenas de caracteres las compara por orden alfabetico:</p>
-    <pre>
+            <h2>Operador "menor que"</h2>
+            <p>Este operador permite comparar cual de las dos cadenas de caracteres/digitos es menor que el otro.En el
+                caso de las cadenas de caracteres las compara por orden alfabetico:</p>
+            <pre>
     <code>
     console.log(5 < 6);
     console.log(10 < 3);
@@ -643,18 +672,20 @@
     //En este caso que usamos variables let,la primera llamada devuelve false y la segunda true.
     </code>
     </pre>
-    <h2>Operador "menor o igual que"</h2>
-    <p>Es básicamente lo mismo que el operador "menor que",pero se le suma la posibilidad de que ambos valorres sean iguales,e.j:</p>
-    <pre>
+            <h2>Operador "menor o igual que"</h2>
+            <p>Es básicamente lo mismo que el operador "menor que",pero se le suma la posibilidad de que ambos valorres
+                sean iguales,e.j:</p>
+            <pre>
     <code>
     console.log(5 <= 5); 
     console.log("Hola" <= "Hola");
     </code>
     </pre>
-    <h2>Operador lógico "and"</h2>
-    <p>Este tipo de operador nos permite escribir dos operandos en la misma expresión,siguiendo la siguiente tabla:</p>
-    <h3>Tabla de verdad del operador and:</h3>
-    <pre class="tablaDeOperadoresLogicos">
+            <h2>Operador lógico "and"</h2>
+            <p>Este tipo de operador nos permite escribir dos operandos en la misma expresión,siguiendo la siguiente
+                tabla:</p>
+            <h3>Tabla de verdad del operador and:</h3>
+            <pre class="tablaDeOperadoresLogicos">
     <code class="otrasCaracteriscasTabla">
     X--Y--X&&Y 
     T--T = T
@@ -663,7 +694,7 @@
     F--F = F
     </code>
     </pre>
-    <pre>
+            <pre>
     <code>
     //La expresión es solo verdadera si ambos operandos son verdaderos:
     var a = 8;
@@ -677,10 +708,10 @@
     //c(1) > 5 false && c(1) == 10 false,valor final es false.
     </code>
     </pre>
-    <h2>Operador lógico "or"</h2>
-    <p>En este caso si culaquiera de los operandos es true entonces el resultado sera true:</p>
-    <h3>Tabla de valores del operador or</h3>
-    <pre class="tablaDeOperadoresLogicos">
+            <h2>Operador lógico "or"</h2>
+            <p>En este caso si culaquiera de los operandos es true entonces el resultado sera true:</p>
+            <h3>Tabla de valores del operador or</h3>
+            <pre class="tablaDeOperadoresLogicos">
     <code class="otrasCaracteriscasTabla">
     X--Y--X||Y
     T--T = T
@@ -689,7 +720,7 @@
     F--F = F 
     </code>
     </pre>
-    <pre>
+            <pre>
     <code>
     var a = 8;
     console.log((a < 5)||(a > 15));
@@ -699,17 +730,17 @@
     //b(5) == 5 true||b(5) < 15 true,el valor final es true.
     </code>
     </pre>
-    <h2>Operador lógico "not"</h2>
-    <p>Se usa para negar el valor de verdad de otra expresión,es decir,para negar una expresión:</p>
-    <h3>Tabla de valores del operador not</h3>
-    <pre class="tablaDeOperadoresLogicos">
+            <h2>Operador lógico "not"</h2>
+            <p>Se usa para negar el valor de verdad de otra expresión,es decir,para negar una expresión:</p>
+            <h3>Tabla de valores del operador not</h3>
+            <pre class="tablaDeOperadoresLogicos">
     <code class="otrasCaracteriscasTabla">
     X --!X
     T--F
     F--T
     </code>
     </pre>
-    <pre>
+            <pre>
     <code>
     var a = 8;
     console.log(!(a > 5));
@@ -718,9 +749,11 @@
     //a(8) < 5 !false = true
     </code>
     </pre>
-    <h2>Sentencias condicionales</h2>
-    <p>Permite decidir si un bloque de código se ejecuta o no dependiendo de una condición,"if" es la palabra clave para las sentencias condicionales,para que se ejecute el código la condición debe ser vedadera:</p>
-    <pre>
+            <h2>Sentencias condicionales</h2>
+            <p>Permite decidir si un bloque de código se ejecuta o no dependiendo de una condición,"if" es la palabra
+                clave para las sentencias condicionales,para que se ejecute el código la condición debe ser vedadera:
+            </p>
+            <pre>
     <code>
     var z = 5;
     if(z > 2) {
@@ -735,9 +768,10 @@
     //Cualquier linea despues del cierre del cierre del condicional se ejecutara.
     </code>
     </pre>
-    <h2>Cláusula "else"</h2>
-    <p>Sirve para expandir los condicionales para decidir que es lo que ocurre si la condición del condicional es falsa:</p>
-    <pre>
+            <h2>Cláusula "else"</h2>
+            <p>Sirve para expandir los condicionales para decidir que es lo que ocurre si la condición del condicional
+                es falsa:</p>
+            <pre>
     <code>
         var s = 5;
     if(s < 2) {
@@ -756,9 +790,9 @@
     //Como la condición es falsa,se muestra el mensaje del else.
     </code>
     </pre>
-    <h2>Cláusula "else if"</h2>
-    <p>Permite manejar condicionales alternativos:</p>
-    <pre>
+            <h2>Cláusula "else if"</h2>
+            <p>Permite manejar condicionales alternativos:</p>
+            <pre>
     <code>
     function clasificarValor(valor) {
     if(valor % 2 == 0) {
@@ -774,11 +808,13 @@
     Y si fuera 7 ni el if y else if se ejecutan,pero si el else.*/
     </code>
     </pre>
-    <h2>Condicionales: orden lógido</h2>
-    <p>Básicamente puedes agregar más de una clausula dependiendo de cuantas condiciones deseas verificar en el condicional.Pero siempre la clausula if va primero,luego la/las else if y al final else ya que sirve como respaldo.</p>
-    <h2>Sentencias switch</h2>
-    <p>Permite  decidir que va a pasar a partir de un valor o expresión:</p>
-    <pre>
+            <h2>Condicionales: orden lógido</h2>
+            <p>Básicamente puedes agregar más de una clausula dependiendo de cuantas condiciones deseas verificar en el
+                condicional.Pero siempre la clausula if va primero,luego la/las else if y al final else ya que sirve
+                como respaldo.</p>
+            <h2>Sentencias switch</h2>
+            <p>Permite decidir que va a pasar a partir de un valor o expresión:</p>
+            <pre>
     <code>
     function clasificarValor(valor) {
     var respuesta;
@@ -819,9 +855,9 @@
     //Dependiendo del valor de la var producto(pizza,hamburguesa o helado) se mostrara solo uno de los casos.
     </code>
     </pre>
-    <h2>Sentencias switch(opción predeterminada)</h2>
-    <p>Esta opción se ejecutara si ninguno de los valores es el valor de la variable o de la expresión:</p>
-    <pre>
+            <h2>Sentencias switch(opción predeterminada)</h2>
+            <p>Esta opción se ejecutara si ninguno de los valores es el valor de la variable o de la expresión:</p>
+            <pre>
     <code>
     function seleccionarIdioma(valor) {
     var idioma;
@@ -845,9 +881,9 @@
     //Al no haber ningun case 4,figurara el valor del default.
     </code>
     </pre>
-    <h2>Sentencias switch(múltiples casos)</h2>
-    <p>Sirve para ejecutar un código específico para varios valores:</p>
-    <pre>
+            <h2>Sentencias switch(múltiples casos)</h2>
+            <p>Sirve para ejecutar un código específico para varios valores:</p>
+            <pre>
     <code>
     function clasificarVolumen(valor) {
     var volumen;
@@ -869,9 +905,10 @@
     }
     </code>
     </pre>
-    <h2>Retornar un valores booleanos</h2>
-    <p>En caso de que quisieramos retornar un valores booleanos podemos hacerlo con sentencias if,else if y else:</p>
-    <pre>
+            <h2>Retornar un valores booleanos</h2>
+            <p>En caso de que quisieramos retornar un valores booleanos podemos hacerlo con sentencias if,else if y
+                else:</p>
+            <pre>
     <code>
     function esMenorQue(a, b) {
     if(a < b) {
@@ -890,9 +927,9 @@
     //Figurara false,si fuera (3, 3) támbien sería false porque estamos usando el operador de comparación estricta.
     </code>
     </pre>
-    <h2>Patrón de retorno anticipado</h2>
-    <p>Se utiliza cuando necesitamos detener la función por alguna condición específica:</p>
-    <pre>
+            <h2>Patrón de retorno anticipado</h2>
+            <p>Se utiliza cuando necesitamos detener la función por alguna condición específica:</p>
+            <pre>
     <code>
     function calcularRaizCuadrada(num) {
     if(num < 0) {
@@ -905,9 +942,10 @@
     sentencia if y se calcula su raiz cuadrada.
     </code>
     </pre>
-    <h2>Crear objetos</h2>
-    <p>Los "objetos" permiten guardar una secuencia o conjunto de propiedades que estan relacionadas con sus valores:</p>
-    <pre>
+            <h2>Crear objetos</h2>
+            <p>Los "objetos" permiten guardar una secuencia o conjunto de propiedades que estan relacionadas con sus
+                valores:</p>
+            <pre>
     <code>
     var myDog = {
     "nombre": "Gordox",
@@ -921,17 +959,18 @@
     };
     </code>
     </pre>
-    <h2>Acceder a propiedades: notación de punto</h2>
-    <p>Sirve para acceder a las propiedades de un objeto: con el ejemplo del tema anterior,accedemos a su nombre:</p>
-    <pre>
+            <h2>Acceder a propiedades: notación de punto</h2>
+            <p>Sirve para acceder a las propiedades de un objeto: con el ejemplo del tema anterior,accedemos a su
+                nombre:</p>
+            <pre>
     <code>
     console.log(myDog.nombre);
     //El punto sirve como conexión entre el objeto(myDog) y la propiedad(nombre).
     </code>
     </pre>
-    <h2>Acceder a propiedades: notación de corchetes</h2>
-    <p>Es una alternativa paraacceder a las propiedades de un objeto:</p>
-    <pre>
+            <h2>Acceder a propiedades: notación de corchetes</h2>
+            <p>Es una alternativa paraacceder a las propiedades de un objeto:</p>
+            <pre>
     <code>
     var profile = {
     "username": "Ragnarok",
@@ -944,9 +983,10 @@
     Para evitar ese error usamos [] para estos casos.*/ 
     </code>
     </pre>
-    <h2>Acceder a propiedades: variables</h2>
-    <p>En caso de que quisieramos acceder a propiedades de objetos mediante variables podemos usar las notaciones(de punto y cochete):</p>
-    <pre>
+            <h2>Acceder a propiedades: variables</h2>
+            <p>En caso de que quisieramos acceder a propiedades de objetos mediante variables podemos usar las
+                notaciones(de punto y cochete):</p>
+            <pre>
     <code>
     var animes = {
     1: "JoJos",
@@ -959,9 +999,9 @@
     //Esto no lo podemos hacer con la notación de punto,únicamente se puede con notación de corchete.
     </code>
     </pre>
-    <h2>Actualizar propiedades</h2>
-    <p>Nos permite actualizar el valor de las propiedades:</p>
-    <pre>
+            <h2>Actualizar propiedades</h2>
+            <p>Nos permite actualizar el valor de las propiedades:</p>
+            <pre>
     <code>
     var mochila = {
     "color": "azul",
@@ -978,9 +1018,9 @@
     mochila.contenido = ["Utiles escolares"];
     </code>
     </pre>
-    <h2>Agregar propiedades</h2>
-    <p>Podemos agregar propiedades a un objeto en JavaScript,e.j:</p>
-    <pre>
+            <h2>Agregar propiedades</h2>
+            <p>Podemos agregar propiedades a un objeto en JavaScript,e.j:</p>
+            <pre>
     <code>
     var curso = {
     "Título": "JavaScript desde cero",
@@ -992,18 +1032,19 @@
     //"vistas" es el nombre de la nueva propiedad.
     </code>
     </pre>
-    <h2>Eliminar propiedades</h2>
-    <p>Para eliminar una propiedad de un objeto en JavaScript usamos el operador "delete": con el ejemplo del tema anterior si quisieramos eliminar la propiedad "duracion":</p>
-    <pre>
+            <h2>Eliminar propiedades</h2>
+            <p>Para eliminar una propiedad de un objeto en JavaScript usamos el operador "delete": con el ejemplo del
+                tema anterior si quisieramos eliminar la propiedad "duracion":</p>
+            <pre>
     <code>
     delete curso.duracion;
     console.log(curso.duracion);
     //Como ya lo eliminamos,al llamarlo figurara undefined.
     </code>
     </pre>
-    <h2>objetos para búsqueda</h2>
-    <p>Nos permite usar un  objeto para reemplazar una sentencia Switch:</p>
-    <pre>
+            <h2>objetos para búsqueda</h2>
+            <p>Nos permite usar un objeto para reemplazar una sentencia Switch:</p>
+            <pre>
     <code>
     function buscarElementoQuimico(simbolo) {
     simbolosQuimicos = {
@@ -1017,9 +1058,9 @@
     //Escribimos el nombre de la función y el simbolo del elemento.
     </code>
     </pre>
-    <h2>Verificar propiedades</h2>
-    <p>Permite verificar si la propiedad existe en el objeto:</p>
-    <pre>
+            <h2>Verificar propiedades</h2>
+            <p>Permite verificar si la propiedad existe en el objeto:</p>
+            <pre>
     <code>
     var miCuaderno = {
     "color": "verde",
@@ -1041,9 +1082,10 @@
     console.log(verificarPropiedad(miCuaderno, "color"));
     </code>
     </pre>
-    <h2>Objetos complejos</h2>
-    <p>Son combinaciones de distintos tipos de datos,usaremos un arreglo que dentro tendra objetos que támbien tendra arreglos dentro de ellos:</p>
-    <pre>
+            <h2>Objetos complejos</h2>
+            <p>Son combinaciones de distintos tipos de datos,usaremos un arreglo que dentro tendra objetos que támbien
+                tendra arreglos dentro de ellos:</p>
+            <pre>
     <code>
     var ordenesDePizzas = [
     {
@@ -1074,9 +1116,9 @@
     console.log(ordenesDePizzas[1]["tamaño"]);
     </code>
     </pre>
-    <h2>Objetos anidados</h2>
-    <p>Son objetos contenidos dentro de otros objetos:</p>
-    <pre>
+            <h2>Objetos anidados</h2>
+            <p>Son objetos contenidos dentro de otros objetos:</p>
+            <pre>
     <code>
     var miReceta = {
     "descipcion": "Como hacer una pizza",
@@ -1099,9 +1141,10 @@
     console.log(miReceta.ingredientes["cobertura"].BBQ);
     </code>
     </pre>
-    <h2>Arreglos anidados</h2>
-    <p>Básicamente son arreglos que tienen objetos dentro de ellos que a su vez estos también tienen arreglos dentro:</p>
-    <pre>
+            <h2>Arreglos anidados</h2>
+            <p>Básicamente son arreglos que tienen objetos dentro de ellos que a su vez estos también tienen arreglos
+                dentro:</p>
+            <pre>
     <code>
     var misPlantas = [
     {
@@ -1128,9 +1171,9 @@
     /*El primer 0 se refiere al primer objeto del arreglo,mientras que el segundo 0 índica el primer elemento del arreglo "lista".
     </code>
     </pre>
-    <h2>Ciclo "while"</h2>
-    <p>Permite escribir un código simplemente con una estructura específica y repetirlo:</p>
-    <pre>
+            <h2>Ciclo "while"</h2>
+            <p>Permite escribir un código simplemente con una estructura específica y repetirlo:</p>
+            <pre>
     <code>
     var i = 0;
     while(i <= 3) {
@@ -1147,14 +1190,15 @@
     //length significa longitud(en este caso del arreglo).
     </code>
     </pre>
-    <h2>Ciclo "for"</h2>
-    <p>Actualiza la variable sin necesidad de que tengamos que hacerlo nosotros,para este tipo ciclos debemos especificar tres aspectos para su ejecución:</p>
-    <ul>
-    <li>iniciación de variable</li>
-    <li>condición de ciclo</li>
-    <li>actualizar var con cada repetición</li>
-    </ul>
-    <pre>
+            <h2>Ciclo "for"</h2>
+            <p>Actualiza la variable sin necesidad de que tengamos que hacerlo nosotros,para este tipo ciclos debemos
+                especificar tres aspectos para su ejecución:</p>
+            <ul>
+                <li>iniciación de variable</li>
+                <li>condición de ciclo</li>
+                <li>actualizar var con cada repetición</li>
+            </ul>
+            <pre>
     <code>
     var miArreglo = [];
     for(var i = 0; i < 10; i+=2) {
@@ -1165,9 +1209,9 @@
     sea menor que 10.*/
     </code>
     </pre>
-    <h2>Iterar sobre un arreglo con un ciclo "for"</h2>
-    <p>Nos permite obtener cada uno de los elementos del arreglo,pudiendo usarlos en el cuerpo del ciclo:</p>
-    <pre>
+            <h2>Iterar sobre un arreglo con un ciclo "for"</h2>
+            <p>Nos permite obtener cada uno de los elementos del arreglo,pudiendo usarlos en el cuerpo del ciclo:</p>
+            <pre>
     <code>
     var ejemploArreglo = [4, 6, 8, 2];
     var total = 0;
@@ -1196,9 +1240,9 @@
     console.log(contarNumerosPares([2, 3, 4, 8, 9, 1]));
     </code>
     </pre>
-    <h2>Ciclos "for" anidados</h2>
-    <p>Son ciclos escritos dentro de otros ciclos:</p>
-    <pre>
+            <h2>Ciclos "for" anidados</h2>
+            <p>Son ciclos escritos dentro de otros ciclos:</p>
+            <pre>
     <code>
     var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
     for(var x = 0; x < myArray.length; i++) {
@@ -1213,9 +1257,9 @@
     }
     </code>
     </pre>
-    <h2>Ciclos "do...while"</h2>
-    <p>Primero realiza la secuencia de código(por lo menos una vez) y recien depués evalua la condición:</p>
-    <pre>
+            <h2>Ciclos "do...while"</h2>
+            <p>Primero realiza la secuencia de código(por lo menos una vez) y recien depués evalua la condición:</p>
+            <pre>
     <code>
     var a = 16;
     do {
@@ -1224,9 +1268,10 @@
     } while (a < 10);
     </code>
     </pre>
-    <h2>Números aleatorios</h2>
-    <p>Genera números aleatorios,pero núnca sera 1(los números generados son entre 0 y 1),las formas de llamarlos son:</p>
-    <pre>
+            <h2>Números aleatorios</h2>
+            <p>Genera números aleatorios,pero núnca sera 1(los números generados son entre 0 y 1),las formas de
+                llamarlos son:</p>
+            <pre>
     <code>
     function generarFraccionAleatoria() {
     return Math.random();
@@ -1239,9 +1284,9 @@
     console.log(Math.random());
     </code>
     </pre>
-    <h2>Números enteros aleatorios</h2>
-    <p>Nos permite convertir los números decimales aleatorios en enteros,dentro de un rango especifíco:</p>
-    <pre>
+            <h2>Números enteros aleatorios</h2>
+            <p>Nos permite convertir los números decimales aleatorios en enteros,dentro de un rango especifíco:</p>
+            <pre>
     <code>
     var númeroAleatorioEntreDosNúmeros = Math.floor(Math.random()*20);
     //Múltiplicamos el decimal por un entero,y con Math.floor truncamos la parte entera.
@@ -1258,9 +1303,9 @@
     }
     </code>
     </pre>
-    <h2>Números enteros aleatorios en un rango</h2>
-    <p>Genera números enteros en un rango específico con un límite superior y uno inferior:</p>
-    <pre>
+            <h2>Números enteros aleatorios en un rango</h2>
+            <p>Genera números enteros en un rango específico con un límite superior y uno inferior:</p>
+            <pre>
     <code>
     functon rangoAleatorio(limiteInferior, limiteSuperior) {
     return Math.floor(Math.random()*(limiteSuperior - limiteInferior + 1)) + limiteInferior;
@@ -1272,9 +1317,9 @@
     //Con el ciclo se incluye como posible resultado el límite superior.
     </code>
     </pre>
-    <h2>Función parseInt()</h2>
-    <p>Convierte cadenas de caracteres que representan un número en un número entero:</p>
-    <pre>
+            <h2>Función parseInt()</h2>
+            <p>Convierte cadenas de caracteres que representan un número en un número entero:</p>
+            <pre>
     <code>
     console.log(parseInt("5"));
     console.log(parseInt("-40"));
@@ -1286,9 +1331,9 @@
     console.log(a + b);
     </code>
     </pre>
-    <h2>Función parseInt() con una base</h2>
-    <p>Convierte cadenas de caracteres en otro sistema númerico al sistema decimal:</p>
-    <pre>
+            <h2>Función parseInt() con una base</h2>
+            <p>Convierte cadenas de caracteres en otro sistema númerico al sistema decimal:</p>
+            <pre>
     <code>
     //Sisttemas númerico binario:
     console.log("110111", 2); // 2 es la base para binarios,cada sistema númerico posee un tipo de base específico.
@@ -1299,9 +1344,9 @@
     //Las bases son un número entero entre 2 y 36.
     </code>
     </pre>
-    <h2>Operador condicional(ternario)</h2>
-    <p>Permite compactar un condicional en una sola línea:</p>
-    <pre>
+            <h2>Operador condicional(ternario)</h2>
+            <p>Permite compactar un condicional en una sola línea:</p>
+            <pre>
     <code>
     (x, y) {
     return x < y ? x:y;
@@ -1314,9 +1359,10 @@
     console.log(a > b ? a + 2 : b * 3);
     </code>
     </pre>
-    <h2>Multiples Operadores condicionales</h2>
-    <p>Combina el poder de los operadores condicionales y ternarios escribiendo multiples operadores condicionales/ternarios uno dentro del otro:</p>
-    <pre>
+            <h2>Multiples Operadores condicionales</h2>
+            <p>Combina el poder de los operadores condicionales y ternarios escribiendo multiples operadores
+                condicionales/ternarios uno dentro del otro:</p>
+            <pre>
     <code>
     function compararNumeros(a, b) {
     return a == b ?  "a y b son iguales"
@@ -1325,460 +1371,11 @@
     }
     </code>
     </pre>
-    </div>
-    <div id = "ES6">
-    <h2>¿Qué es ES6?</h2>
-    <p>ES6(ECMAScript 6) es el nuevo estándar de JavaScript,la cuál agrego nuevas caracteristicas al lenguaje,estos cambios en la sintaxis nos permite escribir código de una manera más rápida y limpia.</p>
-    <h2>var vs let</h2>
-    <p>La diferencia entre declarar una variable con var o let es que,si declaras con con var,podras declarar esa variable dos o más veces:</p>
-    <pre>
-    <code>
-    var campista = "James";
-    var campista = "David";
-    //Pero con let solo puedes declarar una variable una única vez:
-    let campista = "David";
-    //Lo que si puedes hacer es reaccinar el valor.
-    </code>
-    </pre>
-    <h2>Ámbito de var vs let</h2>
-    <p>Las diferencias en el ambito de las variables declaradas con var o con let son:</p>
-    <p>La variable var tiene un ámbito global,pero si esta dentro de una función sera una variable local.Pero con let las variables tienen el ámbito local restringido al bloque de código/expresión donde fue declarada/definida la variable.</p>
-    <h2>Const</h2>
-    <p>Es la tercera opción para declarar una variable,estas solo se pueden usar para acceder a su valor,su valor no se puede modificar una vez ya allá sido declarado:</p>
-    <pre>
-    <code>
-    const MI_CONSTANTE = 35;
-    /*Se escribe en mayúsculas el nombre de las const para poder distinguirlas y para que los desarrolladores sepan que no deben intentar cambiar
-    el valor de esa constante.*/
-    //Si la usaramos en una función:
-    function calcularAreaCirculo(radio) {
-    const PI = 3.14;
-    if(radio < 0) {
-    return undefined;
-    }
-    return PI*(radio**2);
-    }
-    console.log(calcularAreaCirculo(10));
-    //Usar dos ** índica que es el operador para una potencia,el número al lado de ellos sera la potencia deseada.
-    </code>
-    </pre>
-    <h2>Mutar arreglo declarado con const</h2>
-    <p>Si bien a las variables declaradas con "const" no le puedes asignar un valor nuevo,si lo puedes cambiar:</p>
-    <pre>
-    <code>
-    const MI_ARREGLO = [1, 2, 3, 4,];
-    MI_ARREGLO[0] = 5;
-    /*Lo que hacemos es cambiar los elementos del arreglo,básicamente podemos reaccinar el valor del arreglo,pero no el valor directo de la 
-    variable declarada con "const"*/
-    </code>
-    </pre>
-    <h2>Crear un objeto inmutable</h2>
-    <p>Para lograr que un objeto sea inmutable usaremos el metodo freeze():</p>
-    <pre>
-    <code>
-    let colores = {
-    "verde": "#10e04b",
-    "azul": "#1b50e0",
-    "negro": "#000000",
-    "blanco": "#ffffff"
-    };
-    object.freeze(colores);
-    /*object nos permite dar funcionalidades en común a todos los objetos.Pero al usar freeze,entre () aclaramos que un objeto determinado sera
-    el afectado*/
-    </code>
-    </pre>
-    <h2>Funciones flecha</h2>
-    <p>Es un tipo de función más compacta utilizada normalmente para funciones anonimas(funciones sin un nombre especifíco):</p>
-    <pre>
-    <code>
-    const fecha = function() {
-    return new date();
-    };
-    //"new date" crea un objeto con la fecha actual del sistema.
-    /*Si quisieramos transformar esta función en un tipo flecha,tendríamos que eliminar la palabra clave function,la apertura y cierre de la llave,
-    la sentencia return y escribimos el símbolo característico de las funciones flecha (=>):
-    const fecha = () => nex date();
-    /*Dato importante: las funciones flecha son muy utiles cuando queremos pasar una función como argumento a otra función,lo que hacemos es
-    escribirla directamente como el argumento.
-    </code>
-    </pre>
-    <h2>Funciones flecha con parámetros</h2>
-    <p>Para definir funciones flechas que tengan uno o más parametros:</p>
-    <pre>
-    <code>
-    //Si es de una sola línea,eliminamos las palabras function y return,la apertura y cierre de llave,y agregamos la flecha:
-    const sumarTres = (x) => x + 3;
-    console.log(sumarTres(4));
-    //En caso de una función con dos parametros hacemos exactamente lo mismo:
-    const CONCATENAR_ARREGLOS = (arr1, arr2) => arr1.concat(arr2);
-    console.log(CONCATENAR_ARREGLOS([1, 2], [3, 4, 5]));
-    //.concat() es un metodo que permite unir arreglos.
-    //Si la función tiene más de una línea: borramos el function y la apertura de la llave:
-    const SUMAR = (a, b) => {
-    let num = 6;
-    return a + b + num;
-    };
-    console.log(SUMAR(1, 1));
-    </code>
-    </pre>
-    <h2>Valores por defecto para parámetros</h2>
-    <p>Para asignar un valor por defecto a los parámetros de una función flecha tendríamos que escribir un signo igual y el valor por defecto:</p>
-    <pre>
-    <code>
-    const INCREMENTAR = (num, valor = 1) => num + valor;
-    //En caso de que se omita el argumento valor,se asignara el valor por defecto.
-    //Este principio también se puede aplicar a las funciones normales y sus variantes,y a las anonimas.
-    </code>
-    </pre>
-    <h2>Operador rest</h2>
-    <p>Permite pasar cualquier número de argumentos a una función,y que esos argumentos se agrupen como un arreglo:</p>
-    <pre>
-    <code>
-    function miFuncion(...arrgs) {
-    console.log(arrgs);
-    }
-    miFuncion(1, 2, 3, 4); // Oh también:
-    miFuncion([1, 2, 3], [4, 5, 6]); //Oh puedes usar .length() :
-    console.log(arrgs.length);
-    const SUMAR = (...arrgs) => {
-    return arrgs.reduce((a, b) => a + b,0);
-    };
-    /*El metodo .reduce() nos permite reducir el array a un solo valor,sumando los elementos del arreglo y retornando
-    el resultado*/
-    </code>
-    </pre>
-    <h2>Operador spread</h2>
-    <p>Su función es descomponer un arreglo en sus elementos individuales para que la función pueda recibirlos y asignarlos a sus parametros correspondientes:</p>
-    <pre>
-    <code>
-    const numeros = [1, 2, 3];
-    function sumar (x, y, z) {
-    retuen x + y + z;
-    }
-    console.log(sumar(...numeros));
-    //Usamos el mismo símbolo que .rest(),pero lo escribimos en la llamada a la función. 
-    </code>
-    </pre>
-    <h2>Sintaxis de desestructuración</h2>
-    <p>Permite asignar las propiedades de un objeto a variables:</p>
-    <pre>
-    <code>
-    var coordenadas = {
-    x: 4,
-    y: 6,
-    z: 12
-    }
-    const {x, y, z} = coordenadas;
-    </code>
-    </pre>
-    <h2>Sintaxis de desestructuración: objetos anidados</h2>
-    <p>Para acceder a los datos de un objeto anidado haríamos lo siguiente:</p>
-    <pre>
-    <code>
-    const usuario = {
-    joseph: {
-    edad: 30,
-    correo: "JopsephJoestar@gmail.com"
-    }
-    };
-    const {joseph: {edad: edadDelUsuario, correo: correoDelUsuario}} = usuario;
-    //Como ven,para acceder a los objetos anidados,debemos escribir otro corchete que tenga dentro el nombre de aquellos objetos.
-    /*Lo que esta escrito despues de los nombres de las porpiedades que queremos acceder son los nuevos nombres que queremos asignarles a las
-    propiedades (esto es completamente opcional).Si llegasemos a llamarlos,tendríamos que usar estos nuevos nombres*/
-    const PRONOSTICO_LOCAL = {
-    "ayer": {
-    minima: "-1",
-    maxima: 6
-    },
-    "hoy": {
-    minima: 1,
-    maxima: 4
-    },
-    "mañana" = {
-    minima: 2,
-    maxima: 10
-    }
-    };
-    const {hoy: {minima, maxima}} = PRONOSTICO_LOCAL;
-    console.log(minima, maxima);
-    //Usamos una coma y un espacio para que en una sola línea figuren los dos datos.
-    </code>
-    </pre>
-    <h2>Sintaxis de desestructuración: arreglos</h2>
-    <p>Nos permite asignar valores a variables usando arreglos:</p>
-    <pre>
-    <code>
-    var a;
-    var b;
-    var c;
-    [a, b,,,c] = [1, 2, 3, 4, 5, 6];
-    //Ponemos dos comas más para que la var c tome com valor a 5,es decir las dos comas son para que se salten los valores 3 y 4.
-    var x = 8;
-    var y = 6;
-    [y, x] = [x, y];
-    //Escribimos esto porque: queremos que x y b reciban el valor del otro.
-    console.log("x: " + x);
-    console.log("y: " + y);
-    </code>
-    </pre>
-    <h2>Sintaxis de desestructuración con el operador rest</h2>
-    <p>Permite reaccinar un arreglo en varias variables:</p>
-    <pre>
-    <code>
-    var a;
-    var b;
-    var arr;
-    [a, b, ...arr] = [1, 2, 3, 4, 5, 6, 7];
-    console.log(a);
-    console.log(b);
-    console.log(arr);
-    //En caso de que quisieramos remover los tres primeros elementos de un arreglo:
-    const arregloInicial = [1, 2, 3, 4, 5, 6, 7, 8];
-    function removerTresPrimerosElementos(arreglo) {
-    const [,,, ...nuevoArreglo] = arreglo;
-    return nuevoArreglo;
-    }
-    const arregloFinal = removerTresPrimerosElementos(arregloInicial);
-    console.log(arregloFinal);
-    </code>
-    </pre>
-    <h2>Sintaxis de desestructuración: pasar objeto como argumento</h2>
-    <p>Para pasar un objeto como argumento primero identificamos que propiedades vamos a necesitar en la función y escribirlas entrre llaves en el primer parametro,asignandoce esos valores a variables,que podemos trabajar en la función:</p>
-    <pre>
-    <code>
-    var nuevoPerfilCliente = {
-    nombre: "Jon Doe",
-    edad: 24,
-    nacionalidad: "Española",
-    ubicacion: "España"
-    };
-    const actualizarPerfil = ({nombre, edad, nacionalidad, ubicacion}) => {
-    console.log(nombre);
-    console.log(edad);
-    console.log(nacionalidad);
-    console.log(ubicacion);
-    };
-    actualizarPerfil(nuevoPerfilCliente);
-    //Otro ejemplo:
-    const estadisticas = {
-    max: 56.78,
-    min: -0.75
-    };
-    const mitad = ({max, min}) => (max + min) /2.0;
-    console.log(mitad(estadisticas));
-    </code>
-    </pre>
-    <h2>Plantillas literales</h2>
-    <p>Es un tipo de cadena de caracteres que permite crear cadenas con varias líneas y reemplazar los valores de las variables que querramos,algunas de sus características son:</p>
-    <ul>
-    <li>Utiliza el acento invertido `` en vez de comillas.</li>
-    <li>Puede usar tanto comillas simples como dobles.</li>
-    <li>Las líneas de código se preservan.</li>
-    <li>En caso de reemplazar una variable se escribe: ${variable}</li>
-    <li>Puede escribir expresiones dentro de ${}</li>
-    </ul>
-    <pre>
-    <code>
-    var nombre = "Diego";
-    var edad = 8;
-    console.log(`Mi nombre es ${nombre} y tengo ${edad} años.`);
-    var persona = {
-    nombre: "Mario Fernandes",
-    edad 40
-    };
-    const SALUDO = `¡Hola! Mi nombre es ${persona.nombre} y tengo ${persona.edad} años.`;
-    console.log(SALUDO);
-    var myArray = [1, 2, 3, 4];
-    console.log(`El arreglo es ${JSON.stringify(myArray)}`);
-    </code>
-    </pre>
-    <h2>Crear objetos de forma concisa</h2>
-    <p>Lo que haremos sera utilizar una funcion flecha,seguido de su simbolo característico escribimos un parentesis con un par de llaves que dentro tendran los mismos parametros que tiene el parentesis del principio:</p>
-    <pre>
-    <code>
-    const JOESTAR = (nombre, edad, stand) => ({nombre, edad, stand});
-    console.log(JOESTAR("Jotaro Kujo", 17, "Star Platinum"));
-    </code>
-    </pre>
-    <h2>Métodos</h2>
-    <p>Se denomina "método" a la propiedad que tenga de valor una función:</p>
-    <pre>
-    <code>
-    const PERSONAJE_FICTICIO = {
-    nombre: "Naruto Uzumaki",
-    objetivo: "Hokage",
-    presentacion() {
-    return `¡Hola! mi nombre es ${this.nombre} y sere el próximo ${this.objetivo}.`;
-    }
-    };
-    console.log(PERSONAJE_FICTICIO.presentacion());
-    //La función de "this" en JavaScript es referirce al objeto que estamos trabajando,en este caso el objeto "persona" y a su propiedad "nombre"
-    </code>
-    </pre>
-    <h2>Definir una clase</h2>
-    <p>Las "clases" nos periten crear muchos objetos con la misma extructura,propiedades y funcionalidad:</p>
-    <pre>
-    <code>
-    class TransbordadorEspacial {
-    constructor(planeta) {
-    this.planeta = planeta;
-    }
-    }
-    var zeus = new TransbordadorEspacial("Jupiter");
-    console.log(zeus.planeta);
-    /*"constructor" es la función que se va a llamar cuando asignemos a un objeto ese tipo de class."new" es la palabra clave para crear un objeto
-    como valor de una var*/ 
-    /*Las class en JavaScript siguen una convención específica que es que inician su nombre con mayúscula y también entre palabras inician
-    con mayúscula*/ 
-    class Mascota {
-    constructor(nombre, edad) {
-    this.nombre = nombre;
-    this.edad = edad;
-    }
-    }
-    var miMascota = new Mascota("Nora", 5);
-    console.log(miMascota.nombre);
-    console.log(miMascota.edad);
-    </code>
-    </pre>
-    <h2>Getters y Setters</h2>
-    <p>Podemos definir funciones en una clase para que al crear un objeto,este tenga todas esas funciones asociadas,existen dos funciones específicas que protegen la data del objeto.</p>
-    <h3>Getters</h3>
-    <p>Metodos que permiten obtener el valor de una propiedad privada (una propiedad que tenga un guion bajo antes de su nombre),es decir,permite acceder al valor indirectamente.</p>
-    <h3>Setters</h3>
-    <p>Función que actualiza el valor de una propiedad,utiles para verificar el valor nuevo antes de asignarlo.</p>
-    <pre>
-    <code>
-    class libro {
-    constructor(autor) {
-    this._autor = autor;
-    }
-    get autor() {
-    return this._autor;
-    }
-    set autor(nuevoAutor) {
-    this._autor = nuevoAutor;
-    }
-    }
-    const libro = new libro("anonimo");
-    console.log(libro.autor);
-    libro.autor = "Marcelo Díaz";
-    console.log(libro.autor);
-    //Solo utilizar un guion bajo no convierte la variable en privada,es simplemente una convención.
-    </code>
-    </pre>
-    <h2>Exportación para compartir bloques de código</h2>
-    <p>En caso de que quisieramos utilizar funciones almacenadas en un archivo,tendriamos que exportalas,para ello utilizaremos la palabra clave "export" y la variable donde estan almacenadas estas funciones:</p>
-    <pre>
-    <code>
-    export const add = (x, y) => {
-    return x + y;
-    }
-    //Otra forma sería:
-    const add = (x, y) => {
-    return x + y;
-    }
-    export {add};
-    /*Puedes exportar varias funciones utilizando la exportación antes del tipo de variable(ejemplo) o poniendolas todas en la declaración de
-    exportación(ejemplo 2):*/
-    export {add, otherString};
-    </code>
-    </pre>
-    <h2>Reutilización de código mediante importación</h2>
-    <p>Este nos permite elegir las partes del archivo/modulo que queremos cargar:</p>
-    <pre>
-    <code>
-    import {add} from './string_functions.JS'
-    /* ./ es la ruta relativa del archivo,índica a la importación que busque el archivo string_functions.JS en la misma carpeta
-    que el archivo actual*/ 
-    // .JS es la extensión del archivo
-    //import encuentra add en string_functions.JS,solo importa esta función.
-    </code>
-    </pre>
-    <h2>Utilizar * para importar todo desde un archivo</h2>
-    <p>En el caso de que queramos importar todo el contenido de un archivo a otro utilizaremos la sintaxis "import * as":</p>
-    <pre>
-    <code>
-    import * as myModule from "./math_functions.JS";
-    //Si utilizaramos este tipo de sintaxis,el nombre del archivo va entre comillasdobles.
-    /*La declaración import crea un objeto llamado myModule (solo es el nombre de una variable),este contendrá todas las exportaciones que tiene 
-    math_functions.JS,si quisieramos utilizar alguna/s funciones que importamos haríamos así:*/
-    myModule.add(2, 3);
-    myModule.subtract(5, 3);
-    //Recordemos que estamos usando funciones que tienen operaciones matemáticas,por eso los números.
-    </code>
-    </pre>
-    <h2>Respaldo de exportación con el valor predeterminado de expostación</h2>
-    <p>La sintaxis "export default" nos permite exportar un valor de un archivo(siendo esta comúnmente su función):</p>
-    <pre> 
-    <code>
-    export default function string(a, b) {
-    return a : b;
-    }
-    //Oh también se puede usar con funciones anonimas:
-    export default function(a, b) {
-    return a : b;
-    }
-    /*Esta sintaxis solo se utiliza para declarar un valor alternativo para un archivo/modulo,por ende,solo puede tener un valor como exportación
-    predeterminada en cada archivo/modulo.También la "export default" no se puede utilizar con let,const o var*/
-    </code>
-    </pre>
-    <h2>Imortar la exportación predeterminada</h2>
-    <p>En caso de que quisieramos importar una exportación predeterminada utilizariamos una import sintaxis que no encierra entre llaves el valor importado:</p>
-    <pre>
-    <code>
-    import string from "./math.functions.JS";
-    //string es simplemente un nombre de variable para culaquiera que sea la exportación predeterminada del archivo math.functions.JS
-    </code>
-    </pre>
-    <h2>Crear un promesa de J.S</h2>
-    <P>La función constructora "promise" toma como argumento una función,con dos parámetros: "resolve" y "reject",estos metodos se utilizan para determinar el resultado de la promesa.Su función es hacer una promesa para hacer algo,normalmente de forma asincrónica,su sintaxis es:</P>
-    <pre> 
-    <code>
-    const stringPromise = new Promise((resolve, reject) => {});
-    </code>
-    </pre>
-    <h2>Completar una promise con resolve y reject</h2>
-    <p>En las promesas los parametros "resolve" y "reject" se usan para completar la promesa,"resolve" es si queremos que se complete con exito,y "reject" si queremos que falle,ambos toman un argumento:</p>
-    <pre>
-    <code>
-    const makeServerRequest = new Promise((resolve, reject) => {
-    let responseFromServer;
-    if(responseFromServer) {
-    resolve("We got the data");
-    } else {
-    reject("Data not received");
-    }
-    });
-    /*Las promesas tienen tres estados:
-    Pending: sucede cunado no agregamos una forma de completar la promesa,quedando en un estado inicial,es decir,no fue ni cumplida ni rechazada.
-    Fulfilled: significa que la promesa se completo con éxito.
-    Rejected: significa que la promesa falló. 
-    </code>
-    </pre>
-    <h2>Manejar un a "promise" cumplida con "then"</h2>
-    <p>El método "then" programa funciones de devolución de llamada para la finalización de la "promise",independientemente de si cumplio o no.Esto dependiendo que controlador se llama(onFulfilled o onRejected):</p>
-    <pre> 
-    <code>
-    makeServerRequest.then(result => {
-    console.log(result);
-    });
-    //Aquí "result" es el controlador de onFulfilled,ya que "result" proviene del argumento dado al método "resolve"
-    </code>
-    </pre>
-    <h2>Manejo de la "promise" rechazada con "catch"</h2>
-    <p>El método "catch" se usa si su "promise" fue rechazada,se ejecuta después de llamar al método "reject" de la promesa:</p>
-    <pre> 
-    <code>
-    makeServerRequest.cath(error => {
-    console.log(error);
-    });
-    //Dato extra: no borramos el "makeServerRequest.then",simplemente agregamos debajo de el la verción con el método "catch"
-    </code>
-    </pre>
-    </div>
+        </div>
     </main>
     <footer>
+
     </footer>
-    </body>
+</body>
+
 </html>
