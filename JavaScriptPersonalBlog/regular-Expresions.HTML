@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.CSS">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Expreciones Regulares</h1>
+        <nav>
+        <a href="basic-javascript.HTML" class="enlace-barra-nav">volver al principio</a>
+        </nav>
+    </header>
+    <main>
+    <div id="regular-Expressions">
+    <h2>¿Qué son las expresiones regulares?</h2>
+    <p>Las expresiones regulares (también conocidas como "regrex" o "regexp") son patrones que ayudan a los programadores a hacer coincidir conjuntos de caracteres con cadenas.Si bien estas expresiones tienen mucho poder,pueden resultar dificiles de leer debido al uso de caracteres especiales para hacer las coincidencias más flexibles y complejas.</p>
+    <h2>Método .test()</h2>
+    <p>En los lenguajes de programación las expresiones regulares se usan para hacer coincidir partes de cadenas,es decir,crea patrones que nos ayudan a hacer esa combinación:</p>
+    <pre>
+    <code>
+    //ejemplo de expresiones regulares:
+    let firstString = "Hi people";
+    let otherSttring = /Hi/;
+    //La expresión regular es /Hi/ esta no va con ningún tipo de comillas dentro.
+    //Una manera de probar una expresión regular es usando el método .test(),este toma la expresión regular,la aplica a una cadena
+    (que va dentro del parentesis) y devuelve "true" o "false" si su patron encuentra algo o no:
+    let result = otherString.test(firstString);
+    /*Oh también podemos escribir el .test() sin asignarlo a una variable,la diferencia es que al asignarlo a una variable podemos llamarlo con
+    console.log(); y que nos devuelva y figure en la consola su valor booleano*/
+    </code>
+    </pre>
+    <h2>Coincidir cadenas literales</h2>
+    <p>Cuando hablamos de hacer coincidir cadenas literales nos referimos a que la expresión regular busque una coincidencia literal con la cadena:</p>
+    <pre>
+    <code>
+    var saludo = "Hola";
+    var extraer = /Hola/;
+    let final = extraer.test(saludo);
+    /*Aquí hay un acoincidencia literal,pero si la expresión regular se escribiera diferente que la cadena original haría .test() devolviera false*/
+    </code>
+    </pre>
+    <h2>Hacer coindir una cadena literal con diferentes posibilidades</h2>
+    <p>En caso de que quisieramos múltiples patrones de posibilidades utilizamos el operador "alternation"(que usa la barra | y la expresión regular).</p>
+    <pre>
+    <code>
+    let name = "My name is Joseph";
+    var result = /Jotaro|Joseph|Kujo|Jolyne/;
+    </code>
+    </pre>
+    <h2>Ignorar mayúsculas y minúsculas al hacer coincir</h2>
+    <p>En caso de que quisieramos hacer coincidir expresiones regulares que pueden tener mayúsculas o minúsculas que tienen o no las cadenas originales,podemos hacerlos coincidir usando una "bandera",en este caso la "bandera" "i":</p>
+    <pre>
+    <code>
+    let fullName = "Star Platinum";
+    var serchStand = /Star Platinum/i;
+    </code>
+    </pre>
+    <h2>Método .match()</h2>
+    <p>Con el .match() podemos extraer coincidencias reales:</p>
+    <pre>
+    <code>
+    let extraer = "Extraer la palabra codigo";
+    let extracto = /codigo/;
+    const resultado = extraer.match(extracto);
+    /*Dato extra: tanto aquí como en ejemplos anteriores le estamos asignando el valor de la cuerda "codigo" a la variable "resultado".
+    Esto es opcional como ya hemos visto*/ 
+    </code>
+    </pre>
+    <h2>Encontrar más de una vez un patrón</h2>
+    <p>Con el indicador de búsqueda global "g" (estos indicadores son las "banderas) podemos extraer/buscar más de una vez un patrón:</p>
+    <pre>
+    <code>
+    let string = "hi, hi, hi";
+    let extract = /hi/g;
+    string.match(extract);
+    //También podemos usar más de un indicador de búsqueda global en una expresión regular:
+    let extract = /hi/gi;
+    </code>
+    </pre>
+    <h2>Hacer coincidir cualquier cosa con Wilcard Period</h2>
+    <p>En el caso de que no conozcamos o no necesitaramos los caracteres exactos de nuestros patrones,podemos usar el caracter comodín: " . ",el cuál hara coincidir con cualquier caracter a nuestra expresión regular:</p>
+    <pre>
+    <code>
+    let string = "Hi,this is my first day in this job";
+    var extract = /th./;
+    const result = extract.test(string);
+    </code>
+    </pre>
+    <h2>Combinar un caracter con múltiples posibilidades</h2>
+    <p>Las clases de caracteres nos permiten buscar un patrón literal con cierta flexibilidad,es decir,definen un grupo de caracteres que queremos hacer coincidir poniendolos entre corchetes:</p>
+    <pre>
+    <code>
+    let string = "Hacer coincidir esto";
+    let string2 = /est[ae]/;
+    var final = string.match(string2);
+    //Aquí queremos hacer coincidir "esta" y "este",por ende en la expresión regular escribimos los caracteres que pueden coincidir(a y e).
+    </code>
+    </pre>
+    <h2>Unir letras del alfabeto</h2>
+    <p>Si quisieramos definir un rango de caracteres que puedan coincidir con la expresión regular,tendríamos que usar un guion:</p>
+    <pre>
+    <code>
+    var string1 = "cat";
+    var string2 = "bat";
+    var string3 = "mat";
+    let extract = /[a-e]at/;
+    let final1 = string1.match(extract);
+    let final2 = string2.match(extract); 
+    string3.match(extract);
+    </code>
+    </pre>
+    <h2>Unir letras del alfabeto con numeros</h2>
+    <p>También podemos indicar un rango de números: /[0-9]/ o uno con letras y números:</p>
+    <pre>
+    <code>
+    let usuario = "Jonny2407za";
+    var rango = /[a-z0-7]/ig;
+    let resultado = usuario.match(rango);
+    </code>
+    </pre>
+    <h2>Coincidir caracteres individuales no especificados</h2>
+    <p>Los "juegos de caracteres individuales negados" son un conjunto de caracteres que creamos porque no queremos que coincidan,para ello utilizamos un carácter de intercalación ^ :</p>
+    <pre>
+    <code>
+    let producto = "Cuesta 3 pesos";
+    var extraer = /[^0-9aeion]/;
+    </code>
+    </pre>
+    <h2>Emparejar caracteres que aparecen una o más veces</h2>
+    <p>Si queremos comprobar que un caracter/grupo de estos aparece una o más veces seguidas,debemos usar el caracter "+" en la expresión regular:</p>
+    <pre> 
+    <code>
+    let rioFamoso = "Mississippi";
+    var expresionRegular = /s+/;
+    let extraer = rioFamoso.match(expresionRegular);
+    </code>
+    </pre>
+    <h2>Unir caracteres que aparecen cero o más veces</h2>
+    <p>En caso de que quisieramos hacer coincidir caracteres que aparecen cero o más veces,debemos usar el * en la expresión regular:</p>
+    <pre>
+    <code>
+    let a = "Oooooh shit";
+    let b = "Okey man";
+    let c = "who?";
+    let extract = /Oo*/;
+    let final1 = a.match(extract);
+    let final2 = b.match(extract);
+    let final3 = c.match(extract);
+    console.log(final1);
+    console.log(final2);
+    console.log(final3);
+    //La primera llamada nos devuelve: [Ooooo],la segunda: [O] y la tercera: null
+    </code>
+    </pre>
+    <h2>Encontrar caracteres con coincidencia diferida</h2>
+    <p>La coincidencia diferida encuentra la parte más pequeña posible en el menor tiempo dentro de la cadena,para lograr esto utilizamos el ? en la expresión regular:</p>
+    <pre>
+    <code>
+    let estación = "&lth1&gtWinter&lt/h1&gt";
+    var buscar = /&lt.*?&gt/;
+    let busqueda = estacion.match(busqueda);
+    /* &lt &gt son los delimitadores de la expresión &lth1&gt.El ? indica una coincidencia diferida que buscara en el menor tiempo posible la parte más
+    pequeña(&lth1&gt),sin el ? devolvería toda la oración*/
+    </code>
+    </pre>
+    <h2>Coincidir con patrones de cuerdas iniciales</h2>
+    <p>En caso de que quisieramos buscar patrones en posiciones especificas en una cadena,debemos usar el caracter de intercalación ^ (en este caso no habra corchetes,si hubieran se confundiría con el caracter juegos de caracteres negados):</p>
+    <pre>
+    <code>
+    let presentacion = "Mi nombre es Bob";
+    let regresarMi = /^Mi/;
+    var elemento = regresarMi.test(presentacion);
+    </code>
+    </pre>
+    <h2>Hacer  coincidir patrones de cuerdas finales</h2>
+    <p>Si queremos buscar patrones al final de las cadenas,usamos el signo "$" al final de la expresión regular:</p>
+    <pre>
+    <code>
+    let accidente = "Choque mi auto en plena ruta";
+    let lugar = /ruta$/;
+    var testeo = lugar.test(accidente);
+    </code>
+    </pre>
+    <h2>Unir todas las letras y números</h2>
+    <p>La clase de caracteres "\w" coincide con letras mayúsculas y minúsculas más números(también incluye el carácter de subrayado " _ ")</p>
+    <pre>
+    <code>
+    let longString = /[A-Za-z0-9]/;
+    let shortString = /\w+/;
+    var aleatoryNumber = 100;
+    var aleatoryCharacter = "guion_bajo";
+    longString.test(aleatoryNumber);
+    shortString.test(aleatoryNumber);
+    longString.test(aleatoryCharacter);
+    shortString.test(aleatoryCharacter);
+    //Todas las test regresan true
+    </code>
+    </pre>
+    <h2>Combinar todo excepto letras y números</h2>
+    <p>Si quisieramos todo tipo de caracteres excepto letras y números tendríamoss que usar la clase de caracteres abreviados "\W",parecida a "\w":</p>
+    <pre> 
+    <code>
+    let shortString = /\W/;
+    var porcentaje = "10%";
+    var rareza = "baja!";
+    let extraer1 = porcentaje.match(shortString);
+    let extraer2 = rareza.match(shortString);
+    //El primer match devuelve ["%"] y el segundo ["!"]
+    </code>
+    </pre>
+    <h2>Coincidir con todos los caracteres numéricos</h2>
+    <p>Si lo que queremos es solo buscar digitos/números tenemos que usar el atajo de caracteres númericos "\d",que es lo mismo que escribir [0-9]:</p>
+    <pre>
+    <code>
+    let movie = "2012: el final";
+    let movieYear = /\d/g;
+    var extract = movie.match(movieYear).length;
+    //Calcula la cantidad de números en la var movies,en este caso devuelve 4 porque: calcula una longitud de 4 digitos
+    </code>
+    </pre>
+    <h2>Coincidir con todos los caracteres no númericos</h2>
+    <p>Si queremos buscar palabras en la cadena,podemos usar el atajo "\D" en la expresión regular,es lo mismo que escribir [^0-9]:</p>
+    <pre>
+    <code>
+    let artist = "Wolty";
+    let count = /\D/g;
+    var final = artist.match(count).length;
+    //Este atajo también cuenta simbolos y espacios,en este caso devuelve 5
+    </code>
+    </pre>
+    <h2>Coincidir con espacios en blanco</h2>
+    <p>Si queremos hacer coincidir los espacios en blanco,debemos usar el patrón "\s",este mismo también coincide con caracteres de retorno de carro,tabulación,avance de página y nueva línea:</p>
+    <pre>
+    <code>
+    let example "Espacios en blanco";
+    let extract = /\s/g;
+    var result = example.match(extract);
+    //Aquí console.log(result); nos devolvera [' ', ' '] porque hay dos espacios en blanco en la variable "example"
+    </code>
+    </pre>
+    <h2>Coincidir con caracteres que no son espacios en blanco</h2>
+    <p>Si queremos buscar espacios que no sean vacios,debemos usar el patrón "\S",este no coincidirá con espacios en blanco,retornos de carro,tabulaciones,avances de página ni caracteres de nueva línea:</p>
+    <pre>
+    <code>
+    let example = "example";
+    let extract = /\S/g;
+    var final = example.match(extract);
+    /*Aquí console.log(final); nos devolvera todas las letras del let example,si pusieramos .length al final de let final,la llamada nos devolvera
+            la suma total de todas las letras*/
+    </code>
+    </pre>
+    </div>
+    </main>
+    <footer>
+    
+    </footer>
+</body>
+</html>
