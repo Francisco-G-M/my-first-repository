@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>JavaScriptPersonalBlog</title>
 </head>
 
@@ -16,10 +18,14 @@
         </nav>
     </header>
     <main>
-        <div id="ES6">
-            <h2>¿Qué es ES6?</h2>
-            <p>ES6(ECMAScript 6) es el nuevo estándar de JavaScript,la cuál agrego nuevas caracteristicas al
+        <h2>¿Qué es ES6?</h2>
+        <div class="principio">
+            <img src="2B4.jpg">
+            <p class="definicion">ES6(ECMAScript 6) es el nuevo estándar de JavaScript,la cuál agrego nuevas
+                caracteristicas al
                 lenguaje,estos cambios en la sintaxis nos permite escribir código de una manera más rápida y limpia.</p>
+        </div>
+        <div id="ES6">
             <h2>var vs let</h2>
             <p>La diferencia entre declarar una variable con var o let es que,si declaras con con var,podras declarar
                 esa variable dos o más veces:</p>
@@ -274,11 +280,11 @@
             <p>Es un tipo de cadena de caracteres que permite crear cadenas con varias líneas y reemplazar los valores
                 de las variables que querramos,algunas de sus características son:</p>
             <p>
-                Utiliza el acento invertido `` en vez de comillas.<br>
-                Puede usar tanto comillas simples como dobles.<br>
-                Las líneas de código se preservan.<br>
-                En caso de reemplazar una variable se escribe: ${variable}<br>
-                Puede escribir expresiones dentro de ${}
+                1-Utiliza el acento invertido `` en vez de comillas.<br>
+                2-Puede usar tanto comillas simples como dobles.<br>
+                3-Las líneas de código se preservan.<br>
+                4-En caso de reemplazar una variable se escribe: ${variable}<br>
+                5-Puede escribir expresiones dentro de ${}
             </p>
             <pre>
     <code>
@@ -349,10 +355,10 @@
             <h2>Getters y Setters</h2>
             <p>Podemos definir funciones en una clase para que al crear un objeto,este tenga todas esas funciones
                 asociadas,existen dos funciones específicas que protegen la data del objeto.</p>
-            <h3>Getters</h3>
+            <h3>Getters:</h3>
             <p>Metodos que permiten obtener el valor de una propiedad privada (una propiedad que tenga un guion bajo
                 antes de su nombre),es decir,permite acceder al valor indirectamente.</p>
-            <h3>Setters</h3>
+            <h3>Setters:</h3>
             <p>Función que actualiza el valor de una propiedad,utiles para verificar el valor nuevo antes de asignarlo.
             </p>
             <pre>
