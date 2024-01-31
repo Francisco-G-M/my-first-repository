@@ -45,13 +45,14 @@ h3 {
 
 img {
     width: 170%;
-    height: 95%;
+    height: 99%;
     margin-right: 5%;
 }
 .principio {
     display: grid;
     grid-template-columns: 28% 50%;
     grid-gap: 20%;
+    box-shadow: 1px 1px 20px black;
 }
 
 .definicion {
