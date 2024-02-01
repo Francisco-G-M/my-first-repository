@@ -19,11 +19,11 @@
         <h2>¿Qué son las expresiones regulares?</h2>
         <div class="principio">
             <img src="regexImg.webp">
-        <p class="definicion">Las expresiones regulares (también conocidas como "regrex" o "regexp") son patrones
-            que ayudan a los
-            programadores a hacer coincidir conjuntos de caracteres con cadenas.Si bien estas expresiones tienen
-            mucho poder,pueden resultar dificiles de leer debido al uso de caracteres especiales para hacer las
-            coincidencias más flexibles y complejas.</p>
+            <p class="definicion">Las expresiones regulares (también conocidas como "regrex" o "regexp") son patrones
+                que ayudan a los
+                programadores a hacer coincidir conjuntos de caracteres con cadenas.Si bien estas expresiones tienen
+                mucho poder,pueden resultar dificiles de leer debido al uso de caracteres especiales para hacer las
+                coincidencias más flexibles y complejas.</p>
         </div>
         <div id="regular-Expressions">
             <h2>Método .test()</h2>
@@ -282,6 +282,50 @@
     var final = example.match(extract);
     /*Aquí console.log(final); nos devolvera todas las letras del let example,si pusieramos .length al final de let final,la llamada nos devolvera
             la suma total de todas las letras*/
+    </code>
+    </pre>
+            <h2>Especificar número superior e inferior de coincidencias</h2>
+            <p>Si quisieramos especificar el número superior e inferior de patrones,tenemos que usar los especificadores
+                de cantidad "{}",dentro de las llaves,ponemos dos números,el primero sera el inferior y el segundo el
+                superior:</p>
+            <pre>
+    <code>
+    let string = "Heeey boy";
+    let search = /He{3,4}y\sboy/;
+    var final = search.test(string);
+    //Si no pusieramos "\s" nos figuraría false
+    </code>
+    </pre>
+            <h2>Especificar solo el número inferior de coincidencias</h2>
+            <p>Si solo queremos especificar el número inferior de patrones,tendríamos que escribir dentro de las llaves
+                el primer número seguido de una coma:</p>
+            <pre>
+    <code>
+    let string = "Hooola";
+    let string2 = /Ho{3,}la/;
+    var final = string2.test(string);
+    </code>
+    </pre>
+            <h2>Especificar el número exacto de coincidencias</h2>
+            <p>Si queremos especificar el número exacto de coincidencias,simplemente ponemos un solo número dentro de
+                las llaves(sin ninguna coma):</p>
+            <pre>
+    <code>
+    let name = "Timmmy";
+    let search = /Tim{3}y/;
+    var result = search.test(name);
+    </code>
+    </pre>
+            <h2>Verificar todo o nada</h2>
+            <p>Puede pasar que los patrones que deseamos buscar pueden tener partes que existen o no,en ese caso,puede
+                ser importante comprobarlos usando el signo "?".Esto índica que el elemento anterior es opcional:</p>
+            <pre>
+     <code>
+     let inglesAmericano = "Color";
+    let inglesBritanico = "Colour";
+    var search = /Colou?r/;
+    search.test(inglesAmericano);
+    search.test(inglesBritanico);
     </code>
     </pre>
         </div>
