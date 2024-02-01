@@ -347,10 +347,27 @@
     let vericar = /(? = \w{3, 6})(? = \D*\d)/;
     </code>
     </pre>
+            <h2>Verificar la existencia de agrupaciones mixtas de caracteres</h2>
+            <p>Si quisieramos comprobar la existencia de grupos de caracteres que esten usando una expresión
+                regular,tenemos que usar () en la expresión regular,encerrando dentro de ellos los caracteres
+                cambiantes:</p>
+            <pre>
+    <code>
+    let jojoCharacter = "Joseph Joestar";
+    let search = /(Joseph|Jotaro)\sJoestar/;
+    search.test(jojoCharacter);
+    //Si la expresión regular coincide regresa true,y si no false.
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
-
+        <h3 id="titulo-footer">Contactos:</h3>
+        <div class="contactos">
+            <p class="texto-final">Instragram: Fraaan.g_m</p>
+            <p class="texto-final">Gmail: fgmanuello1@gmail.com</p>
+            <p class="texto-final">GitHub: Francisco-G-M</p>
+        </div>
     </footer>
 </body>
 

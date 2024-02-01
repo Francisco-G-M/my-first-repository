@@ -7,7 +7,6 @@ h1 {
 header {
     text-align: center;
 }
-
 #barra-nav {
     text-align: left;
     text-align: center;
@@ -18,11 +17,9 @@ header {
     width: 99%;
     text-align: center;
 }
-
 body {
     background-color: #353333;
 }
-
 h2 {
     color: yellow;
     text-align: center;
@@ -119,4 +116,17 @@ table {
     font-size: 20px;
     width: 16%;
     margin-left: 42%;
+}
+#titulo-footer{
+    background-color: black;
+    border: 1px solid aqua;
+    margin-left: 600px;
+    margin-right: 600px;
+}
+.contactos{
+    text-decoration: underline;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: black;
+    border: 1px solid aqua;
 }
