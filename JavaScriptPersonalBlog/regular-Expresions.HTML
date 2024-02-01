@@ -320,12 +320,31 @@
             <p>Puede pasar que los patrones que deseamos buscar pueden tener partes que existen o no,en ese caso,puede
                 ser importante comprobarlos usando el signo "?".Esto índica que el elemento anterior es opcional:</p>
             <pre>
-     <code>
-     let inglesAmericano = "Color";
+    <code>
+    let inglesAmericano = "Color";
     let inglesBritanico = "Colour";
     var search = /Colou?r/;
     search.test(inglesAmericano);
     search.test(inglesBritanico);
+    </code>
+    </pre>
+            <h2>Previsión positiva y negativa</h2>
+            <p>Los patrones de busqueda anticipada índican a JavaScript que mire hacía adelante en su cadena para buscar
+                patrones más adelante,esto es útil si queremos buscar varios patrones en la misma cadena.La anticipación
+                positiva se asegurara de que el elemento en el patrón de búsqueda esté ahí(pero no coincidirá con el).La
+                anticipación negativa se aseguraraque el elemento en el patrón de búsqueda no este allí:</p>
+            <pre>
+    <code>
+    let hi = "Hi";
+    let he = "He";
+    var extractHi = /H(? = i)/; //anticipación positiva
+    var extractHe = /H(?!E)/;
+    hi.match(extractHi);
+    he.match(extractHe);
+    //Las dos .match() regresaran "h".Las busquedas anticipadas son prácticas en comprobar dos o más patrones en una cadena:
+    //Verificar contraseñas:
+    var contraseña = "abc100";
+    let vericar = /(? = \w{3, 6})(? = \D*\d)/;
     </code>
     </pre>
         </div>
