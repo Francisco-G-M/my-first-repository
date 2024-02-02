@@ -35,6 +35,21 @@
             <h3>Errores lógicos</h3>
             <p>Estos tipos de errores se producen cuándo tu código no hace lo que querias.Estos casos llega a pasar que
                 la sintaxis es correcta pero el resultado es diferente a lo deseado.</p>
+            <h2>Usar la consola de J.S para comprobar el valor de una variable</h2>
+            <p>En J.S el método "console.log()" "imprime" la salida del contenido entre parentesis en la
+                consola,colocarlos en puntos estratéicos del código permite ver los valores intermedios de las
+                variables,tener puntos de control para ver el estado de los cálculos en el código ayuda a determinar
+                dónde esta el problema:</p>
+            <pre>
+    <code>
+    let x = 10;
+    let y = 10;
+    x++;
+    console.log(x);//punto de control
+    let sum = x + y;
+    console.log(sum);
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
