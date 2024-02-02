@@ -394,6 +394,16 @@
     console.log(final);
     </code>
     </pre>
+            <h2>Eliminar espacios en blanco del inicio y el final</h2>
+            <p>En el caso de que tuvieramos espacios en blanco innecesarios,podemos eliminarlos facilmente:</p>
+            <pre>
+    <code>
+    //Si tuvueramos espacios en blanco al principio/final de la cadena:
+    let saludo = "   Hola chicos  ";
+    let quitarExtras = /^\s+|\s+$/g;
+    let final = saludo.replace(quitarExtras, "");
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
