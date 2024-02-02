@@ -374,6 +374,26 @@
     junto con sus grupos capturados (['3 3 3', '3']) los primeros 3 son los grupos capturados,el último 3 es la subcadena coincidente*/ 
     </code>
     </pre>
+            <h2>Utilizar grupos de captura para buscar y reemplazar</h2>
+            <p>En caso de que quisieramos buscar y reemplazar al mismo tiempo texto en una cadena,tendríamos que usar
+                ".replace()",primero escribimos la cadena original,seguido de .replace(),dentro de los parentesis van la
+                cadena de la expresión regular seguido de lo que queremos cambiar:</p>
+            <pre>
+    <code>
+    let string1 = "first second third fifth";
+    let string2 = /fifth/;
+    let stringComplete = string1.replace(string2, "fourth");
+    console.log(stringComplete);
+    //También puedes acceder a los grupos de captura en la cadena de reemplazo con signos de "$":
+    let sequence = "three two one";
+    let otherString = /(\w+)\s(\w+)\s(\w+)/;
+    let group = "$3 $2 $1";
+    let result = sequence.replace(otherString, group);
+    //Un ejemplo de una sola línea sería:
+    let final = "World Hello".replace(/(\w+)\s(\w+)/, '$2 $1');
+    console.log(final);
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
