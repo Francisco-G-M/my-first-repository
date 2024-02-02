@@ -359,6 +359,21 @@
     //Si la expresión regular coincide regresa true,y si no false.
     </code>
     </pre>
+            <h2>Reutilizar patrones usando grupos de captura</h2>
+            <p>Los grupos de captura se utilizan para buscar subcadenas repetidas,estos se construyen encerrando entre
+                paréntesis el patrón de expresiones regulares que se van a capturar.La subcadena que coincide con el
+                grupo se guarda en una "variable" temporal,para acceder a ella dentro de la misma expresión rgular
+                usamos una "\" y el número del grupo de captura,estos se numeran automáticamente según la posición de
+                sus parentesis de apertura(de izquierda a derecha) iniciando en 1:</p>
+            <pre>
+    <code>
+    let stringNumbers = "3 3 3";  
+    let string2 = /^(\d+)\1\1$/;
+    string2.test(stringNumbers);     
+    /*Si usamos .test() nos devolvera un valor booleano,pero con .match() nos devuelven una matriz  con la subcadena coincidente,
+    junto con sus grupos capturados (['3 3 3', '3']) los primeros 3 son los grupos capturados,el último 3 es la subcadena coincidente*/ 
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
