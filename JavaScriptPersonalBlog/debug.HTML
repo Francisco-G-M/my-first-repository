@@ -50,6 +50,62 @@
     console.log(sum);
     </code>
     </pre>
+            <h2>Tipos de datos con console</h2>
+            <p>Fuera de "console.log()" existen otros tipos de metodos para console,los cuales son:</p>
+            <h3>console.warn()</h3>
+            <p>Su función es imprimir texto en la consola como una advertencia.</p>
+            <h3>console.error()</h3>
+            <p>Su función es mostrar un mensaje de error en la consola.</p>
+            <h3>console.info()</h3>
+            <p>Muestra en la consola un mensaje informativo.</p>
+            <h3>console.log()</h3>
+            <p>Imprime texto en la consola como un mensaje de registro.</p>
+            <pre>
+    <code>
+    console.warn('Esto es una advertencia');
+    console.error('Esto es un error');
+    console.info('Esto es un mensaje informativo');
+    console.log('Esto es un mensaje de registro o punto de control del código');
+    </code>
+    </pre>
+            <h2>Usar typeof para comprobar el tipo de una variable</h2>
+            <p>La función de typeof es comprobar la estructura de datos o el tipo de una variable.Siendo útil para
+                depurar si trabajamos con múltiples tipos de datos:</p>
+            <pre>
+    <code>
+    let string1 = 10;
+    let string2 = "hola";
+    let string3 = {};
+    let string4 = [];
+    let string5 = '';
+    console.log(typeof string1);
+    console.log(typeof string2);
+    console.log(typeof string3);
+    console.log(typeof string4);
+    console.log(typeof string5);
+    </code>
+    </pre>
+            <h2>Detectar nombres de funciones y variables mal escritos</h2>
+            <p>Uno de los problemas que podemos tener en nuestro código son los errores de sintaxis que suelen suceder
+                al escribir muy rápido y provoca errores ortográficos.Los caracteres transpuestos,faltantes o mal
+                escritos en una variable o nombre de función provocan que el navegador busque un objeto inexistente y
+                que figure un error de referencia.Esto se corrije simplemente con revisar el código hasta encontrar lo
+                que este mal escrito.</p>
+            <h2>Capture paréntesis,corchetes,llaves y comillas no cerrados</h2>
+            <p>Otro tipo de error común es no escribir el cierre de parentesis,corchetes,llaves y comillas.Actualmente
+                la mayoría de los editores de código modernos generan el cierre del ítem automáticamente.</p>
+            <h2>Capture el uso mixto de comillas simples y dobles</h2>
+            <p>En caso de que quisieramos usar dos tipos de comillas en una cadena,tenemos dos opciones: usar un tipo de
+                comilla para encerrar la oración,y dentro de ella encerrar una parte específica:</p>
+            <pre>
+    <code>
+    let stringA = "Escapar 'comillas simples'";
+    console.log(stringA);
+    //Oh también escapar las comillas dentro de una cadena usando "\":
+    let stringB = 'Escapar \'esto\'';
+    console.log(stringB);
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
