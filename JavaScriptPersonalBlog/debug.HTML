@@ -106,6 +106,26 @@
     console.log(stringB);
     </code>
     </pre>
+            <h2>Captar el uso del operador de asignación en lugar del operador de igualdad</h2>
+            <p>Los programas ramificados(aquellos que hacen algo si se cumplen ciertas ciertas condiciones/parametro) se
+                basan en declaraciones(if,else,else if),las cuales a veces toma la forma de probar si un resultado es
+                igual a un valor,usando el operador "=".Esto conduce a un flujo de control inesperado en su
+                programa,esto es así porque: en J.S el operador "=" asigna un valor a un nombre de variable,en
+                cambio,los operadores "==" "===" verifican la igualdad:</p>
+            <pre>
+    <code>
+    let x = 1;
+    let y = 10;
+    let result;
+    if(x === y) {
+    result = "igual";
+    } else {
+    result = "diferente";
+    }
+    console.log(result);
+    //Aquí devuelve "diferente",si usaramos "==" en el parametro/condición devolviera lo mismo.
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
