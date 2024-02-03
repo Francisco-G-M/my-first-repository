@@ -126,6 +126,27 @@
     //Aquí devuelve "diferente",si usaramos "==" en el parametro/condición devolviera lo mismo.
     </code>
     </pre>
+            <h2>Detectar parentesis faltantes tras una llamada a la función</h2>
+            <p>En algunos casos,cuando una función/método no tiene argumento,es común olvidar incluir los paréntesis
+                vacíos al llamarlo.En estos casos podemos detectarlo asignandole el resultado de una llamada a una
+                función a una variable,ya que veremos que uno está configurado como una referencia de función,en lugar
+                del valor que devuelve la función:</p>
+            <pre>
+    <code>
+    function string() {
+    let a = 10;
+    let b = 6;
+    let c = 4;
+    return a + b + c;
+    }
+    let final = string;
+    console.log(string);
+    //Aquí nos devuelve: [function: string]
+    let other = string();
+    console.log(other);
+    //Aquí si nos devuelve el valor de la función,en este caso,la suma de las variables a + b + c
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
