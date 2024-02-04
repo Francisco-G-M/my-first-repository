@@ -204,6 +204,25 @@
     console.log(resultado); 
     </code>
     </pre>
+            <h2>Evitar bucles infinitos con una condición terminal válida</h2>
+            <p>Producir un bucle infinito es un tipo de error que puede provocar que los navegadores se
+                bloqueen/congelen y provoquen un caos general en la ejecución del programa.Estos bucles pueden
+                originarce por incrementar o disminuir una variable de contador en la dirección incorrecta desde la
+                condición terminal.También lo produce el reestablecer erroneamente un contador o una variable de índice
+                dentro del código del bucle(en vez de incrementarlo o disminuirlo):</p>
+            <pre>
+    <code>
+    function infiniteLoop() {
+    for(let n = 1; n != 4; n += 2) {
+    console.log("Whait!,this is a infinite loop");
+    }
+    }
+    /Al ser n!= 4 nunca sera false(es decir,nunca se termina el bucle) n se incrementa de 2 en 2 cada pasada y se pasa de 4,porque n es igual a 1
+    (es decir,porque n es impar al comienzo del bucle).Esto se soluciona corrigiendo la condición terminal,haciendo que el bucle solo se ejecute si n
+    es menor/igual a 4*/
+    for(let n = 1; n &lt 4; n += 2)
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
