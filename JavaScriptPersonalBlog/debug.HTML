@@ -183,6 +183,27 @@
     }
     </code>
     </pre>
+            <h2>Tener precaución al reinicializar variables dentro de un bucle</h2>
+            <p>Un posible problema al guardar información,incrementar contadores o restablecer variables dentro de un
+                bucle,surge cuando las variables deben reinicializarce o no(y viceversa),esto es peligroso debido a que
+                si erróneamente se restablece la variable que se usa para un bucle infinito:</p>
+            <pre>
+    <code>
+    function arregloDeCeros(x, y) {
+    let nuevoArreglo = [];
+    for(let a = 0; a &lt x; a++) {
+    let hileras = [];
+    for(let b = 0; b &lt y; b++) {
+    hileras.push(0);
+    }
+    nuevoArreglo.push(hileras);
+    }
+    return nuevoArreglo;
+    }
+    let resultado = arregloDeCeros(3, 2);
+    console.log(resultado); 
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
