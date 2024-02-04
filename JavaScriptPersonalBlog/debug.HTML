@@ -147,6 +147,42 @@
     //Aquí si nos devuelve el valor de la función,en este caso,la suma de las variables a + b + c
     </code>
     </pre>
+            <h2>Captar argumentos en el orden incorrecto al llamar a una función</h2>
+            <p>Otro tipo de error en las funciones es cuando los argumentos se proporcionan en el orden incorrecto,esto
+                produce un error de tiempo de ejeccución,esto se soluciona dando todos los argumentos necesarios en el
+                orden correcto:</p>
+            <pre>
+    <code>
+    let elevarNumeroConExponente(n, e) {
+    return Math.pow(n, e);
+    }
+    let numero = 4;
+    let exponente = 2;
+    let resultado = elevarNumeroConExponente(exponente, numero);//Esto sería la verción mal escrita
+    let final = elevarNumeroConExponente(numero, exponente);//Esta sería la verción correcta
+    //Dato extra: Math.pow() devuelve la base elevada al exponente,e.j:
+    let a = 4;
+    let b = 2;
+    let theFinal = Math.pow(a, b);
+    console.log(theFinal);//Esto dvuleve 16
+    </code>
+    </pre>
+            <h2>Errores de captura por uno al usar la indexación</h2>
+            <p>Los errores de uno por uno(también conocidos OBOE) nace cuando se intenta acceder a un índice específico
+                de una cadena/matríz o si recorremos sus índices.En J.S la indexación inicia en 0(y no en 1),esto
+                significa que el último índice es uno menos que la longitud de la cadena/matríz.Si se comete este error
+                se produce un error de referencia de "índice fuera de rango" o se imprime en la consola "undefined":</p>
+            <pre>
+    <code>
+    function contarHastaTres() {
+    let conteo = "123";
+    let contar = conteo.length;
+    for(let i = 0; i &lt contar; i++) {
+    console.log(conteo[i]);
+    }    
+    }
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
