@@ -26,39 +26,52 @@
         </div>
         <div id="basic-data-structure">
             <h2>Utilice una matriz para almacenar una colección de datos</h2>
-            <p>Como ya sabemos,podemos almacenar diferentes tipos de datos dentro de una matriz multidimensional o una unidimensional:</p>
+            <p>Como ya sabemos,podemos almacenar diferentes tipos de datos dentro de una matriz multidimensional o una
+                unidimensional:</p>
             <pre>
-        <code>
-        //Matriz unidimensional:
-        let firstArray = ['one', false, undefined, "", 100];
-        console.log(firstArray);
-        //Matriz multidimensional:
-        let secondArray = [
-        [
-          {
-          x: "X";
-          y: "Y"
-          },
-          {
-          w: "W",
-          z: "Z"
-          }
-        ],
-        [
-          {
-          1: "one",
-          2: "two"
-          },
-          {
-          3: "three",
-          4: "four" 
-          }
-        ]
-        ]
-        ];
-        console.log(secondArray);//Esta llamada devuelve: {1: "one", 2: "two"}
-        </code>
-        </pre>
+    <code>
+    //Matriz unidimensional:
+    let firstArray = ['one', false, undefined, "", 100];
+    console.log(firstArray);
+    //Matriz multidimensional:
+    let secondArray = [
+    [
+      {
+      x: "X";
+      y: "Y"
+      },
+      {
+      w: "W",
+      z: "Z"
+      }
+    ],
+    [
+      {
+      1: "one",
+      2: "two"
+      },
+      {
+      3: "three",
+      4: "four" 
+      }
+    ]
+    ]
+    ];
+    console.log(secondArray);//Esta llamada devuelve: {1: "one", 2: "two"}
+    </code>
+    </pre>
+            <h2>Acceder al contenido de una matriz usando la notación entre corchetes</h2>
+            <p>Para poder acceder al contenido de una matriz podemos usar la notación de corchetes:</p>
+            <pre>
+    <code>
+    let numbersArray = [1, 100, 3, 4, 5];
+    numbersArray[1] = "two";
+    console.log(numbersArray);
+    //Devuelve: [1, 'two', 3, 4, 5],también podemos asignarle a una var como valor una parte del arreglo:
+    let string = numbersArray[1];
+    //Ahora string tiene de valor two
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
