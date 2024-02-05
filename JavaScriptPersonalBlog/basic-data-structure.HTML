@@ -72,6 +72,24 @@
     //Ahora string tiene de valor two
     </code>
     </pre>
+            <h2>Agregar elementos a una matriz con .push() y .unshift()</h2>
+            <p>Como ya sabemos,las matrices son mutables(se le pueden agregar/quitar elementos):</p>
+            <pre>
+    <code>
+    let string1 = "XX";
+    let string2 = [8, 9];
+    string2.unshift('VI', 7);
+    string2.push(string1);
+    //En el caso de quisieramos pasarle una matriz como argumento a una función:
+    function count(string) {
+    string.unshift(1, 'two', "three");
+    string.push("VI", 'VII', 8);
+    return string;
+    }
+    console.log(count([4, 5]));
+    //Aquí devuelve: [1, 'two', 'three', 4, 5, 'VI', 'VII', 8] 
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
