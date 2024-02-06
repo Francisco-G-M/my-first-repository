@@ -131,6 +131,19 @@
     //Aquí eliminamos: 1,2,4,5,7,8 solo quedando [3, 6];
     </code>
     </pre>
+            <h2>Agregar elementos usando .splice()</h2>
+            <p>Retomando el tema anterior,el tercer parametro de .splice() nos permite agregar elementos a la matriz:
+            </p>
+            <pre>
+    <code>
+    const numbersArray = [10, 20, 30, 30, 60];
+    const index = 3;
+    const remove = 1;
+    numbersArray.splice(index, remove, 40, 50);
+    console.log(numbersArray);
+    //Esta llamada nos devolvería: [10, 20, 30, 40, 50, 60] siendo este arreglo el nuevo valor de numbersArray.
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
