@@ -90,6 +90,26 @@
     //Aquí devuelve: [1, 'two', 'three', 4, 5, 'VI', 'VII', 8] 
     </code>
     </pre>
+            <h2>Eliminar elementos de una matriz con .pop() y .shift()</h2>
+            <p>En este caso,si quisieramos remover el primer y último elemento de una matriz tendríamos que usar .pop()
+                y .shift():</p>
+            <pre>
+    <code>
+    let saludo = ["que", "onda", "pa"];
+    saludo.pop();
+    saludo.shift();
+    //También podemos asignarle el valor eliminado a una variable:
+    let guardar = saludo.pop();
+    //En este caso saludo sería igual a [] y guardar sería "onda".Por último,si los usaramos en una función:
+    function usarPopShift(arr) {
+    let pop = arr.pop();
+    let shift = arr.shift();
+    return [shift, pop];
+    }
+    console.log(usarPopShift(['shift', 'nothing', 'nothing', 'pop']));
+    //Esto nos devuelve: ['shift', 'pop']
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
