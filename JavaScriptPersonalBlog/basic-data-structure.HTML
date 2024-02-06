@@ -110,6 +110,27 @@
     //Esto nos devuelve: ['shift', 'pop']
     </code>
     </pre>
+            <h2>Eliminar elementos usando .splice()</h2>
+            <p>Si quisieramos eliminar cualquier número de elementos consecutivos de cualquier matriz,debemos usar
+                .splice().Este puede tomar 3 parametros,el primero representa el índice de la matriz desde la cual
+                comenzar a eliminar elementos,el segundo ínidica el número de elementos a eliminar:</p>
+            <pre>
+    <code>
+    let string = ['que', 'onda', 'capo', 'todo', 'bien'];
+    string.splice(2, 2);
+    /*Aquí estamos eliminando 2 elementos comenzando con el tercer elemento(en el índice 2).Ahora string tiene de valor ['que', 'onda', 'bien'].
+    También podemos asignarle los valores eliminados a una var:*/
+    let string = ['que', 'onda', 'pa', 'todo', 'bien'];
+    let string2 = string.splice(2, 2);
+    //Ahora string2 es igual a: ['pa', 'todo'].También podemos usar varios .splice():
+    const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+    numbers.splice(0, 2);
+    numbers.splice(1, 2);
+    numbers.splice(2, 2);
+    console.log(numbers);
+    //Aquí eliminamos: 1,2,4,5,7,8 solo quedando [3, 6];
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
