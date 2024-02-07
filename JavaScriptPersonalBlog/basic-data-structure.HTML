@@ -155,6 +155,26 @@
     último índice de .splice(),por eso no figura en newArray "four"*/
     </code>
     </pre>
+            <h2>Copiar una matriz con el operador spread</h2>
+            <p>En el caso de que quisieramos todos los elementos de una matriz,podemos copiarlos usando el operador
+                spread:</p>
+            <pre>
+    <code>
+    let valores1 = [undefined, true, false, null, NaN];
+    let valores2 = [...valores2];
+    //Ahora valores2 tiene de valor el mismo arreglo que valores1.Si lo usaramos en una función:
+    function copy(arr, num) {
+    let newArr = [];
+    while(num >= 1) {
+    newArr.push([...arr]);
+    num--;
+    }
+    return newArr;
+    }
+    console.log(copy([NaN, undefined, null], 3));
+    //El número que pongamos va a indicar la cantidad de veces que se le asignara el valor de arr a newArr.
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
