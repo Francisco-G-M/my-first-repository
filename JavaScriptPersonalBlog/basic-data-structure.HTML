@@ -205,6 +205,25 @@
     //La primera llamada devuelve -1,la segunda 0,la tercera 2 y la cuarta 3.
     </code>
     </pre>
+            <h2>Iterar a través de todos los elementos de una matriz usando bucles for</h2>
+            <p>Cuando trabajamos con matrices,a veces resulta útil iterar cada elemento para encontrar uno o más
+                elementos que lleguemos a necesitar o manipular una matriz en función de que elementos de datos cumplen
+                con un conjunto de criterios</p>
+            <pre>
+    <code>
+    function filteredArray(arr, elem) {
+    let newArr = [];
+    for(let a = 0; a &lt arr.length; a++) {
+    if(arr[a].indexOf(elem) == - 1) {
+    newArr.push(arr[a]);
+    }
+    }
+    return newArr;
+    } 
+    console.log(filteredArray([[1, 2, 1], [1, 6, 3], [1, 13, 26], [19, 1, 9]], 3));
+    //Aquí nos devuelve una nueva matriz anidada que solo contiene las matrices que no tengan el elem 3
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
