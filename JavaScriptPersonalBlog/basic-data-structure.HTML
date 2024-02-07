@@ -175,6 +175,22 @@
     //El número que pongamos va a indicar la cantidad de veces que se le asignara el valor de arr a newArr.
     </code>
     </pre>
+            <h2>Combinar matrices con el operador spread</h2>
+            <p>Otra ventaja del operado spread es que nos permite combinar matrices/insertar elementos de una matriz a
+                otra en cualquier índice:</p>
+            <pre>
+    <code>
+    let example1 = ["tres", "cuatro", "cinco", "seis"];
+    let example2 = ["uno", "dos", ...example1, "siete"];
+    //Ahora example2 tiene de valor ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete'].Si lo usaramos en una función:
+    function example3() {
+    let example1 = ["tres", "cuatro", "cinco", "seis"];
+    let example2 = ["uno", "dos", ...example1, "siete"];
+    return example2;
+    }
+    console.log(examole3());
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
