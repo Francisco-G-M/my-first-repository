@@ -285,6 +285,23 @@
     //Aquí le reaccinamos el valor a la propiedad(clave) nombre
     </code>
     </pre>
+            <h2>Acceder a los nombres de propiedades con la notación de corchetes</h2>
+            <p>La notacón de corchetes nos puede ser útil cuando no conocemos las propiedades de los objetos a las que
+                queremos utilizar,permitiendonos acceder a ellas de una manera más dinámica:</p>
+            <pre>
+    <code>
+    let compras = {
+    manzanas: 10,
+    carne: "Tapa de azado",
+    bolsaDePapas: 1,
+    consimento: "Pimienta negra"
+    };
+    function listaDeCompras(comestibles) {
+    return compras[comestibles];
+    };
+    console.log(listaDeCompras("condimento"));
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
