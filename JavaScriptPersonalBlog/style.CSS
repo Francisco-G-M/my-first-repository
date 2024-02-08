@@ -1,3 +1,4 @@
+/*header*/
 h1 {
     color: black;
     background-color: yellow;
@@ -11,15 +12,30 @@ header {
     text-align: left;
     text-align: center;
 }
+.enlace-barra-nav {
+    color: black;
+    background-color: yellowgreen;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 3px;
+}
 
+.enlace-barra-nav:hover {
+    color: red;
+    background-color: white;
+}
 .titulo {
     height: 45px;
     width: 99%;
     text-align: center;
 }
+/*body*/
 body {
     background-color: #353333;
 }
+/*main*/
 h2 {
     color: yellow;
     text-align: center;
@@ -51,7 +67,9 @@ img {
     grid-gap: 20%;
     box-shadow: 1px 1px 20px black;
 }
-
+.pricipio-img{
+height: 100%;
+}
 .definicion {
     margin-top: 15%;
     font-family: cursive;
@@ -86,22 +104,6 @@ pre {
     color: black;
     font-size: 18px;
 }
-
-.enlace-barra-nav {
-    color: black;
-    background-color: yellowgreen;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    border: 1px solid black;
-    padding: 3px;
-}
-
-.enlace-barra-nav:hover {
-    color: red;
-    background-color: white;
-}
-
 th {
     border: 1px solid white;
 }
@@ -117,6 +119,7 @@ table {
     width: 16%;
     margin-left: 42%;
 }
+/*footer*/
 #titulo-footer{
     background-color: black;
     border: 1px solid aqua;
