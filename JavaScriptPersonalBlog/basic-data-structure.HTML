@@ -249,6 +249,24 @@
     console.log(arreglosAnidados[2][1]);// esto es igual a: [[[100]]],si pusieramos [2][1][0] = [[100]],[2][1][0][0] = [100] y [2][1][0][0][0] = 100
     </code>
     </pre>
+            <h2>Agregar pares clave-valor a objetos en J.S</h2>
+            <p>Los objetos son solo colecciones de oares clave-valor,es decir,son piezas de datos(valores) asignados a
+                identificadores únicos llamados propiedades(claves):</p>
+            <pre>
+    <code>
+    const comidas = {
+    naranjas: 10,
+    peras: 6,
+    manzanas: 9,
+    bananas: 5
+    };
+    comidas.duraznos = 4;
+    comidas.mangos = 5;
+    comidas['frutos secos'] = 15;
+    console.log(comidas);
+    //Ahora al llamar al objeto,este incluira las nuevas clave-valor que le asignamos
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
