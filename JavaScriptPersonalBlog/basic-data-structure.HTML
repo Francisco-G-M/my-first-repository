@@ -267,6 +267,24 @@
     //Ahora al llamar al objeto,este incluira las nuevas clave-valor que le asignamos
     </code>
     </pre>
+            <h2>Modificar un objeto anidado dentro de un objeto</h2>
+            <p>Dentro de los objetos podemos tener matrices,otros onjetos o cualquier otro tipo de dato valido en J.S,a
+                estos mismos se les puede asignar nuevos valores a sus claves:</p>
+            <pre>
+    <code>
+    let usuario = {
+    id: 0124382,
+    registrado: "17/12/19";
+    informacion: {
+    sexo: 'Masculino',
+    nombre: 'Osvaldo'
+    }
+    };
+    usuario['informacion'].nombre = 'Miguel';
+    console.log(usuario);
+    //Aquí le reaccinamos el valor a la propiedad(clave) nombre
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
