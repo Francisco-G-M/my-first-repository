@@ -224,6 +224,31 @@
     //Aquí nos devuelve una nueva matriz anidada que solo contiene las matrices que no tengan el elem 3
     </code>
     </pre>
+            <h2>Crear matrices multidimensionales complejas</h2>
+            <p>Las matrices pueden tener una infinita profundidad de matrices que pueden contener otras
+                matrices,teniendo cada una sus propios niveles,y así infinitamente.Es así como una matriz se convierte
+                en una estructura de datos compleja(una matriz multidimensional o anidada):</p>
+            <pre>
+    <code>
+    let arreglosAnidados = [
+    ['unshift', false],
+    [
+     [true, 'array']
+    ],
+    [
+     [
+       ['splice', 7]
+     ],
+     [
+       [
+         [100]
+       ]
+     ] 
+    ]
+    ];
+    console.log(arreglosAnidados[2][1]);// esto es igual a: [[[100]]],si pusieramos [2][1][0] = [[100]],[2][1][0][0] = [100] y [2][1][0][0][0] = 100
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
