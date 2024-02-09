@@ -18,7 +18,7 @@
     <main>
         <h2>¿Qué son las estructuras de datos básicas?</h2>
         <div class="principio">
-            <img src="BDS1.png" alt="basic-data-structure-logo">
+            <img src="BDS1.jpg" alt="basic-data-structure-logo">
             <p class="definicion">Las estructuras de datos básicas(Arrays y Objetos) son maneras en las que podemos
                 guardar elementos en la computadora,de esta forma podemos acceder,crear y eliminar datos de forma
                 eficiente.Ademas podemos usar metodos como objectKeys() y .splice() para acceder y manipular los datos
@@ -300,6 +300,16 @@
     return compras[comestibles];
     };
     console.log(listaDeCompras("condimento"));
+    </code>
+    </pre>
+            <h2>Usar "delete" para eliminar las propiedades de los objetos</h2>
+            <p>En caso de que quisieramos eliminar claves-valor de un objeto tenemos que usar la palabra clave "delete":
+            </p>
+            <pre>
+    <code>
+    delete compras.manzanas;
+    delete compras.carne;
+    delete compras['condimento'];
     </code>
     </pre>
         </div>
