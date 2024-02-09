@@ -312,6 +312,34 @@
     delete compras['condimento'];
     </code>
     </pre>
+            <h2>Evaluar si un objeto contiene una propiedad</h2>
+            <p>En caso de que quisieramos comprobar si un objeto tiene una propiedad en específico,podemos usar los
+                métodos: .hasOwnProperty() o in:</p>
+            <pre>
+    <code>
+    let clientes = {
+    Gomes: {
+    activo: true,
+    registrado: '01/04/12'
+    },
+    Marcelo: {
+    activo: false,
+    registrado: '19/02/14'
+    },
+    Papo: {
+    activo: true,
+    registrado: '10/07/17'
+    }
+    };
+    function verificarUsers(user) {
+    return 'Gomes' in user && 'Marcelo' in user && 'Papo' in user;
+    }
+    console.log(verificarUsers(clientes));
+    //En caso de que usaramos el otro método:
+    user.hasOwnProperty('Marcelo')
+    //Básicamente escribimos lo mismo que el ejemplo de in,pero con este método 
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
