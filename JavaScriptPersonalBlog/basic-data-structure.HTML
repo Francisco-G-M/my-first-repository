@@ -371,6 +371,31 @@
     console.log(verificarUsers(object));
     </code>
     </pre>
+            <h2>Generar un arreglo con todas las claves de un objeto usando Object.keys()</h2>
+            <p>La función de Object.keys() es generar un arreglo que tendrá todas las claves almacenadas en un
+                objeto.Dentro de los parentesis de este método escribimos el nombre del objecto como argumento:</p>
+            <pre>
+    <code>
+    let family = {
+    John: {
+    character: "Son"
+    },
+    Mike: {
+    character: "Father"
+    },
+    Mariana: {
+    character: "Mather"
+    }
+    };
+    let result = Object.keys(family);
+    console.log(result);
+    function myFamily(member) {
+    return Object.keys(member);
+    }
+    console.log(myFamily(family));
+    //Tanto la llamada de la función y la del result devuelven: ['John', 'Mike', 'Mariana']
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
