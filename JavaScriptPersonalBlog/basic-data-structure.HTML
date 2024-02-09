@@ -340,6 +340,37 @@
     //Básicamente escribimos lo mismo que el ejemplo de in,pero con este método 
     </code>
     </pre>
+            <h2>Iterar mediante las claves de un objeto con la sentencia for...in</h2>
+            <p>Si necesitamos iterar todas las claves de un objeto podemos usar un bucle for...in para lograrlo:</p>
+            <pre>
+    <code>
+    const object = {
+    Pepito: {
+    online: true
+    },
+    Jaimito: {
+    online: false
+    },
+    Perro: {
+    online: false
+    }
+    };
+    for(let people in object) {
+    console.log(people, object[people]);
+    }
+    //Si lo usaramos en una función:
+    function countPlayers(users) {
+    let final = 0;
+    for(let obj in users) {
+    if(users[obj].online == true) {
+    final++;
+    }
+    }
+    return final
+    }
+    console.log(verificarUsers(object));
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
