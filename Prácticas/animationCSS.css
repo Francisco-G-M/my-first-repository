@@ -1,0 +1,145 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*animacion 1*/
+#fondo1 {
+    background: url(ES6logo.jpg);
+    background-size: 100% 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#fondo2 {
+    background: url(JSbasicLogoPracticas.png);
+    background-size: 100% 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: animacion1 10s 4s linear infinite;
+    -webkit-animation: animacion2 10s 4s linear infinite;
+}
+
+#fondo3 {
+    background: url(fondoAzul.avif);
+    background-size: 100% 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: animacion1 10s 1s linear infinite;
+    -webkit-animation: animacion1 10s 1s linear infinite;
+}
+
+@keyframes animacion1 {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes animacion1 {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/*animacion 2*/
+@keyframes animacion2 {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    30% {
+        left: -100%;
+    }
+    80% {
+        left: -100%;
+    }
+    90% {
+        left: 0%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+@keyframes animacion3 {
+    0% {
+        top: 0%;
+    }
+    20% {
+        top: 0%;
+    }
+    30% {
+        top: -100%;
+    }
+    80% {
+        top: -100%;
+    }
+    90% {
+        top: 0%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+
+#a {
+    position: absolute;
+    background: url(JSbasicLogoPracticas.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#b {
+    position:absolute;
+    background: url(ES6logo.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    animation: animacion3 10s ease-in-out 2s infinite;
+}
+
+#c {
+    position:absolute;
+    background: url(fondoAzul.avif);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    animation: animacion2 10s ease-in-out 0s infinite;
+}
