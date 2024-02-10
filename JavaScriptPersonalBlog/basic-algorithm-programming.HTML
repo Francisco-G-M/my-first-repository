@@ -51,6 +51,23 @@
     console.log(final);
     </code>
     </pre>
+            <h2>Factorizar un número</h2>
+            <p>Recordemos que un factorial es el producto de todos los enteros menores o iguales al número
+                seleccionado,en este caso vamos a devolver el factorial de 9:</p>
+            <pre>
+    <code>
+    function factorizar(n) {
+    if(n &lt= 0) {
+    return 1;
+    }
+    console.log(n);
+    return n*factirizar(n - 1);
+    }
+    console.log(factirizar(9));
+    /*La primera llamada sirve como un punto de control,este nos devuelve la recursividad de 9.La segunda llamada nos devuelve el resultado de
+    múltiplicar la recursividad de 9,dando 362.880*/
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
