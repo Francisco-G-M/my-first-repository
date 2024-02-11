@@ -90,6 +90,28 @@
     cada letra*/
     </code>
     </pre>
+            <h2>Devolver los números mayores de los arreglos</h2>
+            <p>Para devolver un arreglo que tenga el número mayor de cada matriz anidad,podemos iterar con un bucle for:
+            </p>
+            <pre>
+    <code>
+    function ejemplo(array) {
+    let newArr = [];
+    for(let h = 0; h &lt array.length; h++) {
+    let largestNumber = array[h][0];
+    for(let i = 0; i &lt array[h].length; i++) {
+    if(array[h][i] &gt largestNumber) {
+    largestNumber = array[h][i];
+    }
+    }
+    newArr[h] = largestNumber;
+    }
+    return  newArr;
+    }
+    var final = ejemplo([[8, 6, 9, 7], [13, 30, 29, 21], [20, 15, 14, 10], [0, 99, 8, 3]]);
+    console.log(final);
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
