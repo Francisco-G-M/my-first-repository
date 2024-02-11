@@ -112,6 +112,30 @@
     console.log(final);
     </code>
     </pre>
+            <h2>Confirmar si una cadena termina con el destino dado</h2>
+            <p>Para verificar que una cadena termine con la cadena final dada podemos hacer lo siguiente:</p>
+            <pre>
+    <code>
+    function ending(str, end) {
+    let theEnd = end.length;
+    let endMatch = str.splice(str.length - theEnd, str.length);
+    if(endMatch == end) {
+    return true;
+    }
+    return false;
+    }
+    var theFinal = ending("Tomas", "s");
+    console.log(theFinal); // Esta llamada devuelve true
+    /*Esto sería la manera larga de hacerlo,si quisieramos hacerlo más simple y dinámico sería usando .endsWitch() que hace exactamente lo mismo:
+    let greeting = "hello";
+    console.log(greeting.endsWitch('lo'));
+    function example(str, final) {
+    return str.endsWitch(final);
+    }
+    let example2 = example("Mí documento es 2233448", 8);
+    console.log(example2); // Esta llamada devuelve true
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
