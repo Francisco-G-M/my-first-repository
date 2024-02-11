@@ -160,6 +160,17 @@
     console.log(example3("hi", 4));
     </code>
     </pre>
+            <h2>Recortar una cadena</h2>
+            <p>En caso de que quisieramos recortar una cadena que es más larga de la longitud máxima asignada,podemos
+                usar .splice() para truncarla donde querramos:</p>
+            <pre>
+    <code>
+    function truncar(str, n) {
+    return string.length &gt n ? string.splice(0, n) : string;
+    }
+    console.log(truncar("Truncar la palabra más larga", 7)); //Esto nos devuelve la primera palabra
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
