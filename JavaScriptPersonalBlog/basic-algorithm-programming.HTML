@@ -136,6 +136,30 @@
     console.log(example2); // Esta llamada devuelve true
     </code>
     </pre>
+            <h2>Repetir una cadena</h2>
+            <p>Para repetir una cadena por una determinada cantidad de veces podemos hacerlo de las siguientes maneras:
+            </p>
+            <pre>
+    <code>
+    function repeatString(str1, num) {
+    let string = "";
+    for(let i = 0; i &lt num; i++) {
+    string += str1;
+    }
+    return string;
+    }
+    repeatString("W", 3);
+    function example2(str2, n) {
+    return n &gt 0 ? str - example2(str2, n - 1) : "";
+    }
+    console.log(example2(363, 2));
+    //La forma más sencilla y práctica para esto sería usando el método .repeat():
+    function example3(str3, n2) {
+    return str3.repeat(n2);
+    }
+    console.log(example3("hi", 4));
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
