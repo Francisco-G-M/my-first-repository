@@ -68,6 +68,28 @@
     múltiplicar la recursividad de 9,dando 362.880*/
     </code>
     </pre>
+            <h2>Encontrar la palabra más larga de una cadena</h2>
+            <p>En caso de que quisieramos encontrar la palabra más larga de una cadena haríamos así:</p>
+            <pre>
+    <code>
+    function theLongWord(str) {
+    let longWord = "";
+    let word = str.split(" ");
+    for(let c = 0; c &lt word.length; c++) {
+    let individualWord = word[c];
+    if(individualWord.length &gt longWord.length) {
+    longWord = individualWord;
+    }
+    }
+    return longWord.length;
+    }
+    let buscar = theLongWord("Cual es la palabra más larga");
+    console.log(buscar);
+    /*Lo que hacemos es iterar a través de la cadena hasta encontrar la palabra más larga,".split()" lo que hace es separar cada palabra en una
+    subcadena dentroo de un arreglo,si ponemos (" ") con un espacio hará lo ya dicho, si no hará lo mismo pero separando y volviendo una subcadena a
+    cada letra*/
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
