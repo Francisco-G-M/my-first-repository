@@ -182,6 +182,27 @@
     return valor === true||valor === false;
     </code>
     </pre>
+            <h2>Convertir la primera letra en Mayúscula</h2>
+            <p>En esta ocasión queremos convertir en Mayúscula las primeras letras de las palabras de una cadena:</p>
+            <pre>
+    <code>
+    function letrasConMayuscula(str) {
+    let newString = str.split(" ");
+    let newArr = [];
+    for(let x in newString) {
+    newArr[x] = newString[x][0].toUpperCase() + newString[x].slice(1).toLowerCase();
+    }
+    return newArr.join(" ");
+    }
+    let a = letrasConMayuscula("soy una tasa de cafe");
+    console.log(a);
+    /* .toLowerCase() devuelve una copia de la cadena en minuscula,en este caso,vuelve a minuscula todo el contenido de la subcadena a partir del
+    índice 1 de esa subcadena.
+    .join(" ") concatena los elementos de una o más matrices unidimensionales,en este caso esta uniendo las subcadenas hechas por .split(" ").Este
+    método toma un parametro: ejemplo.join(separador); el separador es opcional,si se omite,los elementos del arreglo seran separados por una coma,
+    pero si es una cadena vacía ("") une todos los elementos sin ningún carácter entre ellos*/
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
