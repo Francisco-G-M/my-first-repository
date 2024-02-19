@@ -203,6 +203,24 @@
     pero si es una cadena vacía ("") une todos los elementos sin ningún carácter entre ellos*/
     </code>
     </pre>
+            <h2>Copiar y agregar un arreglo en otro arreglo</h2>
+            <p>En este caso queremos copiar y agregar un arreglo en otro arreglo,insertando en el índice índicado como
+                parametro en la función:</p>
+            <pre>
+    <code>
+    function copiarAgregar(arr1, arr2, indice) {
+    let newArr = arr2.slice();
+    for(let w = 0; w &lt arr1.length; w++) {
+    newArr.splice(indice, 0, arr1[w]);
+    indice++;
+    }
+    return newArr;
+    }
+    let a = copiarAgregar([55, 66, 77], [44, 88, 99], 1);
+    console.log(a);
+    //El parametro "índice" índica donde va a empezar a copiar el arr1 en el arr2
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
