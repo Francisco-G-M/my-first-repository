@@ -221,6 +221,20 @@
     //El parametro "índice" índica donde va a empezar a copiar el arr1 en el arr2
     </code>
     </pre>
+            <h2>Eliminar los valores falsos de un arreglo con .filter()</h2>
+            <p>El método .filter() tiene como función crear un nuevo Array con los elementos que cumplen con la
+                condición dada (.filter(consición)),en este caso,la condición son los valores booleanos primitivos
+                (true, false),devolviendonos solo los elementos que sean true:</p>
+            <pre>
+    <code>
+    function convertirValoresEnBooleanos(array) {
+    return array.filter(boolean);
+    }
+    let a = convertirValoresEnBooleanos([10, "Hi", '', NaN, 9, false]);
+    console.log(a);
+    //Aquí nos devuelve loa elementos considerados true: [10, 'Hi', 9],todos los demas son false
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
