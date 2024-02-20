@@ -235,6 +235,21 @@
     //Aquí nos devuelve loa elementos considerados true: [10, 'Hi', 9],todos los demas son false
     </code>
     </pre>
+            <h2>Ordenar y manipular los elementos de un array con el método .sort()</h2>
+            <p>La función de .sort() es ordenar los elementos de un array según un criterio(este mismo puede ser
+                definido opcionalmente con un callback,estos son básicamente el uso de funciones como párametros de
+                otras funciones).En esta ocasión,queremos devolver el índice más bajo en el que un valor va a ser
+                introducido en un arreglo que anteriormente fue ordenado:</p>
+            <pre>
+    <code>
+    function example(array, n) {
+    return array.concat(n).sort((x, y) => x-y).indexOf(n);
+    }
+    let result = example([5, 7], 6);
+    console.log(result);
+    //Esta llamada nos devuelve el índice más bajo donde fue insertado el valor de n en el array
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
