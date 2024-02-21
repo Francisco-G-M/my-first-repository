@@ -1,54 +1,56 @@
 *{
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  text-align: center;
 }
-.enlace-barra{
-    padding: 10px 30px;
-    background-color: #3e5d29;
-    color: #30A8F2 ;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .enlace-barra:hover{
-      background-color: #30A8F2;
-    color:#29355D; 
-  }
-  #barra-nav{
-    background-color: #748D9C;
-    text-align: center;
-  }
-  h1{
-    color:#30A8F2;
-    background-color: #BF2626;
-    width: 100%;
-    height: 100%;
-    font-size: 100px;
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-  }
-  #principal{
-    width: 100%;
-    display: inline-block;
-    text-align: center;
-  }
-  img{
-    width: 30%;
-    height: 50%;
-  }
-
-  #segundo{
-    font-size: 30px;
-    text-align: center;
-  }
-  main{
-    background: #F25D07;
-  }
-  a{
-    background-color:red;
-    color:black ;
-    border: 2px solid black;
-  }
-  footer{
-    width: 100%;
-    height: 50%;
-  }
+header{
+  width: 1345px;
+}
+h1{
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: red;
+  font-size: 100px;
+  border: 2px solid black;
+}
+.AuspiciantesImg{
+  width: 24%;
+  height: 20%;
+}
+main{
+  background-color: rgb(212, 53, 53);
+}
+h2{
+  font-size: 30px;
+  color: white;
+  border: 3px solid white;
+}
+p{
+  font-size: 23px;
+  color: white;
+}
+#final-img{
+  width: 100%;
+  height: 50%;
+}
+h3{
+  color: cyan;
+  border: 3px solid cyan;
+}
+#participar{
+  text-align: center;
+}
+a{
+  color: skyblue;
+  margin: auto;
+  font-size: 23px;
+}
+footer{
+  background: red;
+}
+#texto-final{
+  font-size: 18px;
+  border: 2px solid black;
+}
