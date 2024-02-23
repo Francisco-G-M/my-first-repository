@@ -250,6 +250,25 @@
     //Esta llamada nos devuelve el índice más bajo donde fue insertado el valor de n en el array
     </code>
     </pre>
+            <h2>Comprobar la existencia de los elementos del segundo índice de un arreglo en el primer índice</h2>
+            <p>En esta ocasión vamos a comprobar que los elementos del segundo índice se encuentren dentro del primer
+                índice de un arreglo:</p>
+            <pre>
+    <code>
+    function comprobar(array) {
+    let first = array[0].toLowerCase();
+    let second = array[1].toLowerCase();
+    for(let a = 0; a &lt second.length; a++) {
+    if(first.indexOf(second[a]) &lt 0) {
+    return false;
+    }
+    }
+    return true;
+    }
+    comprobar(["buenas", "HOLA"]);
+    //Para evitarnos problemas con las mayúsculas convertimos a minuscula los dos índices del arreglo
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
