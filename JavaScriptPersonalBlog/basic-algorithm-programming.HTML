@@ -269,6 +269,22 @@
     //Para evitarnos problemas con las mayúsculas convertimos a minuscula los dos índices del arreglo
     </code>
     </pre>
+            <h2>Dividir un arreglo unidimensional en uno bidimensional</h2>
+            <p>Lo que haremos será dividir un arreglo unidimensional en grupos según el valor del segundo parametro de
+                la función:</p>
+            <pre>
+    <code>
+    function dividirEnGrupos(array, division) {
+    let newArr = [];
+    for(let b = 0; b &lt array.length; b += division) {
+    newArr.push(array.slice(b, b + division));
+    }
+    return newArr;
+    }
+    dividirEnGrupos([10, 20, 30, 40], 2);
+    //Aquí nos devuelve: [[10, 20], [30, 40]]
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
