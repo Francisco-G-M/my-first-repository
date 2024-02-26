@@ -16,10 +16,11 @@
         </nav>
     </header>
     <main>
-        <h2>¿Qué es la progrmación orientada a objetos?</h2>
+        <h1>¿Qué es la progrmación orientada a objetos?</h1>
         <div class="principio">
             <img src="OOP1.jpeg" alt="object-oriented-programming">
-            <p class="definicion">La OOP (progrmación orientada a objetos) es un modelo de programación en el cual se utilizan los objetos
+            <p class="definicion">La OOP (progrmación orientada a objetos) es un modelo de programación en el cual se
+                utilizan los objetos
                 y
                 las clases para organizar el código,buscando que este sea reutilizable,organizado y sencillo de
                 mantener.Este modelo sigue el principio de desarrollo de sofware DRY (Don't Repeat Yourself),que como
@@ -27,7 +28,32 @@
         </div>
 
         <div id="object-oriented-programming">
-
+            <h2>Definir una función "constructor"</h2>
+            <p>Este tipo de funciones crean nuevos objetos que definen propiedades y comportamientos para el nuevo
+                objeto:</p>
+            <pre>
+    <code>
+    function Character() {
+    this.name = "Scoby-Duu";
+    this.color = "Brown";
+    }            
+    </code>
+    </pre>
+            <p>Los constructores siguen las siguientes convenciones:</p>
+            <ul>
+                <li>-Se definen con un nombre en mayúscula para distinguirlos de otras funciones que no sean
+                    constructores.</li>
+                <li>-Utilizan la clave "this" para establecer propiedades del objeto que se crea.Dentro de esta función
+                    "this" se refiere al nuevo objeto.</li>
+                <li>-Los constructores definen propiedades y comportamientos,a diferencia de las funciones que devuelven
+                    un valor.</li>
+            </ul>
+            <p>Si queremos asignar el constructor a una variable:</p>
+            <pre>
+    <code>
+    let otherCharacter = new Character();
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
