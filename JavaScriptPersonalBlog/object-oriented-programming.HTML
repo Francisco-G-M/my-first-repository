@@ -114,6 +114,20 @@
             <p>Lo que estamos haciendo es asignarle a "caniche" las propiedades directas del constructor
                 "Perro",posteriormente con un ciclo for..in y una sentencia if le asignamos a arrayDog las propiedades
                 copiadas del nuevo objeto caniche.</p>
+            <h2>Reducir código duplicado con la propiedad "prototype"</h2>
+            <p>La propiedad "prototype" encierra y reutiliza el código para crear objetos,siendo muy útil para evitar
+                las variables duplicadas dentro de cada instancia:</p>
+            <pre>
+    <code>
+    function Perro(nombre) {
+    this.nombre = nombre;
+    }
+    let labrador = new Perro("Mr.Dog");
+    Perro.prototype.patas = 4;
+    </code>
+    </pre>
+            <p>Aquí le asignamos a "Perro prototype" la propiedad "patas" con su valor,esto hara que todas las
+                instancias de "Perro" tengan esta clave-valor en común.</p>
         </div>
     </main>
     <footer>
