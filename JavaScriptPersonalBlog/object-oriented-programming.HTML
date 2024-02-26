@@ -128,6 +128,29 @@
     </pre>
             <p>Aquí le asignamos a "Perro prototype" la propiedad "patas" con su valor,esto hara que todas las
                 instancias de "Perro" tengan esta clave-valor en común.</p>
+            <h2>Iterar en todas las propiedades,seleccionarlas individualmente y agrgarlas en arrays</h2>
+            <p>En este caso queremos iterar en todas las propiedades de un constructor,para posteriormente asignar las
+                propiedades directas a un array,y las propiedades prototipo a otro array:</p>
+            <pre>
+    <code>
+    function Perro(nombre) {
+    this.nombre = nombre;
+    }
+    Perro.prototype.patas = 4;
+    let labrador = new Perro("Mr.Dog");
+    let propiedadesDirectas = [];
+    let propiedadesPrototipos = [];
+    for(let propiedades in labrador) {
+    if(labrador.hasOwnProperty(propiedades)) {
+    propiedadesDirectas.push(propiedades);
+    } else {
+    propiedadesPrototipos.push(propiedades);
+    }
+    }
+    console.log(propiedadesDirectas);
+    console.log(propiedadesPrototipos);
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
