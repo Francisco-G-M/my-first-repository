@@ -67,15 +67,31 @@
             <p>La función de los parametros en los constructores es volverlos más flexibles,pudiendo definir las
                 propiedades de cada nuevo objeto en el momento que se crea:</p>
             <pre>
-<code>
-function Dog(name, color) {
-this.name = name;
-this.color = color;
-this.legs = 4;
-}
-let goldenTerrier = new Dog("BigBoy", "Golden");
-</code>
-</pre>
+   <code>
+   function Dog(name, color) {
+   this.name = name;
+   this.color = color;
+   this.legs = 4;
+   }
+   let goldenTerrier = new Dog("BigBoy", "Golden");
+   </code>
+   </pre>
+            <h2>Verificar el constructor de un objeto con "instanceof"</h2>
+            <p>La función de "instanceof" es verificar la instancia de un objeto de un determinado
+                constructor,básicamente compara un objeto con un constructor,devolviendo true o false si el objeto fue
+                creado/o no con ese constructor:</p>
+            <pre>
+   <code>
+   function Propiedad(numberOfHouse) {
+   this.numberOfHouse = numberOfHouse;
+   }
+   let miPropiedad = new Propiedad(17);
+   miPropiedad instanceof Propiedad;
+   //Esto devuelve true,támbien podemos llamarlo con un console.log():
+   console.log(miPropiedad instanceof Propiedad);
+   //támbien devuelve true
+   </code>
+   </pre>
         </div>
     </main>
     <footer>
