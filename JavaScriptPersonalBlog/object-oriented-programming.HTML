@@ -92,10 +92,37 @@
    //támbien devuelve true
    </code>
    </pre>
+            <h2>Propiedades directas</h2>
+            <p>Denominados propiedades directas a todo aquello definido en la instancia de un objeto,e.j:</p>
+            <pre>
+   <code>
+   function Perro(nombre) {
+   this.nombre = nombre;
+   this.patas = 4;
+   } 
+   let caniche = new Perro("Limon");
+   let arrayDog = [];
+   for(let agregar in caniche) {
+   if(agregar in caniche) {
+   arrayDog.push(agregar);
+   }
+   }
+   console.log(arrayDog);
+   //Aquí nos devuelve: ['nombre', 'patas']
+   </code>
+   </pre>
+            <p>Lo que estamos haciendo es asignarle a "caniche" las propiedades directas del constructor
+                "Perro",posteriormente con un ciclo for..in y una sentencia if le asignamos a arrayDog las propiedades
+                copiadas del nuevo objeto caniche.</p>
         </div>
     </main>
     <footer>
-
+        <h3 id="titulo-footer">Contactos:</h3>
+        <div class="contactos">
+            <p class="texto-final">Instragram: Fraaan.g_m</p>
+            <p class="texto-final">Gmail: fgmanuello1@gmail.com</p>
+            <p class="texto-final">GitHub: Francisco-G-M</p>
+        </div>
     </footer>
 </body>
 
