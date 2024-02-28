@@ -194,6 +194,24 @@
     caniche.descripcion();
     </code>
     </pre>
+            <h2>Establecer la propiedad "constructor" al asignar un prototipo a un nuevo objeto</h2>
+            <p>Al establecer un prototipo a un objeto nuevo sucede un efecto secundario,se sobrescribe la porpiedad
+                "constructor",esto se soluciona definiendo la propiedad "constructor" siempre que se establesca un
+                prototipo a un objeto nuevo:</p>
+            <pre>
+    <code>
+    Perro.prototype = {
+    constructor: Perro,
+    patas: 4,
+    propietario() {
+    console.log("El dueño del perro es John.");
+    },
+    descripcion() {
+    console.log("Caniche blanco de 25kg y 40cm de alto.");
+    }
+    };
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
