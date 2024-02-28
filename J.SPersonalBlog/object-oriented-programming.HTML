@@ -245,6 +245,41 @@
     //Los tres devuelven true
     </code>
     </pre>
+            <h2>Seguir el principio de DRY(Don't Repeat Yourself)</h2>
+            <p>El principio DRY consiste en evitar repetir código,debido a que se considera un problema porque: si se
+                realiza cualquier tipo de cambio requiere corregir el código en múltiples lugares,significando más
+                trabajo y mayor margen para errores:</p>
+            <pre>
+    <code>
+    function Lagarto() {};
+    Lagarto.prototype = {
+    constructor: Lagarto,
+    dialogo() {
+    console.log("He say hello.");
+    }
+    };
+    function Gato() {};
+    Gato.prototype = {
+    constructor: Gato,
+    dialogo() {
+    console.log("He say hello.");
+    }
+    };
+    </code>
+    </pre>
+            <p>Aquí se repite el método "dialogo",para cumplir con el principio de DRY podemos crear un supertype que
+                incluya este método y así eliminarlo de los constructores "Lagarto" y "Gato":</p>
+            <pre>
+    <code>
+    function Animales() {};
+    Animales.prototype = {
+    constructor: Animales,
+    dialogo() {
+    console.log("He say hello.");
+    }
+    };
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
