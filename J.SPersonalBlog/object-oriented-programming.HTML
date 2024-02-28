@@ -212,6 +212,14 @@
     };
     </code>
     </pre>
+            <h2>Comprender el origen del prototipo de un objeto</h2>
+            <p>Es importante comprender que los objetos nuevos eredan el prototipo de la función constructor original de
+                ese objeto,esto se puede comprobar con el método "isPrototypeOf()" que devolvera true o false:</p>
+            <pre>
+    <code>
+    Perro.prototype.isPrototypeOf(caniche);
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
