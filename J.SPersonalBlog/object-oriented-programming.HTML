@@ -171,6 +171,29 @@
     </pre>
             <p>Debido a que la propiedad "constructor" se puede sobreescribir,normalmente,es más recomendable usar el
                 método "instanceof" para verificar el tipo de un objeto.</p>
+            <h2>Establecer un prototype a un objeto</h2>
+            <p>Una manera más eficiente de usar los prototype es establecerlos a un objeto nuevo que ya tenga las
+                propiedades que queremos:</p>
+            <pre>
+    <code>
+    function Perro(nombre) {
+    this.nombre = nombre;
+    }
+    Perro.prototype = {
+    patas: 4,
+    propietario() {
+    console.log("El dueño del perro es John.");
+    },
+    descripcion() {
+    console.log("Caniche blanco de 25kg y 40cm de alto.");
+    }
+    };
+    let caniche = new Perro('Blanquito');
+    caniche.propietario();
+    console.log(caniche.patas);
+    caniche.descripcion();
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
