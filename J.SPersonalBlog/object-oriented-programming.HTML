@@ -222,7 +222,29 @@
     Perro.prototype.isPrototypeOf(caniche);
     </code>
     </pre>
-
+            <h2>Entender a prototype</h2>
+            <p>Casi todos los objetos en J.S tienen un prototipo,siendo estos mismos un objeto,por lo tanto, los
+                prototype pueden tener su propio prototipo.En J.S ya viene establecido por default el Object.prototype()
+                del cual todos los objetos heredan sus propiedades,es decir,Object es el supertype todos los objetos en
+                J.S,esto lo podemos comprobar con "isPrototypeOf()":</p>
+            <pre>
+    <code>
+    function Perro(nombre) {
+    this.nombre = nombre;
+    };
+    Perro.prototype = {
+    constructor: Perro,
+    patas: 4,
+    propietario() {},
+    descripcion() {}
+    };
+    let caniche = new Perro('Blanquito');
+    Object.prototype.isPrototypeOf(Perro.prototype);
+    Perro.prototype.isPrototypeOf(caniche);
+    Object.prototype.isPrototypeOf(Perro);
+    //Los tres devuelven true
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
