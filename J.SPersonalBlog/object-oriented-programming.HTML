@@ -289,6 +289,24 @@
     let oso = Object.create(Animales.prototype);
     </code>
     </pre>
+            <h2>Establecer el subtype prototype como instancia del supertype</h2>
+            <p>También podemos usar el método "Object.create()" para hacer que los subtytpe hereden las propiedades del
+                supertype:</p>
+            <pre>
+    <code>
+    function Animales() {};
+    Animales.prototype = {
+    constructor: Animales,
+    descripcion() {
+    console.log("He say hello.");
+    }
+    };
+    function Perro() {};
+    Perro.prototype = Object.create(Animales.prototype);
+    let labrador = new Perro();
+    labrador.descripcion();
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
