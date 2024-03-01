@@ -54,7 +54,7 @@
     //Si la usaramos en una función:
     function calcularAreaCirculo(radio) {
     const PI = 3.14;
-    if(radio < 0) {
+    if(radio &lt 0) {
     return undefined;
     }
     return PI*(radio**2);
@@ -100,7 +100,7 @@
     //"new date" crea un objeto con la fecha actual del sistema.
     /*Si quisieramos transformar esta función en un tipo flecha,tendríamos que eliminar la palabra clave function,la apertura y cierre de la llave,
     la sentencia return y escribimos el símbolo característico de las funciones flecha (=>):
-    const fecha = () => nex date();
+    const fecha = () => new date();
     /*Dato importante: las funciones flecha son muy utiles cuando queremos pasar una función como argumento a otra función,lo que hacemos es
     escribirla directamente como el argumento.
     </code>
@@ -139,12 +139,12 @@
                 arreglo:</p>
             <pre>
     <code>
-    function miFuncion(...arrgs) {
-    console.log(arrgs);
+    function miFuncion(...args) {
+    console.log(args);
     }
     miFuncion(1, 2, 3, 4); // Oh también:
     miFuncion([1, 2, 3], [4, 5, 6]); //Oh puedes usar .length() :
-    console.log(arrgs.length);
+    console.log(args.length);
     const SUMAR = (...arrgs) => {
     return arrgs.reduce((a, b) => a + b,0);
     };
