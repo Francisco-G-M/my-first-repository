@@ -10,13 +10,13 @@ header{
 h1{
   width: 100%;
   height: 100%;
-  color: white;
-  background: red;
+  color: rgb(255, 255, 255);
+  background: rgb(255, 0, 0);
   font-size: 100px;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
 }
 .AuspiciantesImg{
-  width: 24%;
+  width: 14%;
   height: 20%;
 }
 main{
@@ -24,33 +24,34 @@ main{
 }
 h2{
   font-size: 30px;
-  color: white;
-  border: 3px solid white;
+  color: rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
 }
 p{
   font-size: 23px;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 #final-img{
   width: 100%;
   height: 50%;
 }
 h3{
-  color: cyan;
-  border: 3px solid cyan;
+  color: rgb(0, 255, 255);
+  border: 3px solid rgb(0, 255, 255);
 }
 #participar{
   text-align: center;
 }
 a{
-  color: skyblue;
+  color: rgb(135, 206, 235);
   margin: auto;
   font-size: 23px;
 }
 footer{
-  background: red;
+  background: rgb(255, 0, 0);
+  margin-bottom: 20px;
 }
 #texto-final{
   font-size: 18px;
-  border: 2px solid black;
+  border: 2px solid rgb(0, 0, 0);
 }
