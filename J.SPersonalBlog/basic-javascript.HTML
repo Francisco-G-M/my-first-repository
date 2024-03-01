@@ -65,7 +65,7 @@
     //También podes aisnarle un valor númerico,e.j:
     miVariable = 16;
     </code>
-    </pre>s
+    </pre>
                         <h2>Asignar el valor de una var a otra var</h2>
                         <p>Para poder asignarle el valor de una var a otra var hariamos así :</p>
                         <pre>
@@ -664,19 +664,19 @@
                                 caracteres,JavaScript las comparara según el orden alfabetico:</p>
                         <pre>
     <code>
-    console.log(6 > 5);
-    console.log(3 > 10);
+    console.log(6 &gt 5);
+    console.log(3 &gt 10);
     //La primera llamada devuelve true y la segunda false.
-    console.log("b" > "a");
-    console.log("acb" > "abc");
+    console.log("b" &gt "a");
+    console.log("acb" &gt "abc");
     /*Aquí la primera llamada devuelve true,pero en la segunda J.S compara cada uno de los caracteres en orden,
     al ser a=a pasa a comparar el segundo caracter c > b,aquí determina el resultado que es true.*/
-    console.log("mundo" > "hola");
+    console.log("mundo" &gt "hola");
     //También devuelve true porque la M viene despues de la H en el orden alfabetico.
     var x = 15;
     var y = 7;
-    console.log(x > y);
-    console.log(y > x);
+    console.log(x &gt y);
+    console.log(y &gt x);
     //La primera llamada devuleve true mientras que la segunda false.
     </code>
     </pre>
@@ -688,8 +688,8 @@
                         </p>
                         <pre>
     <code>
-    console.log(5 > 5);
-    console.log(5 >= 5);
+    console.log(5 &gt 5);
+    console.log(5 &gt= 5);
     //El primer console.log() devuele false y el segundo true.
     </code>
     </pre>
@@ -699,16 +699,16 @@
                                 caso de las cadenas de caracteres las compara por orden alfabetico:</p>
                         <pre>
     <code>
-    console.log(5 < 6);
-    console.log(10 < 3);
+    console.log(5 &lt 6);
+    console.log(10 &lt 3);
     //La primera llamada devuelve true la segunda false.
-    console.log("A" < "B");
-    console.log("abc" < "acb");
-    //Aquí las dos devuelven true porque: al ser a = a pasa a comparar b < c.
+    console.log("A" &lt "B");
+    console.log("abc" &lt "acb");
+    //Aquí las dos devuelven true porque: al ser a = a pasa a comparar b &lt c
     let x = 15;
     let y = 7;
-    console.log(x < y);
-    console.log(y < x);
+    console.log(x &lt y);
+    console.log(y &lt x);
     //En este caso que usamos variables let,la primera llamada devuelve false y la segunda true.
     </code>
     </pre>
@@ -718,8 +718,8 @@
                                 sean iguales,e.j:</p>
                         <pre>
     <code>
-    console.log(5 <= 5); 
-    console.log("Hola" <= "Hola");
+    console.log(5 &lt= 5); 
+    console.log("Hola" &lt= "Hola");
     </code>
     </pre>
                         <h2>Operador lógico "and"</h2>
@@ -734,20 +734,20 @@
                                 </thead>
                                 <tbody>
                                         <tr>
-                                                <td>--T--T--=</td>
-                                                <td>-------T-------</td>
+                                                <td>T = T</td>
+                                                <td>T</td>
                                         </tr>
                                         <tr>
-                                                <td>--T--F--=</td>
-                                                <td>-------F-------</td>
+                                                <td>T = F</td>
+                                                <td>F</td>
                                         </tr>
                                         <tr>
-                                                <td>--F--T--=</td>
-                                                <td>-------F-------</td>
+                                                <td>F = T</td>
+                                                <td>F</td>
                                         </tr>
                                         <tr>
-                                                <td>--F--F--=</td>
-                                                <td>-------F-------</td>
+                                                <td>F = F</td>
+                                                <td>F</td>
                                         </tr>
                                 </tbody>
                         </table>
@@ -755,14 +755,14 @@
     <code>
     //La expresión es solo verdadera si ambos operandos son verdaderos:
     var a = 8;
-    console.log((a > 5)&&(a < 10));
-    // a(8) > 5 true && a(8) < 10 true,valor final true.
+    console.log((a &gt 5)&&(a &lt 10));
+    // a(8) &gt 5 true && a(8) &lt 10 true,valor final true.
     var b = 3;
-    console.log((b > 5)&&(b < 10));
-    //b(3) > 5 false && b(3) < 10 true,valor final es false.
+    console.log((b &gt 5)&&(b &lt 10));
+    //b(3) &gt 5 false && b(3) &lt 10 true,valor final es false.
     var c = 1;
-    console.log((c > 5)&&(c == 10));
-    //c(1) > 5 false && c(1) == 10 false,valor final es false.
+    console.log((c &gt 5)&&(c == 10));
+    //c(1) &gt 5 false && c(1) == 10 false,valor final es false.
     </code>
     </pre>
                         <h2>Operador lógico "or"</h2>
@@ -770,36 +770,36 @@
                         <h3>Tabla de valores del operador or:</h3>
                         <table>
                                 <thead>
-                                        <th>--X---Y--</th>
+                                        <th>X--Y</th>
                                         <th>X||Y</th>
                                 </thead>
                                 <tbody>
                                         <tr>
-                                                <td>---T---T---</td>
-                                                <td>-------T-------</td>
+                                                <td>T + T</td>
+                                                <td>T</td>
                                         </tr>
                                         <tr>
-                                                <td>---T---F---</td>
-                                                <td>-------T-------</td>
+                                                <td>T + F</td>
+                                                <td>T</td>
                                         </tr>
                                         <tr>
-                                                <td>---F---T---</td>
-                                                <td>-------T-------</td>
+                                                <td>F + T</td>
+                                                <td>T</td>
                                         </tr>
                                         <tr>
-                                                <td>---F---F---</td>
-                                                <td>-------F-------</td>
+                                                <td>F + F</td>
+                                                <td>F</td>
                                         </tr>
                                 </tbody>
                         </table>
                         <pre>
     <code>
     var a = 8;
-    console.log((a < 5)||(a > 15));
-    //a(8) < 5 false||a(8) > 15 false,el valor final es false.
+    console.log((a &lt 5)||(a &gt 15));
+    //a(8) &lt 5 false||a(8) &gt 15 false,el valor final es false.
     var b = 5;
-    console.log((b == 5)||(b < 15));
-    //b(5) == 5 true||b(5) < 15 true,el valor final es true.
+    console.log((b == 5)||(b &lt 15));
+    //b(5) == 5 true||b(5) &lt 15 true,el valor final es true.
     </code>
     </pre>
                         <h2>Operador lógico "not"</h2>
@@ -807,24 +807,24 @@
                         <h3>Tabla de valores del operador not:</h3>
                         <table>
                                 <thead>
-                                        <th>X---!X</th>
+                                        <th>X = !X</th>
                                 </thead>
                                 <tbody>
                                         <tr>
-                                                <td>T---F</td>
+                                                <td>T = F</td>
                                         </tr>
                                         <tr>
-                                                <td>F---T</td>
+                                                <td>F = T</td>
                                         </tr>
                                 </tbody>
                         </table>
                         <pre>
     <code>
     var a = 8;
-    console.log(!(a > 5));
-    //a(8) > 5 esto es true,pero con ! se niega su valor inicial(que en este caso es true),dando como resultado false.
-    console.log(!(a < 5));
-    //a(8) < 5 !false = true
+    console.log(!(a &gt 5));
+    //a(8) &gt 5 esto es true,pero con ! se niega su valor inicial(que en este caso es true),dando como resultado false.
+    console.log(!(a &lt 5));
+    //a(8) &lt 5 !false = true
     </code>
     </pre>
                         <h2>Sentencias condicionales</h2>
@@ -836,7 +836,7 @@
                         <pre>
     <code>
     var z = 5;
-    if(z > 2) {
+    if(z &gt 2) {
     console.log("La condición es verdadera.");
     }
     /*La condición puede ser tan compleja como uno quiera,se puede usar operadores lógicos(and,or,not).
@@ -854,13 +854,13 @@
                                 es falsa:</p>
                         <pre>
     <code>
-        var s = 5;
-    if(s < 2) {
+    var s = 5;
+    if(s &lt 2) {
     console.log("La condición es verdadera.");
     } else {
     console.log("La condición es falsa.");
     }
-    /*Como s(5) < 2  es falso,se ejecuta la línea de else.
+    /*Como s(5) &lt 2  es falso,se ejecuta la línea de else.
     Si if fuera true solo se ejecutaría ella y se ignoraria la línea else.*/
     var estacion = "Invierno";
     if(estacion == "Verano") {
@@ -961,7 +961,7 @@
     }
     return idioma;
     }
-    console.log()seleccionarIdioma(4);
+    console.log(seleccionarIdioma(4));
     //Al no haber ningun case 4,figurara el valor del default.
     </code>
     </pre>
@@ -996,7 +996,7 @@
                         <pre>
     <code>
     function esMenorQue(a, b) {
-    if(a < b) {
+    if(a &lt b) {
     return true;
     } else {
     return false;
@@ -1004,7 +1004,7 @@
     }
     //Pero existe una manera mucho más práctica:
     function esMenorQue(a, b) {
-    return a < b;
+    return a &lt b;
     }
     console.log(esMenorQue(3, 6));
     //Figurara true.
@@ -1017,7 +1017,7 @@
                         <pre>
     <code>
     function calcularRaizCuadrada(num) {
-    if(num < 0) {
+    if(num &lt 0) {
     return undefined;
     }
     return Math.sqrt(num);
@@ -1267,14 +1267,14 @@
                         <pre>
     <code>
     var i = 0;
-    while(i <= 3) {
+    while(i &lt= 3) {
     console.log("Hola mundo");
     i++;
     }
-    /*índicamos que siempre que i <= 3 se va a ejecutar el código,y cada vez que lo haga se incrementa en uno el valor(i++)
+    /*índicamos que siempre que i &lt= 3 se va a ejecutar el código,y cada vez que lo haga se incrementa en uno el valor(i++)
     hasta que la condición sea falsa y,por ende,deje de ejecutarse el ciclo,sino usamos i++ sería un ciclo ínfinito.*/
     var numeros = [2, 3, 4, 5, 6, 8, 9, 34];
-    while(numeros.length > 4) {
+    while(numeros.length &gt 4) {
     numeros.pop();
     }
     console.log(numeros);
@@ -1293,7 +1293,7 @@
                         <pre>
     <code>
     var miArreglo = [];
-    for(var i = 0; i < 10; i+=2) {
+    for(var i = 0; i &lt 10; i+=2) {
     miArreglo.push(i);
     }
     console.log(miArreglo);
@@ -1308,7 +1308,7 @@
     <code>
     var ejemploArreglo = [4, 6, 8, 2];
     var total = 0;
-    for(var i = 0; i < ejemploArreglo; i++) {
+    for(var i = 0; i &lt ejemploArreglo; i++) {
     console.log("Avance" + i);
     console.log(ejemplosArreglo[i]);
     total += ejemploArreglo;                                               
@@ -1316,14 +1316,14 @@
     console.log(total);
     //Si quisieramos mostrar cadenas de caracteres en mayúsculas:
     var lenguajes = ["JavaScript", "HTML", "Java", "CSS"];
-    for(var i = 0; i < lenguajes.length; i++) {
+    for(var i = 0; i &lt lenguajes.length; i++) {
     console.log(lenguajes[i].toUpperCase());
     }
     //.toUpperCase() sirve para indicar que queremos que esas cadenas de caracteres pasen a estar en mayúsculas.
     //Si usaramos ciclo "for" en una función:
     function contarNumerosPares(arreglo) {
     var total = 0;
-    for(var j = 0; j < arreglo.length; j++) {
+    for(var j = 0; j &lt arreglo.length; j++) {
     if(arreglo[j] % 2 == 0) {
     total++;
     }
@@ -1338,11 +1338,11 @@
                         <pre>
     <code>
     var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-    for(var x = 0; x < myArray.length; i++) {
+    for(var x = 0; x &lt myArray.length; i++) {
     console.log("Nueva interacion");
     var arregloAnidado = myArray[i];
     console.log("Arreglo: " + arregloAnidado);
-    for(var y = 0; y < arregloAnidado.length; y++) {
+    for(var y = 0; y &lt arregloAnidado.length; y++) {
     console.log("Ciclo anidado");
     console.log("Elemento: " + arregloAnidado[y]);
     console.log(arregloAnidado[y]);
@@ -1359,7 +1359,7 @@
     do {
     console.log(a);
     a++;
-    } while (a < 10);
+    } while (a &lt 10);
     </code>
     </pre>
                         <h2>Números aleatorios</h2>
@@ -1394,7 +1394,7 @@
     console.log(generarEnteroAleatorio(5));
     }
     //El valor final nunca dara el limite Superior(5).Para generar muchos números aleatorios podemos usar ciclos:
-    for(var p = 0; p < 15; p++) {
+    for(var p = 0; p &lt 15; p++) {
     console.log(generarEnteroAleatorio(5));
     }
     </code>
@@ -1407,7 +1407,7 @@
     return Math.floor(Math.random()*(limiteSuperior - limiteInferior + 1)) + limiteInferior;
     }
     //Si quisieramos generar varios números,podemos usar un ciclo:
-    for(var k = 0; k < 15; k++) {
+    for(var k = 0; k &lt 15; k++) {
     console.log(rangoAleatorio(3, 8));
     }
     //Con el ciclo se incluye como posible resultado el límite superior.
@@ -1444,15 +1444,15 @@
                         <p>Permite compactar un condicional en una sola línea:</p>
                         <pre>
     <code>
-    (x, y) {
-    return x < y ? x:y;
+    function retornarMinimo(x, y) {
+    return x &lt y ? x:y;
     }
     //Oh en vez de usar return podemos escribir:
-    console.log(x < y ? x:y);
+    console.log(x &lt y ? x:y);
     //Si la condición se cumple figurara el valor de x,si no es así sera el valor de y.
     var a = 5;
     var b = 9;
-    console.log(a > b ? a + 2 : b * 3);
+    console.log(a &gt b ? a + 2 : b * 3);
     </code>
     </pre>
                         <h2>Multiples Operadores condicionales</h2>
@@ -1462,7 +1462,7 @@
     <code>
     function compararNumeros(a, b) {
     return a == b ?  "a y b son iguales"
-         : a > b ? "a es mayor que b"
+         : a &gt b ? "a es mayor que b"
          : "b es mayor que a";
     }
     </code>
