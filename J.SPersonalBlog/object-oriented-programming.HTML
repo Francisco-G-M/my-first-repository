@@ -307,6 +307,25 @@
     labrador.descripcion();
     </code>
     </pre>
+            <h2>Restablecer un "constructor" heredado</h2>
+            <p>Al heredar un nuevo objeto(subtype) el prototype de otro objeto(supertype),también adquiere el
+                constructor del supertype,esto se puede solucionar estableciendo manualmente el constructor correcto a
+                cada nuevo objeto:</p>
+            <pre>
+    <code>
+    function Animales() {};
+    function Gatos() {};
+    function Aves() {};
+    Gatos.prototype = Object.create(Animales.prototype);
+    Aves.prototype = Object.create(Animales.prototype);
+    let ocelote = new Gatos();
+    let gaviota = new Aves();
+    //Aquí ambos let tienen el constructor "Animales"
+    Gatos.prototype.constructor = Gatos;
+    Aves.prototype.constructor = Aves;
+    //Ahora los dos let tienen el constructor correcto
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
