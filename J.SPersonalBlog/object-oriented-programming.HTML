@@ -326,6 +326,23 @@
     //Ahora los dos let tienen el constructor correcto
     </code>
     </pre>
+            <h2>Agregar métodos a un objeto nuevo tras asignarle una herencia</h2>
+            <p>Cuando un subtype hereda un prototype de un supertype no solo optiene los métodos del supertype,sino que
+                también mantiene sus propias propiedades/mátodos:</p>
+            <pre>
+    <code>
+    function Animales() {};
+    Animales.prototype.comer = function() {
+    console.log("Munch munch");
+    };
+    function Perro() {};
+    Perro.prototype = Object.create(Animales.prototype);
+    Perro.prototype.constructor = Perro;
+    Perro.prototype.ladrido = function() {
+    console.log("Woof woof");
+    }
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
