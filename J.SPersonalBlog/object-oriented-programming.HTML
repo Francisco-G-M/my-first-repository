@@ -391,7 +391,7 @@
     plane.fly();
     </code>
     </pre>
-            <h2>Prevenir la modificación de las propiedades de un objeto mediante "closures"</h2>
+            <h2>Prevenir la modificación de las propiedades de un objeto mediante los "closure"</h2>
             <p>La gran desventaja de declarar propiedades públicas(como plane.name del tema anterior) es que se pueden
                 acceder y cambiar en cualquier parte del código,lo cual nos puede generar muchos problemas en un
                 futuro.Para evitar esto podemos convertir la propiedad pública en privada,esto se logra creando una
@@ -413,6 +413,18 @@
             <p>En este caso,accessibilityId es el método privado,ya que tiene acceso a la variable privada "id",esto es
                 posible porque ambos estan declarados en el mismo contexto.Esto es conocido como un "closure",que en J.S
                 básicamente consiste en que una función siempre tiene acceso al contexto en el que se creó.</p>
+            <h2>Funciones invocadas inmediatamente(IIFE)</h2>
+            <p>Las Inmediaty Invoked Function Expression (IIFE) son un patrón común en J.S que consiste en la ejecución
+                de una función apenas declarada.Estos patrones estan formados por una función anónima encerrada entre
+                paréntesis juntó con otro par de paréntesis al final(esta parte sirve para llamar inmediatamente a la
+                función):</p>
+            <pre>
+    <code>
+    (function() {
+    console.log("I am a anonymous function");
+    })();
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
