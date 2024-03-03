@@ -425,6 +425,34 @@
     })();
     </code>
     </pre>
+            <h2>Crear un módulo usando una IIFE</h2>
+            <p>Las IIFE a menudo se utilizan para agrupar propiedades/métodos en un único objeto/módulo:</p>
+            <pre>
+    <code>
+    let groupMixin = (function() {
+    return {
+    user1: function(obj) {
+    obj.id = function() {
+    console.log("El ID del user1 es: " + 72899);
+    };
+    },
+    user2: function(obj) {
+    obj.greeting = function() {
+    console.log("Hi people.");
+    };
+    }
+    }
+    })();
+    let bob = {};
+    groupMixin.user1(bob);
+    groupMixin.user2(bob);
+    bob.id();
+    bob.greeting();
+    </code>
+    </pre>
+            <p>Aquí invocamos una IIFE que nos devuelve el objeto "groupMixin",el cual tiene de propiedades todos los
+                comportamientos de los Mixin.La gran ventaja de crear modulos con IIFE es que podemos empaquetar en un
+                único objeto los comportamientos de los Mixin,que podra ser usado en cualquier parte del código.</p>
         </div>
     </main>
     <footer>
