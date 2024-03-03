@@ -171,7 +171,7 @@
     console.log(verificarObjeto(caniche));
     </code>
     </pre>
-            <p>Debido a que la propiedad "constructor" se puede sobreescribir,normalmente,es más recomendable usar el
+            <p>Debido a que la propiedad "constructor" se puede sobrescribir,normalmente,es más recomendable usar el
                 método "instanceof" para verificar el tipo de un objeto.</p>
             <h2>Establecer un prototype a un objeto</h2>
             <p>Una manera más eficiente de usar los prototype es establecerlos a un objeto nuevo que ya tenga las
@@ -341,6 +341,29 @@
     Perro.prototype.ladrido = function() {
     console.log("Woof woof");
     }
+    </code>
+    </pre>
+            <h2>Como sobrescribir métodos heredados</h2>
+            <p>En caso de que quisieramos sobrescribir una propiedad/método heredado,tenemos que llamar al prototype de
+                la instancia junto con el nombre del método a sobrescribir:</p>
+            <pre>
+    <code>
+    function Aves() {};
+    Aves.prototype.characteristic = function() {
+    return "Las Aves se distinguen por poder volar";
+    };
+    Aves.prototype.size = "Small";
+    function Gaviota() {};
+    Gaviota.prototype = Object.create(Aves.prototype);
+    Gaviota.prototype.constructor = Gaviota;
+    Gaviota.prototype.size = "Medium";
+    Gaviota.prototype.characteristic = function() {
+    return "Las Gaviotas se caracterizan por estar normalmente en las costas.";
+    };
+    //Como se puede observar,aquí sobrescribimos la propiedad "size" y el método "characteristic" en la instancia "Gaviota"
+    let gaviota = new Gaviota();
+    console.log(gaviota.size);
+    console.log(gaviota.characteristic());
     </code>
     </pre>
         </div>
