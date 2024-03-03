@@ -391,6 +391,28 @@
     plane.fly();
     </code>
     </pre>
+            <h2>Prevenir la modificación de las propiedades de un objeto mediante "closures"</h2>
+            <p>La gran desventaja de declarar propiedades públicas(como plane.name del tema anterior) es que se pueden
+                acceder y cambiar en cualquier parte del código,lo cual nos puede generar muchos problemas en un
+                futuro.Para evitar esto podemos convertir la propiedad pública en privada,esto se logra creando una
+                variable dentro de la función constructora(lo cual va a cambiar su alcance global a uno local).Siendo
+                así que,la variable solo se puede acceder y cambiar por métodos que esten dentro de la misma función
+                constructora:</p>
+            <pre>
+    <code>
+    function User1() {
+    let id = 72899;
+    this.accessibilityId = function() {
+    return id;
+    }
+    };
+    let bob = new User1();
+    console.log(bob.accessibilityId());
+    </code>
+    </pre>
+            <p>En este caso,accessibilityId es el método privado,ya que tiene acceso a la variable privada "id",esto es
+                posible porque ambos estan declarados en el mismo contexto.Esto es conocido como un "closure",que en J.S
+                básicamente consiste en que una función siempre tiene acceso al contexto en el que se creó.</p>
         </div>
     </main>
     <footer>
