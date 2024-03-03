@@ -366,6 +366,31 @@
     console.log(gaviota.characteristic());
     </code>
     </pre>
+            <h2>Usar un "mixin" para definir un comportanmiento común entre objetos no relacionados</h2>
+            <p>Como ya vimos,las herencias se realizan entre objetos relacionados,pero en el caso contrario no se
+                recomienda usar una herencia,para ello podemos usar un "Mixin",el cual permite que otros objetos puedan
+                utilizar una colección de funciones:</p>
+            <pre>
+    <code>
+    let disneyCharacter = {
+    name: "Donal",
+    animal: "Duck"
+    };
+    let plane = {
+    name: "Avioneitor",
+    typePlane: "Small Plane"
+    };
+    let abilityMixin = function(obj) {
+    obj.fly = function() {
+    console.log(this.name + " It's fly,HE CAN FLY");
+    }
+    };
+    abilityMixin(disneyCharacter);
+    abilityMixin(plane);
+    disneyCharacter.fly();
+    plane.fly();
+    </code>
+    </pre>
         </div>
     </main>
     <footer>
