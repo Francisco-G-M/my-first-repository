@@ -34,9 +34,8 @@ header{
 }
 .secondButtons{
     position: relative;
-    border: 2px solid rgb(0, 0, 0);
     background: rgb(233, 16, 179);
-    width: 98%;
+    width: 100%;
 }
 .secondButtons:hover{
     background: rgb(224, 103, 194);
@@ -47,4 +46,10 @@ header{
 }
 #drop-downMenu ul li:hover ul{
     display: block;
+}
+#text{
+    margin-top: 130px;
+}
+main{
+    background: #00ffff;
 }
