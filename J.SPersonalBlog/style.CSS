@@ -1,5 +1,6 @@
 *{
     list-style: none;
+    text-decoration: none;
 }
 /*header*/
 h1 {
@@ -140,4 +141,13 @@ ul{
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(0, 0, 0);
     border: 1px solid rgb(0, 255, 255);
+}
+.social-media{
+    font-size: 19px;
+    color: rgb(245, 245, 245);
+    text-align: center;
+    margin: 20px;
+}
+.social-media:hover{
+    color: #0000ff;
 }
