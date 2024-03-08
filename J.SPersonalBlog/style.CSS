@@ -15,8 +15,8 @@ h1 {
 }
 .barra-nav {
     position: fixed;
-    margin-left: 155px;
     margin-top: -49px;
+    margin-left: 155px;
 }
 #ES6-barra-nav{
     position: fixed;
@@ -144,7 +144,6 @@ ul {
 }
 
 .contactos {
-    text-decoration: underline;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: rgb(0, 0, 0);
@@ -160,4 +159,5 @@ ul {
 
 .social-media:hover {
     color: #0000ff;
+    text-decoration: underline;
 }
