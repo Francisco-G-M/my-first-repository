@@ -16,12 +16,12 @@ h1 {
 .barra-nav {
     position: fixed;
     margin-top: -49px;
-    margin-left: 155px;
+    margin-left: 60px;
 }
 #ES6-barra-nav{
     position: fixed;
     margin-top: -49px;
-    margin-left: 100px;
+    margin-left: 6px;
 }
 .enlace-barra-nav {
     color: rgb(0, 0, 0);
@@ -141,6 +141,7 @@ ul {
     background-color: rgb(0, 0, 0);
     border: 1px solid rgb(0, 255, 255);
     margin: 20px 600px;
+    text-decoration: none;
 }
 
 .contactos {
