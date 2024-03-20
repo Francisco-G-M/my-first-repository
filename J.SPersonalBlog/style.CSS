@@ -94,7 +94,12 @@ img {
     grid-gap: 20%;
     box-shadow: 1px 1px 20px rgb(0, 0, 0);
 }
-
+#principioJS{
+    display: grid;
+    grid-template-columns: 28% 50%;
+    grid-gap: 20%;
+    box-shadow: 1px 1px 20px rgb(0, 0, 0);
+}
 .pricipio-img {
     height: 100%;
 }
@@ -103,12 +108,10 @@ img {
     margin-top: 15%;
     font-family: cursive;
 }
-
 #definicionJS {
-    margin-top: 25%;
+    margin-top: 40%;
     font-family: cursive;
 }
-
 ul {
     font-size: 18px;
     color: rgb(255, 255, 255);
