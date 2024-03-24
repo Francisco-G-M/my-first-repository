@@ -33,10 +33,33 @@
         <h2>¿Qué es la programación funcional?</h2>
         <div class="presentacion-tema">
             <img src="FPlogoImg.jfif" alt="functional-programming">
-            <p>La programación funcional es un paradigma en la programación(también podemos decir que
-                es un enfoque común del desarrollo de software) donde el código se organiza en funciones más básicas y
-                pequeñas, las cuales se pueden combinar para construir programas más complejos</p>
+            <p>La FP(Functional Programmnig) es un estilo de programación en el cual las soluciones son
+                simples,consisten en: "Imput(un aentrada)"
+                seguido de un "Process(un proceso)" y termina con un "Output(una salida/resultado)".Con Programación
+                Funcional nos referimos a:</p>
         </div>
+        <h3>Funciones Aisladas:</h3>
+        <p>Sin dependencia del estado del programa,estas incluyen variables globales sujetas a cambios.</p>
+        <h3>Funciones Puras:</h3>
+        <p>La misma entrada siempre dara la misma salida</p>
+        <h3>Funciones con efectos secundarios:</h3>
+        <p>Cualquier posible cambio/mutación en el estado del programa fuera de la función estan cuidadosamente
+            constrolados.</p>
+        <h3>Ejemplo de FP</h3>
+        <pre>
+    <code>
+    const prepareCoffee = () =&gt 'Coffee';
+    const takeCoffee = (numOfCoffeeCups) =&gt {
+    let coffeeCups = [];
+    for(let cups = 1; cups &lt= numOfCoffeeCups; cups++) {
+    let coffeeCup = prepareCoffee();
+    coffeeCups.push(coffeeCup);
+    }
+    return coffeeCups;
+    }
+    console.log(takeCoffee(3));
+    </code>
+    </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
