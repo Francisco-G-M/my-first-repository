@@ -13,35 +13,10 @@ h1 {
     width: 99%;
     margin-top: 50px;
 }
-.BJ-RE-barra-nav {
+.sections{
     position: fixed;
-    margin-top: -45px;
-    margin-left: 60px;
-}
-#BDS-barra-nav{
-    position: fixed;
-    margin-top: -45px;
-    margin-left: 80px;
-}
-#ES6-barra-nav{
-    position: fixed;
-    margin-top: -49px;
-    margin-left: 6px;
-}
-.debug-barra-nav{
-    position: fixed;
-    margin-top: -49px;
-    margin-left: 30px; 
-}
-.algorithm-object-barra-nav{
-    position: fixed;
-    margin-top: -49px;
-    margin-left: 100px;
-}
-#FP-barra-nav{
-    position: fixed;
-    margin-left: 80px;
-    margin-top: -45px;
+    top: 0px;
+    left: 400px;
 }
 .enlace-barra-nav {
     color: rgb(12, 4, 4);
@@ -85,7 +60,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     box-shadow: 0px 0px 20px black;
-    grid-gap: 60px;
+    grid-gap: 45px;
 }
 .presentacion-tema img{
     width: 120%;
