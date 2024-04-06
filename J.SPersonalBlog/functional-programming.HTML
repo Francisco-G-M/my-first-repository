@@ -76,6 +76,22 @@
     const cappuccino = takeCoffee(prepareOtherCoffee, 2);
     </code>
     </pre>
+        <h2>Utilizar la F.P para evitar mutaciones y efectos secundarios</h2>
+        <p>En la F.P unos de los fundamentos principales es no cambiar las cosas,ya que esto produce errores.Esto se
+            evita sabiendo que las funciones no cambian nada,incluyendo los argumentos de la propia función o cualquier
+            var global,e.j:</p>
+        <pre>
+    <code>
+    let globalVar = 1;
+    function incrementar() {
+    return globalVar + 3;
+    }
+    console.log(incrementar()); // Esta llamada retorna la globalVar con su valor incrementado en 4,pero no modifica el valor original de la globalVar. 
+    console.log(globalVar); // Como dije en el comnetario anterior,el valor original de la globalVar no se módifica.
+    </code>
+    </pre>
+        <p>Si incrementaramos el valor en la function usando los "++" produciria una mutación en la globalVar,cambiando
+            su valor original(esto se conoce como el efecto secundario de la mutación).</p>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
