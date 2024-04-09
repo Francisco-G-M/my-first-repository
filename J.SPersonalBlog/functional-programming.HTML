@@ -86,12 +86,35 @@
     function incrementar() {
     return globalVar + 3;
     }
-    console.log(incrementar()); // Esta llamada retorna la globalVar con su valor incrementado en 4,pero no modifica el valor original de la globalVar. 
+    console.log(incrementar()); //Retorna la globalVar con su valor incrementado en 4,pero no modifica el valor original de la globalVar. 
     console.log(globalVar); // Como dije en el comnetario anterior,el valor original de la globalVar no se módifica.
     </code>
     </pre>
         <p>Si incrementaramos el valor en la function usando los "++" produciria una mutación en la globalVar,cambiando
             su valor original(esto se conoce como el efecto secundario de la mutación).</p>
+        <h2>Evitar la dependencia externa de una función con argumentos</h2>
+        <p>Cuando hablamos de la dependencia externa de una función,nos referimos a que una función depende del valor de
+            una var global/objeto o de cualquier otra parte del código.Retomando el ejemplo del tema anterior,la función
+            "incrementar" depende de que exista y no se altere la "globalVar".Para evitar esto recurrimos a otro
+            principio de la F.P que consiste en declarar sus dependencias de forma explícita.Básicamente si la función
+            depende de la existencia de una var u objeto,debemos pasarlo a la función como argumento:</p>
+        <pre>
+    <code>
+    const globalVar = 4;
+    function incrementar(variable) {
+    return variable + 1;
+    }
+    console.log(incrementar(globalVar));
+    </code>
+    </pre>
+        <p>Este principio tiene como ventajas:</p>
+        <ol>
+            <li>-Que la función es más fácil de usar.</li>
+            <li>-Se sabra que necesita para ejecutarse correctamente.</li>
+            <li>-No dependerá de ninguna otra parte del programa para funcionar correctamente.</li>
+            <li>-Se sabrá lo que se puede cambiar y que no.</li>
+            <li>-La función siempre produciría el mismo resultado para el mismo conjunto de entradas.</li>
+        </ol>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
