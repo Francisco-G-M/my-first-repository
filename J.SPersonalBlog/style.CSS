@@ -75,8 +75,13 @@ h3 {
 ul {
     font-size: 18px;
     color: rgb(255, 255, 255);
+    text-align: center;
 }
-
+ol{
+    text-align: center;
+    color: #ffffff;
+    font-size: 19px;
+}
 .listaDeOpciones {
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -113,10 +118,6 @@ table {
     font-size: 20px;
     width: 16%;
     margin-left: 42%;
-}
-
-ul {
-    text-align: center;
 }
 
 /*footer*/
