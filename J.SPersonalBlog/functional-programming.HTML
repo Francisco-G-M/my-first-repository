@@ -115,6 +115,30 @@
             <li>-Se sabrá lo que se puede cambiar y que no.</li>
             <li>-La función siempre produciría el mismo resultado para el mismo conjunto de entradas.</li>
         </ol>
+        <h2>Refactorizar las var globales fuera de las funciones</h2>
+        <p>En caso de tengamos que trabajar con una matriz global,lo más conveniente sería utilizar copias del mismo
+            para realizar cambios en las funciones:</p>
+        <pre>
+    <code>
+    const list = ["Hola!", "..."];
+    function agregar(copu, addToCopy) {
+    let newCopy = [...copy];
+    newCopy.push(addToCopy);
+    return newCopy;
+    }
+    function remover(copy, addToCopy) {
+    let newCopy = [...copy];
+    const index = newCopy.indexOf(addToCopy);
+    if(index &gt 0) {
+    newCopy.splice(index, 1);
+    return newCopy;
+    }
+    }
+    console.log(agregar(list, "Adios"));
+    console.log(remover(list, "..."));
+    console.log(remover(agregar(list, "Adios"), "..."));
+    </code>
+    </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
