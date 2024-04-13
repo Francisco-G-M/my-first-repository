@@ -139,6 +139,34 @@
     console.log(remover(agregar(list, "Adios"), "..."));
     </code>
     </pre>
+        <h2>Extraer datos de un arreglo con el método "map"</h2>
+        <p>Este método lo que hace es iterar sobre cada elemento de un arreglo y devolver un nuevo array con los
+            resultados de llamar a la función callback en cada elemento(esto se hace sin ninguna mutación en el arreglo
+            original),e.j:</p>
+        <pre>
+    <code>
+    const usersList = [
+    {
+        "Name": "Oscar",
+        "registered": "01/07/19"
+    },
+    {
+        "Name": "Pablo",
+        "registered": "08/04/22"
+    },
+    {
+        "Name": "Cherry",
+        "registered": "13/01/24"
+    }
+    ];
+    const search = usersList.map(({Name: nombre, registered: registrado}) => ({nombre, registrado}));
+    console.log(search);
+    </code>
+    </pre>
+        <p>Con la desestructuración para pasar objetos como argumento podemos extraer y devolver el nombre y la fecha de
+            registro del user en un nuevo objeto por cada uno de los objetos anidados en el arreglo "usersList",todo
+            dentro del arreglo creado con
+            ".map()"</p>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
