@@ -16,7 +16,7 @@ h1 {
 .sections{
     position: fixed;
     top: 0px;
-    left: 400px;
+    left: 350px;
 }
 .enlace-barra-nav {
     color: rgb(12, 4, 4);
@@ -45,6 +45,7 @@ h2 {
     text-align: center;
     margin: 20px 250px;
     text-decoration: underline;
+
 }
 
 p {
@@ -61,9 +62,9 @@ h3 {
 }
 .presentacion-tema{
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 350px 1000px;
     box-shadow: 0px 0px 20px black;
-    grid-gap: 45px;
+    grid-gap: 25px;
 }
 .presentacion-tema img{
     width: 120%;
