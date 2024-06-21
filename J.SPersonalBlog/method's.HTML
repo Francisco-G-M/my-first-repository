@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="JSlogoIA.ico">
+    <title>J.SPersonalBlog</title>
+</head>
+
+<body>
+    <header>
+        <nav class="sections">
+            <a href="principal-page.HTML" class="enlace-barra-nav">Volver al principio</a>
+            <a href="basic-javascript.HTML" class="enlace-barra-nav">Basic.JS</a>
+            <a href="ECMAScript-6.HTML" class="enlace-barra-nav">ES6</a>
+            <a href="regular-Expresions.HTML" class="enlace-barra-nav">Regular.E</a>
+            <a href="debug.HTML" class="enlace-barra-nav">Debug</a>
+            <a href="basic-data-structure.HTML" class="enlace-barra-nav">Basic.D.S</a>
+            <a href="basic-algorithm-programming.HTML" class="enlace-barra-nav">Basic.A.P</a>
+            <a href="object-oriented-programming.HTML" class="enlace-barra-nav">OOP</a>
+            <a href="functional-programming.HTML" class="enlace-barra-nav">Functional.P</a>
+        </nav>
+        <h1 class="titulo">JavaScriptPersonalBlog</h1>
+    </header>
+    <main>
+        <h2>¿Qué son los Métodos en JavaScript?</h2>
+        <div class="presentacion-tema">
+            <img src="method'sIMG.webp" alt="method-logo">
+            <p>En JavaScript, los métodos son una serie de instrucciones para completar una tarea/proceso, o una función
+                asignada a un objeto.Estos mismos nos sirven mucho para ahorrar, simplificar y agilizar nuestro código.
+            </p>
+        </div>
+        <div id="method's-JS">
+            <h2>push()</h2>
+            <p>El método push() permite añadir un elemento al final de un Array:</p>
+            <pre>
+<code>
+let estaciones = ['Invierno', "Otoño", 'Primavera'];
+estaciones.push("Verano");
+console.log(estaciones);
+</code>
+</pre>
+            <h2>pop()</h2>
+            <p>El método pop() sirve para remover el último elemento de un Array:</p>
+            <pre>
+<code>
+let estaciones = ['Invierno', "Otoño", 'Primavera', "Verano"];
+estaciones.pop()
+console.log(estaciones);
+//También podemos asignarle el valor eliminado a una variable:
+var estacion;
+estacion = estaciones.pop();
+</code>
+</pre>
+            <h2>shift()</h2>
+            <p>Este método sirve para remover el primer elemento de un Array:</p>
+            <pre>
+<code>
+let estaciones = ['Invierno', "Otoño", 'Primavera', "Verano"];
+estaciones.shift();
+console.log(estaciones);
+</code>
+</pre>
+            <h2>unshift()</h2>
+            <p>El método unshift() tiene como función agregar un elemento al principio de un Array:</p>
+            <pre>
+<code>
+let estaciones = ["Otoño", 'Primavera', "Verano"];
+estaciones.unshift('Invierno');
+console.log(estaciones);
+</code>
+</pre>
+        </div>
+    </main>
+    <footer>
+        <h3 id="titulo-footer">Contactos:</h3>
+        <div class="contactos">
+            <a href="https://www.instagram.com/fraaan.g_m/" target="_blank" class="social-media">Instagram:
+                fraaan.g_m</a>
+            <a href="mailto:fgmanuello1@gmail.com" target="_blank" class="social-media">Gmail:
+                fgmanuello1@gmail.com</a>
+            <a href="https://github.com/Francisco-G-M" target="_blank" class="social-media">GitHub:
+                Francisco-G-M</a>
+        </div>
+    </footer>
+</body>
+
+</html>
