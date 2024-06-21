@@ -22,6 +22,7 @@
                         <a href="basic-algorithm-programming.HTML" class="enlace-barra-nav">Basic.A.P</a>
                         <a href="object-oriented-programming.HTML" class="enlace-barra-nav">OOP</a>
                         <a href="functional-programming.HTML" class="enlace-barra-nav">Functional.P</a>
+                        <a href="method's.HTML" class="enlace-barra-nav">Method's</a>
                 </nav>
                 <h1 class="titulo">JavaScriptPersonalBlog</h1>
         </header>
@@ -92,6 +93,8 @@
     <code>
     var x = 9;
     var miIdioma = "Español";
+    var myLanguage = 'Spanish';
+    var numberInInvertedCommas = "100";
     </code>
     </pre>
                         <h2>Variables no inicializadas</h2>
@@ -99,6 +102,7 @@
                         <pre>
     <code>
     var a;
+    var emptyVar;
     </code>
     </pre>
                         <h2>Mayúsculas y miúsculas</h2>
@@ -109,22 +113,23 @@
                         <pre>
     <code>
     var miVariable = 5;
-    console.log(MIVARIABLE)
+    console.log(MIVARIABLE) // &lt--- esto es un error
     </code>
     </pre>
                         <h2>Suma,resta,multiplicación y división</h2>
                         <p>Para sumar en J.S es muy simple,e.j:</p>
                         <pre>
     <code>
-    var suma = 7 + 12;var suma = 7 + 12;
+    var suma = 7 + 12;
+    //Para la resta,multiplicación y división es básicamente lo mismo,e.j:
+    var resta = 15 - 5;
+    var producto = 5*3;
+    var cociente = 20/2;
+    //Un dato a destacar es que si divides entre Cero te figurara Infinity en la consola.
+    //Para calcular el resto de una división usamos el signo " % " ,e.j:
+    var resto = 15 % 5;
     </code>
     </pre>
-                        <p>Para la resta,multiplicación y división es básicamente lo mismo,e.j: var resta = 15 -
-                                5; var
-                                producto =
-                                5*3; var cociente = 20/2;</p>
-                        <p>Un dato a destacar es que si divides entre Cero te figurara Infinity en la consola.
-                        </p>
                         <h2>Números decimales en J.S</h2>
                         <p>En J.S al escribir números decimales usamos un punto para separar la parte decimal de
                                 la
@@ -132,6 +137,8 @@
                         <pre>
     <code>
     var cuentaTotal = 23.4;
+    var capitalActual = "$120.000";
+    var capitalPerdido = '-$120.000';
     </code>
     </pre>
                         <h2>multiplicar y dividir números decimales</h2>
@@ -140,13 +147,6 @@
     <code>
     var producto = 3.4*10.4;
     var cociente = 5.0/2.0;
-    </code>
-    </pre>
-                        <h2>Resto de una división</h2>
-                        <p>Para calcular el resto de una división usamos el signo " % " ,e.j:</p>
-                        <pre>
-    <code>
-    var resto = 15 % 5;
     </code>
     </pre>
                         <h2>Incrementar el valor de una variable</h2>
