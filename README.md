@@ -1,3 +1,2 @@
 # my-first-repository
-Hi this is my first repository, in this project you can see all project's and prototype's and the progress of that project's.
-Thank you for you attention and welcome.<3
+"Welcome to my first repository on GitHub. Here you will find my projects and their progress. I hope you like it."
