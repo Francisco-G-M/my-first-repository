@@ -26,23 +26,23 @@
         <p>Este tipo de ciclos permite escribir un código simple con una estructura específica para que repetica una
             acción hasta que la condición no se cumpla:</p>
         <pre>
-<code>
-var i = 0;
-while(i &lt= 3) {
-console.log("ElBananero, SAPEEE");
-i++;
-};
-// i++ índica que el valor se ira incrementando con cada ciclado
-//Índicamos que siempre que i &Lt= 3 se ejecute el mensaje, y cada vez que lo haga se incrementa en uno el valor hasta que la condición de ciclado sea
-falsa y, por ende, deje de ejecutarse el ciclo.En caso de que no usaramos el i++ sería un ciclo ínfinito
-var numbers = [2, 3, 4, 5, 6, 8, 9, 34];
-while(numbers.length &gt 4) {
-numbers.pop();
-};
-console.log(numbers);
-</code>
-</pre>
-        <h2>ciclo for</h2>
+    <code>
+    var i = 0;
+    while(i &lt= 3) {
+    console.log("ElBananero, SAPEEE");
+    i++;
+    };
+    // i++ índica que el valor se ira incrementando con cada ciclado
+    //Índicamos que siempre que i &Lt= 3 se ejecute el mensaje, y cada vez que lo haga se incrementa en uno el valor hasta que la condición de ciclado 
+    sea falsa y, por ende, deje de ejecutarse el ciclo.En caso de que no usaramos el i++ sería un ciclo ínfinito
+    var numbers = [2, 3, 4, 5, 6, 8, 9, 34];
+    while(numbers.length &gt 4) {
+    numbers.pop();
+    };
+    console.log(numbers);
+    </code>
+    </pre>
+        <h2>Ciclo for</h2>
         <p>Con los ciclos "for" podemos repetir,iterar y usar la recursividad en Arrays y variables.Este tipo de ciclo
             requiere que especifiquemos tres parametros para su correcta ejecución:</p>
         <ol>
@@ -51,45 +51,75 @@ console.log(numbers);
             <li>Actualizar la variable con cada ciclado</li>
         </ol>
         <pre>
-<code>
-let myArray = [];
-for(let i = 0; i &lt 10; i += 2) {
-myArray.push(i);
-return myArray;
-};
-console.log(myArray);
-</code>
-</pre>
+    <code>
+    let myArray = [];
+    for(let i = 0; i &lt 10; i += 2) {
+    myArray.push(i);
+    return myArray;
+    };
+    console.log(myArray);
+    </code>
+    </pre>
         <h2>Ciclos for anidados</h2>
         <p>Básicamente, son ciclos for escritos dentro de otros ciclos for, esto sirve mucho cuando queremos iterar en
             Arrays multidimensionales:</p>
         <pre>
-<code>
-var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-for(let i = 0; i &lt myArray.length; i++) {
-let arrayAnidado = myArray[i];
-console.log("Arreglo: " + arrayAnidado);
-//Este primer ciclo lo que hace es iterar en la primera capa del Array multidimensional
-for(let j = 0; j &lt arrayAnidado.length; j++) {
-console.log("Ciclo anidado");
-console.log("elemento: " + arrayAnidado[j]);
-console.log(arrayAnidado[j]);
-//Esto segundo ciclo itera en los Arrays internos 
-}
-};
-</code>
-</pre>
+    <code>
+    var myArray = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+    for(let i = 0; i &lt myArray.length; i++) {
+    let arrayAnidado = myArray[i];
+    console.log("Arreglo: " + arrayAnidado);
+    //Este primer ciclo lo que hace es iterar en la primera capa del Array multidimensional
+    for(let j = 0; j &lt arrayAnidado.length; j++) {
+    console.log("Ciclo anidado");
+    console.log("elemento: " + arrayAnidado[j]);
+    console.log(arrayAnidado[j]);
+    //Esto segundo ciclo itera en los Arrays internos 
+    }
+    };
+    </code>
+    </pre>
         <h2>Ciclos do...while</h2>
         <p>Este tipo de ciclo primero realiza la secuencia de código(por lo menos una vez) y despues evalua la
             condición:</p>
         <pre>
-<code>
-var x = 16;
-do{
+    <code>
+    var x = 16;
+    do{
     console.log(x);
-}while(x &lt 10);
-</code>
-</pre>
+    }while(x &lt 10);
+    </code>
+    </pre>
+        <h2>Ciclos for...in</h2>
+        <p>Los ciclos for...in sirven para iterar todas las claves de un objeto, e.j:</p>
+        <pre>
+    <code>
+    const object = {
+    Pepito: {
+        online: true
+    },
+    Jaimito: {
+        online: false
+    },
+    Perro: {
+        online: false
+    }
+    };
+    for(let people in object) {
+    console.log(people, object[people]);
+    };
+    //Si lo usaramos en una función:
+    function countPlayers(users) {
+    let final = 0;
+    for(let obj i users) {
+    if(users[obj].online == true) {
+    final++;
+    }
+    }
+    return final;
+    };
+    </code>
+    </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
