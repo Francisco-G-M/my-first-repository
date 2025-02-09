@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.CSS">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="JSbasicLogo - copia.ico">
+    <title>J.SPersonalBlog</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">J.SPersonalBlog</h1>
+    </header>
+    <main>
+        <h2>¿Qué es el DOM?</h2>
+        <div class="presentacion-tema">
+            <img src="DOM.jpeg" alt="Document-Object-Model-img">
+            <p>El Document Object Model(DOM) es la representación de los objetos(elementos) que conforman la estructura
+                de un documento en la web. Es decir, representar el documento HTML mediante el DOM nos permite acceder y
+                manipular sus elementos.
+                En el DOM los elementos son representados como Nodos y Objetos, con los que podemos trabajar en
+                JavaScript, esto incluye propiedades, métodos y eventos.
+            </p>
+        </div>
+        <h2>¿Qué es un Nodo?</h2>
+        <div class="presentacion-tema">
+            <img src="NodosImg2.jpg" alt="Nodos-img">
+            <p>Consiste en un punto específico del diagrama o del árbol de Nodos del DOM. Los elementos que incluyen
+                los Nodos son:
+            </p>
+        </div>
+        <ol>
+            <li>El Documento como tal.</li>
+            <li>Los elementos HTML.</li>
+            <li>El texto entre etiquetas.</li>
+            <li>Los comentarios.</li>
+        </ol>
+        <h2>Jerarquía del DOM</h2>
+        <ol>
+            <li>Root Node: Es el nodo úbicado en la parte superior del árbol. En HTML es &lthtml&gt</li>
+            <li>Parent Node: Es el nodo que contiene uno o más nodos hijos dentro de su estructura</li>
+            <li>Child Node: Es cualquier nodo que está directamente contenido dentro de otro nodo (su nodo padre)</li>
+            <li>Descendant Node: Es cualquier nodo que esté dentro de otro nodo, sin importar la profundidad</li>
+            <li>Sibiling Node: Es cualquier nodo que comparte el mismo Parent Node que otro nodo</li>
+        </ol>
+        <p>Es algo confuso, por ende te recomiendo ver el ejemplo del curso: JavaScript para Manipulación del DOM -
+            Curso con Proyectos de FreeCodeCamp a partir del minuto 18:28 hasta el 22:54</p>
+        <h2>Diferencia entre Nodo vs Elemento</h2>
+        <p>En el contexto del DOM, el concepto de nodo es más ámplio que el de elemento:</p>
+        <ul>
+            <li>Usualmente nos referimos a los elementos del documento HTML como "elementos"</li>
+            <li>Un nodo puede ser un elemento HTML, pero también puede ser texto o comentarios en el documento</li>
+        </ul>
+        <p>El siguiente ejemplo aclara lo dicho anteriormente:</p>
+        <div id="divPadre">
+        <div id="Nodo-vs-Elemento-Div1">
+            <p>Nodos en el DOM</p>
+            <div id="Nodo-vs-Elemento-Div2">
+                <p>Elementos HTML</p>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <h3 id="titulo-footer">Contactos:</h3>
+        <div class="contactos">
+            <a href="https://www.instagram.com/fraaan.g_m/" target="_blank" class="social-media">Instagram:
+                fraaan.g_m</a>
+            <a href="mailto:fgmanuello1@gmail.com" target="_blank" class="social-media">Gmail:
+                fgmanuello1@gmail.com</a>
+            <a href="https://github.com/Francisco-G-M" target="_blank" class="social-media">GitHub:
+                Francisco-G-M</a>
+        </div>
+    </footer>
+</body>
+
+</html>
