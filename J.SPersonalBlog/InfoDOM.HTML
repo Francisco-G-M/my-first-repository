@@ -86,6 +86,19 @@
 </code>
         </pre>
         <p>También puedes combinarlo junto con otras etiquetas, agregando así nuevas funciones, por ejemplo:</p>
+        <h3>Contenido del elemento</h3>
+        <ul>
+            <li>innerHTML: módifica el contenido HTML interno.</li>
+            <li>textContent: módifica el texto del elemento, sin interpretar etiquetas HTML.</li>
+            <li>innerText: similar a "textContent", pero tiene en cuenta los estilos CSS.</li>
+        </ul>
+        <pre>
+<code>
+    let titulo = document.getElementById("titulo");
+    titulo.innerHTML = &ltb&gtNuevo Titulo&lt/b&gt;
+    titulo.textContent = "Nuevo Titulo";
+</code>
+        </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
