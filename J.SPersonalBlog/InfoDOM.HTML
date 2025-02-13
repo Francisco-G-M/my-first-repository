@@ -113,6 +113,20 @@
     titulo.classList.add("resaltado");
 </code>
         </pre>
+        <h3>Atributos HTML</h3>
+        <ul>
+            <li>setAttribute(nombre, valor): módifica o agrega atributos.</li>
+            <li>getAttribute(nombre): obtiene valor de un atributo.</li>
+            <li>removeAttribute(nombre): elimina un atributo.</li>
+        </ul>
+        <pre>
+<code>
+    let enlace = document.getElementById("enlace");
+    enlace.setAttribute("href", "https:--------");
+    console.log(enlace.getAttribute("href"));
+    enlace.removeAttribute("target");
+</code>
+        </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
