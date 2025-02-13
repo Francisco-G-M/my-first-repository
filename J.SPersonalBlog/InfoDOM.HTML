@@ -127,6 +127,22 @@
     enlace.removeAttribute("target");
 </code>
         </pre>
+        <h3>Eventos y Comportamientos</h3>
+        <ul>
+            <li>onclick: asigna una función al evento "click".</li>
+            <li>onmouseover: cambia el comportamiento cuando el mouse pasa sobre el elemento.</li>
+            <li>addEventListener(evento, función): forma más flexible de manejar eventos.</li>
+        </ul>
+        <pre>
+<code>
+    titulo.onclick = funtion() {
+        alert("Hiciste Click");
+    };
+    titulo.addEventListener("mouseover", function() {
+        titulo.style.color = "blue";
+    });
+</code>
+        </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
