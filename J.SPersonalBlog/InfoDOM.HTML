@@ -13,6 +13,9 @@
 
 <body>
     <header>
+        <nav class="sections">
+            <a href="principal-page.HTML" class="enlace-barra-nav">Volver al principio</a>
+        </nav>
         <h1 class="titulo">J.SPersonalBlog</h1>
     </header>
     <main>
@@ -57,13 +60,32 @@
         </ul>
         <p>El siguiente ejemplo aclara lo dicho anteriormente:</p>
         <div id="divPadre">
-        <div id="Nodo-vs-Elemento-Div1">
-            <p>Nodos en el DOM</p>
-            <div id="Nodo-vs-Elemento-Div2">
-                <p>Elementos HTML</p>
+            <div id="Nodo-vs-Elemento-Div1">
+                <p>Nodos en el DOM</p>
+                <div id="Nodo-vs-Elemento-Div2">
+                    <p>Elementos HTML</p>
+                </div>
             </div>
         </div>
-    </div>
+        <h2>Seleccionar Elementos</h2>
+        <h3>.getElementById()</h3>
+        <p>Método del objeto "documento" en J.S utilizado para seleccionar un elemento HTML especifíco mediante un
+            atributo "id".Devuelve una referencia al primer elemento que coincida con el "id" dado o Null si no se
+            encuentra ningún elemento con ese "id".
+            Su sintaxis es:</p>
+        <pre>
+<code>
+    document.getElementById("id-del-elemento");
+</code>
+            </pre>
+        <p>Ejemplo de uso:</p>
+        <pre>
+<code>
+    let elemento = document.getElementById("titulo");
+    console.log(elemento.textcontent);
+</code>
+        </pre>
+        <p>También puedes combinarlo junto con otras etiquetas, agregando así nuevas funciones, por ejemplo:</p>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
