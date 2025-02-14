@@ -48,8 +48,8 @@
     //Una manera de probar una expresión regular es usando el método .test(),este toma la expresión regular,la aplica a una cadena
     (que va dentro del parentesis) y devuelve "true" o "false" si su patron encuentra algo o no:
     let result = otherString.test(firstString);
-    /*Oh también podemos escribir el .test() sin asignarlo a una variable,la diferencia es que al asignarlo a una variable podemos llamarlo con
-    console.log(); y que nos devuelva y figure en la consola su valor booleano*/
+    /*Oh también podemos escribir el .test() sin asignarlo a una variable,la diferencia es que al asignarlo a una variable podemos llamarlo
+    con console.log(); y que nos devuelva y figure en la consola su valor booleano*/
     </code>
     </pre>
             <h2>Coincidir cadenas literales</h2>
@@ -60,7 +60,8 @@
     var saludo = "Hola";
     var extraer = /Hola/;
     let final = extraer.test(saludo);
-    /*Aquí hay un acoincidencia literal,pero si la expresión regular se escribiera diferente que la cadena original haría .test() devolviera false*/
+    /*Aquí hay un acoincidencia literal,pero si la expresión regular se escribiera diferente que la cadena original haría .test()
+    devolviera false*/
     </code>
     </pre>
             <h2>Hacer coindir una cadena literal con diferentes posibilidades</h2>
@@ -195,8 +196,8 @@
     let estación = "&lth1&gtWinter&lt/h1&gt";
     var buscar = /&lt.*?&gt/;
     let busqueda = estacion.match(busqueda);
-    /* &lt &gt son los delimitadores de la expresión &lth1&gt.El ? indica una coincidencia diferida que buscara en el menor tiempo posible la parte más
-    pequeña(&lth1&gt),sin el ? devolvería toda la oración*/
+    /* &lt &gt son los delimitadores de la expresión &lth1&gt.El ? indica una coincidencia diferida que buscara en el menor tiempo posible la parte
+    más pequeña(&lth1&gt),sin el ? devolvería toda la oración*/
     </code>
     </pre>
             <h2>Coincidir con patrones de cuerdas iniciales</h2>
@@ -290,8 +291,8 @@
     let example = "example";
     let extract = /\S/g;
     var final = example.match(extract);
-    /*Aquí console.log(final); nos devolvera todas las letras del let example,si pusieramos .length al final de let final,la llamada nos devolvera
-            la suma total de todas las letras*/
+    /*Aquí console.log(final); nos devolvera todas las letras del let example,si pusieramos .length al final de let final,la llamada nos
+    devolvera la suma total de todas las letras*/
     </code>
     </pre>
             <h2>Especificar número superior e inferior de coincidencias</h2>

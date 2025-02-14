@@ -21,7 +21,7 @@
             <a href="basic-data-structure.HTML" class="enlace-barra-nav">Basic.D.S</a>
             <a href="basic-algorithm-programming.HTML" class="enlace-barra-nav">Basic.A.P</a>
             <a href="object-oriented-programming.HTML" class="enlace-barra-nav">OOP</a>
-            <a href="functional-programming.HTML"  class="enlace-barra-nav">Functional.P</a>
+            <a href="functional-programming.HTML" class="enlace-barra-nav">Functional.P</a>
         </nav>
         <h1>ECMAScript-6</h1>
     </header>
@@ -57,8 +57,8 @@
             <pre>
     <code>
     const MI_CONSTANTE = 35;
-    /*Se escribe en mayúsculas el nombre de las const para poder distinguirlas y para que los desarrolladores sepan que no deben intentar cambiar
-    el valor de esa constante.*/
+    /*Se escribe en mayúsculas el nombre de las const para poder distinguirlas y para que los desarrolladores sepan que no deben intentar
+    cambiar el valor de esa constante.*/
     //Si la usaramos en una función:
     function calcularAreaCirculo(radio) {
     const PI = 3.14;
@@ -93,8 +93,8 @@
     "blanco": "#ffffff"
     };
     object.freeze(colores);
-    /*object nos permite dar funcionalidades en común a todos los objetos.Pero al usar freeze,entre () aclaramos que un objeto determinado sera
-    el afectado*/
+    /*object nos permite dar funcionalidades en común a todos los objetos.Pero al usar freeze,entre () aclaramos que un objeto determinado
+    sera el afectado*/
     </code>
     </pre>
             <h2>Funciones flecha</h2>
@@ -106,8 +106,8 @@
     return new date();
     };
     //"new date" crea un objeto con la fecha actual del sistema.
-    /*Si quisieramos transformar esta función en un tipo flecha,tendríamos que eliminar la palabra clave function,la apertura y cierre de la llave,
-    la sentencia return y escribimos el símbolo característico de las funciones flecha (=>):
+    /*Si quisieramos transformar esta función en un tipo flecha,tendríamos que eliminar la palabra clave function,la apertura y cierre
+    de la llave, la sentencia return y escribimos el símbolo característico de las funciones flecha (=>):
     const fecha = () => new date();
     /*Dato importante: las funciones flecha son muy utiles cuando queremos pasar una función como argumento a otra función,lo que hacemos es
     escribirla directamente como el argumento.
@@ -287,13 +287,13 @@
             <h2>Plantillas literales</h2>
             <p>Es un tipo de cadena de caracteres que permite crear cadenas con varias líneas y reemplazar los valores
                 de las variables que querramos,algunas de sus características son:</p>
-            <p>
-                1-Utiliza el acento invertido `` en vez de comillas.<br>
-                2-Puede usar tanto comillas simples como dobles.<br>
-                3-Las líneas de código se preservan.<br>
-                4-En caso de reemplazar una variable se escribe: ${variable}<br>
-                5-Puede escribir expresiones dentro de ${}
-            </p>
+            <ol>
+                <li>Utiliza el acento invertido `` en vez de comillas.</li>
+                <li>Puede usar tanto comillas simples como dobles.</li>
+                <li>Las líneas de código se preservan.</li>
+                <li>En caso de reemplazar una variable se escribe: ${variable}</li>
+                <li>Puede escribir expresiones dentro de ${}</li>
+            </ol>
             <pre>
     <code>
     var nombre = "Diego";
@@ -331,7 +331,8 @@
     }
     };
     console.log(PERSONAJE_FICTICIO.presentacion());
-    //La función de "this" en JavaScript es referirce al objeto que estamos trabajando,en este caso el objeto "persona" y a su propiedad "nombre"
+    //La función de "this" en JavaScript es referirce al objeto que estamos trabajando,en este caso el objeto "persona" y a su propiedad
+    "nombre"
     </code>
     </pre>
             <h2>Definir una clase</h2>
@@ -345,8 +346,8 @@
     }
     var zeus = new TransbordadorEspacial("Jupiter");
     console.log(zeus.planeta);
-    /*"constructor" es la función que se va a llamar cuando asignemos a un objeto ese tipo de class."new" es la palabra clave para crear un objeto
-    como valor de una var*/ 
+    /*"constructor" es la función que se va a llamar cuando asignemos a un objeto ese tipo de class."new" es la palabra clave para crear
+    un objeto como valor de una var*/ 
     /*Las class en JavaScript siguen una convención específica que es que inician su nombre con mayúscula y también entre palabras inician
     con mayúscula*/ 
     class Mascota {
@@ -425,14 +426,14 @@
     <code>
     import * as myModule from "./math_functions.JS";
     //Si utilizaramos este tipo de sintaxis,el nombre del archivo va entre comillasdobles.
-    /*La declaración import crea un objeto llamado myModule (solo es el nombre de una variable),este contendrá todas las exportaciones que tiene 
-    math_functions.JS,si quisieramos utilizar alguna/s funciones que importamos haríamos así:*/
+    /*La declaración import crea un objeto llamado myModule (solo es el nombre de una variable),este contendrá todas las exportaciones
+    que tiene  math_functions.JS,si quisieramos utilizar alguna/s funciones que importamos haríamos así:*/
     myModule.add(2, 3);
     myModule.subtract(5, 3);
     //Recordemos que estamos usando funciones que tienen operaciones matemáticas,por eso los números.
     </code>
     </pre>
-            <h2>Respaldo de exportación con el valor predeterminado de expostación</h2>
+            <h2>Respaldo de exportación con el valor predeterminado de exportación</h2>
             <p>La sintaxis "export default" nos permite exportar un valor de un archivo(siendo esta comúnmente su
                 función):</p>
             <pre>
@@ -444,8 +445,8 @@
     export default function(a, b) {
     return a : b;
     }
-    /*Esta sintaxis solo se utiliza para declarar un valor alternativo para un archivo/modulo,por ende,solo puede tener un valor como exportación
-    predeterminada en cada archivo/modulo.También la "export default" no se puede utilizar con let,const o var*/
+    /*Esta sintaxis solo se utiliza para declarar un valor alternativo para un archivo/modulo,por ende,solo puede tener un valor como
+    exportación predeterminada en cada archivo/modulo.También la "export default" no se puede utilizar con let,const o var*/
     </code>
     </pre>
             <h2>Imortar la exportación predeterminada</h2>
@@ -480,7 +481,8 @@
     }
     });
     /*Las promesas tienen tres estados:
-    Pending: sucede cunado no agregamos una forma de completar la promesa,quedando en un estado inicial,es decir,no fue ni cumplida ni rechazada.
+    Pending: sucede cunado no agregamos una forma de completar la promesa,quedando en un estado inicial,es decir,no fue ni cumplida ni
+    rechazada.
     Fulfilled: significa que la promesa se completo con éxito.
     Rejected: significa que la promesa falló. 
     </code>
