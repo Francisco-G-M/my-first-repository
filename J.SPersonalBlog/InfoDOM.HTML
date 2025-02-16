@@ -154,6 +154,24 @@
     titulo.style.visibility = "hidden";
 </code>
         </pre>
+        <h2>.getElementsByClassName()</h2>
+        <p>Método del objeto "document" o de cualquier elemento HTML que permite seleccionar todos los elementos que
+            tiene una clase específica.Su sintaxis es:</p>
+        <pre>
+<code>
+    document.getElementByClassName("nombre-de-clase");
+    elemento.getElementByClassName("--");
+</code>
+            </pre>
+        <h3>Características:</h3>
+        <ul>
+            <li>Devuelve una colección de elementos(HTMLCollection) que tienen la clase específicada.</li>
+            <li>Es una colección "en vivo", osea, si el DOM cambia(ya sea que se agregan/eliminan elementos con esa
+                clase), la colección se actualizará automáticamente.</li>
+            <li>No devuelve un solo elemento, sino una colección, por lo que para acceder a un elemento especifíco, hay
+                que usar índices, como si fuera un Array.</li>
+            <li>Si no hay elementos con esa clase, devuelve una colección vacía.</li>
+        </ul>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
