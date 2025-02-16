@@ -63,7 +63,7 @@ p {
 h3 {
     color: rgb(0, 255, 255);
     margin: 3vh;
-    text-align: center;
+    font-size: 1.5rem;
 }
 .presentacion-tema{
     display: grid;
@@ -93,22 +93,6 @@ ol{
 }
 li{
     margin-top: 4vh;
-}
-#divPadre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 35vhvh; 
-}
-#Nodo-vs-Elemento-Div1{
-border: 0.5vh solid #000000;
-width: 20vh;
-}
-#Nodo-vs-Elemento-Div2{
-    border: 0.5vh solid #ffff00;
-    width: 15vh;
-    margin-left: 1vw;
-    margin-bottom: 0.5vw;
 }
 .listaDeOpciones {
     color: rgb(255, 255, 255);

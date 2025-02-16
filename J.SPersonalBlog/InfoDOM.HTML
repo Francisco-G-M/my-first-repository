@@ -29,19 +29,22 @@
                 JavaScript, esto incluye propiedades, métodos y eventos.
             </p>
         </div>
-        <h2 class="h2-centrados">¿Qué es un Nodo?</h2>
-        <div class="presentacion-tema">
-            <img src="NodosImg2.jpg" alt="Nodos-img">
-            <p>Consiste en un punto específico del diagrama o del árbol de Nodos del DOM. Los elementos que incluyen
-                los Nodos son:
-            </p>
-        </div>
+        <h2>¿Qué es un Nodo?</h2>
+        <p>Consiste en un punto específico del diagrama o del árbol de Nodos del DOM. Los elementos que incluyen
+            los Nodos son:
+        </p>
         <ol>
             <li>El Documento como tal.</li>
             <li>Los elementos HTML.</li>
             <li>El texto entre etiquetas.</li>
             <li>Los comentarios.</li>
         </ol>
+        <p>Ahora que ya sabes que es un nodo, te explícare brevemente la diferencia entre los Nodos con los elementos:
+        </p>
+        <ul>
+            <li>Usualmente nos referimos a los elementos del documento HTML como "elementos"</li>
+            <li>Un nodo puede ser un elemento HTML, pero también puede ser texto o comentarios en el documento</li>
+        </ul>
         <h2>Jerarquía del DOM</h2>
         <ol>
             <li>Root Node: Es el nodo úbicado en la parte superior del árbol. En HTML es &lthtml&gt</li>
@@ -52,23 +55,8 @@
         </ol>
         <p>Es algo confuso, por ende te recomiendo ver el ejemplo del curso: JavaScript para Manipulación del DOM -
             Curso con Proyectos de FreeCodeCamp a partir del minuto 18:28 hasta el 22:54</p>
-        <h2>Diferencia entre Nodo vs Elemento</h2>
-        <p>En el contexto del DOM, el concepto de nodo es más ámplio que el de elemento:</p>
-        <ul>
-            <li>Usualmente nos referimos a los elementos del documento HTML como "elementos"</li>
-            <li>Un nodo puede ser un elemento HTML, pero también puede ser texto o comentarios en el documento</li>
-        </ul>
-        <p>El siguiente ejemplo aclara lo dicho anteriormente:</p>
-        <div id="divPadre">
-            <div id="Nodo-vs-Elemento-Div1">
-                <p>Nodos en el DOM</p>
-                <div id="Nodo-vs-Elemento-Div2">
-                    <p>Elementos HTML</p>
-                </div>
-            </div>
-        </div>
-        <h2>Seleccionar Elementos</h2>
-        <h3>.getElementById()</h3>
+        <h2>Seleccionar Elementos:</h2>
+        <h2>.getElementById()</h2>
         <p>Método del objeto "documento" en J.S utilizado para seleccionar un elemento HTML especifíco mediante un
             atributo "id".Devuelve una referencia al primer elemento que coincida con el "id" dado o Null si no se
             encuentra ningún elemento con ese "id".
@@ -172,6 +160,23 @@
                 que usar índices, como si fuera un Array.</li>
             <li>Si no hay elementos con esa clase, devuelve una colección vacía.</li>
         </ul>
+        <h2>.getElementsByTagName()</h2>
+        <p>Método del DOM que se usa para seleccionar elementos de una página web basándose en su etiqueta HTML.Retorna
+            una colección "en vivo" de todos los elementos que coinciden con el nombre de la etiqueta específica.Su
+            sintaxis es:</p>
+        <pre>
+<code>
+    document.getElementsByTagName("Tag-Name");
+</code>
+             </pre>
+        <ul>
+            <li>Donde esta "Tag-Name" va la cadena de texto que representa el nombre de la etiqueta que deseas
+                seleccionar("p", "div", "span", etc).</li>
+            <li>Si bien devuelve una "HTMLCollection"(que es similar a un Array), no tiene todos los métodos de los
+                Arrays</li>
+        </ul>
+        <h3>Dato Extra:</h3>
+        <p>Si no hay coincidencias, devolverá una colección vacía(HTMLCollection con length = 0), pero no es Null.</p>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
