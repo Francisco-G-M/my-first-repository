@@ -177,6 +177,24 @@
         </ul>
         <h3>Dato Extra:</h3>
         <p>Si no hay coincidencias, devolverá una colección vacía(HTMLCollection con length = 0), pero no es Null.</p>
+        <h2>.querrySelector()</h2>
+        <p>Método que permite seleccionar el primer elemento del documento que coincida con un selector CSS
+            específicado. Este sirve para acceder y manipular elementos del DOM de forma dinámica, lo que es útil para
+            cambiar contenido, modificar estilos, agregar/eliminar clases, etc. Su sintaxis es:</p>
+        <pre>
+<code>
+    document.querrySelector("selectorCSS");
+    document.querrySelector(".mi-clase");
+    document.querrySelector("#mi-id");
+    document.querrySelector("p");
+    document.querrySelector(".lista li");
+</code>
+        </pre>
+        <p>"selectorCSS": string que sigue la sintaxis de los selectores css.</p>
+        <ul>
+            <li>"p": selecciona el primer &gtp&lt</li>
+            <li>".lista li": primer &gtli&lt dentro de .lista</li>
+        </ul>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
