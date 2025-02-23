@@ -192,9 +192,23 @@
         </pre>
         <p>"selectorCSS": string que sigue la sintaxis de los selectores css.</p>
         <ul>
-            <li>"p": selecciona el primer &gtp&lt</li>
-            <li>".lista li": primer &gtli&lt dentro de .lista</li>
+            <li>"p": selecciona el primer &ltp&gt</li>
+            <li>".lista li": primer &ltli&gt dentro de .lista</li>
         </ul>
+        <h2>.querrySelectorAll()</h2>
+        <p>Método que permite seleccionar múltiples elementos dentro de un documento HTML utilizando un selector CSS.
+            Retorna una NodeList (lista de nodos parecida a un Array), conteniendo todos los elementos que coinciden con
+            el selector privado. Sirve para:</p>
+        <ul>
+            <li>Seleccionar todos los elementos que coinciden con el selector.</li>
+            <li>Aplicar modificaciones/estilos a múltiples elementos a la vez.</li>
+            <li>Recorrer los elementos seleccionados con métodos (e.j: forEch)</li>
+        </ul>
+        <pre>
+<code>
+    document.querrySelectorAll("selector");
+</code>
+            </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
