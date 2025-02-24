@@ -209,6 +209,38 @@
     document.querrySelectorAll("selector");
 </code>
             </pre>
+        <h2>Principales propiedades/métodos para classList:</h2>
+        <h3>remove(class1, class2, ...)</h3>
+        <p>Elimina una o más clases del elemento, si la clase no existe, no hace nada.</p>
+        <h3>toggle(className, force)</h3>
+        <p>Alterna la presencia de una clase. Si la clase existe, la elimina, si no existe, la añade. También acepta un
+            segundo argumento booleano(force)</p>
+        <h3>contains(className)</h3>
+        <p>Verifica si el elemento tiene una clase específica, retorna "true" si la clase está presente, y "false" si
+            no.</p>
+        <h3>replace(oldClass, newClass)</h3>
+        <p>Reemplaza una clase existente con una nueva. Si "oldClass" no existe, no hace nada.</p>
+        <h3>forEach(callBack)</h3>
+        <p>Este método solo esta disponible en navegadores modernos. Permite iterar sobre todas las clases del elemento.
+        </p>
+        <h3>length</h3>
+        <p>Devuelve el número de clases en el elemento.</p>
+        <h3>value</h3>
+        <p>Devuelve todas las clases en formato de cadena separada por espacios.</p>
+        <pre>
+<code>
+    element.classList.remove("active", "highlight");
+    element.classList.toggle("hidden");
+    element.classList.toggle("hidden", true);
+    element.classList.contains("active");
+    element.classList.replace("old-class", "new-class");
+    element.classList.forEach(cls =&gt {
+        console.log(cls);
+    });
+    console.log(element.classList.length);
+    console.log(element.classList.value);
+</code>
+            </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
