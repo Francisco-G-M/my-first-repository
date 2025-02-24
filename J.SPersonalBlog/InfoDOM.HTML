@@ -256,6 +256,18 @@
     elementoPadre.appendChild(nuevoHijo);
 </code>
         </pre>
+        <h2>.append()</h2>
+        <p>Método que se usa para agregar contenido dentro de un elemento HTML en el DOM. Es más flexible que
+            ".appendChild()", ya que permite agregar multiples nodos/cadenas de texto al mismo tiempo:</p>
+        <pre>
+<code>
+    let parrafo = document.createElement("p");
+    parrafo.append("Este es un párrafo", "con extra de texto");
+    let div = document.createElement("div");
+    div.append("Texto simple centro del div,", parrafo);
+    document.body.append(div);
+</code>
+            </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
