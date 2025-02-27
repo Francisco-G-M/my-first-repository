@@ -297,6 +297,18 @@
     let father = son.parentNode;
 </code>
         </pre>
+        <h2>.children</h2>
+        <p>Método que devuelve una colección en vivo que contiene todos los elementos hijos de un nodo padre. Solo
+            incluye nodos de tipo "element", excluyendo nodos de tipo "element", excluyendo nodos de texto, comentarios
+            u otros tipos de nodos.</p>
+        <pre>
+<code>
+    let son = document.getElementById("contenedor");
+    let children = contenedor.children;
+    console.log(son);
+    console.log(son[0]); //Accede al primer hijo elemento.
+</code>
+            </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
