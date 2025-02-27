@@ -277,6 +277,26 @@
     let father = son.parentElement;
 </code>
             </pre>
+        <h2>.parentNode</h2>
+        <p>Propiedad del DOM de J.S que hace referencia al nodo padre de un elemento específico. Siendo útil para
+            navegar en la jerarquía del DOM y manipular elementos de manera dinámica. Su principal diferencia con
+            ".parentElement" es:</p>
+        <ul>
+            <li>Devuelve el nodo padre, que puede ser cualquier tipo de nodo, incluyendo nodos de tipo "element",
+                "document", o incluso "DocumentFragment".</li>
+            <li>Si el nodo padre no es un elemento (e.j: si el nodo es un "document"), puede devolver "Null".</li>
+        </ul>
+        <p>En el caso de ".parentElement":</p>
+        <ul>
+            <li>Devuleve solo el elemento padre (un nodo de tipo "element")</li>
+            <li>Si el nodo padre es un elemento válido, devuelve "Null".</li>
+        </ul>
+        <pre>
+<code>
+    let son = document.getElementById("myElement");
+    let father = son.parentNode;
+</code>
+        </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
