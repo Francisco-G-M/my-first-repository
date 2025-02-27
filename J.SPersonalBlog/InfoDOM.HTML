@@ -327,6 +327,17 @@
     //Devuelve el elemento
 </code>
             </pre>
+        <h2>.lastChild</h2>
+        <p>Devuelve el último nodo hijo de un elemento. Este nodo puede ser de cualquier tipo, incluyendo
+            elementos(element), nodos de texto(text), comentarios(comment), etc.</p>
+        <pre>
+<code>
+    let contenedor = document.getElementById("contenedor");
+    console.log(contenedor.lastChild);
+    console.log(contenedor.lastElementChild);
+</code>
+            </pre>
+            <p>Si solo quieres obtener el último hijo(ignorando nodos de texto), puedes usar: "lastElementChild"</p>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
