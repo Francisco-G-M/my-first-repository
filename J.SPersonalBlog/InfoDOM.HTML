@@ -318,6 +318,15 @@
     console.log(contenedor.firstChild);
 </code>
             </pre>
+        <p>En este caso, "contenedor.firstChild" devuelve un nodo de texto, ya que el espacio en blanco antes de
+            cualquier elemento se considera un nodo de texto. Si solo quieres obtener el primer elemento hijo(ignorando
+            nodos de texto), puedes usar: .firstElementChild</p>
+        <pre>
+<code>
+    console.log("contenedor.firstElementChild");
+    //Devuelve el elemento
+</code>
+            </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
