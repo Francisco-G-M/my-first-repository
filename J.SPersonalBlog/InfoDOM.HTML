@@ -337,7 +337,25 @@
     console.log(contenedor.lastElementChild);
 </code>
             </pre>
-            <p>Si solo quieres obtener el último hijo(ignorando nodos de texto), puedes usar: "lastElementChild"</p>
+        <p>Si solo quieres obtener el último hijo(ignorando nodos de texto), puedes usar: "lastElementChild"</p>
+        <h2>.previousElementSibling</h2>
+        <p>Propiedad del DOM de J.S que devuelve el elemento hermano anterior del elemento seleccionado, es decir, el
+            nodo anterior que es un elemento(excluyendo nodos de tetxo o comentarios). Si no hay un elemento hermano
+            anterior, devuelve "Null":</p>
+        <pre>
+<code>
+    &ltdiv id="father"&gt
+    &ltp&gtPrimer texto&lt/p&gt
+    &lth2 id="titulo"&gtTítulo&lt/p&gt
+    &ltp&gtSegundo texto&lt/p&gt
+    &ltscript&gt
+    let titulo = document.getElementById("titulo");
+    let hermanoAnterior = titulo.previousElementSibling;
+    console.log(hermanoAnterior);
+    //&ltp&gtPrimer texto&lt/p&gt
+    &lt/script&gt
+</code>
+            </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
