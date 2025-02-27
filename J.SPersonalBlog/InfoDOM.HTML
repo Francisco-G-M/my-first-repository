@@ -356,6 +356,24 @@
     &lt/script&gt
 </code>
             </pre>
+        <h2>.nextSibling</h2>
+        <p>Propiedad en el DOM de J.S que devuelve el siguiente nodo hermano del elemento seleccionado, que puede ser un
+            nodo de texto, comentario o elemento. Si no hay un nodo siguiente, devuleve "Null":</p>
+        <pre>
+<code>
+    &ltdiv id="padre"&gt
+    &ltp id="parrafo"&gtPárrafo.&lt/p&gt
+    &lt!--comentario--&gt
+    &lth2&gtTítulo&lt/p&gt
+    &lt/div&gt
+    &ltscript&gt
+    let parrafo = document.getElementById("parrafo");
+    let siguienteNodo = parrafo.nextSibling;
+</code>
+            </pre>
+        <p>Al tener el elemento &ltp&gt un comentario delante, nextSibling selecciona el siguiente nodo(en este caso el
+            comentario). Si quieres solo obtener elementos HTML, debes usar ".nextElementSibling". Si quisieras obtener
+            el hermano anterior del elemento selecciona, debes usar: ".previousSibling".</p>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
