@@ -374,6 +374,21 @@
         <p>Al tener el elemento &ltp&gt un comentario delante, nextSibling selecciona el siguiente nodo(en este caso el
             comentario). Si quieres solo obtener elementos HTML, debes usar ".nextElementSibling". Si quisieras obtener
             el hermano anterior del elemento selecciona, debes usar: ".previousSibling".</p>
+        <h2>Eventos del DOM</h2>
+        <p>Situación/suceso que ocurre en el sitio web como resultado de interpretación con el usuario, o por otra causa
+            como cambios en el estado del dispositivo o de la ventana.</p>
+        <h3>Conceptos Principales</h3>
+        <h4>Elemento Target</h4>
+        <p>Objeto/elemento que ha sido activado/selecciona por una acción del usuario (click, pulsación de una tecla,
+            etc). Comúnmente es utilizado en eventos, siendo una especie de manejadores de eventos, para obtener el
+            elemento, e.j: un click en un enlace, el "Target" sería el enlace que fue presionado.</p>
+        <pre>
+<code>
+    document.addEventListener('click', function(event) {
+        console.log(event.target); //Muestra el elemento que fue clickeado
+    });
+</code>
+            </pre>
     </main>
     <footer>
         <h3 id="titulo-footer">Contactos:</h3>
