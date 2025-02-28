@@ -112,7 +112,7 @@ code {
 pre {
     background-color: rgb(21, 18, 26);
     border: 0.5vh solid rgba(26, 2, 56, 0.445);
-    border-radius: 10px 10px;
+    max-width: 85%;
 }
 
 .otrasCaracteriscasTabla {
