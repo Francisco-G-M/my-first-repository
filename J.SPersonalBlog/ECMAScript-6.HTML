@@ -46,18 +46,21 @@
     //Lo que si puedes hacer es reaccinar el valor.
     </code>
     </pre>
-            <h2>Ámbito de var vs let</h2>
+            <h3>Ámbito de var vs let</h3>
             <p>Las diferencias en el ambito de las variables declaradas con var o con let son:</p>
-            <p>La variable var tiene un ámbito global,pero si esta dentro de una función sera una variable local.Pero
-                con let las variables tienen el ámbito local restringido al bloque de código/expresión donde fue
-                declarada/definida la variable.</p>
+            <ul>
+                <li>La variable var tiene un ámbito global,pero si esta dentro de una función sera una variable local.
+                </li>
+                <li>Pero
+                    con let las variables tienen el ámbito local restringido al bloque de código/expresión donde fue
+                    declarada/definida la variable</li>
+            </ul>
             <h2>Const</h2>
             <p>Es la tercera opción para declarar una variable,estas solo se pueden usar para acceder a su valor,su
                 valor no se puede modificar una vez ya allá sido declarado:</p>
             <pre>
     <code>
     const MI_CONSTANTE = 35;
-    /*Se escribe en mayúsculas el nombre de las const para poder distinguirlas y para que los desarrolladores sepan que no deben intentar
     cambiar el valor de esa constante.*/
     //Si la usaramos en una función:
     function calcularAreaCirculo(radio) {
@@ -71,17 +74,20 @@
     //Usar dos ** índica que es el operador para una potencia,el número al lado de ellos sera la potencia deseada.
     </code>
     </pre>
-            <h2>Mutar arreglo declarado con const</h2>
+            <p>Se escribe en mayúsculas el nombre de las const para poder distinguirlas y para que los desarrolladores
+                sepan que no deben intentar</p>
+            <h3>Mutar arreglo declarado con const</h3>
             <p>Si bien a las variables declaradas con "const" no le puedes asignar un valor nuevo,si lo puedes cambiar:
             </p>
             <pre>
     <code>
     const MI_ARREGLO = [1, 2, 3, 4,];
     MI_ARREGLO[0] = 5;
-    /*Lo que hacemos es cambiar los elementos del arreglo,básicamente podemos reaccinar el valor del arreglo,pero no el valor directo de la 
-    variable declarada con "const"*/
     </code>
     </pre>
+            <p>Lo que hacemos es cambiar los elementos del arreglo,básicamente podemos reaccinar el valor del
+                arreglo,pero no el valor directo de la
+                variable declarada con "const"</p>
             <h2>Crear un objeto inmutable</h2>
             <p>Para lograr que un objeto sea inmutable usaremos el metodo freeze():</p>
             <pre>
@@ -93,10 +99,11 @@
     "blanco": "#ffffff"
     };
     object.freeze(colores);
-    /*object nos permite dar funcionalidades en común a todos los objetos.Pero al usar freeze,entre () aclaramos que un objeto determinado
-    sera el afectado*/
     </code>
     </pre>
+            <p>object nos permite dar funcionalidades en común a todos los objetos.Pero al usar freeze,entre ()
+                aclaramos que un objeto determinado
+                sera el afectado</p>
             <h2>Funciones flecha</h2>
             <p>Es un tipo de función más compacta utilizada normalmente para funciones anonimas(funciones sin un nombre
                 especifíco):</p>
@@ -106,14 +113,16 @@
     return new date();
     };
     //"new date" crea un objeto con la fecha actual del sistema.
-    /*Si quisieramos transformar esta función en un tipo flecha,tendríamos que eliminar la palabra clave function,la apertura y cierre
-    de la llave, la sentencia return y escribimos el símbolo característico de las funciones flecha (=>):
     const fecha = () => new date();
-    /*Dato importante: las funciones flecha son muy utiles cuando queremos pasar una función como argumento a otra función,lo que hacemos es
-    escribirla directamente como el argumento.
     </code>
     </pre>
-            <h2>Funciones flecha con parámetros</h2>
+            <p>Si quisieramos transformar una función en una tipo flecha,tendríamos que eliminar la palabra clave
+                function,la apertura y cierre
+                de la llave, la sentencia return y escribimos el símbolo característico de las funciones flecha (=>)</p>
+                <h4>Dato Importante:</h4>
+                <p>Las funciones flecha son muy utiles cuando queremos pasar una función como argumento a otra función,lo que hacemos es
+                    escribirla directamente como el argumento.</p>
+            <h3>Funciones flecha con parámetros</h3>
             <p>Para definir funciones flechas que tengan uno o más parametros:</p>
             <pre>
     <code>
