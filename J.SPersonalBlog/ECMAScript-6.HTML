@@ -119,9 +119,10 @@
             <p>Si quisieramos transformar una función en una tipo flecha,tendríamos que eliminar la palabra clave
                 function,la apertura y cierre
                 de la llave, la sentencia return y escribimos el símbolo característico de las funciones flecha (=>)</p>
-                <h4>Dato Importante:</h4>
-                <p>Las funciones flecha son muy utiles cuando queremos pasar una función como argumento a otra función,lo que hacemos es
-                    escribirla directamente como el argumento.</p>
+            <h4>Dato Importante:</h4>
+            <p>Las funciones flecha son muy utiles cuando queremos pasar una función como argumento a otra función,lo
+                que hacemos es
+                escribirla directamente como el argumento.</p>
             <h3>Funciones flecha con parámetros</h3>
             <p>Para definir funciones flechas que tengan uno o más parametros:</p>
             <pre>
@@ -194,7 +195,7 @@
     const {x, y, z} = coordenadas;
     </code>
     </pre>
-            <h2>Sintaxis de desestructuración: objetos anidados</h2>
+            <h3>Sintaxis de desestructuración: objetos anidados</h3>
             <p>Para acceder a los datos de un objeto anidado haríamos lo siguiente:</p>
             <pre>
     <code>
@@ -205,9 +206,7 @@
     }
     };
     const {joseph: {edad: edadDelUsuario, correo: correoDelUsuario}} = usuario;
-    //Como ven,para acceder a los objetos anidados,debemos escribir otro corchete que tenga dentro el nombre de aquellos objetos.
-    /*Lo que esta escrito despues de los nombres de las porpiedades que queremos acceder son los nuevos nombres que queremos asignarles a las
-    propiedades (esto es completamente opcional).Si llegasemos a llamarlos,tendríamos que usar estos nuevos nombres*/
+    //Para acceder a los objetos anidados,debemos escribir un segundo par de corchetes que contenga el nombre de aquellos objetos.
     const PRONOSTICO_LOCAL = {
     "ayer": {
     minima: "-1",
@@ -227,7 +226,12 @@
     //Usamos una coma y un espacio para que en una sola línea figuren los dos datos.
     </code>
     </pre>
-            <h2>Sintaxis de desestructuración: arreglos</h2>
+            <p>Lo que esta escrito despues de los nombres de las propiedades({edad: edadDelUsuario, correo:
+                correoDelUsuario})que queremos acceder son los nuevos nombres
+                que queremos asignarles a las
+                propiedades (esto es completamente opcional).Si llegasemos a llamarlos,tendríamos que usar estos nuevos
+                nombres</p>
+            <h3>Sintaxis de desestructuración: arreglos</h3>
             <p>Nos permite asignar valores a variables usando arreglos:</p>
             <pre>
     <code>
@@ -235,7 +239,7 @@
     var b;
     var c;
     [a, b,,,c] = [1, 2, 3, 4, 5, 6];
-    //Ponemos dos comas más para que la var c tome com valor a 5,es decir las dos comas son para que se salten los valores 3 y 4.
+    //Ponemos dos comas más para que la var c tome como valor a 5,es decir las dos comas son para que se salten los valores 3 y 4.
     var x = 8;
     var y = 6;
     [y, x] = [x, y];
@@ -244,7 +248,7 @@
     console.log("y: " + y);
     </code>
     </pre>
-            <h2>Sintaxis de desestructuración con el operador rest</h2>
+            <h3>Sintaxis de desestructuración con el operador rest</h3>
             <p>Permite reaccinar un arreglo en varias variables:</p>
             <pre>
     <code>
@@ -265,7 +269,7 @@
     console.log(arregloFinal);
     </code>
     </pre>
-            <h2>Sintaxis de desestructuración: pasar objeto como argumento</h2>
+            <h3>Sintaxis de desestructuración: pasar objeto como argumento</h3>
             <p>Para pasar un objeto como argumento primero identificamos que propiedades vamos a necesitar en la función
                 y escribirlas entrre llaves en el primer parametro,asignandoce esos valores a variables,que podemos
                 trabajar en la función:</p>
@@ -340,10 +344,10 @@
     }
     };
     console.log(PERSONAJE_FICTICIO.presentacion());
-    //La función de "this" en JavaScript es referirce al objeto que estamos trabajando,en este caso el objeto "persona" y a su propiedad
-    "nombre"
     </code>
     </pre>
+            <p>La función de "this" en JavaScript es referirce al objeto que estamos trabajando,en este caso el objeto
+                "persona" y a su propiedad "nombre".</p>
             <h2>Definir una clase</h2>
             <p>Las "clases" nos periten crear muchos objetos con la misma extructura,propiedades y funcionalidad:</p>
             <pre>
@@ -355,10 +359,6 @@
     }
     var zeus = new TransbordadorEspacial("Jupiter");
     console.log(zeus.planeta);
-    /*"constructor" es la función que se va a llamar cuando asignemos a un objeto ese tipo de class."new" es la palabra clave para crear
-    un objeto como valor de una var*/ 
-    /*Las class en JavaScript siguen una convención específica que es que inician su nombre con mayúscula y también entre palabras inician
-    con mayúscula*/ 
     class Mascota {
     constructor(nombre, edad) {
     this.nombre = nombre;
@@ -370,13 +370,18 @@
     console.log(miMascota.edad);
     </code>
     </pre>
-            <h2>Getters y Setters</h2>
+            <p>"constructor" es la función que se va a llamar cuando asignemos a un objeto ese tipo de class."new" es la
+                palabra clave para crear un objeto como valor de una var.</p>
+            <p>Las class en JavaScript siguen una convención específica que es que inician su nombre con mayúscula y
+                también entre palabras inician
+                con mayúscula.</p>
+            <h3>Getters y Setters</h3>
             <p>Podemos definir funciones en una clase para que al crear un objeto,este tenga todas esas funciones
                 asociadas,existen dos funciones específicas que protegen la data del objeto.</p>
-            <h3>Getters:</h3>
+            <h4>Getters:</h4>
             <p>Metodos que permiten obtener el valor de una propiedad privada (una propiedad que tenga un guion bajo
                 antes de su nombre),es decir,permite acceder al valor indirectamente.</p>
-            <h3>Setters:</h3>
+            <h4>Setters:</h4>
             <p>Función que actualiza el valor de una propiedad,utiles para verificar el valor nuevo antes de asignarlo.
             </p>
             <pre>
@@ -399,8 +404,9 @@
     //Solo utilizar un guion bajo no convierte la variable en privada,es simplemente una convención.
     </code>
     </pre>
-            <h2>Exportación para compartir bloques de código</h2>
-            <p>En caso de que quisieramos utilizar funciones almacenadas en un archivo,tendriamos que exportalas,para
+            <h2>Exportación e Importación de código</h2>
+            <h3>Exportación para compartir bloques de código</h3>
+            <p>En caso de que quisieramos utilizar funciones almacenadas en un archivo,tendríamos que exportalas,para
                 ello utilizaremos la palabra clave "export" y la variable donde estan almacenadas estas funciones:</p>
             <pre>
     <code>
@@ -412,37 +418,41 @@
     return x + y;
     }
     export {add};
-    /*Puedes exportar varias funciones utilizando la exportación antes del tipo de variable(ejemplo) o poniendolas todas en la declaración de
-    exportación(ejemplo 2):*/
-    export {add, otherString};
     </code>
     </pre>
-            <h2>Reutilización de código mediante importación</h2>
+            <p>Puedes exportar varias funciones utilizando la exportación antes del tipo de variable(ejemplo) o
+                poniendolas todas en la declaración de
+                exportación(ejemplo 2): export {add, otherString};</p>
+            <h3>Reutilización de código mediante importación</h3>
             <p>Este nos permite elegir las partes del archivo/modulo que queremos cargar:</p>
             <pre>
     <code>
     import {add} from './string_functions.JS'
-    /* ./ es la ruta relativa del archivo,índica a la importación que busque el archivo string_functions.JS en la misma carpeta
-    que el archivo actual*/ 
-    // .JS es la extensión del archivo
-    //import encuentra add en string_functions.JS,solo importa esta función.
     </code>
     </pre>
-            <h2>Utilizar * para importar todo desde un archivo</h2>
+            <ul>
+                <li>./ es la ruta relativa del archivo,índica a la importación que busque el archivo string_functions.JS
+                    en
+                    la misma carpeta que el archivo actual.</li>
+                <li>.JS es la extensión del archivo</li>
+                <li>import encuentra add en string_functions.JS,solo importa esta función.</li>
+            </ul>
+            <h3>Utilizar * para importar todo desde un archivo</h3>
             <p>En el caso de que queramos importar todo el contenido de un archivo a otro utilizaremos la sintaxis
                 "import * as":</p>
             <pre>
     <code>
     import * as myModule from "./math_functions.JS";
     //Si utilizaramos este tipo de sintaxis,el nombre del archivo va entre comillasdobles.
-    /*La declaración import crea un objeto llamado myModule (solo es el nombre de una variable),este contendrá todas las exportaciones
-    que tiene  math_functions.JS,si quisieramos utilizar alguna/s funciones que importamos haríamos así:*/
     myModule.add(2, 3);
     myModule.subtract(5, 3);
     //Recordemos que estamos usando funciones que tienen operaciones matemáticas,por eso los números.
     </code>
     </pre>
-            <h2>Respaldo de exportación con el valor predeterminado de exportación</h2>
+            <p>La declaración import crea un objeto llamado myModule (solo es el nombre de una variable),este contendrá
+                todas las exportaciones
+                que tiene math_functions.JS,si quisieramos utilizar alguna/s funciones que importamos haríamos así</p>
+            <h3>Respaldo de exportación con el valor predeterminado de exportación</h3>
             <p>La sintaxis "export default" nos permite exportar un valor de un archivo(siendo esta comúnmente su
                 función):</p>
             <pre>
@@ -454,19 +464,22 @@
     export default function(a, b) {
     return a : b;
     }
-    /*Esta sintaxis solo se utiliza para declarar un valor alternativo para un archivo/modulo,por ende,solo puede tener un valor como
-    exportación predeterminada en cada archivo/modulo.También la "export default" no se puede utilizar con let,const o var*/
     </code>
     </pre>
-            <h2>Imortar la exportación predeterminada</h2>
+            <p>Esta sintaxis solo se utiliza para declarar un valor alternativo para un archivo/modulo,por ende,solo
+                puede tener un valor como
+                exportación predeterminada en cada archivo/modulo.También la "export default" no se puede utilizar con
+                let,const o var</p>
+            <h3>Importar la exportación predeterminada</h3>
             <p>En caso de que quisieramos importar una exportación predeterminada utilizariamos una import sintaxis que
                 no encierra entre llaves el valor importado:</p>
             <pre>
     <code>
     import string from "./math.functions.JS";
-    //string es simplemente un nombre de variable para culaquiera que sea la exportación predeterminada del archivo math.functions.JS
     </code>
     </pre>
+            <p>string es simplemente un nombre de variable para culaquiera que sea la exportación predeterminada del
+                archivo math.functions.JS</p>
             <h2>Crear un promesa de J.S</h2>
             <P>La función constructora "promise" toma como argumento una función,con dos parámetros: "resolve" y
                 "reject",estos metodos se utilizan para determinar el resultado de la promesa.Su función es hacer una
