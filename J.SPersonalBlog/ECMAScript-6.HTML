@@ -489,7 +489,7 @@
     const stringPromise = new Promise((resolve, reject) => {});
     </code>
     </pre>
-            <h2>Completar una promise con resolve y reject</h2>
+            <h3>Completar una promesa con resolve y reject</h3>
             <p>En las promesas los parametros "resolve" y "reject" se usan para completar la promesa,"resolve" es si
                 queremos que se complete con exito,y "reject" si queremos que falle,ambos toman un argumento:</p>
             <pre>
@@ -502,14 +502,17 @@
     reject("Data not received");
     }
     });
-    /*Las promesas tienen tres estados:
-    Pending: sucede cunado no agregamos una forma de completar la promesa,quedando en un estado inicial,es decir,no fue ni cumplida ni
-    rechazada.
-    Fulfilled: significa que la promesa se completo con éxito.
-    Rejected: significa que la promesa falló. 
     </code>
     </pre>
-            <h2>Manejar una "promise" cumplida con "then"</h2>
+            <p>Las promesas tienen tres estados:</p>
+            <h4>Pedding</h4>
+            <p>sucede cunado no agregamos una forma de completar la promesa,quedando en un estado inicial,es decir,no
+                fue ni cumplida ni rechazada.</p>
+            <h4>Fulfilled</h4>
+            <p>significa que la promesa se completo con éxito.</p>
+            <h4>Rejected</h4>
+            <p>significa que la promesa falló. </p>
+            <h3>Manejar una "promise" cumplida con "then"</h3>
             <p>El método "then" programa funciones de devolución de llamada para la finalización de la
                 "promise",independientemente de si cumplio o no.Esto dependiendo que controlador se llama(onFulfilled o
                 onRejected):</p>
@@ -521,7 +524,7 @@
     //Aquí "result" es el controlador de onFulfilled,ya que "result" proviene del argumento dado al método "resolve"
     </code>
     </pre>
-            <h2>Manejo de la "promise" rechazada con "catch"</h2>
+            <h3>Manejo de la "promise" rechazada con "catch"</h3>
             <p>El método "catch" se usa si su "promise" fue rechazada,se ejecuta después de llamar al método "reject" de
                 la promesa:</p>
             <pre>
@@ -529,9 +532,11 @@
     makeServerRequest.cath(error => {
     console.log(error);
     });
-    //Dato extra: no borramos el "makeServerRequest.then",simplemente agregamos debajo de el la verción con el método "catch"
     </code>
     </pre>
+            <h4>Dato Extra</h4>
+            <p>No borramos el "makeServerRequest.then",simplemente agregamos debajo de el la verción con el método
+                "catch".</p>
         </div>
     </main>
     <footer>
