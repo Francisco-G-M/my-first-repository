@@ -44,14 +44,15 @@
     //ejemplo de expresiones regulares:
     let firstString = "Hi people";
     let otherSttring = /Hi/;
-    //La expresión regular es /Hi/ esta no va con ningún tipo de comillas dentro.
-    //Una manera de probar una expresión regular es usando el método .test(),este toma la expresión regular,la aplica a una cadena
-    (que va dentro del parentesis) y devuelve "true" o "false" si su patron encuentra algo o no:
     let result = otherString.test(firstString);
-    /*Oh también podemos escribir el .test() sin asignarlo a una variable,la diferencia es que al asignarlo a una variable podemos llamarlo
-    con console.log(); y que nos devuelva y figure en la consola su valor booleano*/
     </code>
     </pre>
+            <p>La expresión regular es /Hi/ esta no va con ningún tipo de comillas dentro. Una manera de probar una
+                expresión regular es usando el método .test(),este toma la expresión regular,la aplica a una cadena
+                (que va dentro del parentesis) y devuelve "true" o "false" si su patron encuentra algo o no.</p>
+            <p>También podemos escribir el .test() sin asignarlo a una variable,la diferencia es que al asignarlo a una
+                variable podemos llamarlo
+                con console.log(); y que nos devuelva y figure en la consola su valor booleano.</p>
             <h2>Coincidir cadenas literales</h2>
             <p>Cuando hablamos de hacer coincidir cadenas literales nos referimos a que la expresión regular busque una
                 coincidencia literal con la cadena:</p>
@@ -60,11 +61,12 @@
     var saludo = "Hola";
     var extraer = /Hola/;
     let final = extraer.test(saludo);
-    /*Aquí hay un acoincidencia literal,pero si la expresión regular se escribiera diferente que la cadena original haría .test()
-    devolviera false*/
     </code>
     </pre>
-            <h2>Hacer coindir una cadena literal con diferentes posibilidades</h2>
+            <p>Aquí hay un acoincidencia literal,pero si la expresión regular se escribiera diferente que la cadena
+                original haría .test()
+                devolviera false</p>
+            <h3>Hacer coindir una cadena literal con diferentes posibilidades</h3>
             <p>En caso de que quisieramos múltiples patrones de posibilidades utilizamos el operador "alternation"(que
                 usa la barra | y la expresión regular).</p>
             <pre>
@@ -90,10 +92,11 @@
     let extraer = "Extraer la palabra codigo";
     let extracto = /codigo/;
     const resultado = extraer.match(extracto);
-    /*Dato extra: tanto aquí como en ejemplos anteriores le estamos asignando el valor de la cuerda "codigo" a la variable "resultado".
-    Esto es opcional como ya hemos visto*/ 
     </code>
     </pre>
+            <h4>Dato extra</h4>
+            <p>Tanto aquí como en ejemplos anteriores le estamos asignando el valor de la cuerda "codigo" a la variable
+                "resultado". Esto es opcional como ya hemos visto</p>
             <h2>Encontrar más de una vez un patrón</h2>
             <p>Con el indicador de búsqueda global "g" (estos indicadores son las "banderas) podemos extraer/buscar más
                 de una vez un patrón:</p>
@@ -125,9 +128,10 @@
     let string = "Hacer coincidir esto";
     let string2 = /est[ae]/;
     var final = string.match(string2);
-    //Aquí queremos hacer coincidir "esta" y "este",por ende en la expresión regular escribimos los caracteres que pueden coincidir(a y e).
     </code>
     </pre>
+            <p>Aquí queremos hacer coincidir "esta" y "este",por ende en la expresión regular escribimos los caracteres
+                que pueden coincidir(a y e).</p>
             <h2>Unir letras del alfabeto</h2>
             <p>Si quisieramos definir un rango de caracteres que puedan coincidir con la expresión regular,tendríamos
                 que usar un guion:</p>
@@ -196,10 +200,10 @@
     let estación = "&lth1&gtWinter&lt/h1&gt";
     var buscar = /&lt.*?&gt/;
     let busqueda = estacion.match(busqueda);
-    /* &lt &gt son los delimitadores de la expresión &lth1&gt.El ? indica una coincidencia diferida que buscara en el menor tiempo posible la parte
-    más pequeña(&lth1&gt),sin el ? devolvería toda la oración*/
     </code>
     </pre>
+            <p>&lt &gt son los delimitadores de la expresión &lth1&gt.El ? indica una coincidencia diferida que buscara
+                en el menor tiempo posible la parte más pequeña(&lth1&gt),sin el ? devolvería toda la oración.</p>
             <h2>Coincidir con patrones de cuerdas iniciales</h2>
             <p>En caso de que quisieramos buscar patrones en posiciones especificas en una cadena,debemos usar el
                 caracter de intercalación ^ (en este caso no habra corchetes,si hubieran se confundiría con el caracter
@@ -237,7 +241,7 @@
     //Todas las test regresan true
     </code>
     </pre>
-            <h2>Combinar todo excepto letras y números</h2>
+            <h3>Combinar todo excepto letras y números</h3>
             <p>Si quisieramos todo tipo de caracteres excepto letras y números tendríamoss que usar la clase de
                 caracteres abreviados "\W",parecida a "\w":</p>
             <pre>
@@ -261,7 +265,7 @@
     //Calcula la cantidad de números en la var movies,en este caso devuelve 4 porque: calcula una longitud de 4 digitos
     </code>
     </pre>
-            <h2>Coincidir con todos los caracteres no númericos</h2>
+            <h3>Coincidir con todos los caracteres no númericos</h3>
             <p>Si queremos buscar palabras en la cadena,podemos usar el atajo "\D" en la expresión regular,es lo mismo
                 que escribir [^0-9]:</p>
             <pre>
@@ -283,7 +287,7 @@
     //Aquí console.log(result); nos devolvera [' ', ' '] porque hay dos espacios en blanco en la variable "example"
     </code>
     </pre>
-            <h2>Coincidir con caracteres que no son espacios en blanco</h2>
+            <h3>Coincidir con caracteres que no son espacios en blanco</h3>
             <p>Si queremos buscar espacios que no sean vacios,debemos usar el patrón "\S",este no coincidirá con
                 espacios en blanco,retornos de carro,tabulaciones,avances de página ni caracteres de nueva línea:</p>
             <pre>
@@ -291,10 +295,10 @@
     let example = "example";
     let extract = /\S/g;
     var final = example.match(extract);
-    /*Aquí console.log(final); nos devolvera todas las letras del let example,si pusieramos .length al final de let final,la llamada nos
-    devolvera la suma total de todas las letras*/
     </code>
     </pre>
+            <p>Aquí console.log(final); nos devolvera todas las letras del let example,si pusieramos .length al final de
+                let final,la llamada nos devolvera la suma total de todas las letras.</p>
             <h2>Especificar número superior e inferior de coincidencias</h2>
             <p>Si quisieramos especificar el número superior e inferior de patrones,tenemos que usar los especificadores
                 de cantidad "{}",dentro de las llaves,ponemos dos números,el primero sera el inferior y el segundo el
