@@ -413,6 +413,20 @@
         <p>Cuando la página se carga completamente.</p>
         <h4>onsubmit</h4>
         <p>Cuando se emvía un formulario.</p>
+        <h2>.addEventListener()</h2>
+        <p>Método utilizado para agregar un evento a un elemento del DOM. Permite ejecutar una función cuando ocurre un
+            evento específico(e.j: un "click")</p>
+        <pre>
+<code>
+    element.addEventListener(tipoDeEvento, funcion, useCapture);
+</code>
+            </pre>
+        <ol>
+            <li>tipo de evento: es el nombre del evento("string"),e.j: "click", "mouseover", etc.</li>
+            <li>funcion: es la función(callback) que se ejecutará cuando ocurra el evento.</li>
+            <li>useCapture(boolean): (esto es opcional). Define si el evento se maneja en la fase de captura(true), o en
+                la fase de burbujeo(false, por defecto).</li>
+        </ol>
     </main>
     <footer>
         <div class="contactos">
