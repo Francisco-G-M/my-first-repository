@@ -427,6 +427,31 @@
             <li>useCapture(boolean): (esto es opcional). Define si el evento se maneja en la fase de captura(true), o en
                 la fase de burbujeo(false, por defecto).</li>
         </ol>
+        <h3>Tipos de Fase</h3>
+        <h4>Fase de Captura</h4>
+        <p>El evento viaja desde el "document" hasta el elemento objetivo.</p>
+        <h4>Fase de Objetivo</h4>
+        <p>El evento llega al elemento donde se originó.</p>
+        <h4>Fase de Burbujeo</h4>
+        <p>El evento se propaga de regreso hacia el "document", pasando por los ancestros del elemento.</p>
+        <h2>.removeEventListener()</h2>
+        <p>Método utilizado para eliminar un "Event Listener" previamente agregado a un elemento con
+            ".addEventListener()".</p>
+        <pre>
+<code>
+    element.removeEventListener(evento, function, opciones);
+</code>
+            </pre>
+        <ol>
+            <li>evento: el nombre del evento a eliminar.</li>
+            <li>function: la función que se usó para agregar el listener.</li>
+            <li>opciones(opcional): un objeto o boolean que debe coincidir con las opciones usadas en
+                ".addEventListener()".</li>
+        </ol>
+        <h4>Dato Importante</h4>
+        <p>El parámetro de "function" debe ser exactamente la misma que en ".addEventListener()". Si en este último se
+            usó
+            opciones como {capture: true}, hay que pasar la misma opción a "removeEventListener()".</p>
     </main>
     <footer>
         <div class="contactos">
