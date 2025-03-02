@@ -146,7 +146,7 @@
     string3.match(extract);
     </code>
     </pre>
-            <h2>Unir letras del alfabeto con numeros</h2>
+            <h3>Unir letras del alfabeto con numeros</h3>
             <p>También podemos indicar un rango de números: /[0-9]/ o uno con letras y números:</p>
             <pre>
     <code>
@@ -174,7 +174,7 @@
     let extraer = rioFamoso.match(expresionRegular);
     </code>
     </pre>
-            <h2>Unir caracteres que aparecen cero o más veces</h2>
+            <h3>Unir caracteres que aparecen cero o más veces</h3>
             <p>En caso de que quisieramos hacer coincidir caracteres que aparecen cero o más veces,debemos usar el * en
                 la expresión regular:</p>
             <pre>
@@ -215,7 +215,7 @@
     var elemento = regresarMi.test(presentacion);
     </code>
     </pre>
-            <h2>Hacer coincidir patrones de cuerdas finales</h2>
+            <h3>Hacer coincidir patrones de cuerdas finales</h3>
             <p>Si queremos buscar patrones al final de las cadenas,usamos el signo "$" al final de la expresión regular:
             </p>
             <pre>
@@ -311,7 +311,7 @@
     //Si no pusieramos "\s" nos figuraría false
     </code>
     </pre>
-            <h2>Especificar solo el número inferior de coincidencias</h2>
+            <h3>Especificar solo el número inferior de coincidencias</h3>
             <p>Si solo queremos especificar el número inferior de patrones,tendríamos que escribir dentro de las llaves
                 el primer número seguido de una coma:</p>
             <pre>
@@ -321,7 +321,7 @@
     var final = string2.test(string);
     </code>
     </pre>
-            <h2>Especificar el número exacto de coincidencias</h2>
+            <h3>Especificar el número exacto de coincidencias</h3>
             <p>Si queremos especificar el número exacto de coincidencias,simplemente ponemos un solo número dentro de
                 las llaves(sin ninguna coma):</p>
             <pre>
@@ -356,11 +356,16 @@
     var extractHe = /H(?!E)/;
     hi.match(extractHi);
     he.match(extractHe);
-    //Las dos .match() regresaran "h".Las busquedas anticipadas son prácticas en comprobar dos o más patrones en una cadena:
+    </code>
+    </pre>
+            <p>Las dos .match() regresaran "h".Las busquedas anticipadas son prácticas en comprobar dos o más patrones
+                en una cadena</p>
+            <pre>
+<code>
     //Verificar contraseñas:
     var contraseña = "abc100";
     let vericar = /(? = \w{3, 6})(? = \D*\d)/;
-    </code>
+</code>
     </pre>
             <h2>Verificar la existencia de agrupaciones mixtas de caracteres</h2>
             <p>Si quisieramos comprobar la existencia de grupos de caracteres que esten usando una expresión
@@ -384,11 +389,12 @@
     <code>
     let stringNumbers = "3 3 3";  
     let string2 = /^(\d+)\1\1$/;
-    string2.test(stringNumbers);     
-    /*Si usamos .test() nos devolvera un valor booleano,pero con .match() nos devuelven una matriz  con la subcadena coincidente,
-    junto con sus grupos capturados (['3 3 3', '3']) los primeros 3 son los grupos capturados,el último 3 es la subcadena coincidente*/ 
+    string2.test(stringNumbers);
     </code>
     </pre>
+            <p>Si usamos .test() nos devolvera un valor booleano,pero con .match() nos devuelven una matriz con la
+                subcadena coincidente, junto con sus grupos capturados (['3 3 3', '3']) los primeros 3 son los grupos
+                capturados,el último 3 es la subcadena coincidente.</p>
             <h2>Utilizar grupos de captura para buscar y reemplazar</h2>
             <p>En caso de que quisieramos buscar y reemplazar al mismo tiempo texto en una cadena,tendríamos que usar
                 ".replace()",primero escribimos la cadena original,seguido de .replace(),dentro de los parentesis van la
