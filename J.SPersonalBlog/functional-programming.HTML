@@ -192,6 +192,18 @@
     //Devuelve: Hola Mundo
 </code>
         </pre>
+        <h3>Agregar elementos al final de un Array usando ".concat()" en lugar de ".push()"</h3>
+        <p>A diferencia del método ".push()", ".concat()" no altera/módifica ningún array cuando lo utilizamos para
+            agregar elementos, es decir, cumple con un principio fundamental de la Programación Funcional, el cual es:
+            no producir mutaciones ni efectos secundarios en el código, e.j:</p>
+        <pre>
+<code>
+    function noMutaciones(arr, unir) {
+        const SAPEEE = arr.concat(unir);
+        return SAPEEE;
+    };
+</code>
+            </pre>
     </main>
     <footer>
         <div class="contactos">
