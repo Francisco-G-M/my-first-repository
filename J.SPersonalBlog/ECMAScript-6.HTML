@@ -71,11 +71,12 @@
     return PI*(radio**2);
     }
     console.log(calcularAreaCirculo(10));
-    //Usar dos ** índica que es el operador para una potencia,el número al lado de ellos sera la potencia deseada.
     </code>
     </pre>
             <p>Se escribe en mayúsculas el nombre de las const para poder distinguirlas y para que los desarrolladores
                 sepan que no deben intentar</p>
+            <p>Usar dos ** índica que es el operador para una potencia,el número al lado de ellos sera la potencia
+                deseada.</p>
             <h3>Mutar arreglo declarado con const</h3>
             <p>Si bien a las variables declaradas con "const" no le puedes asignar un valor nuevo,si lo puedes cambiar:
             </p>
@@ -148,7 +149,7 @@
             <pre>
     <code>
     const INCREMENTAR = (num, valor = 1) => num + valor;
-    //En caso de que se omita el argumento valor,se asignara el valor por defecto.
+    //En caso de que se omite el argumento "valor",se asignara el valor por defecto.
     //Este principio también se puede aplicar a las funciones normales y sus variantes,y a las anonimas.
     </code>
     </pre>
@@ -166,10 +167,11 @@
     const SUMAR = (...arrgs) => {
     return arrgs.reduce((a, b) => a + b,0);
     };
-    /*El metodo .reduce() nos permite reducir el array a un solo valor,sumando los elementos del arreglo y retornando
-    el resultado*/
     </code>
     </pre>
+            <p>El metodo .reduce() nos permite reducir el array a un solo valor,sumando los elementos del arreglo y
+                retornando
+                el resultado.</p>
             <h2>Operador spread</h2>
             <p>Su función es descomponer un arreglo en sus elementos individuales para que la función pueda recibirlos y
                 asignarlos a sus parametros correspondientes:</p>
@@ -206,7 +208,6 @@
     }
     };
     const {joseph: {edad: edadDelUsuario, correo: correoDelUsuario}} = usuario;
-    //Para acceder a los objetos anidados,debemos escribir un segundo par de corchetes que contenga el nombre de aquellos objetos.
     const PRONOSTICO_LOCAL = {
     "ayer": {
     minima: "-1",
@@ -226,11 +227,13 @@
     //Usamos una coma y un espacio para que en una sola línea figuren los dos datos.
     </code>
     </pre>
+            <p>Para acceder a los objetos anidados,debemos escribir un segundo par de corchetes que contenga el nombre
+                de aquellos objetos.</p>
             <p>Lo que esta escrito despues de los nombres de las propiedades({edad: edadDelUsuario, correo:
                 correoDelUsuario})que queremos acceder son los nuevos nombres
                 que queremos asignarles a las
                 propiedades (esto es completamente opcional).Si llegasemos a llamarlos,tendríamos que usar estos nuevos
-                nombres</p>
+                nombres.</p>
             <h3>Sintaxis de desestructuración: arreglos</h3>
             <p>Nos permite asignar valores a variables usando arreglos:</p>
             <pre>
