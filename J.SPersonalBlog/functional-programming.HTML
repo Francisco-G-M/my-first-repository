@@ -285,6 +285,31 @@
     console.log(totalRating(List));
 </code>
             </pre>
+        <h2>Método ".sort()"</h2>
+        <p>El método ".sort()" permite ordenar los elementos de un array de acuerdo a un callback, e.j:</p>
+        <pre>
+<code>
+    function ordenar(array) {
+        let newArray = array.sort(function(x, y) {
+            return x === y ? 0 : x &lt y ? -1 : 1;
+        });
+        return newArray;
+    };
+    console.log(ordenar(["a", "d", "e", "b", "c"]));
+</code>
+            </pre>
+        <p>En este caso, el callback índica que el array sera ordenado alfabéticamente, la explicación es la siguiente:
+        </p>
+        <ol>
+            <li>"ordenar(array)": toma un array como argumento.</li>
+            <li>"array.sort()": ordenara el array según lo que sea establecido en el callback.</li>
+            <li>"(x, y) {....}": es el callback que define el criterio de ordenación.</li>
+            <li>"x === y ? 0": si x es igual a y, mantiene el orden actual.</li>
+            <li>"x &lt y ? -1": si x es menor que y (alfabéticamente anterior), pone a x antes que y.</li>
+            <li>En caso contrario al punto anterior: si x es mayor que y, pone a x después de y.</li>
+        </ol>
+        <h4>Dato Extra</h4>
+        <p>Este método produce como efecto secundario mutaciones en los arrays.</p>
     </main>
     <footer>
         <div class="contactos">
