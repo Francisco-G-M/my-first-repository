@@ -89,8 +89,10 @@
     function incrementar() {
     return globalVar + 3;
     }
-    console.log(incrementar()); //Retorna la globalVar con su valor incrementado en 4,pero no modifica el valor original de la globalVar. 
-    console.log(globalVar); // Como dije en el comnetario anterior,el valor original de la globalVar no se módifica.
+    console.log(incrementar());
+    //Retorna la globalVar con su valor incrementado en 4,pero no modifica el valor original de la globalVar. 
+    console.log(globalVar);
+    // Como dije en el comnetario anterior,el valor original de la globalVar no se módifica.
     </code>
     </pre>
         <p>Si incrementaramos el valor en la function usando los "++" produciria una mutación en la
@@ -202,6 +204,85 @@
         const SAPEEE = arr.concat(unir);
         return SAPEEE;
     };
+</code>
+            </pre>
+        <h2>Método ".reduce()"</h2>
+        <p>Este método permite el uso de formas más generales de procesamiento de arrays, incluso siendo posible que
+            tanto
+            ".filter()" como ".map()" puedan derivarse como aplicaciones especiales de ".reduce()". Lo que hace este
+            método es iterar sobre cada elemento del array y retornar un solo valor(ya sea un "string", "number", "obj",
+            "array"). Esto se consigue mediante un "callback" que se llama en cada interacción. El callback acepta
+            cuatro argumentos:</p>
+        <h3>Primer Argumento</h3>
+        <p>Se conoce como acumulador, que recibe el valor retornado del "callback" de la interación anterior.</p>
+        <h3>Segundo Argumento</h3>
+        <p>Elemento actual que se esta procesando.</p>
+        <h3>Tercer Argumento</h3>
+        <p>Índice del elemento que se esta procesando.</p>
+        <h3>Cuarto Argumento</h3>
+        <p>Array sobre el cual se llama al método ".sort()".</p>
+        <h3>Parametro Adicional</h3>
+        <p>Toma el valor inicial para el acumulador. Si este no se usa, entonces la primera enteracción se omite y la
+            segunda se pasa por el primer elemento del array como acumulador.</p>
+        <h4>Ejemplo 1 (utilizando lso primeros 3 parametros):</h4>
+        <pre>
+<code>
+    const onePiece = [
+    {name: 'Ace', age: 20},
+    {name: 'Garp', age: 78},
+    {name: 'Luffy', age: 19}
+    ];
+    console.log(onePiece.reduce((sum, user) => sum + user.age, 0));
+</code>
+            </pre>
+        <h4>Ejemplo 2:</h4>
+        <pre>
+<code>
+    const watchList = [
+   {
+    "Title": "Inception",
+    "Year": "2010",
+    "Director": "Christopher Nolan",
+    "Writer": "Christopher Nolan",
+    "imdbRating": "8.8"
+   },
+   {
+    "Title": "Interstellar",
+    "Year": "2014",
+    "Director": "Christopher Nolan",
+    "Writer": "Jonathan Nolan, Christopher Nolan",
+    "imdbRating": "8.6"
+   },
+   {
+    "Title": "The Dark Knight",
+    "Year": "2008",
+    "Director": "Christopher Nolan",
+    "imdbRating": "9.0"
+   },
+   {
+    "Title": "Batman Begins",
+    "Year": "2005",
+    "Director": "Christopher Nolan",
+    "imdbRating": "8.3"
+   },
+   {
+    "Title": "Avatar",
+    "Year": "2009",
+    "Director": "James Cameron",
+    "imdbRating": "7.9"
+   }
+   ];
+
+    function totalRating(List) {
+    let averageRating = List
+    .filter(film => film.Director === "Christopher Nolan")
+    .map(film => Number(film.imdbRating))
+    .reduce((ratingTotal, rating) => ratingTotal + rating) /
+    List.filter(film => film.Director === "Christopher Nolan").length;
+    return averageRating;
+   }
+
+    console.log(totalRating(List));
 </code>
             </pre>
     </main>
