@@ -310,6 +310,17 @@
         </ol>
         <h4>Dato Extra</h4>
         <p>Este método produce como efecto secundario mutaciones en los arrays.</p>
+        <h2>Método ".split()"</h2>
+        <p>Lo que hace este método es dividir una cadena en un array de cadenas. Para ello, se necesita un argumento
+            para el delimitador, el cual puede ser un carácter para separar la cadena, o una expresión regular, e.j:</p>
+        <pre>
+<code>
+    let stringA = "Gordo Salamero";
+    const separador1 = sttringA.split(" ");
+    let stringB = "Como2Tamo-Muchachos4yo5los6veo7muy-bien";
+    const separador2 = stringB.split(/\d|\W/);
+</code>
+            </pre>
     </main>
     <footer>
         <div class="contactos">
