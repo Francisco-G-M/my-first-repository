@@ -349,6 +349,22 @@
 </code>
             </pre>
         <p>Las primeras tres opciones devuelven "false", solo la última retorna "true".</p>
+        <h2>Método ".some()"</h2>
+        <p>La función de este método es comprobar si algún elemento del array cumple con la condición dada, en caso de
+            que si se cumpla retorna "true", pero si no retorna "false". La condición a comprobar se establece dentro de
+            un callback. e.j:</p>
+        <pre>
+<code>
+    function chequeador(sujeto) {
+        return sujeto.some(function(value) {
+            return value &gt 0;
+        });
+    };
+    console.log(chequeador([-7, 2, -4]));
+    //Oh también:[-7, '2', -4];[-7, 'two', -4];[-7, '-2', -4]
+</code>
+            </pre>
+        <p>Las primeras dos llamadas retornan "true", las otras dos "false".</p>
     </main>
     <footer>
         <div class="contactos">
