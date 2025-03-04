@@ -333,6 +333,22 @@
     console.log(ejemploJoin("Haceme-un-petardo-mi-nombre-es-Ricardo"));
 </code>
             </pre>
+        <h2>Método ".every()"</h2>
+        <p>Este método comprueba si cada elemento de un array pasa una prueba en particular, es decir, si todos los
+            elementos pasan la prueba retorna "true", en caso contrario "false". La "prueba en particular" consiste en
+            un callback, en el cual definimos la condición a comprobar, e.j:</p>
+        <pre>
+<code>
+    function revision(sujeto) {
+        return sujeto.every(function(value) {
+            return value &gt 0;
+        });
+    };
+    console.log([10, 9, 7, 1, -99]);
+    //Oh también:[10, 9, 7, 1, '-99'];[10, 9, 7, 1, "two"];[10, 9, 7, 1, "99"]
+</code>
+            </pre>
+        <p>Las primeras tres opciones devuelven "false", solo la última retorna "true".</p>
     </main>
     <footer>
         <div class="contactos">
