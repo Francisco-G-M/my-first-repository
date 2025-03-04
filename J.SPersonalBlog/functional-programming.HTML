@@ -365,6 +365,27 @@
 </code>
             </pre>
         <p>Las primeras dos llamadas retornan "true", las otras dos "false".</p>
+        <h2>Introducción a la Currificación y a la aplicación de Funciones Parciales</h2>
+        <ul>
+            <li>Aridad: Número de argumentos que requiere una función.</li>
+            <li>Currificación: Transformar una función que toma múltiples argumentos en una secuencia de funciones que
+                argumento cada una.
+                toman un solo</li>
+        </ul>
+        <p>Por ende, currificar una función significa convertir una función de "x" aridades a "x" funciones de 1 aridad,
+            e.j:</p>
+        <pre>
+<code>
+    function currificador(a) {
+        return function(b) {
+            return function(c) {
+                return a + b + c;
+            };
+        };
+    };
+    console.log(currificador(1)(2)(3));
+</code>
+            </pre>
     </main>
     <footer>
         <div class="contactos">
