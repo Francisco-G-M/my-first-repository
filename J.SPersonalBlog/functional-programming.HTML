@@ -321,6 +321,18 @@
     const separador2 = stringB.split(/\d|\W/);
 </code>
             </pre>
+        <h2>Método ".join()"</h2>
+        <p>Este método se utiliza para unir los elementos de un array creando una cadena de texto. Requiere de un
+            argumento para específicar un delimitador que separe los elementos del array en la cadena, e.j:</p>
+        <pre>
+<code>
+    function ejemploJoin(string) {
+        let newArr = string.split(/\W/).join(" ");
+        return newArr;
+    };
+    console.log(ejemploJoin("Haceme-un-petardo-mi-nombre-es-Ricardo"));
+</code>
+            </pre>
     </main>
     <footer>
         <div class="contactos">
