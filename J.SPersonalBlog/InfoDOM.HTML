@@ -15,7 +15,7 @@
     <header>
         <h1 id="pp-h1">J.SPersonalBlog</h1>
         <nav class="sections">
-            <a href="principal-page.HTML" class="enlace-barra-nav">Volver al principio</a>
+            <a href="principal-page.HTML" class="enlace-barra-nav">Inicio</a>
         </nav>
     </header>
     <main>
@@ -56,7 +56,7 @@
         <p>Es algo confuso, por ende te recomiendo ver el ejemplo del curso: JavaScript para Manipulación del DOM -
             Curso con Proyectos de FreeCodeCamp a partir del minuto 18:28 hasta el 22:54</p>
         <h2>Seleccionar Elementos:</h2>
-        <h2>.getElementById()</h2>
+        <h3>.getElementById()</h3>
         <p>Método del objeto "documento" en J.S utilizado para seleccionar un elemento HTML especifíco mediante un
             atributo "id".Devuelve una referencia al primer elemento que coincida con el "id" dado o Null si no se
             encuentra ningún elemento con ese "id".
@@ -74,7 +74,7 @@
 </code>
         </pre>
         <p>También puedes combinarlo junto con otras etiquetas, agregando así nuevas funciones, por ejemplo:</p>
-        <h3>Contenido del elemento</h3>
+        <h4>Contenido del elemento</h4>
         <ul>
             <li>innerHTML: módifica el contenido HTML interno.</li>
             <li>textContent: módifica el texto del elemento, sin interpretar etiquetas HTML.</li>
@@ -87,7 +87,7 @@
     titulo.textContent = "Nuevo Titulo";
 </code>
         </pre>
-        <h3>Estilos CSS</h3>
+        <h4>Estilos CSS</h4>
         <ul>
             <li>style: módifica estilos en línea como color, tamaño de fuente, etc.</li>
             <li>className: cambia la clase CSS del elemento.</li>
@@ -101,7 +101,7 @@
     titulo.classList.add("resaltado");
 </code>
         </pre>
-        <h3>Atributos HTML</h3>
+        <h4>Atributos HTML</h4>
         <ul>
             <li>setAttribute(nombre, valor): módifica o agrega atributos.</li>
             <li>getAttribute(nombre): obtiene valor de un atributo.</li>
@@ -115,7 +115,7 @@
     enlace.removeAttribute("target");
 </code>
         </pre>
-        <h3>Eventos y Comportamientos</h3>
+        <h4>Eventos y Comportamientos</h4>
         <ul>
             <li>onclick: asigna una función al evento "click".</li>
             <li>onmouseover: cambia el comportamiento cuando el mouse pasa sobre el elemento.</li>
@@ -131,7 +131,7 @@
     });
 </code>
         </pre>
-        <h3>Mostrar u ocultar un elemento</h3>
+        <h4>Mostrar u ocultar un elemento</h4>
         <ul>
             <li>style.display: cambia la visibilidad del elemento(none, block, inline, etc).</li>
             <li>style.visibility: oculta el elemento sin quitarlo del flujo del documento.</li>
@@ -142,7 +142,7 @@
     titulo.style.visibility = "hidden";
 </code>
         </pre>
-        <h2>.getElementsByClassName()</h2>
+        <h3>.getElementsByClassName()</h3>
         <p>Método del objeto "document" o de cualquier elemento HTML que permite seleccionar todos los elementos que
             tiene una clase específica.Su sintaxis es:</p>
         <pre>
@@ -151,7 +151,7 @@
     elemento.getElementByClassName("--");
 </code>
             </pre>
-        <h3>Características:</h3>
+        <h4>Características:</h4>
         <ul>
             <li>Devuelve una colección de elementos(HTMLCollection) que tienen la clase específicada.</li>
             <li>Es una colección "en vivo", osea, si el DOM cambia(ya sea que se agregan/eliminan elementos con esa
@@ -160,7 +160,7 @@
                 que usar índices, como si fuera un Array.</li>
             <li>Si no hay elementos con esa clase, devuelve una colección vacía.</li>
         </ul>
-        <h2>.getElementsByTagName()</h2>
+        <h3>.getElementsByTagName()</h3>
         <p>Método del DOM que se usa para seleccionar elementos de una página web basándose en su etiqueta HTML.Retorna
             una colección "en vivo" de todos los elementos que coinciden con el nombre de la etiqueta específica.Su
             sintaxis es:</p>
@@ -175,9 +175,9 @@
             <li>Si bien devuelve una "HTMLCollection"(que es similar a un Array), no tiene todos los métodos de los
                 Arrays</li>
         </ul>
-        <h3>Dato Extra:</h3>
+        <h4>Dato Extra:</h4>
         <p>Si no hay coincidencias, devolverá una colección vacía(HTMLCollection con length = 0), pero no es Null.</p>
-        <h2>.querrySelector()</h2>
+        <h3>.querrySelector()</h3>
         <p>Método que permite seleccionar el primer elemento del documento que coincida con un selector CSS
             específicado. Este sirve para acceder y manipular elementos del DOM de forma dinámica, lo que es útil para
             cambiar contenido, modificar estilos, agregar/eliminar clases, etc. Su sintaxis es:</p>
@@ -195,7 +195,7 @@
             <li>"p": selecciona el primer &ltp&gt</li>
             <li>".lista li": primer &ltli&gt dentro de .lista</li>
         </ul>
-        <h2>.querrySelectorAll()</h2>
+        <h3>.querrySelectorAll()</h3>
         <p>Método que permite seleccionar múltiples elementos dentro de un documento HTML utilizando un selector CSS.
             Retorna una NodeList (lista de nodos parecida a un Array), conteniendo todos los elementos que coinciden con
             el selector privado. Sirve para:</p>
@@ -299,7 +299,7 @@
         </pre>
         <h2>.children</h2>
         <p>Método que devuelve una colección en vivo que contiene todos los elementos hijos de un nodo padre. Solo
-            incluye nodos de tipo "element", excluyendo nodos de tipo "element", excluyendo nodos de texto, comentarios
+            incluye nodos de tipo "element", excluyendo nodos de texto, comentarios
             u otros tipos de nodos.</p>
         <pre>
 <code>
@@ -369,6 +369,7 @@
     &ltscript&gt
     let parrafo = document.getElementById("parrafo");
     let siguienteNodo = parrafo.nextSibling;
+    &lt/script&gt
 </code>
             </pre>
         <p>Al tener el elemento &ltp&gt un comentario delante, nextSibling selecciona el siguiente nodo(en este caso el
@@ -412,7 +413,7 @@
         <h4>onload</h4>
         <p>Cuando la página se carga completamente.</p>
         <h4>onsubmit</h4>
-        <p>Cuando se emvía un formulario.</p>
+        <p>Cuando se envía un formulario.</p>
         <h2>.addEventListener()</h2>
         <p>Método utilizado para agregar un evento a un elemento del DOM. Permite ejecutar una función cuando ocurre un
             evento específico(e.j: un "click")</p>
@@ -423,7 +424,7 @@
             </pre>
         <ol>
             <li>tipo de evento: es el nombre del evento("string"),e.j: "click", "mouseover", etc.</li>
-            <li>funcion: es la función(callback) que se ejecutará cuando ocurra el evento.</li>
+            <li>funcion: es el callback que se ejecutará cuando ocurra el evento.</li>
             <li>useCapture(boolean): (esto es opcional). Define si el evento se maneja en la fase de captura(true), o en
                 la fase de burbujeo(false, por defecto).</li>
         </ol>
