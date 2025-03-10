@@ -42,7 +42,7 @@
         let max = Math.max(array[0], array[1]);
         let min = Math.min(array[0], array[1]);
         let sumTotal = 0;
-        for(let a = min; a &gt= max; a++) {
+        for(let a = min; a &lt= max; a++) {
             sumTotal += a;
         }
         return sumTotal;
@@ -51,6 +51,22 @@
     //Retorna: 4950
 </code>
         </pre>
+        <h4>Math.max()</h4>
+        <p>Método de "Math" que devuelve el mayor de los números proporcionados como argumentos. Sintaxis:</p>
+        <pre>
+<code>
+    Math.max(valor1, valor2, ...., valorN);
+</code>
+        </pre>
+        <p>Si algún argumento no es un número, devuelve "NaN", pero si no se pasan argumentos, retorna "Infinity".</p>
+        <h4>Math.min()</h4>
+        <p>Método de "Math" que devuelve el número más pequeño de los proporcionados como argumentos:</p>
+        <pre>
+<code>
+    Math.min(valor1, valor2, ...., valorN);
+</code>
+        </pre>
+        <p>Si algún argumento no es un número, devuelve "NaN", pero si no se pasan argumentos, retorna "Infinity".</p>
     </main>
     <footer>
         <div class="contactos">
