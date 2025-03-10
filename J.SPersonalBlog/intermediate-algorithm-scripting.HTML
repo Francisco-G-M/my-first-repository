@@ -100,6 +100,21 @@
             </pre>
         <p>En caso de que el elemento si este devuleve "true", caso contrario será "false". El valor de "inicio" es
             opcional.</p>
+        <h2>Busca y destruir elementos en un Array usando "filter" e "includes"</h2>
+        <p>En este caso, debemos buscar en un array una "x" cantidad de argumentos de tipo "number", que posteriormente
+            eliminaremos del array:</p>
+        <pre>
+<code>
+    function destruir(array, ...remover) {
+        return array.filter(item =&gt !remover.includes(item));
+    }
+</code>
+            </pre>
+        <ul>
+            <li>.filter(): crea un nuevo array con los elementos que cumplen una condición.</li>
+            <li>.includes(): verifica si un valor está en el array "remover".</li>
+            <li>Negación "!": se usa para eliminar los elementos que están en "remover".</li>
+        </ul>
     </main>
     <footer>
         <div class="contactos">
