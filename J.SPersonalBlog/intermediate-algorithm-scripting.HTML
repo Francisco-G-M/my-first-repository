@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.CSS">
+    <link rel="icon" href="JSbasicLogo - copia.ico">
+    <title>J.SPersonalBlog</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="pp-h1">J.SPersonalBlog</h1>
+        <nav class="sections">
+            <a href="principal-page.HTML" class="enlace-barra-nav">Inicio</a>
+            <a href="basic-javascript.HTML" class="enlace-barra-nav">Basic.JS</a>
+            <a href="ECMAScript-6.HTML" class="enlace-barra-nav">ES6</a>
+            <a href="regular-Expresions.HTML" class="enlace-barra-nav">Regular.E</a>
+            <a href="debug.HTML" class="enlace-barra-nav">Debug</a>
+            <a href="basic-data-structure.HTML" class="enlace-barra-nav">Basic.D.S</a>
+            <a href="basic-algorithm-scripting.HTML" class="enlace-barra-nav">Basic.A.S</a>
+            <a href="object-oriented-programming.HTML" class="enlace-barra-nav">OOP</a>
+            <a href="functional-programming.HTML" class="enlace-barra-nav">Functional.P</a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="h2-centrados">¿Qué es la programación de algoritmos intermedios?</h2>
+        <div class="presentacion-tema">
+            <img src="Inter.A.S.jpg" alt="intermediate-algorithm-scripting">
+            <p>La P.A.I se centra en el desarrollo de soluciones avanzadas que van más allá de los conceptos básicos
+                de la sintaxis y estructuras de control. La cual implica el uso de estructuras de datos más complejas,
+                optimización de código, manipulación eficiente de datos y aplicación de paradigmas de programación.</p>
+        </div>
+        <h2>Como sumar todos los numeros en un rango</h2>
+        <p>En este caso, debemos devolver la suma del rango entre dos números de un array:</p>
+        <pre>
+<code>
+    function total(array) {
+        let max = Math.max(array[0], array[1]);
+        let min = Math.min(array[0], array[1]);
+        let sumTotal = 0;
+        for(let a = min; a &gt= max; a++) {
+            sumTotal += a;
+        }
+        return sumTotal;
+    }
+    console.log(total([1, 99]));
+    //Retorna: 4950
+</code>
+        </pre>
+    </main>
+    <footer>
+        <div class="contactos">
+            <a href="https://www.instagram.com/fraaan.g_m/" target="_blank" class="social-media">Instagram:
+                fraaan.g_m</a>
+            <a href="mailto:fgmanuello1@gmail.com" target="_blank" class="social-media">Gmail:
+                fgmanuello1@gmail.com</a>
+            <a href="https://github.com/Francisco-G-M" target="_blank" class="social-media">GitHub:
+                Francisco-G-M</a>
+        </div>
+    </footer>
+</body>
+
+</html>
