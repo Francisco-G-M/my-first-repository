@@ -67,6 +67,28 @@
 </code>
         </pre>
         <p>Si algún argumento no es un número, devuelve "NaN", pero si no se pasan argumentos, retorna "Infinity".</p>
+        <h2>Diferencia entre dos arrays</h2>
+        <p>En esta ocasión se comparan dos arrays, y se devuelve uno nuevo con los elementos que sólo se encuentran en
+            uno de los dos arrays brindados:</p>
+        <pre>
+<code>
+    function diferencia(arr1, arr2) {
+        const newArr = [];
+        function fusionar(primero, segundo) {
+            for(let a = 0; a &lt primero.length; a++) {
+                if(segundo.indexOf(primero[a]) === -1) {
+                    newArr.push(primero[a]);
+                }
+            }
+        }
+        fusionar(arr1, arr2);
+        fusionar(arr2, arr1);
+        return newArr;
+    }
+</code>
+            </pre>
+        <p>La primera llamada "fusionar" busca los elementos de "arr1" que no están en "arr2" y lo agregamos a "newArr".
+            La segunda llamada hace lo mismo pero con "arr2".</p>
     </main>
     <footer>
         <div class="contactos">
