@@ -115,6 +115,32 @@
             <li>.includes(): verifica si un valor está en el array "remover".</li>
             <li>Negación "!": se usa para eliminar los elementos que están en "remover".</li>
         </ul>
+        <h2>Buscar coincidencias y retornarlas en un nuevo array</h2>
+        <p>Lo que haremos será crear una función que recorre un nuevo array de objetos, y devolvera un nuevo array con
+            aquellos objetos que cumplan la coincidencia:</p>
+        <pre>
+<code>
+    function unaFuncion(coleccion, newCollection) {
+        const newArr = [];
+        for(let  i = 0; i &lt coleccion.length; i++) {
+            let coincidencia = false;
+            for(const prop in newCollection) {
+                if(coleccion[i][prop] !== newCollection[prop]) {
+                    coincidencia = true;
+                }
+            }
+            if(coincidencia === false) {
+                newArr.push(coleccion[i]);
+            }
+        }
+        return newArr;
+    }
+</code>
+            </pre>
+        <p>Se establece "coincidencia === false", ya que servirá como indicador de si el objeto actual no coincide con
+            newCollection. En caso de que si hay diferencia, se cambia el valor de "coincidencia" a "true". Si
+            "coincidencia" sigue siendo "false" tras revisar las propiedades de "newCollection", significa que
+            "coleccion" tiene todas las propiedades con los valores exactos y se agrega a "newArr".</p>
     </main>
     <footer>
         <div class="contactos">
