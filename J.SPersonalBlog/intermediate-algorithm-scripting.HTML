@@ -141,6 +141,18 @@
             newCollection. En caso de que si hay diferencia, se cambia el valor de "coincidencia" a "true". Si
             "coincidencia" sigue siendo "false" tras revisar las propiedades de "newCollection", significa que
             "coleccion" tiene todas las propiedades con los valores exactos y se agrega a "newArr".</p>
+        <h2>Convertir una cadena a "Spinal Tap Case"</h2>
+        <p>Lo que vamos a hacer es convertir una cadena de caracteres en una "Spinal Tap Case", es decir, la cadena va a
+            pasar a estar en minúsculas e unida por guiones entre cada palabra:</p>
+        <pre>
+<code>
+    function spinalTapCase(string) {
+        return string.split(/\s|_|\? = [A-Z]|\d/)
+        .join("-").toLowerCase();
+    }
+    console.log(spinalTapCase("Convertir_en una2Spinal_Tap case"));
+</code>
+            </pre>
     </main>
     <footer>
         <div class="contactos">
