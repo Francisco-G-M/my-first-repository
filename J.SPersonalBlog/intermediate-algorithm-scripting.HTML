@@ -153,6 +153,25 @@
     console.log(spinalTapCase("Convertir_en una2Spinal_Tap case"));
 </code>
             </pre>
+        <h2>Traducir del ingles al "Pig Latin"</h2>
+        <p>En esta ocasión, mediante una función vamos a traducir una palabra del ingles al "Pig Latin", este último
+            consiste en un juego de palabras, en el cual se reorganizan las letras de una palabra siguiendo reglas
+            específicas, las cuales son:</p>
+        <ul>
+            <li>Si la palabra comienza con una consonante, toma la primera consonante/grupo de estas, y movela al final
+                de la palabra, agregando también un "ay" al final.</li>
+            <li>Si la palabra comienza con una vocal, simplemente agrega "way" al final.</li>
+        </ul>
+        <pre>
+<code>
+    function translate(string) {
+        let group = /^[^aeiou]+/;
+        let consonants = string.match(group);
+        return consonants !== null ? string.replace(group, "").concat(consonants).concat("ay")
+        : string.concat("way");
+    }
+</code>
+        </pre>
     </main>
     <footer>
         <div class="contactos">
