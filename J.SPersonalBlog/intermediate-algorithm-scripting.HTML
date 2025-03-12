@@ -172,6 +172,21 @@
     }
 </code>
         </pre>
+        <h2>Buscar y reemplazar palabras en una string</h2>
+        <p>En este caso, vamos a buscar y reemplazar palabras en una oración, lo cual va a depender de los argumnetos
+            "before" y "after":</p>
+        <pre>
+<code>
+    function replace(string, before, after) {
+        if(before[0] === before[0].toUpperCase()) {
+            after = after[0].toUpperCase() + after.slice(1);
+        } else {
+            after = after[0].toLowerCase() + after.slice(1);
+        };
+        return string.replace(before, after);
+    };
+</code>
+            </pre>
     </main>
     <footer>
         <div class="contactos">
