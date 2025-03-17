@@ -187,6 +187,24 @@
     };
 </code>
             </pre>
+        <h2>Convertir entidades HTML</h2>
+        <p>En este caso, vamos a convertir los siguientes caracteres: &;&lt;&gt;"";''; en cadenas de caracteres:</p>
+        <pre>
+<code>
+    function convertir(string) {
+        let entidadesHTML = {
+            "&": "&amp",
+            "&lt": "&lt",
+            "&gt": "&gt",
+            '""': "&quot",
+            "''": "&apos"
+        };
+        return string.split("")
+        .map(ent =&gt entidadesHTML[ent] || ent)
+        .join("");
+    }
+</code>
+        </pre>
     </main>
     <footer>
         <div class="contactos">
