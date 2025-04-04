@@ -226,6 +226,30 @@
     }
 </code>
         </pre>
+        <h2>Sumar todos los números primos</h2>
+        <p>En este caso, vamos a sumar todos los números primos del parametro "n" de nuestra función "sumarPrimos":</p>
+        <pre>
+<code>
+    function sumarPrimos(n) {
+        function verificar(n) {
+            const raiz = Math.sqr(n);
+            for(let i = 2; i &lt= raiz; i++) {
+                if(n %i === 0) {
+                    return false;
+                }
+            }
+                return true;
+            }
+            let sum = 0;
+            for(let i = 2; i &lt= n; i++) {
+                if(verificar(i)) {
+                suma += i;
+            }
+        }
+            return suma;
+        }
+</code>
+        </pre>
     </main>
     <footer>
         <div class="contactos">
