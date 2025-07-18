@@ -1,0 +1,13 @@
+playlist = []
+cancion1 = input("Ingrese la primera canción: ")
+cancion2 = input("Ingrese la segunda canción: ")
+cancion3 = input("Ingrese la tercera canción: ")
+playlist.append(cancion1)
+playlist.append(cancion2)
+playlist.append(cancion3)
+print(playlist)
+cantidad_de_canciones = len(playlist)
+print(f"Cantidad de canciones en la lista: {cantidad_de_canciones}")
+remover = input("Ingrese de la canción que quiere eliminar: ")
+playlist.remove(remover)
+print(playlist)
